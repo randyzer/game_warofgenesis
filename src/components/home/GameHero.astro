@@ -1,0 +1,49 @@
+---
+import type { GameConfig } from "../../config/schema";
+import type { ImageAsset } from "../../data/schemas/media";
+import type { PageInventoryEntry } from "../../data/schemas/page-inventory";
+import GameMedia from "../media/GameMedia.astro";
+
+interface Props {
+  page: PageInventoryEntry;
+  brand: GameConfig["brand"];
+  displayHeading?: string;
+  startPage?: PageInventoryEntry;
+  heroMedia?: ImageAsset;
+  browseTarget?: string;
+}
+
+const { page, brand, displayHeading = brand.name, startPage, heroMedia, browseTarget } = Astro.props;
+const mediaStateClass = heroMedia ? "game-hero--has-media" : "game-hero--no-media";
+---
+
+<section class:list={["game-hero", mediaStateClass, "shell"]} aria-labelledby="game-hero-title">
+  <div class="game-hero__copy reveal reveal--1">
+    <p class="eyebrow">{brand.name} player wiki</p>
+    <h1 id="game-hero-title" data-pagefind-meta="title">
+      {displayHeading}
+    </h1>
+    <p class="game-hero__lede" data-pagefind-meta="description">{page.description}</p>
+    <p class="game-hero__tagline">{brand.tagline}</p>
+    {(startPage || browseTarget) && (
+      <div class="hero__actions">
+        {startPage && (
+          <a class="button button--primary" href={startPage.route}>
+            Start here <span aria-hidden="true">→</span>
+          </a>
+        )}
+        {browseTarget && (
+          <a class="button button--quiet" href={browseTarget}>
+            Browse the wiki
+          </a>
+        )}
+      </div>
+    )}
+  </div>
+
+  {heroMedia && (
+    <div class="game-hero__media reveal reveal--2" data-media-placement="hero">
+      <GameMedia asset={heroMedia} eager />
+    </div>
+  )}
+</section>

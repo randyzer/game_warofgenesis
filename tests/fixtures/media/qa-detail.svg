@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#272e2a"/>
+  <rect x="70" y="125" width="660" height="350" rx="10" fill="#e8e3d4"/>
+  <g fill="#959d89">
+    <rect x="110" y="170" width="160" height="210"/><rect x="310" y="170" width="160" height="210"/><rect x="510" y="170" width="180" height="210"/>
+  </g>
+  <path d="M160 275L190 315L235 230" fill="none" stroke="#252822" stroke-width="10"/>
+  <text x="70" y="75" font-family="sans-serif" font-size="27" fill="#e8e3d4">SYNTHETIC MEDIA QA · DETAIL</text>
+  <text x="110" y="432" font-family="sans-serif" font-size="24" fill="#252822">A readable caption belongs outside the image.</text>
+  <text x="70" y="545" font-family="sans-serif" font-size="23" fill="#e8e3d4">Test illustration only — not game content</text>
+</svg>

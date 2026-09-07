@@ -1,0 +1,43 @@
+---
+import type { PageInventoryEntry } from "../../data/schemas/page-inventory";
+
+interface Props {
+  id: string;
+  title: string;
+  pages: PageInventoryEntry[];
+  eyebrow?: string;
+  showUpdatedAt?: boolean;
+  showDescriptions?: boolean;
+}
+
+const {
+  id,
+  title,
+  pages,
+  eyebrow = "Explore the wiki",
+  showUpdatedAt = false,
+  showDescriptions = true,
+} = Astro.props;
+const titleId = `${id}-title`;
+---
+
+{pages.length > 0 && (
+  <section id={id} class="portal-section shell" aria-labelledby={titleId}>
+    <header class="portal-section__header">
+      <p class="eyebrow">{eyebrow}</p>
+      <h2 id={titleId}>{title}</h2>
+    </header>
+    <div class="portal-grid">
+      {pages.map((page) => (
+        <a class="portal-card" href={page.route}>
+          {showUpdatedAt && (
+            <time datetime={page.updatedAt}>Updated {page.updatedAt}</time>
+          )}
+          <h3>{page.title}</h3>
+          {showDescriptions && <p>{page.description}</p>}
+          <span class="portal-card__action">Read more <span aria-hidden="true">→</span></span>
+        </a>
+      ))}
+    </div>
+  </section>
+)}

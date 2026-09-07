@@ -1,0 +1,66 @@
+---
+import type { ResolvedNavigationGroup } from "../../core/site-data";
+
+interface Props {
+  groups: ResolvedNavigationGroup[];
+  currentRoute: string;
+}
+
+const { groups, currentRoute } = Astro.props;
+---
+
+<details class="mobile-nav">
+  <summary class="mobile-nav__toggle">Menu <span aria-hidden="true">+</span></summary>
+  <nav class="mobile-nav__panel" aria-label="Primary navigation">
+    <ul class="mobile-nav__list">
+      {groups.map((group) => {
+        const label = group.label ?? group.page.title;
+        const groupIsActive =
+          currentRoute === group.page.route ||
+          group.children.some((child) => currentRoute === child.route);
+
+        return group.children.length > 0 ? (
+          <li data-active={groupIsActive ? "true" : undefined}>
+            <details class="mobile-nav__group">
+              <summary>{label}</summary>
+              <div class="mobile-nav__children">
+                <a
+                  class="mobile-nav__overview"
+                  href={group.page.route}
+                  aria-current={currentRoute === group.page.route ? "page" : undefined}
+                  data-nav-page-id={group.page.pageId}
+                >
+                  Overview <span aria-hidden="true">→</span>
+                </a>
+                <ul>
+                  {group.children.map((child) => (
+                    <li data-nav-page-id={child.pageId}>
+                      <a
+                        href={child.route}
+                        aria-current={currentRoute === child.route ? "page" : undefined}
+                      >
+                        {child.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </details>
+          </li>
+        ) : (
+          <li
+            data-active={groupIsActive ? "true" : undefined}
+            data-nav-page-id={group.page.pageId}
+          >
+            <a
+              href={group.page.route}
+              aria-current={currentRoute === group.page.route ? "page" : undefined}
+            >
+              {label}
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  </nav>
+</details>

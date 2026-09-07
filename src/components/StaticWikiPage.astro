@@ -1,0 +1,58 @@
+---
+import { mediaCatalog } from "../data/media/catalog";
+import type { ImageAsset, VideoAsset } from "../data/schemas/media";
+import type { PageInventoryEntry } from "../data/schemas/page-inventory";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GameMedia from "./media/GameMedia.astro";
+import ScreenshotGallery from "./media/ScreenshotGallery.astro";
+
+interface Props {
+  page: PageInventoryEntry;
+  heroMedia?: ImageAsset;
+  galleryMedia?: ImageAsset[];
+  trailerMedia?: VideoAsset;
+}
+
+const { page } = Astro.props;
+const mappedMedia = mediaCatalog.getPageMedia(page.pageId);
+const {
+  heroMedia = mappedMedia.heroMedia,
+  galleryMedia = mappedMedia.galleryMedia,
+  trailerMedia = mappedMedia.trailerMedia,
+} = Astro.props;
+---
+
+<BaseLayout page={page}>
+  <main
+    id="main-content"
+    class="static-page shell"
+    data-pagefind-body={page.indexability === "index" ? true : undefined}
+  >
+    <header class="static-page__header reveal reveal--1">
+      <p class="eyebrow">Static guide</p>
+      <h1 data-pagefind-meta="title">{page.title}</h1>
+      <p class="static-page__intro" data-pagefind-meta="description">{page.description}</p>
+    </header>
+
+    {heroMedia && (
+      <div class="page-media" data-media-placement="hero">
+        <GameMedia asset={heroMedia} eager />
+      </div>
+    )}
+
+    <div class="static-page__body prose">
+      <slot />
+    </div>
+
+    {galleryMedia.length > 0 && (
+      <div class="page-media" data-media-placement="gallery">
+        <ScreenshotGallery assets={galleryMedia} />
+      </div>
+    )}
+    {trailerMedia && (
+      <div class="page-media" data-media-placement="trailer">
+        <GameMedia asset={trailerMedia} />
+      </div>
+    )}
+  </main>
+</BaseLayout>

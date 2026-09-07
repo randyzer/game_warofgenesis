@@ -1,0 +1,29 @@
+---
+import ToolShell from "../../components/ToolShell.astro";
+import { buildToolRouteRecords, selectToolPages } from "../../core/page-models";
+import { enabledPageCatalog } from "../../core/site-data";
+import { loadToolDefinition } from "../../core/tool-loader";
+import type { ToolRouteRecord } from "../../core/page-models";
+import type { ToolDefinition } from "../../data/schemas/tools";
+
+interface Props {
+  record: ToolRouteRecord;
+  definition: ToolDefinition;
+}
+
+export function getStaticPaths() {
+  return buildToolRouteRecords(selectToolPages(enabledPageCatalog)).map(
+    (record) => ({
+      params: { slug: record.slug },
+      props: {
+        record,
+        definition: loadToolDefinition(record.slug, record.kind),
+      },
+    }),
+  );
+}
+
+const { record, definition } = Astro.props;
+---
+
+<ToolShell page={record.page} definition={definition} />

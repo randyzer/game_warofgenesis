@@ -1,0 +1,27 @@
+---
+pageId: guide.getting-started
+---
+
+This starter keeps publishing decisions separate from prose. Configure those decisions first, then write against a stable page contract.
+
+## 1. Set the game and brand
+
+Edit `game.config.ts`. Replace the starter name, canonical HTTPS URL, default SEO copy, and social handle. Keep the locale on an English tag such as `en`, `en-US`, or `en-GB` for the global English-market build.
+
+Every feature flag is explicit. Turn on only the page families that have reviewed data and a route implementation.
+
+## 2. Declare pages before writing them
+
+Add each intended URL to `src/data/page-inventory.json`. The inventory owns the route, editorial title and description, publishing status, indexability, dates, relationships, and source confidence.
+
+For an editorial page, add a `contentRef` that points to its collection and slug. In the MDX file, keep frontmatter focused on `pageId`; do not duplicate inventory metadata.
+
+## 3. Add sourced facts by module
+
+Entity data belongs in `src/data/facts/`. Each enabled hero, weapon, item, or map module has its own JSON file and schema. Record source URLs, accessed dates, evidence notes, and confidence with every entity.
+
+Disabled modules need no empty data files. If you enable a module without its required fact file, production validation stops the build.
+
+## 4. Verify before publishing
+
+Run `npm run check` for types and unit tests, then `npm run build` for inventory validation, static output, sitemap generation, and the Pagefind index. Preview the production output when testing search because the development server does not contain a fresh Pagefind index.

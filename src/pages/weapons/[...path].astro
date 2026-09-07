@@ -1,0 +1,46 @@
+---
+import EntityDatabase from "../../components/EntityDatabase.astro";
+import type { EntityDatabaseRow } from "../../core/filter-state";
+import EntityDetail from "../../components/EntityDetail.astro";
+import { buildEntityModuleRouteRecords, type EntityModuleRouteRecord } from "../../core/entity-route-model";
+import { loadFactModule } from "../../core/fact-loader";
+import { enabledPageCatalog, siteConfig } from "../../core/site-data";
+import { getEntityModuleDefinition } from "../../data/entity-modules";
+import type { WeaponFact } from "../../data/schemas/facts";
+
+interface Props {
+  record: EntityModuleRouteRecord<WeaponFact>;
+}
+
+const moduleDefinition = getEntityModuleDefinition("weapons");
+
+export function getStaticPaths() {
+  const definition = getEntityModuleDefinition("weapons");
+  if (!siteConfig.features[definition.module]) return [];
+  const facts = loadFactModule(definition.module, siteConfig);
+  return buildEntityModuleRouteRecords({ segment: definition.routeSegment, module: definition.module, entityType: definition.entityType, catalog: enabledPageCatalog, facts })
+    .map((record) => ({ params: { path: record.path }, props: { record } }));
+}
+
+const { record } = Astro.props;
+const detailRoutes = new Map(enabledPageCatalog.flatMap((page) =>
+  page.entityRef?.entityType === moduleDefinition.entityType ? [[page.entityRef.entityId, page.route] as const] : [],
+));
+const rows: EntityDatabaseRow[] = record.facts.map((fact) => ({
+  id: fact.id, name: fact.name, summary: fact.summary,
+  classification: fact.weaponClass,
+  detail: `${fact.damage} damage · ${fact.fireRate}/s`,
+  patch: fact.patch, route: detailRoutes.get(fact.id),
+}));
+---
+
+{record.view === "detail" ? (
+  <EntityDetail page={record.page} fact={record.fact} entityLabel={moduleDefinition.singularLabel} fields={[
+    { label: "Class", value: record.fact.weaponClass },
+    { label: "Damage", value: String(record.fact.damage) },
+    { label: "Fire rate", value: `${record.fact.fireRate}/s` },
+    { label: "Effective range", value: `${record.fact.effectiveRange} m` },
+  ]} />
+) : (
+  <EntityDatabase page={record.page} rows={rows} entityLabel={moduleDefinition.pluralLabel} view={record.view} />
+)}

@@ -1,0 +1,27 @@
+---
+import { enabledPageCatalog, siteConfig } from "../core/site-data";
+
+const year = new Date().getUTCFullYear();
+const footerPages = enabledPageCatalog.filter((page) =>
+  ["about", "privacy", "terms"].includes(page.pageId),
+);
+---
+
+<footer class="site-footer">
+  <div class="shell site-footer__grid">
+    <div>
+      <span class="eyebrow">{siteConfig.brand.shortName}</span>
+      <p class="site-footer__statement">
+        {siteConfig.brand.tagline}
+      </p>
+    </div>
+    <div class="site-footer__meta">
+      <p>{siteConfig.brand.name} / {year}</p>
+      <p>{siteConfig.brand.tagline}</p>
+      <nav class="site-footer__links" aria-label="Company and legal">
+        {footerPages.map((page) => <a href={page.route}>{page.pageId}</a>)}
+      </nav>
+      <a href="/#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>

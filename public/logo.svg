@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Game Atlas logo">
+  <rect width="64" height="64" fill="#111111"/>
+  <path d="M18 44 32 14l14 30h-8l-2.8-6.4H28.8L26 44h-8Zm14-20-4.4 10h8.8L32 24Z" fill="#f8f4ec"/>
+  <path d="M14 50h36v4H14z" fill="#db3d2f"/>
+</svg>

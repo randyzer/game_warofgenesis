@@ -1,0 +1,8 @@
+---
+import LegalPage from "../components/LegalPage.astro";
+import { getPageByRoute } from "../core/site-data";
+
+const page = getPageByRoute("/about/");
+---
+
+<LegalPage page={page} copyType="about" kicker="Editorial standard" />

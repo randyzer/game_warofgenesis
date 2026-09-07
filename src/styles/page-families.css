@@ -1,0 +1,39 @@
+[data-page-family="core"] {
+  --page-accent: var(--color-accent);
+}
+
+[data-page-family="guides"] {
+  --page-accent: var(--color-guides, var(--color-accent));
+}
+
+[data-page-family="heroes"] {
+  --page-accent: var(--color-heroes, var(--color-accent));
+}
+
+[data-page-family="weapons"] {
+  --page-accent: var(--color-weapons, var(--color-accent));
+}
+
+[data-page-family="items"] {
+  --page-accent: var(--color-items, var(--color-accent));
+}
+
+[data-page-family="maps"] {
+  --page-accent: var(--color-maps, var(--color-accent));
+}
+
+[data-page-family="tierLists"] {
+  --page-accent: var(--color-meta, var(--color-accent));
+}
+
+[data-page-family="news"] {
+  --page-accent: var(--color-updates, var(--color-accent));
+}
+
+[data-page-family="search"] {
+  --page-accent: var(--color-accent);
+}
+
+[data-page-family="tools"] {
+  --page-accent: var(--color-tools, var(--color-accent));
+}

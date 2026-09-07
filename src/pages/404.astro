@@ -1,0 +1,25 @@
+---
+import { getPageByRoute, getRelatedPages } from "../core/site-data";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const page = getPageByRoute("/404.html");
+const recoveryPages = getRelatedPages(page);
+---
+
+<BaseLayout page={page}>
+  <main id="main-content" class="not-found shell">
+    <div class="not-found__code" aria-hidden="true">404</div>
+    <div class="not-found__copy reveal reveal--1">
+      <p class="eyebrow">Page unavailable</p>
+      <h1>{page.title}</h1>
+      <p>{page.description}</p>
+      <nav aria-label="Recovery links">
+        {recoveryPages.map((recoveryPage) => (
+          <a class="button button--primary" href={recoveryPage.route}>
+            {recoveryPage.pageId === "home" ? "Back to home" : recoveryPage.title}
+          </a>
+        ))}
+      </nav>
+    </div>
+  </main>
+</BaseLayout>

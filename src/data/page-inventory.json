@@ -1,0 +1,302 @@
+[
+  {
+    "pageId": "home",
+    "route": "/",
+    "pageType": "home",
+    "cluster": "core",
+    "module": "core",
+    "priority": 100,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "index",
+    "title": "Game Atlas — Guides, Builds & Game Data",
+    "description": "Find clear, source-aware game guides and reference data in a fast, focused experience.",
+    "publishedAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "primaryKeyword": "game guides",
+    "tags": ["guides", "reference", "game data"],
+    "relatedPageIds": ["guide.getting-started"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://gameatlas.example/",
+        "sourceType": "editorial",
+        "accessedAt": "2026-09-01",
+        "evidenceNote": "Starter editorial copy; replace before production launch."
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "pageId": "hub.guides",
+    "route": "/guides/",
+    "pageType": "hub",
+    "cluster": "guides",
+    "module": "guides",
+    "feature": "guides",
+    "priority": 95,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "index",
+    "title": "Game Guides & Field Notes | Game Atlas",
+    "description": "Browse every published Game Atlas field guide from one fast, source-aware editorial index.",
+    "publishedAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "primaryKeyword": "game guides hub",
+    "tags": ["guides", "hub", "editorial"],
+    "relatedPageIds": ["home", "guide.getting-started"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://gameatlas.example/guides/",
+        "sourceType": "editorial",
+        "accessedAt": "2026-09-01",
+        "evidenceNote": "Starter guide index assembled from the enabled Page Catalog."
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "pageId": "guide.getting-started",
+    "route": "/guides/getting-started/",
+    "pageType": "guide",
+    "cluster": "onboarding",
+    "module": "guides",
+    "feature": "guides",
+    "priority": 90,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "index",
+    "title": "How to Configure This Game Site Starter",
+    "description": "Set the brand, feature flags, page inventory, and sourced facts before publishing your first production game guide.",
+    "publishedAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "primaryKeyword": "game site starter setup",
+    "tags": ["setup", "workflow", "publishing"],
+    "contentRef": {
+      "collection": "guides",
+      "slug": "getting-started"
+    },
+    "relatedPageIds": ["home"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://gameatlas.example/guides/getting-started/",
+        "sourceType": "editorial",
+        "accessedAt": "2026-09-01",
+        "evidenceNote": "Starter operating instructions maintained with the repository."
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "pageId": "search",
+    "route": "/search/",
+    "pageType": "search",
+    "cluster": "core",
+    "module": "search",
+    "feature": "search",
+    "priority": 70,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "building",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "noindex",
+    "title": "Search Game Atlas Guides",
+    "description": "Search the published Game Atlas guide index without sending queries to an external search service.",
+    "publishedAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "primaryKeyword": "search game atlas",
+    "tags": ["search", "guides", "discovery"],
+    "relatedPageIds": ["home", "hub.guides"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://gameatlas.example/search/",
+        "sourceType": "editorial",
+        "accessedAt": "2026-09-01",
+        "evidenceNote": "Starter search shell; Pagefind interaction is attached after build."
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "pageId": "about",
+    "route": "/about/",
+    "pageType": "about",
+    "cluster": "core",
+    "module": "core",
+    "priority": 45,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": true,
+    "needsUpdate": false,
+    "indexability": "index",
+    "title": "About Game Atlas Editorial",
+    "description": "Learn how Game Atlas separates editorial decisions, sourced facts, and static delivery for trustworthy game guidance.",
+    "publishedAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "primaryKeyword": "about game atlas",
+    "tags": ["about", "editorial", "method"],
+    "relatedPageIds": ["home", "hub.guides"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://gameatlas.example/about/",
+        "sourceType": "editorial",
+        "accessedAt": "2026-09-01",
+        "evidenceNote": "Starter editorial-method copy requiring operator review before launch."
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "pageId": "privacy",
+    "route": "/privacy/",
+    "pageType": "privacy",
+    "cluster": "legal",
+    "module": "core",
+    "priority": 20,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": true,
+    "needsUpdate": false,
+    "indexability": "noindex",
+    "title": "Privacy Policy | Game Atlas",
+    "description": "Review the starter privacy disclosure and replace it with terms appropriate to your business, jurisdiction, and data practices.",
+    "publishedAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "primaryKeyword": "game atlas privacy policy",
+    "tags": ["privacy", "legal", "policy"],
+    "relatedPageIds": ["home", "terms"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://gameatlas.example/privacy/",
+        "sourceType": "editorial",
+        "accessedAt": "2026-09-01",
+        "evidenceNote": "Non-legal starter disclosure requiring qualified review before launch."
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "pageId": "terms",
+    "route": "/terms/",
+    "pageType": "terms",
+    "cluster": "legal",
+    "module": "core",
+    "priority": 20,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": true,
+    "needsUpdate": false,
+    "indexability": "noindex",
+    "title": "Terms of Use | Game Atlas",
+    "description": "Review the starter terms and replace them with conditions appropriate to your game site, content rights, and jurisdiction.",
+    "publishedAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "primaryKeyword": "game atlas terms of use",
+    "tags": ["terms", "legal", "policy"],
+    "relatedPageIds": ["home", "privacy"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://gameatlas.example/terms/",
+        "sourceType": "editorial",
+        "accessedAt": "2026-09-01",
+        "evidenceNote": "Non-legal starter terms requiring qualified review before launch."
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "pageId": "not-found",
+    "route": "/404.html",
+    "pageType": "not-found",
+    "cluster": "core",
+    "module": "core",
+    "priority": 0,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "noindex",
+    "title": "Page Not Found | Game Atlas",
+    "description": "The requested page is outside the published Game Atlas index; return to a verified guide or start a new search.",
+    "publishedAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "primaryKeyword": "game atlas page not found",
+    "tags": ["error", "navigation", "404"],
+    "relatedPageIds": ["home", "search"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://gameatlas.example/404.html",
+        "sourceType": "editorial",
+        "accessedAt": "2026-09-01",
+        "evidenceNote": "Starter error-page copy derived from the enabled navigation catalog."
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "pageId": "hero.demo-sentinel",
+    "route": "/heroes/demo-sentinel/",
+    "pageType": "hero",
+    "cluster": "heroes",
+    "module": "heroes",
+    "feature": "heroes",
+    "priority": 10,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "index",
+    "title": "Demo Sentinel Hero Guide",
+    "description": "A non-production inventory record used to verify that disabled entity modules never generate public routes.",
+    "publishedAt": "2026-09-01",
+    "updatedAt": "2026-09-01",
+    "primaryKeyword": "demo sentinel guide",
+    "tags": ["demo", "hero", "validation"],
+    "entityRef": {
+      "entityType": "hero",
+      "entityId": "demo-sentinel"
+    },
+    "relatedPageIds": ["home"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://gameatlas.example/",
+        "sourceType": "editorial",
+        "accessedAt": "2026-09-01",
+        "evidenceNote": "Validation-only demo record; excluded by the heroes feature flag."
+      }
+    ],
+    "confidence": "high"
+  }
+]

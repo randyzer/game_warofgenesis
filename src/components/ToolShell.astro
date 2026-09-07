@@ -1,0 +1,101 @@
+---
+import { getRelatedPages } from "../core/site-data";
+import {
+  buildBreadcrumbSchema,
+  buildBreadcrumbTrail,
+  buildCanonicalUrl,
+} from "../core/seo";
+import { enabledPageCatalog, siteConfig } from "../core/site-data";
+import type { ToolDefinition } from "../data/schemas/tools";
+import type { PageInventoryEntry } from "../data/schemas/page-inventory";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CalculatorIsland from "./islands/CalculatorIsland";
+import PlannerIsland from "./islands/PlannerIsland";
+
+interface Props {
+  page: PageInventoryEntry;
+  definition: ToolDefinition;
+}
+
+const { page, definition } = Astro.props;
+const relatedPages = getRelatedPages(page);
+const kindLabel = definition.kind === "calculator" ? "Calculator" : "Planner";
+const canonical = buildCanonicalUrl(siteConfig, page.route);
+const breadcrumbTrail = buildBreadcrumbTrail(siteConfig, page, enabledPageCatalog);
+---
+
+<BaseLayout page={page} structuredData={buildBreadcrumbSchema(canonical, breadcrumbTrail)}>
+  <main
+    id="main-content"
+    class="tool-shell shell"
+    data-pagefind-body={page.indexability === "index" ? true : undefined}
+  >
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        {breadcrumbTrail.map((item, index) => (
+          <li aria-current={index === breadcrumbTrail.length - 1 ? "page" : undefined}>
+            {index === breadcrumbTrail.length - 1 ? item.name : <a href={item.url}>{item.name}</a>}
+          </li>
+        ))}
+      </ol>
+    </nav>
+
+    <header class="tool-shell__header reveal reveal--1">
+      <div>
+        <p class="eyebrow">Interactive field instrument / {kindLabel}</p>
+        <h1 data-pagefind-meta="title">{page.title}</h1>
+        <p data-pagefind-meta="description">{page.description}</p>
+      </div>
+      <dl>
+        <div><dt>Patch</dt><dd>{definition.patch}</dd></div>
+        <div><dt>Updated</dt><dd>{definition.updatedAt}</dd></div>
+      </dl>
+    </header>
+
+    <section class="tool-workspace" aria-label={`${kindLabel} workspace`}>
+      <aside>
+        <span class="eyebrow">Calculation context</span>
+        <p>Results use the reviewed formula set for patch {definition.patch}. Recheck after game updates.</p>
+      </aside>
+      <div class="tool-workspace__surface">
+        {definition.kind === "calculator" ? (
+          <CalculatorIsland definition={definition} client:load />
+        ) : (
+          <PlannerIsland definition={definition} client:load />
+        )}
+      </div>
+    </section>
+
+    <section class="entity-sources section-rule" aria-labelledby="tool-sources-title">
+      <div>
+        <p class="eyebrow">Sources &amp; verification</p>
+        <h2 id="tool-sources-title">How this calculation was checked</h2>
+      </div>
+      <ol>
+        {definition.sources.map((source, index) => (
+          <li>
+            <span>{(index + 1).toString().padStart(2, "0")}</span>
+            <div>
+              <strong>{source.sourceType.replaceAll("-", " ")}</strong>
+              <p>{source.evidenceNote}</p>
+              <a href={source.sourceUrl} rel="noreferrer">View source ↗</a>
+            </div>
+            <time datetime={source.accessedAt}>Accessed {source.accessedAt}</time>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    {relatedPages.length > 0 && (
+      <nav class="next-dispatch" aria-label="Related pages">
+        <span class="eyebrow">Related dispatches</span>
+        {relatedPages.map((relatedPage) => (
+          <a href={relatedPage.route}>
+            <strong>{relatedPage.title}</strong>
+            <span aria-hidden="true">→</span>
+          </a>
+        ))}
+      </nav>
+    )}
+  </main>
+</BaseLayout>

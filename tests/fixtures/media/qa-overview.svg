@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#e8e3d4"/>
+  <g stroke="#c7c0ad" stroke-width="2">
+    <path d="M0 135H1200M0 270H1200M0 405H1200M0 540H1200M240 0V675M480 0V675M720 0V675M960 0V675"/>
+  </g>
+  <path d="M0 530L210 250L400 410L690 120L880 280L1200 80V675H0Z" fill="#959d89"/>
+  <path d="M160 535L435 415L715 245L1025 190" fill="none" stroke="#754331" stroke-width="12" stroke-dasharray="20 12"/>
+  <g fill="#faf7ed" stroke="#754331" stroke-width="8">
+    <circle cx="160" cy="535" r="26"/><circle cx="435" cy="415" r="26"/><circle cx="715" cy="245" r="26"/>
+  </g>
+  <text x="48" y="72" font-family="sans-serif" font-size="30" fill="#252822">SYNTHETIC MEDIA QA · ROUTE OVERVIEW</text>
+  <text x="48" y="635" font-family="sans-serif" font-size="24" fill="#252822">Test illustration only — not game content</text>
+</svg>

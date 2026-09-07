@@ -1,0 +1,32 @@
+---
+import DesktopNav from "./navigation/DesktopNav.astro";
+import MobileNav from "./navigation/MobileNav.astro";
+import { resolvedNavigationGroups, siteConfig } from "../core/site-data";
+import { buildBrandPresentation } from "../core/brand";
+
+interface Props {
+  currentRoute: string;
+}
+
+const { currentRoute } = Astro.props;
+const brandPresentation = buildBrandPresentation(siteConfig);
+---
+
+<header class="site-header">
+  <div class="site-header__inner shell">
+    <a class="brand" href="/" aria-label={`${siteConfig.brand.name} home`}>
+      {brandPresentation.logoPath ? (
+        <img class="brand__logo" src={brandPresentation.logoPath} alt="" aria-hidden="true" decoding="async" />
+      ) : (
+        <span class="brand__mark" aria-hidden="true">{brandPresentation.mark}</span>
+      )}
+      <span class="brand__copy">
+        <strong>{siteConfig.brand.shortName}</strong>
+        <small>{brandPresentation.descriptor}</small>
+      </span>
+    </a>
+
+    <DesktopNav groups={resolvedNavigationGroups} currentRoute={currentRoute} />
+    <MobileNav groups={resolvedNavigationGroups} currentRoute={currentRoute} />
+  </div>
+</header>

@@ -1,0 +1,52 @@
+---
+import type { ResolvedNavigationGroup } from "../../core/site-data";
+
+interface Props {
+  groups: ResolvedNavigationGroup[];
+  currentRoute: string;
+}
+
+const { groups, currentRoute } = Astro.props;
+---
+
+<nav class="desktop-nav" aria-label="Primary navigation">
+  <ul class="desktop-nav__list">
+    {groups.map((group) => {
+      const label = group.label ?? group.page.title;
+      const groupIsActive =
+        currentRoute === group.page.route ||
+        group.children.some((child) => currentRoute === child.route);
+
+      return (
+        <li
+          class="desktop-nav__group"
+          data-active={groupIsActive ? "true" : undefined}
+          data-nav-page-id={group.page.pageId}
+        >
+          <a
+            class="desktop-nav__link"
+            href={group.page.route}
+            aria-current={currentRoute === group.page.route ? "page" : undefined}
+          >
+            {label}
+          </a>
+          {group.children.length > 0 && (
+            <ul class="desktop-nav__menu" aria-label={`${label} pages`}>
+              {group.children.map((child) => (
+                <li data-nav-page-id={child.pageId}>
+                  <a
+                    href={child.route}
+                    aria-current={currentRoute === child.route ? "page" : undefined}
+                  >
+                    <span>{child.title}</span>
+                    <small>{child.description}</small>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+      );
+    })}
+  </ul>
+</nav>

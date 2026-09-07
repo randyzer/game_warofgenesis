@@ -1,0 +1,24 @@
+---
+import type { PageInventoryEntry } from "../../data/schemas/page-inventory";
+
+interface Props {
+  pages: PageInventoryEntry[];
+}
+
+const { pages } = Astro.props;
+---
+
+{pages.length > 0 && (
+  <nav class="related-pages next-dispatch" aria-label="Related pages">
+    <span class="eyebrow">Keep exploring</span>
+    {pages.map((page) => (
+      <a href={page.route}>
+        <span>
+          <strong>{page.title}</strong>
+          <small>{page.description}</small>
+        </span>
+        <span aria-hidden="true">→</span>
+      </a>
+    ))}
+  </nav>
+)}

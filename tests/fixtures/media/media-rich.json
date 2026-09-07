@@ -1,0 +1,40 @@
+{
+  "assets": [
+    {
+      "id": "qa.overview",
+      "type": "image",
+      "src": "/media/qa-overview.svg",
+      "alt": "Synthetic terrain overview with a route across three checkpoints",
+      "caption": "Synthetic QA fixture — inspect hero scaling and gallery readability, not game accuracy.",
+      "sourceUrl": "https://example.com/media-qa/overview"
+    },
+    {
+      "id": "qa.detail",
+      "type": "image",
+      "src": "/media/qa-detail.svg",
+      "alt": "Synthetic interface detail containing three cards and a check mark",
+      "caption": "Synthetic detail fixture with a different aspect ratio. Source links remain readable on mobile.",
+      "sourceUrl": "https://example.com/media-qa/detail"
+    },
+    {
+      "id": "qa.trailer",
+      "type": "video",
+      "src": "aqz-KE-bpKQ",
+      "alt": "Big Buck Bunny test trailer",
+      "caption": "Public test video for responsive embed QA only; no game association is implied.",
+      "sourceUrl": "https://www.youtube.com/watch?v=aqz-KE-bpKQ"
+    }
+  ],
+  "pages": [
+    {
+      "pageId": "guide.getting-started",
+      "hero": "qa.overview",
+      "gallery": ["qa.overview", "qa.detail"],
+      "trailer": "qa.trailer"
+    },
+    {
+      "pageId": "hero.demo-sentinel",
+      "hero": "qa.detail"
+    }
+  ]
+}

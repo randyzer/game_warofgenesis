@@ -1,0 +1,25 @@
+---
+interface Props {
+  items?: Array<{ question: string; answer: string }>;
+  title?: string;
+}
+
+const { items = [], title = "Frequently asked questions" } = Astro.props;
+---
+
+{items.length > 0 && (
+  <section class="faq section-rule" aria-labelledby="faq-title">
+    <header class="faq__header">
+      <p class="eyebrow">Quick answers</p>
+      <h2 id="faq-title">{title}</h2>
+    </header>
+    <div class="faq__list">
+      {items.map((item) => (
+        <details>
+          <summary>{item.question}</summary>
+          <p>{item.answer}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+)}

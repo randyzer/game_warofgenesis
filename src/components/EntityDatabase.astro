@@ -1,0 +1,49 @@
+---
+import EntityFilterIsland from "./islands/EntityFilterIsland";
+import type { EntityDatabaseRow } from "../core/filter-state";
+import { mediaCatalog } from "../data/media/catalog";
+import type { ImageAsset } from "../data/schemas/media";
+import type { PageInventoryEntry } from "../data/schemas/page-inventory";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GameMedia from "./media/GameMedia.astro";
+
+interface Props {
+  page: PageInventoryEntry;
+  rows: EntityDatabaseRow[];
+  entityLabel: string;
+  view: "hub" | "database";
+  heroMedia?: ImageAsset;
+}
+
+const { page, rows, entityLabel, view } = Astro.props;
+const mappedMedia = mediaCatalog.getPageMedia(page.pageId);
+const { heroMedia = mappedMedia.heroMedia } = Astro.props;
+---
+
+<BaseLayout page={page}>
+  <main
+    id="main-content"
+    class="entity-database shell"
+    data-pagefind-body={page.indexability === "index" ? true : undefined}
+  >
+    <header class="entity-database__header reveal reveal--1">
+      <div>
+        <p class="eyebrow">{view === "hub" ? "Module index" : "Structured database"} / {rows.length.toString().padStart(2, "0")} records</p>
+        <h1 data-pagefind-meta="title">{page.title}</h1>
+      </div>
+      <p data-pagefind-meta="description">{page.description}</p>
+    </header>
+
+    {heroMedia && (
+      <div class="page-media entity-database__media" data-media-placement="hero">
+        <GameMedia asset={heroMedia} eager />
+      </div>
+    )}
+
+    <EntityFilterIsland rows={rows} entityLabel={entityLabel} client:visible />
+
+    <p class="table-scroll__hint">
+      Scroll horizontally on narrow screens. Facts are generated from one validated module file.
+    </p>
+  </main>
+</BaseLayout>

@@ -1,0 +1,25 @@
+---
+interface Props {
+  items: Array<{ label: string; value: string }>;
+  title?: string;
+}
+
+const { items, title = "Quick facts" } = Astro.props;
+---
+
+{items.length > 0 && (
+  <section class="quick-facts" aria-labelledby="quick-facts-title">
+    <div class="quick-facts__heading">
+      <p class="eyebrow">At a glance</p>
+      <h2 id="quick-facts-title">{title}</h2>
+    </div>
+    <dl>
+      {items.map((item) => (
+        <div>
+          <dt>{item.label}</dt>
+          <dd>{item.value}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+)}

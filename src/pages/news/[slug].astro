@@ -1,0 +1,40 @@
+---
+import { getCollection, render, type CollectionEntry } from "astro:content";
+
+import EditorialArticle from "../../components/EditorialArticle.astro";
+import { resolveContentPages } from "../../core/page-resolution";
+import { selectEditorialPages } from "../../core/page-models";
+import { enabledPageCatalog, pageInventory, siteConfig } from "../../core/site-data";
+import type { PageInventoryEntry } from "../../data/schemas/page-inventory";
+
+interface Props {
+  page: PageInventoryEntry;
+  entry: CollectionEntry<"news">;
+}
+
+export async function getStaticPaths() {
+  if (!siteConfig.features.news) return [];
+
+  const entries = await getCollection("news");
+  const allowedPageIds = new Set(
+    selectEditorialPages(enabledPageCatalog, "patch").map((page) => page.pageId),
+  );
+
+  return resolveContentPages(pageInventory, entries)
+    .filter(({ page }) => allowedPageIds.has(page.pageId))
+    .map(({ page, content }) => ({
+      params: { slug: page.contentRef?.slug },
+      props: { page, entry: content },
+    }));
+}
+
+const { page, entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<EditorialArticle
+  page={page}
+  sectionLabel="Game update"
+>
+  <Content />
+</EditorialArticle>

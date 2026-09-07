@@ -1,0 +1,16 @@
+---
+import { imageAssetSchema, type ImageAsset } from "../../data/schemas/media";
+import GameMedia from "./GameMedia.astro";
+
+interface Props {
+  assets: ImageAsset[];
+}
+
+const assets = Astro.props.assets.map((asset) => imageAssetSchema.parse(asset));
+---
+
+{assets.length > 0 && (
+  <div class="screenshot-gallery">
+    {assets.map((asset) => <GameMedia asset={asset} />)}
+  </div>
+)}

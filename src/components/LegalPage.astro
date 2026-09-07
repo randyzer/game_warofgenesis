@@ -1,0 +1,63 @@
+---
+import { getStaticPageCopy, type StaticPageType } from "../core/static-page-copy";
+import { getRelatedPages } from "../core/site-data";
+import type { PageInventoryEntry } from "../data/schemas/page-inventory";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+interface Props {
+  page: PageInventoryEntry;
+  copyType: StaticPageType;
+  kicker: string;
+}
+
+const { page, copyType, kicker } = Astro.props;
+const copy = getStaticPageCopy(copyType);
+const relatedPages = getRelatedPages(page);
+---
+
+<BaseLayout page={page}>
+  <main
+    id="main-content"
+    class="static-page shell"
+    data-pagefind-body={page.indexability === "index" ? true : undefined}
+  >
+    <header class="static-page__header reveal reveal--1">
+      <p class="eyebrow">{kicker}</p>
+      <h1 data-pagefind-meta="title">{page.title}</h1>
+      <p class="static-page__intro" data-pagefind-meta="description">{copy.intro}</p>
+      <p class="static-page__date">Last reviewed / {page.updatedAt}</p>
+    </header>
+
+    {copy.reviewNotice && (
+      <aside class="review-notice" aria-label="Required legal review">
+        <span aria-hidden="true">!</span>
+        <div>
+          <strong>Operator action required</strong>
+          <p>{copy.reviewNotice}</p>
+        </div>
+      </aside>
+    )}
+
+    <div class="static-page__body">
+      {copy.sections.map((section, index) => (
+        <section class="static-section">
+          <span>{(index + 1).toString().padStart(2, "0")}</span>
+          <div>
+            <h2>{section.heading}</h2>
+            {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+          </div>
+        </section>
+      ))}
+    </div>
+
+    <nav class="next-dispatch" aria-label="Related pages">
+      <span class="eyebrow">Continue through the index</span>
+      {relatedPages.map((relatedPage) => (
+        <a href={relatedPage.route}>
+          <strong>{relatedPage.title}</strong>
+          <span aria-hidden="true">→</span>
+        </a>
+      ))}
+    </nav>
+  </main>
+</BaseLayout>

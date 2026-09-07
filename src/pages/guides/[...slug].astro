@@ -1,0 +1,94 @@
+---
+import { getCollection, render, type CollectionEntry } from "astro:content";
+
+import WikiArticle from "../../components/wiki/WikiArticle.astro";
+import GameMedia from "../../components/media/GameMedia.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  enabledPageCatalog,
+  pageInventory,
+} from "../../core/site-data";
+import {
+  buildGuideRouteRecords,
+  type GuideRouteRecord,
+} from "../../core/optional-routes";
+import { resolveContentPages } from "../../core/page-resolution";
+import { mediaCatalog } from "../../data/media/catalog";
+
+interface Props {
+  record: GuideRouteRecord<CollectionEntry<"guides">>;
+}
+
+export async function getStaticPaths() {
+  const entries = await getCollection("guides");
+  const resolved = resolveContentPages(pageInventory, entries);
+
+  return buildGuideRouteRecords(enabledPageCatalog, resolved).map((record) => ({
+    params: { slug: record.path },
+    props: { record },
+  }));
+}
+
+const { record } = Astro.props;
+const page = record.page;
+const rendered = record.view === "article" ? await render(record.content) : undefined;
+const Content = rendered?.Content;
+const hubMedia = record.view === "hub"
+  ? (record.pageMedia ?? mediaCatalog.getPageMedia(page.pageId))
+  : undefined;
+---
+
+{record.view === "hub" ? (
+  <BaseLayout page={page}>
+    <main id="main-content" class="hub-page shell" data-pagefind-body>
+      <header class="hub-page__header reveal reveal--1">
+        <div>
+          <p class="eyebrow">
+            Guide library / {record.guidePages.length.toString().padStart(2, "0")} available
+          </p>
+          <h1 data-pagefind-meta="title">{page.title}</h1>
+        </div>
+        <p data-pagefind-meta="description">{page.description}</p>
+      </header>
+
+      {hubMedia?.heroMedia && (
+        <div class="page-media hub-page__media" data-media-placement="hero">
+          <GameMedia asset={hubMedia.heroMedia} eager />
+        </div>
+      )}
+
+      <div class="hub-page__legend" aria-label="Guide index legend">
+        <span>No.</span>
+        <span>Player guide</span>
+        <span>Last updated</span>
+      </div>
+
+      <ol class="guide-index">
+        {record.guidePages.map((guide, index) => (
+          <li>
+            <a href={guide.route}>
+              <span class="guide-index__number">{(index + 1).toString().padStart(2, "0")}</span>
+              <span class="guide-index__title">
+                <small>Player guide</small>
+                <strong>{guide.title}</strong>
+                <span>{guide.description}</span>
+              </span>
+              <span class="guide-index__updated">
+                <small>Last updated</small>
+                <time datetime={guide.updatedAt}>{guide.updatedAt}</time>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </main>
+  </BaseLayout>
+) : (
+  <WikiArticle
+    page={page}
+    headings={rendered?.headings}
+    faq={record.content.data.faq}
+  >
+    {Content && <Content />}
+  </WikiArticle>
+)}

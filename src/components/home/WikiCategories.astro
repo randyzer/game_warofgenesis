@@ -1,0 +1,34 @@
+---
+import type { PageInventoryEntry } from "../../data/schemas/page-inventory";
+
+interface Props {
+  pages: PageInventoryEntry[];
+}
+
+const { pages } = Astro.props;
+---
+
+{pages.length > 0 && (
+  <section
+    id="browse-by-category"
+    class="portal-section shell"
+    aria-labelledby="wiki-categories-title"
+  >
+    <header class="portal-section__header">
+      <p class="eyebrow">Choose a path</p>
+      <h2 id="wiki-categories-title">Browse by category</h2>
+    </header>
+    <div class="portal-grid portal-grid--categories">
+      {pages.map((page, index) => (
+        <a class="portal-card portal-card--category" href={page.route}>
+          <span class="portal-card__index" aria-hidden="true">
+            {(index + 1).toString().padStart(2, "0")}
+          </span>
+          <h3>{page.title}</h3>
+          <p>{page.description}</p>
+          <span class="portal-card__action">Explore <span aria-hidden="true">↗</span></span>
+        </a>
+      ))}
+    </div>
+  </section>
+)}
