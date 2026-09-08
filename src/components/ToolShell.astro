@@ -6,6 +6,11 @@ import {
   buildCanonicalUrl,
 } from "../core/seo";
 import { enabledPageCatalog, siteConfig } from "../core/site-data";
+import { projectPublicSources } from "../core/public-sources";
+import {
+  projectClientCalculatorDefinition,
+  projectClientPlannerDefinition,
+} from "../core/tool-definitions";
 import type { ToolDefinition } from "../data/schemas/tools";
 import type { PageInventoryEntry } from "../data/schemas/page-inventory";
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -22,6 +27,7 @@ const relatedPages = getRelatedPages(page);
 const kindLabel = definition.kind === "calculator" ? "Calculator" : "Planner";
 const canonical = buildCanonicalUrl(siteConfig, page.route);
 const breadcrumbTrail = buildBreadcrumbTrail(siteConfig, page, enabledPageCatalog);
+const publicSources = projectPublicSources(definition.sources);
 ---
 
 <BaseLayout page={page} structuredData={buildBreadcrumbSchema(canonical, breadcrumbTrail)}>
@@ -59,9 +65,15 @@ const breadcrumbTrail = buildBreadcrumbTrail(siteConfig, page, enabledPageCatalo
       </aside>
       <div class="tool-workspace__surface">
         {definition.kind === "calculator" ? (
-          <CalculatorIsland definition={definition} client:load />
+          <CalculatorIsland
+            definition={projectClientCalculatorDefinition(definition)}
+            client:load
+          />
         ) : (
-          <PlannerIsland definition={definition} client:load />
+          <PlannerIsland
+            definition={projectClientPlannerDefinition(definition)}
+            client:load
+          />
         )}
       </div>
     </section>
@@ -72,12 +84,11 @@ const breadcrumbTrail = buildBreadcrumbTrail(siteConfig, page, enabledPageCatalo
         <h2 id="tool-sources-title">How this calculation was checked</h2>
       </div>
       <ol>
-        {definition.sources.map((source, index) => (
+        {publicSources.map((source, index) => (
           <li>
             <span>{(index + 1).toString().padStart(2, "0")}</span>
             <div>
-              <strong>{source.sourceType.replaceAll("-", " ")}</strong>
-              <p>{source.evidenceNote}</p>
+              <strong>{source.sourceTypeLabel}</strong>
               <a href={source.sourceUrl} rel="noreferrer">View source ↗</a>
             </div>
             <time datetime={source.accessedAt}>Accessed {source.accessedAt}</time>

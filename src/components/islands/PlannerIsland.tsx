@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import {
   decodePlannerState,
   encodePlannerState,
+  type PlannerDefinition,
   validatePlannerSelection,
 } from "../../core/tool-definitions";
-import type { PlannerDefinition } from "../../data/schemas/tools";
 
 interface Props {
   definition: PlannerDefinition;

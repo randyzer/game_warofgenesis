@@ -8,6 +8,7 @@ import type { ContentEntryReference } from "../src/core/page-resolution";
 import { collectSiteValidationErrors } from "../src/core/site-validation";
 import {
   collectMediaReadinessSignals,
+  findMediaDecisionTable,
   parseMediaDecisionTableMarkdown,
 } from "../src/core/media-readiness";
 import {
@@ -48,10 +49,11 @@ readErrors.push(
   ),
 );
 
-const mediaDecisionTablePath = resolve(projectRoot, "MEDIA_DECISION_TABLE.md");
-if (existsSync(mediaDecisionTablePath)) {
+const mediaDecisionTableLocation = findMediaDecisionTable(projectRoot);
+readErrors.push(...mediaDecisionTableLocation.errors);
+if (mediaDecisionTableLocation.path) {
   const mediaDecisionTable = parseMediaDecisionTableMarkdown(
-    readFileSync(mediaDecisionTablePath, "utf8"),
+    readFileSync(mediaDecisionTableLocation.path, "utf8"),
   );
   const mediaReadinessSignals = collectMediaReadinessSignals({
     inventory,

@@ -1,8 +1,11 @@
 # Content and Data Guide
 
-Starter v2.5.0 separates publication decisions, authored narrative, structured
+Starter v2.6.1 separates publication decisions, authored narrative, structured
 facts, visual assets, configuration, theme, and presentation. Keep each value in
 its owning layer; do not turn Runtime Page Inventory into a whole-page CMS.
+V2.6.1 Phase C D1-D3 technical hardening is implemented in this Starter for
+media readiness projection, public-safe source rendering, and Node 22 runtime
+alignment.
 
 ## Authority boundaries
 
@@ -16,7 +19,7 @@ its owning layer; do not turn Runtime Page Inventory into a whole-page CMS.
 | Media Manifest | `src/data/media/media.json` | Asset records and fixed `hero`/`gallery`/`trailer` placement references |
 | Theme | `src/styles/theme.css` | Game-wide palette and controlled module role tokens |
 | Presentation | Astro components and targeted CSS | Rendering already resolved data |
-| SOP/Human review | `GAME_SOP v2.5` and project artifacts | Coverage decisions, research quality, factual/legal/visual approval, release gates |
+| SOP/Human review | `GAME_SOP v2.6.1` and project artifacts | Coverage decisions, research quality, factual/legal/visual approval, release gates |
 
 The dependency direction is one way: presentation consumes these authorities.
 Media, content, facts, homepage sections, and components cannot create or publish
@@ -130,7 +133,7 @@ Explain the actual task.
 ```
 
 FAQ is optional, explicitly authored, and visible. An absent or empty list
-renders nothing. FAQ never enters Inventory and Starter v2.5.0 does not generate
+renders nothing. FAQ never enters Inventory and the current implementation does not generate
 questions or FAQ JSON-LD.
 
 Guide pages use `WikiArticle`. Its Table of Contents consumes only H2/H3 records
@@ -180,10 +183,16 @@ schema. If no applicable facts exist, omit the section.
 
 ## Media Manifest: visual placement, not publication
 
-Media v2.5.0 supports local images, local MP4/WebM video, optional local video
-posters, and YouTube IDs only. Local files live under `public/media/` and use
-safe `/media/...` paths. YouTube video `src` is a validated 11-character ID, not
-an iframe URL.
+The current Starter v2.6.1 package keeps the existing media contract and adds
+Phase C D1-D3 media-readiness projection. It supports
+`docs/MEDIA_DECISION_TABLE.md` for new projects, root `MEDIA_DECISION_TABLE.md`
+for legacy compatibility, duplicate-authority fail-closed validation, exact
+lifecycle enum validation, Runtime Page Inventory identity resolution, and
+deterministic SOP-derived readiness signals. Runtime media support remains
+limited to local images, local MP4/WebM video, optional local video posters, and
+YouTube IDs only. Local files live under `public/media/` and use safe
+`/media/...` paths. YouTube video `src` is a validated 11-character ID, not an
+iframe URL.
 
 ```json
 {
@@ -223,14 +232,14 @@ an iframe URL.
 }
 ```
 
-The three fixed placements are the complete v2.5.0 vocabulary. A mapping may
+The three fixed placements are the complete current vocabulary. A mapping may
 reference an existing unpublished page for future authoring, but it cannot
 publish that page, enable its feature, create a route, or change indexability.
 Every mapped or unmapped registered local image, local video, and poster must
 exist and pass validation.
 
 Guide/entity article renderers may consume hero, gallery, and trailer. Hub pages
-consume hero media only in v2.5.0; gallery and trailer are not automatically
+consume hero media only in the current implementation; gallery and trailer are not automatically
 rendered on hubs. `StaticWikiPage.astro` is a constrained reusable renderer for
 explicit page inputs and fixed placements. It does not own routing,
 publication, navigation, indexability, or Page Inventory fields.
@@ -248,7 +257,7 @@ details.
 
 ## Theme and page-family identity
 
-Game-specific palette values belong in `src/styles/theme.css`. Starter v2.5.0
+Game-specific palette values belong in `src/styles/theme.css`. Starter v2.6.1
 defaults are intentionally neutral and installable, not a shippable generic
 brand identity. Footer colors and borders derive from shared theme tokens so a
 project theme can replace them naturally. The family key comes only from the

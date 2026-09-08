@@ -1,6 +1,7 @@
-# GAME_SITE_STARTER v2.5.0
+# GAME_SITE_STARTER v2.6.1
 
-Starter v2.5.0 is a static-first Astro foundation for media-rich game wikis. It
+Starter v2.6.1 is the current template release target for the static-first
+Astro foundation for media-rich game wikis. It
 keeps the proven publication, fact, SEO, route, search, and reconciliation core
 while providing a player-facing Wiki portal, grouped navigation, Wiki articles,
 local media, optional FAQ content, neutral theme defaults, and restrained
@@ -8,19 +9,31 @@ page-family accents.
 
 The default repository is a small generic adoption example. It deliberately
 does not ship fictional game facts, screenshots, news, or entity databases.
+V2.6.1 Phase C D1-D3 technical hardening is implemented in this Starter: media
+decision tables are projected deterministically, public source rendering uses a
+safe metadata boundary, and the runtime contract is Node 22 only.
 
 ## Version provenance
 
 These three artifacts have different responsibilities:
 
-- `GAME_SOP v2.5` is the production methodology. It decides what a competitive
-  game wiki should cover and which human research/release gates apply.
-- `GAME_SITE_STARTER v2.5.0` is the reusable technical implementation that makes
-  approved coverage easy to publish consistently.
-- Historical Master Prompt files and Starter 2.0 reports are provenance
-  artifacts. Do not treat those stale references as current Starter identity.
+- `GAME_SOP v2.6.1` is the current methodology package identity. Historical
+  `GAME_SOP v2.5` references are baseline provenance, not current authority.
+- `GAME_SITE_STARTER v2.6.1` identifies the Starter template release and its
+  `GAME_SOP v2.6.1` compatibility line. Phase C D1-D3
+  technical implementation evidence is recorded separately; it is not final
+  Human approval.
+- Historical Master Prompt files and Starter 2.0/V2.5/V2.6 reports are
+  provenance artifacts. Do not treat those stale references as current Starter
+  identity.
 
-Starter v2.5.0 follows the approved implementation scope in
+`package.json` version `0.1.0` is the inherited private application/scaffold
+package metadata version, also recorded at the top level and root package of
+`package-lock.json`. This package metadata value does not identify the Starter
+release or SOP compatibility line. The historical v2.5.0 proposal already records
+`0.1.0`, and the v2.6 Git baseline retains it; v2.6.1 keeps that metadata unchanged.
+
+The current package carries forward the approved Starter v2.5.0 scope in
 [`docs/STARTER_V2.5_CHANGE_PROPOSAL.md`](docs/STARTER_V2.5_CHANGE_PROPOSAL.md)
 while preserving the Starter 2.0 architecture baseline recorded in
 [`docs/STARTER_2.0_ARCHITECTURE_PROPOSAL.md`](docs/STARTER_2.0_ARCHITECTURE_PROPOSAL.md).
@@ -67,8 +80,8 @@ The implementation uses:
 
 ## Adopt for a real game
 
-1. Record the source Starter commit, `GAME_SOP v2.5` commit, and current Master
-   Prompt version in the new project's brief.
+1. Record the source Starter commit, `GAME_SOP v2.6.1` package/reference, and
+   current Master Prompt version in the new project's brief.
 2. Complete the SOP research and human planning gates before changing page
    scope. The Starter does not decide whether a game needs heroes, tier lists,
    maps, tools, or any other content family.
@@ -122,9 +135,14 @@ When homepage hero media is absent, the desktop hero renders as an intentional
 single-column layout. When hero media exists, the desktop split layout remains.
 Mobile remains one column in both states.
 
-### Media V2.5.0
+### Media contract
 
-Media v2.5.0 supports only:
+The current Starter v2.6.1 package keeps the existing fixed-placement media
+implementation and adds V2.6.1 Phase C D1-D3 media-readiness projection. It
+supports `docs/MEDIA_DECISION_TABLE.md`, legacy root `MEDIA_DECISION_TABLE.md`
+compatibility, duplicate-authority fail-closed validation, exact lifecycle enum
+validation, Runtime Page Inventory identity resolution, and deterministic
+SOP-derived readiness signals. The media runtime still supports only:
 
 - local image files under `public/media/`, referenced as `/media/...`;
 - validated 11-character YouTube IDs rendered through `youtube-nocookie.com`;
@@ -185,7 +203,7 @@ is not a plugin system.
 
 ## Documentation
 
-- [Starter v2.5.0 change proposal](docs/STARTER_V2.5_CHANGE_PROPOSAL.md)
+- [Historical Starter v2.5.0 change proposal](docs/STARTER_V2.5_CHANGE_PROPOSAL.md)
 - [Starter 2.0 architecture baseline](docs/STARTER_2.0_ARCHITECTURE_PROPOSAL.md)
 - [Content and data boundaries](docs/CONTENT_AND_DATA_GUIDE.md)
 - [Starter 1.0 → 2.0 migration](docs/STARTER_2.0_MIGRATION.md)

@@ -1,8 +1,11 @@
-# Local media — Starter v2.5.0
+# Local media — Starter v2.6.1
 
 The Starter deliberately ships with an empty `src/data/media/media.json`.
 No media is valid: pages keep their normal text/fact layout without placeholders.
 A broken reference is invalid and fails validation, including references on unpublished pages.
+V2.6.1 Phase C D1-D3 media-readiness projection is implemented here as
+deterministic validation support for the `GAME_SOP v2.6.1` media lifecycle
+contract.
 
 ## Add an asset
 
@@ -50,7 +53,7 @@ file, description, and source URL with reviewed project material.
   in project SOP/research artifacts and human review.
 - Hero images load eagerly; gallery/inline images load lazily. Images scale in
   their natural aspect ratio without crop variants or manifest dimensions.
-- Optimize file size manually before adoption. Starter v2.5.0 does not process,
+- Optimize file size manually before adoption. Starter v2.6.1 does not process,
   upload, or transcode media.
 
 ## YouTube contract

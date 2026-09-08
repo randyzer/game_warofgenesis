@@ -16,6 +16,8 @@ import {
   encodePlannerState,
   evaluateCalculator,
   normalizeCalculatorInputs,
+  projectClientCalculatorDefinition,
+  projectClientPlannerDefinition,
   validatePlannerSelection,
 } from "../src/core/tool-definitions";
 import { loadToolDefinition } from "../src/core/tool-loader";
@@ -108,6 +110,35 @@ afterEach(() => {
 });
 
 describe("tool definitions", () => {
+  it("projects explicit minimal calculator and planner payloads for client islands", () => {
+    const calculatorPayload = projectClientCalculatorDefinition(calculator);
+    const plannerPayload = projectClientPlannerDefinition(planner);
+
+    expect(calculatorPayload).toEqual({
+      id: calculator.id,
+      resultLabel: calculator.resultLabel,
+      resultUnit: calculator.resultUnit,
+      precision: calculator.precision,
+      inputs: calculator.inputs,
+      formula: calculator.formula,
+    });
+    expect(plannerPayload).toEqual({
+      id: planner.id,
+      slots: planner.slots.map((slot) => ({
+        id: slot.id,
+        label: slot.label,
+        required: slot.required,
+        options: slot.options.map((option) => ({
+          id: option.id,
+          label: option.label,
+        })),
+      })),
+    });
+    expect(JSON.stringify({ calculatorPayload, plannerPayload })).not.toMatch(
+      /evidenceNote|Validation-only source/,
+    );
+  });
+
   it("parses valid calculators and rejects unknown formula inputs", () => {
     expect(parseToolDefinition(calculator).kind).toBe("calculator");
     expect(() =>

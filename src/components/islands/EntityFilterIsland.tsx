@@ -72,7 +72,7 @@ export default function EntityFilterIsland({ rows, entityLabel }: Props) {
 
       <div className="table-scroll" role="region" aria-label={`${entityLabel} database`} tabIndex={0}>
         <table>
-          <caption>{entityLabel} records verified for the current fact dataset</caption>
+          <caption>{entityLabel} details and patch versions</caption>
           <thead>
             <tr>
               <th scope="col">Name</th>

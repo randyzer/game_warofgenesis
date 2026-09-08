@@ -1,7 +1,10 @@
-# GAME_SITE_STARTER v2.5.0 Release QA Checklist
+# GAME_SITE_STARTER v2.6.1 Release QA Checklist
 
 Use this checklist after changing config, Runtime Page Inventory, content,
 facts, tools, media, theme, dependencies, or presentation components.
+V2.6.1 Phase C D1-D3 technical hardening is implemented in this Starter; this
+checklist covers the deterministic checks and still preserves the Human release
+gates.
 
 Automated checks establish deterministic structural correctness. They do **not**
 prove that content is useful or accurate, that media is visually appropriate,
@@ -11,11 +14,11 @@ gate.
 ## Record provenance first
 
 - [ ] Record the source Starter commit and working branch.
-- [ ] Record the `GAME_SOP v2.5` commit used for production methodology.
+- [ ] Record the `GAME_SOP v2.6.1` package/reference used for production methodology.
 - [ ] Record the current Master Prompt version.
 - [ ] Record any known version mismatch instead of silently rewriting upstream
       documents.
-- [ ] Confirm the v2.5 scope authority is
+- [ ] Confirm the historical v2.5 scope authority is
       `docs/STARTER_V2.5_CHANGE_PROPOSAL.md`.
 - [ ] Confirm the working tree contains no unrelated or secret files.
 
@@ -210,7 +213,7 @@ Automation cannot approve the following items.
 - [ ] Sources are authoritative enough for the claim and their access dates are
       current.
 - [ ] Competitive coverage, content-family selection, P0/P1/P2 scope, and game
-      fit satisfy `GAME_SOP v2.5` and project research.
+      fit satisfy `GAME_SOP v2.6.1` and project research.
 - [ ] Internal review/update flags are cleared only by an authorized human.
 
 ### Media and rights

@@ -1,8 +1,103 @@
-import {
-  type CalculatorDefinition,
-  type FormulaNode,
-  type PlannerDefinition,
-} from "../data/schemas/tools";
+export type FormulaNode =
+  | { kind: "constant"; value: number }
+  | { kind: "input"; inputId: string }
+  | {
+      kind: "add" | "multiply" | "min" | "max";
+      operands: FormulaNode[];
+    }
+  | { kind: "subtract" | "divide"; left: FormulaNode; right: FormulaNode };
+
+export interface CalculatorDefinition {
+  id: string;
+  resultLabel: string;
+  resultUnit?: string;
+  precision: number;
+  inputs: Array<{
+    id: string;
+    label: string;
+    unit?: string;
+    min: number;
+    max: number;
+    step: number;
+    defaultValue: number;
+  }>;
+  formula: FormulaNode;
+}
+
+export interface PlannerDefinition {
+  id: string;
+  slots: Array<{
+    id: string;
+    label: string;
+    required: boolean;
+    options: Array<{
+      id: string;
+      label: string;
+    }>;
+  }>;
+}
+
+function projectClientFormulaNode(node: FormulaNode): FormulaNode {
+  switch (node.kind) {
+    case "constant":
+      return { kind: node.kind, value: node.value };
+    case "input":
+      return { kind: node.kind, inputId: node.inputId };
+    case "add":
+    case "multiply":
+    case "min":
+    case "max":
+      return {
+        kind: node.kind,
+        operands: node.operands.map(projectClientFormulaNode),
+      };
+    case "subtract":
+    case "divide":
+      return {
+        kind: node.kind,
+        left: projectClientFormulaNode(node.left),
+        right: projectClientFormulaNode(node.right),
+      };
+  }
+}
+
+export function projectClientCalculatorDefinition(
+  definition: CalculatorDefinition,
+): CalculatorDefinition {
+  return {
+    id: definition.id,
+    resultLabel: definition.resultLabel,
+    ...(definition.resultUnit ? { resultUnit: definition.resultUnit } : {}),
+    precision: definition.precision,
+    inputs: definition.inputs.map((input) => ({
+      id: input.id,
+      label: input.label,
+      ...(input.unit ? { unit: input.unit } : {}),
+      min: input.min,
+      max: input.max,
+      step: input.step,
+      defaultValue: input.defaultValue,
+    })),
+    formula: projectClientFormulaNode(definition.formula),
+  };
+}
+
+export function projectClientPlannerDefinition(
+  definition: PlannerDefinition,
+): PlannerDefinition {
+  return {
+    id: definition.id,
+    slots: definition.slots.map((slot) => ({
+      id: slot.id,
+      label: slot.label,
+      required: slot.required,
+      options: slot.options.map((option) => ({
+        id: option.id,
+        label: option.label,
+      })),
+    })),
+  };
+}
 
 export function normalizeCalculatorInputs(
   definition: CalculatorDefinition,

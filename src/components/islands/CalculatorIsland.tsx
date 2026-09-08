@@ -5,8 +5,8 @@ import {
   encodeCalculatorState,
   evaluateCalculator,
   normalizeCalculatorInputs,
+  type CalculatorDefinition,
 } from "../../core/tool-definitions";
-import type { CalculatorDefinition } from "../../data/schemas/tools";
 
 interface Props {
   definition: CalculatorDefinition;
