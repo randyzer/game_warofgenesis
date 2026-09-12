@@ -1,13 +1,20 @@
 import {
   existsSync,
   readFileSync,
-  readdirSync,
   statSync,
 } from "node:fs";
 import { join, resolve } from "node:path";
 
 import { collectBuildHtmlAuditErrors, collectReferencedAssetPaths } from "../src/core/html-audit";
 import { routeToOutputFile } from "../src/core/output-reconciliation";
+import {
+  collectPagefindBudgetErrors,
+  formatPagefindDiagnostics,
+} from "../src/core/pagefind-artifacts";
+import {
+  inspectPagefindArtifacts,
+  readInstalledPagefindVersion,
+} from "./normalize-pagefind-output";
 import {
   buildCanonicalUrl,
   buildRobotsTxt,
@@ -23,6 +30,7 @@ import {
   isLocalMediaFile,
   isPublicImageFile,
 } from "./media-validation";
+import { EVIDENCE_MARKER_FILE } from "./build-site";
 
 const outputDirectory = resolve(process.cwd(), "dist");
 const htmlByRoute = new Map(
@@ -36,17 +44,10 @@ const errors = collectBuildHtmlAuditErrors({
   pages: enabledPageCatalog,
   htmlByRoute,
 });
-const warnings: string[] = [];
-
-function directorySize(directory: string): number {
-  return readdirSync(directory, { withFileTypes: true }).reduce(
-    (total, entry) => {
-      const path = join(directory, entry.name);
-      return total + (entry.isDirectory() ? directorySize(path) : statSync(path).size);
-    },
-    0,
-  );
+if (existsSync(resolve(process.cwd(), EVIDENCE_MARKER_FILE))) {
+  errors.push(`Canonical final output must not contain ${EVIDENCE_MARKER_FILE}.`);
 }
+const warnings: string[] = [];
 
 function assetSize(assetPath: string): number {
   const path = join(outputDirectory, assetPath.replace(/^\//, ""));
@@ -137,8 +138,6 @@ const requiredFiles = [
   "robots.txt",
   "sitemap-index.xml",
   "sitemap-0.xml",
-  "pagefind/pagefind.js",
-  "pagefind/pagefind-entry.json",
 ];
 for (const file of requiredFiles) {
   if (!existsSync(join(outputDirectory, file))) {
@@ -169,11 +168,16 @@ if (existsSync(sitemapPath)) {
 }
 
 const pagefindDirectory = join(outputDirectory, "pagefind");
-const pagefindBytes = existsSync(pagefindDirectory)
-  ? directorySize(pagefindDirectory)
-  : 0;
-if (pagefindBytes > 800_000) {
-  errors.push(`Pagefind output exceeds the 800 KB starter budget: ${pagefindBytes} bytes.`);
+let pagefindDiagnostics = "Pagefind output unavailable.";
+try {
+  const pagefindReport = inspectPagefindArtifacts({
+    pagefindDirectory,
+    installedVersion: readInstalledPagefindVersion(process.cwd()),
+  });
+  errors.push(...pagefindReport.errors, ...collectPagefindBudgetErrors(pagefindReport));
+  pagefindDiagnostics = formatPagefindDiagnostics(pagefindReport, pagefindReport.rawTotalBytes, 0);
+} catch (error) {
+  errors.push(`Pagefind artifact audit could not run: ${error instanceof Error ? error.message : String(error)}`);
 }
 
 const referencedJsBytes = [...referencedAssets]
@@ -196,7 +200,7 @@ if (errors.length > 0) {
       `Largest page JS reference: ${largestReferencedJsBytes} B.`,
       `Unique referenced CSS: ${referencedCssBytes} B.`,
       `Unique referenced JS: ${referencedJsBytes} B.`,
-      `Pagefind output: ${pagefindBytes} B.`,
+      `Pagefind normalized payload: ${pagefindDiagnostics}.`,
     ].join(" "),
   );
   for (const warning of warnings) console.warn(warning);

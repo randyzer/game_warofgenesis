@@ -6,8 +6,10 @@ import { describe, expect, it } from "vitest";
 
 import {
   collectMediaReadinessSignals,
+  evaluateMediaReadiness,
   findMediaDecisionTable,
   parseMediaDecisionTableMarkdown,
+  type MediaReadinessPurpose,
   type MediaReadinessSignals,
 } from "../src/core/media-readiness";
 import { pageInventory } from "../src/core/site-data";
@@ -61,11 +63,13 @@ ${rows.join("\n")}
 function signalsFromMarkdown(
   markdown: string,
   inventory: PageInventoryEntry[] = pageInventory,
+  purpose: MediaReadinessPurpose = "final",
 ): MediaReadinessSignals {
   const parsed = parseMediaDecisionTableMarkdown(markdown);
   const signals = collectMediaReadinessSignals({
     inventory,
     decisions: parsed.decisions,
+    purpose,
   });
 
   return {
@@ -150,6 +154,123 @@ describe("media decision table authority path", () => {
 });
 
 describe("media readiness V2.6.1 lifecycle projection", () => {
+  it("permits integrated structured Human/visual pending blockers only for evidence purpose", () => {
+    const pending = parseMediaDecisionTableMarkdown(table(
+      "| home | Homepage | HIGH PRIORITY | The homepage hero needs recognizable game identity. | Hero | SEMANTICALLY VERIFIED | VERIFIED | PENDING | INTEGRATED | PENDING | observed | Media owner | Pending Human review fixture. |",
+    ));
+
+    expect(collectMediaReadinessSignals({
+      inventory: pageInventory,
+      decisions: pending.decisions,
+      purpose: "final",
+    }).errors).toHaveLength(1);
+    expect(collectMediaReadinessSignals({
+      inventory: pageInventory,
+      decisions: pending.decisions,
+      purpose: "evidence",
+    }).errors).toEqual([]);
+  });
+
+  it.each([
+    ["REVISE", "PASS"],
+    ["BLOCK", "PASS"],
+    ["APPROVED", "REVISE"],
+    ["APPROVED", "BLOCK"],
+  ] as const)("keeps %s/%s blocking ahead of fallback-only for evidence purpose", (humanDecision, visualGateState) => {
+    const cells = rowCells(validRows.homeResolved);
+    cells[7] = humanDecision;
+    cells[8] = "FALLBACK ONLY";
+    cells[9] = visualGateState;
+    const parsed = parseMediaDecisionTableMarkdown(table(markdownRow(cells)));
+
+    expect(collectMediaReadinessSignals({
+      inventory: pageInventory,
+      decisions: parsed.decisions,
+      purpose: "evidence",
+    }).errors.join("\n")).toMatch(/blocking Human\/visual state/i);
+  });
+
+  it("keeps unsupported lifecycle combinations blocking for evidence purpose", () => {
+    const parsed = parseMediaDecisionTableMarkdown(table(
+      "| home | Homepage | HIGH PRIORITY | The homepage hero needs recognizable game identity. | Hero | FOUND | VERIFIED | APPROVED | NOT INTEGRATED | PASS | observed | Media owner | Unsupported fixture. |",
+    ));
+
+    expect(collectMediaReadinessSignals({
+      inventory: pageInventory,
+      decisions: parsed.decisions,
+      purpose: "evidence",
+    }).errors.join("\n")).toMatch(/unsupported media lifecycle combination/i);
+  });
+
+  it("preserves structured Human/visual PENDING precedence over fallback-only for evidence purpose", () => {
+    const parsed = parseMediaDecisionTableMarkdown(table(
+      "| home | Homepage | HIGH PRIORITY | The homepage hero needs recognizable game identity. | Hero | FOUND | UNRESOLVED | PENDING | FALLBACK ONLY | PENDING | observed | Media owner | Fallback-only pending fixture. |",
+    ));
+    const final = evaluateMediaReadiness({
+      inventory: pageInventory,
+      decisions: parsed.decisions,
+      purpose: "final",
+    });
+    const evidence = evaluateMediaReadiness({
+      inventory: pageInventory,
+      decisions: parsed.decisions,
+      purpose: "evidence",
+    });
+
+    expect(final.blockingIssues).toEqual([
+      expect.objectContaining({ cause: "human-visual-pending" }),
+    ]);
+    expect(final.signals.errors).toHaveLength(1);
+    expect(final.signals.errors.join("\n")).toMatch(/pending/i);
+    expect(final.signals.errors.join("\n")).not.toMatch(/fallback-only/i);
+    expect(evidence.blockingIssues).toEqual([
+      expect.objectContaining({ cause: "human-visual-pending" }),
+    ]);
+    expect(evidence.permittedEvidenceIssues).toEqual(evidence.blockingIssues);
+    expect(evidence.signals.errors).toEqual([]);
+  });
+
+  it("keeps approved fallback-only without waiver blocked for final and evidence", () => {
+    const parsed = parseMediaDecisionTableMarkdown(table(
+      "| home | Homepage | HIGH PRIORITY | The homepage hero needs recognizable game identity. | Hero | SEMANTICALLY VERIFIED | VERIFIED | APPROVED | FALLBACK ONLY | PASS | observed | Media owner | Non-waived fallback-only fixture. |",
+    ));
+
+    for (const purpose of ["final", "evidence"] as const) {
+      const evaluation = evaluateMediaReadiness({
+        inventory: pageInventory,
+        decisions: parsed.decisions,
+        purpose,
+      });
+      expect(evaluation.blockingIssues).toEqual([
+        expect.objectContaining({ cause: "fallback-only" }),
+      ]);
+      expect(evaluation.permittedEvidenceIssues).toEqual([]);
+      expect(evaluation.signals.errors.join("\n")).toMatch(/fallback-only/i);
+    }
+  });
+
+  it("keeps malformed fallback-only lifecycle data blocked for evidence", () => {
+    const malformed = table(
+      "| home | Homepage | HIGH PRIORITY | The homepage hero needs recognizable game identity. | Hero | FOUND | UNRESOLVED | UNKNOWN | FALLBACK ONLY | PENDING | observed | Media owner | Malformed fixture. |",
+    );
+
+    expect(signalsFromMarkdown(
+      malformed,
+      pageInventory,
+      "evidence",
+    ).errors.join("\n")).toMatch(/human_decision.*UNKNOWN|UNKNOWN.*human_decision/i);
+  });
+
+  it("keeps fully resolved integrated state ready for final and evidence", () => {
+    for (const purpose of ["final", "evidence"] as const) {
+      expect(signalsFromMarkdown(
+        table(validRows.homeResolved),
+        pageInventory,
+        purpose,
+      )).toEqual({ errors: [], warnings: [], info: [] });
+    }
+  });
+
   it.each([1, 2])("selects the canonical table after %i explanatory tables", (count) => {
     const explanation = "## Reference\n\n| Field | Meaning |\n| --- | --- |\n| notes | Recorded explanation |\n\n";
     const markdown = `# Media planning\n\nReference prose.\n\n${explanation.repeat(count)}## Route Decisions\n${table(validRows.guideResolved)}`;
@@ -196,7 +317,7 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
     ["home", "HIGH PRIORITY", "errors"],
     ["home", "RECOMMENDED", "info"],
     ["home", "OPTIONAL", "info"],
-    ["guide.getting-started", "HIGH PRIORITY", "warnings"],
+    ["guide.getting-started", "HIGH PRIORITY", "errors"],
     ["guide.getting-started", "RECOMMENDED", "info"],
     ["guide.getting-started", "OPTIONAL", "info"],
   ] as const)("projects explained WAIVED/PENDING for %s %s as %s pending evidence", (page, need, severity) => {
@@ -551,7 +672,7 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
     });
   });
 
-  it("keeps homepage HIGH PRIORITY unresolved blocking while guide HIGH PRIORITY unresolved is a warning", () => {
+  it("blocks HIGH PRIORITY pending final readiness for home and non-home identities", () => {
     expect(
       signalsFromMarkdown(table(
         "| home | Homepage | HIGH PRIORITY | The homepage hero needs recognizable game identity. | Hero | FOUND | UNRESOLVED | PENDING | NOT INTEGRATED | PASS | observed | owner | Pending homepage fixture. |",
@@ -561,8 +682,21 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
     const guide = signalsFromMarkdown(table(
       "| guide.getting-started | guide/article | HIGH PRIORITY | This guide needs important visual support. | inline | FOUND | UNRESOLVED | PENDING | NOT INTEGRATED | PASS | observed | owner | Pending guide fixture. |",
     ));
+    expect(guide.errors.join("\n")).toMatch(
+      /guide\.getting-started.*HIGH PRIORITY.*pending|unresolved/i,
+    );
+  });
+
+  it("permits non-home HIGH PRIORITY pending only for evidence purpose", () => {
+    const guide = signalsFromMarkdown(
+      table(
+        "| guide.getting-started | guide/article | HIGH PRIORITY | This guide needs important visual support. | inline | FOUND | UNRESOLVED | PENDING | NOT INTEGRATED | PASS | observed | owner | Pending guide fixture. |",
+      ),
+      pageInventory,
+      "evidence",
+    );
+
     expect(guide.errors).toEqual([]);
-    expect(guide.warnings.join("\n")).toMatch(/guide\.getting-started.*HIGH PRIORITY.*pending|unresolved/i);
   });
 
   it("fails closed for unsupported exact state combinations", () => {

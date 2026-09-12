@@ -1,5 +1,6 @@
 import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
 import gameConfig from "../game.config";
 import { buildEnabledPageCatalog } from "../src/core/catalog";
@@ -10,6 +11,7 @@ import {
   collectMediaReadinessSignals,
   findMediaDecisionTable,
   parseMediaDecisionTableMarkdown,
+  type MediaReadinessPurpose,
 } from "../src/core/media-readiness";
 import {
   entityModuleKeys,
@@ -26,7 +28,15 @@ import {
   isPublicImageFile,
 } from "./media-validation";
 
-const projectRoot = process.cwd();
+export interface RunSiteValidationInput {
+  projectRoot?: string;
+  purpose?: MediaReadinessPurpose;
+}
+
+export function runSiteValidation({
+  projectRoot = process.cwd(),
+  purpose = "final",
+}: RunSiteValidationInput = {}): number {
 const readErrors: string[] = [];
 const warnings: string[] = [];
 const info: string[] = [];
@@ -58,6 +68,7 @@ if (mediaDecisionTableLocation.path) {
   const mediaReadinessSignals = collectMediaReadinessSignals({
     inventory,
     decisions: mediaDecisionTable.decisions,
+    purpose,
   });
   readErrors.push(...mediaDecisionTable.errors);
   readErrors.push(...mediaReadinessSignals.errors);
@@ -155,7 +166,7 @@ if (errors.length > 0) {
   }
   for (const warning of warnings) console.warn(`Warning: ${warning}`);
   for (const item of info) console.info(`Info: ${item}`);
-  process.exitCode = 1;
+  return 1;
 } else {
   const enabledPages = buildEnabledPageCatalog(gameConfig, inventory);
   console.log(
@@ -163,4 +174,19 @@ if (errors.length > 0) {
   );
   for (const warning of warnings) console.warn(`Warning: ${warning}`);
   for (const item of info) console.info(`Info: ${item}`);
+  return 0;
+}
+}
+
+function isMainModule(): boolean {
+  return Boolean(process.argv[1]) && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+}
+
+if (isMainModule()) {
+  if (process.argv.length > 2) {
+    console.error("Public site validation is final-only; unsupported CLI arguments were provided.");
+    process.exitCode = 1;
+  } else {
+    process.exitCode = runSiteValidation();
+  }
 }

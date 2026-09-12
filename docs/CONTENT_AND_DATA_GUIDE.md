@@ -1,9 +1,9 @@
 # Content and Data Guide
 
-Starter v2.6.1 separates publication decisions, authored narrative, structured
+Starter v2.6.2 separates publication decisions, authored narrative, structured
 facts, visual assets, configuration, theme, and presentation. Keep each value in
 its owning layer; do not turn Runtime Page Inventory into a whole-page CMS.
-V2.6.1 Phase C D1-D3 technical hardening is implemented in this Starter for
+V2.6.2 Phase 1C preserves the Phase C D1-D3 technical hardening in this Starter for
 media readiness projection, public-safe source rendering, and Node 22 runtime
 alignment.
 
@@ -19,7 +19,7 @@ alignment.
 | Media Manifest | `src/data/media/media.json` | Asset records and fixed `hero`/`gallery`/`trailer` placement references |
 | Theme | `src/styles/theme.css` | Game-wide palette and controlled module role tokens |
 | Presentation | Astro components and targeted CSS | Rendering already resolved data |
-| SOP/Human review | `GAME_SOP v2.6.1` and project artifacts | Coverage decisions, research quality, factual/legal/visual approval, release gates |
+| SOP/Human review | `GAME_SOP v2.6.2` and project artifacts | Coverage decisions, research quality, factual/legal/visual approval, release gates |
 
 The dependency direction is one way: presentation consumes these authorities.
 Media, content, facts, homepage sections, and components cannot create or publish
@@ -183,7 +183,7 @@ schema. If no applicable facts exist, omit the section.
 
 ## Media Manifest: visual placement, not publication
 
-The current Starter v2.6.1 package keeps the existing media contract and adds
+The current Starter v2.6.2 implementation keeps the existing media contract and adds
 Phase C D1-D3 media-readiness projection. It supports
 `docs/MEDIA_DECISION_TABLE.md` for new projects, root `MEDIA_DECISION_TABLE.md`
 for legacy compatibility, duplicate-authority fail-closed validation, exact
@@ -257,7 +257,7 @@ details.
 
 ## Theme and page-family identity
 
-Game-specific palette values belong in `src/styles/theme.css`. Starter v2.6.1
+Game-specific palette values belong in `src/styles/theme.css`. Starter v2.6.2
 defaults are intentionally neutral and installable, not a shippable generic
 brand identity. Footer colors and borders derive from shared theme tokens so a
 project theme can replace them naturally. The family key comes only from the

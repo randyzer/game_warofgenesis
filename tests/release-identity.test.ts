@@ -23,8 +23,8 @@ describe("release identity", () => {
       expect(source).not.toMatch(/`GAME_SOP v2\.5` is the production methodology/);
       expect(source).not.toMatch(/Record the `GAME_SOP v2\.5` commit used for production methodology/);
       expect(source).not.toMatch(/fit satisfy `GAME_SOP v2\.5`/);
-      expect(source).toMatch(/\b(?:GAME_SITE_STARTER|Starter) v2\.6\.1\b/);
-      expect(source).toMatch(/GAME_SOP v2\.6\.1\b/);
+      expect(source).toMatch(/\b(?:GAME_SITE_STARTER|Starter) v2\.6\.2\b/);
+      expect(source).toMatch(/GAME_SOP v2\.6\.2\b/);
       expect(source).toMatch(/Phase C|D1-D3/i);
       expect(source).not.toMatch(/not yet implemented|not implemented yet/i);
       expect(source).not.toMatch(/IMPLEMENTATION COMPLETE|final Human PASS/i);
@@ -40,7 +40,7 @@ describe("release identity", () => {
     expect(packageLock.version).toBe(packageJson.version);
     expect(packageLock.packages[""].version).toBe(packageJson.version);
     expect(readme).toContain(
-      "`GAME_SITE_STARTER v2.6.1` identifies the Starter template release and its `GAME_SOP v2.6.1` compatibility line.",
+      "`GAME_SITE_STARTER v2.6.2` identifies the current Starter implementation target and its `GAME_SOP v2.6.2` compatibility line.",
     );
     expect(readme).toContain(
       `\`package.json\` version \`${packageJson.version}\` is the inherited private application/scaffold package metadata version, also recorded at the top level and root package of \`package-lock.json\`.`,
@@ -48,5 +48,16 @@ describe("release identity", () => {
     expect(readme).toContain(
       "This package metadata value does not identify the Starter release or SOP compatibility line.",
     );
+  });
+
+  it("documents normalized Pagefind and NOT FINAL evidence-build contracts", () => {
+    const readme = read("../README.md");
+    const qa = read("../docs/QA_CHECKLIST.md");
+
+    expect(`${readme}\n${qa}`).toContain("npm run build:evidence");
+    expect(qa).toMatch(/normalized contract-required Pagefind payload.*800,000 B/i);
+    expect(qa).toContain("dist/EVIDENCE_BUILD_NOT_FINAL.json");
+    expect(qa).toMatch(/NOT FINAL/i);
+    expect(qa).toMatch(/Human review required/i);
   });
 });

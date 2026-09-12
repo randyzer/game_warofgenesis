@@ -1,8 +1,9 @@
-# GAME_SITE_STARTER v2.6.1 Release QA Checklist
+# GAME_SITE_STARTER v2.6.2 Release QA Checklist
 
 Use this checklist after changing config, Runtime Page Inventory, content,
 facts, tools, media, theme, dependencies, or presentation components.
-V2.6.1 Phase C D1-D3 technical hardening is implemented in this Starter; this
+V2.6.2 Phase 1C preserves the Phase C D1-D3 technical hardening and adds the
+approved normalized Pagefind/evidence-build contracts; this
 checklist covers the deterministic checks and still preserves the Human release
 gates.
 
@@ -14,7 +15,7 @@ gate.
 ## Record provenance first
 
 - [ ] Record the source Starter commit and working branch.
-- [ ] Record the `GAME_SOP v2.6.1` package/reference used for production methodology.
+- [ ] Record the `GAME_SOP v2.6.2` package/reference used for production methodology.
 - [ ] Record the current Master Prompt version.
 - [ ] Record any known version mismatch instead of silently rewriting upstream
       documents.
@@ -141,12 +142,16 @@ Do not continue to release review if any command exits non-zero.
 - [ ] Astro static generation;
 - [ ] exact Runtime Page Inventory ↔ HTML output reconciliation;
 - [ ] Pagefind indexing;
+- [ ] Pagefind 1.5.2 exact artifact classification and normalization;
 - [ ] generated HTML, internal-link, canonical, robots, JSON-LD, sitemap, image
       alt, media, and orphan-page audit;
 - [ ] per-page HTML ≤ 80 KB;
 - [ ] referenced CSS ≤ 64 KB;
 - [ ] referenced JavaScript ≤ 230 KB;
-- [ ] Pagefind output ≤ 800 KB.
+- [ ] normalized contract-required Pagefind payload ≤ 800,000 B; raw Pagefind
+      total is diagnostic only;
+- [ ] exact known optional stock UI is absent or proven unreferenced before
+      removal; unknown structure and missing required artifacts fail closed.
 
 Also inspect the final output directly:
 
@@ -160,6 +165,26 @@ Also inspect the final output directly:
       broken internal link.
 - [ ] Ordinary static pages do not hydrate client JavaScript; islands appear
       only on Search/entity-filter/calculator/planner pages that use them.
+
+### Fresh Human-review evidence output
+
+Use `npm run build:evidence` only when final validation is blocked solely by a
+contract-valid Human/visual `PENDING` readiness state and fresh rendered output
+is required for review. It must fail for `REVISE`, `BLOCK`, malformed or
+unsupported lifecycle data, Inventory ambiguity, missing content/assets,
+fallback-only invalid states, unknown Pagefind structures, and every non-media
+deterministic error.
+
+- [ ] Opening/closing output clearly says `FRESH VISUAL EVIDENCE BUILD`,
+      `NOT FINAL CLOSING BUILD`, and `HUMAN REVIEW REQUIRED`.
+- [ ] Successful evidence output contains
+      `dist/EVIDENCE_BUILD_NOT_FINAL.json` with only `mode: evidence` and
+      `final: false` semantics.
+- [ ] Evidence generation does not mutate Human decisions, visual state,
+      waivers, rights state, or `MEDIA_DECISION_TABLE.md`.
+- [ ] After explicit Human decisions, rerun the fresh canonical sequence.
+- [ ] Successful `npm run build` output does not contain the evidence marker;
+      a surviving marker fails closed.
 
 ## Feature-off and fallback matrix
 
@@ -213,7 +238,7 @@ Automation cannot approve the following items.
 - [ ] Sources are authoritative enough for the claim and their access dates are
       current.
 - [ ] Competitive coverage, content-family selection, P0/P1/P2 scope, and game
-      fit satisfy `GAME_SOP v2.6.1` and project research.
+      fit satisfy `GAME_SOP v2.6.2` and project research.
 - [ ] Internal review/update flags are cleared only by an authorized human.
 
 ### Media and rights

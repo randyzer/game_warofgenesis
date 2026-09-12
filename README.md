@@ -1,6 +1,6 @@
-# GAME_SITE_STARTER v2.6.1
+# GAME_SITE_STARTER v2.6.2
 
-Starter v2.6.1 is the current template release target for the static-first
+Starter v2.6.2 is the current implementation target for the static-first
 Astro foundation for media-rich game wikis. It
 keeps the proven publication, fact, SEO, route, search, and reconciliation core
 while providing a player-facing Wiki portal, grouped navigation, Wiki articles,
@@ -9,7 +9,8 @@ page-family accents.
 
 The default repository is a small generic adoption example. It deliberately
 does not ship fictional game facts, screenshots, news, or entity databases.
-V2.6.1 Phase C D1-D3 technical hardening is implemented in this Starter: media
+V2.6.2 Phase 1C adds the approved Pagefind and fresh-evidence contracts on top
+of the existing Phase C D1-D3 technical hardening: media
 decision tables are projected deterministically, public source rendering uses a
 safe metadata boundary, and the runtime contract is Node 22 only.
 
@@ -17,10 +18,11 @@ safe metadata boundary, and the runtime contract is Node 22 only.
 
 These three artifacts have different responsibilities:
 
-- `GAME_SOP v2.6.1` is the current methodology package identity. Historical
+- `GAME_SOP v2.6.2` is the current methodology package identity. Historical
   `GAME_SOP v2.5` references are baseline provenance, not current authority.
-- `GAME_SITE_STARTER v2.6.1` identifies the Starter template release and its
-  `GAME_SOP v2.6.1` compatibility line. Phase C D1-D3
+- `GAME_SITE_STARTER v2.6.2` identifies the current Starter implementation target and its
+  `GAME_SOP v2.6.2` compatibility line. Phase 1C implementation evidence and
+  the earlier Phase C D1-D3
   technical implementation evidence is recorded separately; it is not final
   Human approval.
 - Historical Master Prompt files and Starter 2.0/V2.5/V2.6 reports are
@@ -31,7 +33,7 @@ These three artifacts have different responsibilities:
 package metadata version, also recorded at the top level and root package of
 `package-lock.json`. This package metadata value does not identify the Starter
 release or SOP compatibility line. The historical v2.5.0 proposal already records
-`0.1.0`, and the v2.6 Git baseline retains it; v2.6.1 keeps that metadata unchanged.
+`0.1.0`, and the v2.6 Git baseline retains it; v2.6.2 keeps that metadata unchanged.
 
 The current package carries forward the approved Starter v2.5.0 scope in
 [`docs/STARTER_V2.5_CHANGE_PROPOSAL.md`](docs/STARTER_V2.5_CHANGE_PROPOSAL.md)
@@ -56,6 +58,21 @@ The production output is `dist/`. `npm run build` validates configuration,
 content, facts, and media; generates static Astro pages; reconciles every HTML
 route exactly with Runtime Page Inventory; creates the Pagefind index; and audits
 generated HTML, links, SEO, sitemap, robots, media markup, and size budgets.
+Pagefind 1.5.2 output is normalized by removing only exact, proven-unreferenced
+stock UI files; the 800,000 B ceiling applies to the complete normalized
+contract-required runtime/index payload, while the raw total remains diagnostic.
+
+When fresh rendered output is needed solely for Human review while the only
+final-readiness blocker is a contract-valid Human/visual `PENDING`, run:
+
+```bash
+npm run build:evidence
+```
+
+This output is **NOT FINAL** and carries
+`dist/EVIDENCE_BUILD_NOT_FINAL.json`. Human review is required. The command
+does not approve or mutate lifecycle decisions; `npm run build` remains the
+fail-closed canonical final build and must produce output without that marker.
 
 ## Practical architecture
 
@@ -80,7 +97,7 @@ The implementation uses:
 
 ## Adopt for a real game
 
-1. Record the source Starter commit, `GAME_SOP v2.6.1` package/reference, and
+1. Record the source Starter commit, `GAME_SOP v2.6.2` package/reference, and
    current Master Prompt version in the new project's brief.
 2. Complete the SOP research and human planning gates before changing page
    scope. The Starter does not decide whether a game needs heroes, tier lists,
@@ -137,8 +154,8 @@ Mobile remains one column in both states.
 
 ### Media contract
 
-The current Starter v2.6.1 package keeps the existing fixed-placement media
-implementation and adds V2.6.1 Phase C D1-D3 media-readiness projection. It
+The current Starter v2.6.2 implementation keeps the existing fixed-placement media
+implementation and V2.6.1 Phase C D1-D3 media-readiness projection. It
 supports `docs/MEDIA_DECISION_TABLE.md`, legacy root `MEDIA_DECISION_TABLE.md`
 compatibility, duplicate-authority fail-closed validation, exact lifecycle enum
 validation, Runtime Page Inventory identity resolution, and deterministic

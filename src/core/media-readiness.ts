@@ -44,9 +44,31 @@ export interface MediaReadinessSignals {
   info: string[];
 }
 
+export type MediaReadinessPurpose = "final" | "evidence";
+
+export type MediaReadinessBlockingCause =
+  | "human-visual-pending"
+  | "human-visual-block"
+  | "fallback-only"
+  | "invalid-no-media"
+  | "unsupported-lifecycle"
+  | "inventory-resolution";
+
+export interface MediaReadinessBlockingIssue {
+  cause: MediaReadinessBlockingCause;
+  message: string;
+}
+
+export interface MediaReadinessEvaluation {
+  signals: MediaReadinessSignals;
+  blockingIssues: MediaReadinessBlockingIssue[];
+  permittedEvidenceIssues: MediaReadinessBlockingIssue[];
+}
+
 export interface MediaReadinessInput {
   inventory: PageInventoryEntry[];
   decisions?: MediaReadinessDecision[];
+  purpose?: MediaReadinessPurpose;
 }
 
 export interface MediaDecisionTableParseResult {
@@ -457,8 +479,9 @@ function resolveInventoryPage(
 function collectInventoryResolutionErrors(
   inventory: PageInventoryEntry[],
   decisions: MediaReadinessDecision[],
-): string[] {
-  const errors: string[] = [];
+): MediaReadinessBlockingIssue[] {
+  const errors: MediaReadinessBlockingIssue[] = [];
+  const push = (message: string) => errors.push({ cause: "inventory-resolution", message });
   const pageResolutionCounts = new Map<string, MediaReadinessDecision[]>();
 
   for (const decision of decisions) {
@@ -467,13 +490,13 @@ function collectInventoryResolutionErrors(
     );
 
     if (matches.length === 0) {
-      errors.push(
+      push(
         `MEDIA_DECISION_TABLE.md row ${decision.lineNumber} references no Runtime Page Inventory row: ${decision.pageIdOrRoute}.`,
       );
       continue;
     }
     if (matches.length > 1) {
-      errors.push(
+      push(
         `MEDIA_DECISION_TABLE.md row ${decision.lineNumber} matches multiple Runtime Page Inventory rows: ${decision.pageIdOrRoute}.`,
       );
       continue;
@@ -487,7 +510,7 @@ function collectInventoryResolutionErrors(
 
   for (const [pageId, rows] of pageResolutionCounts) {
     if (rows.length > 1) {
-      errors.push(
+      push(
         `Duplicate media decision row for Runtime Page Inventory page "${pageId}": rows ${rows.map((row) => row.lineNumber).join(", ")}.`,
       );
     }
@@ -496,8 +519,22 @@ function collectInventoryResolutionErrors(
   return errors;
 }
 
+interface MediaReadinessProjection {
+  blockingIssues: MediaReadinessBlockingIssue[];
+  warnings: string[];
+  info: string[];
+}
+
+function pushBlocking(
+  projection: MediaReadinessProjection,
+  cause: MediaReadinessBlockingCause,
+  message: string,
+) {
+  projection.blockingIssues.push({ cause, message });
+}
+
 function pushSeveritySignal(
-  signals: MediaReadinessSignals,
+  signals: MediaReadinessProjection,
   page: PageInventoryEntry,
   decision: MediaReadinessDecision,
   state: "pending" | "fallback-only",
@@ -505,11 +542,11 @@ function pushSeveritySignal(
   const message = `Media readiness ${page.pageId} (${page.route}) is ${decision.mediaNeed} and ${state}; unresolved media is not resolved by Starter projection.`;
 
   if (decision.mediaNeed === "HIGH PRIORITY") {
-    if (page.pageType === "home" || page.route === "/") {
-      signals.errors.push(message);
-    } else {
-      signals.warnings.push(message);
-    }
+    pushBlocking(
+      signals,
+      state === "pending" ? "human-visual-pending" : "fallback-only",
+      message,
+    );
     return;
   }
 
@@ -517,7 +554,7 @@ function pushSeveritySignal(
 }
 
 function projectNoMediaDecision(
-  signals: MediaReadinessSignals,
+  signals: MediaReadinessProjection,
   decision: MediaReadinessDecision,
 ) {
   if (
@@ -527,7 +564,9 @@ function projectNoMediaDecision(
     decision.visualGateState === "REVISE" ||
     decision.visualGateState === "BLOCK"
   ) {
-    signals.errors.push(
+    pushBlocking(
+      signals,
+      "invalid-no-media",
       `MEDIA_DECISION_TABLE.md row ${decision.lineNumber} has NO MEDIA NEEDED conflict/revise/block states; unsupported unresolved rights or Human/visual block cannot be hidden by no-media classification.`,
     );
     return;
@@ -552,19 +591,23 @@ function projectNoMediaDecision(
   }
 
   if (!hasExplanation(decision.needRationale)) {
-    signals.errors.push(
+    pushBlocking(
+      signals,
+      "invalid-no-media",
       `MEDIA_DECISION_TABLE.md row ${decision.lineNumber} has NO MEDIA NEEDED without positive need_rationale.`,
     );
     return;
   }
 
-  signals.errors.push(
+  pushBlocking(
+    signals,
+    "unsupported-lifecycle",
     `MEDIA_DECISION_TABLE.md row ${decision.lineNumber} has unsupported media lifecycle combination for NO MEDIA NEEDED.`,
   );
 }
 
 function projectMediaNeededDecision(
-  signals: MediaReadinessSignals,
+  signals: MediaReadinessProjection,
   page: PageInventoryEntry,
   decision: MediaReadinessDecision,
 ) {
@@ -574,7 +617,9 @@ function projectMediaNeededDecision(
     decision.visualGateState === "REVISE" ||
     decision.visualGateState === "BLOCK"
   ) {
-    signals.errors.push(
+    pushBlocking(
+      signals,
+      "human-visual-block",
       `MEDIA_DECISION_TABLE.md row ${decision.lineNumber} has blocking Human/visual state for ${page.pageId}: ${decision.humanDecision}/${decision.visualGateState}.`,
     );
     return;
@@ -610,32 +655,59 @@ function projectMediaNeededDecision(
     return;
   }
 
-  signals.errors.push(
+  pushBlocking(
+    signals,
+    "unsupported-lifecycle",
     `MEDIA_DECISION_TABLE.md row ${decision.lineNumber} has unsupported media lifecycle combination for ${page.pageId}.`,
   );
 }
 
-export function collectMediaReadinessSignals({
+export function evaluateMediaReadiness({
   inventory,
   decisions,
-}: MediaReadinessInput): MediaReadinessSignals {
-  const signals: MediaReadinessSignals = { errors: [], warnings: [], info: [] };
-  if (!decisions) return signals;
-
-  signals.errors.push(...collectInventoryResolutionErrors(inventory, decisions));
-  if (signals.errors.length > 0) return signals;
-
-  for (const decision of decisions) {
-    const page = resolveInventoryPage(inventory, decision);
-    if (!page) continue;
-
-    if (decision.mediaNeed === "NO MEDIA NEEDED") {
-      projectNoMediaDecision(signals, decision);
-      continue;
-    }
-
-    projectMediaNeededDecision(signals, page, decision);
+  purpose = "final",
+}: MediaReadinessInput): MediaReadinessEvaluation {
+  const projection: MediaReadinessProjection = { blockingIssues: [], warnings: [], info: [] };
+  if (!decisions) {
+    return {
+      signals: { errors: [], warnings: [], info: [] },
+      blockingIssues: [],
+      permittedEvidenceIssues: [],
+    };
   }
 
-  return signals;
+  projection.blockingIssues.push(...collectInventoryResolutionErrors(inventory, decisions));
+  if (projection.blockingIssues.length === 0) {
+    for (const decision of decisions) {
+      const page = resolveInventoryPage(inventory, decision);
+      if (!page) continue;
+
+      if (decision.mediaNeed === "NO MEDIA NEEDED") {
+        projectNoMediaDecision(projection, decision);
+        continue;
+      }
+
+      projectMediaNeededDecision(projection, page, decision);
+    }
+  }
+
+  const permittedEvidenceIssues = purpose === "evidence"
+    ? projection.blockingIssues.filter((issue) => issue.cause === "human-visual-pending")
+    : [];
+  const permittedSet = new Set(permittedEvidenceIssues);
+  return {
+    signals: {
+      errors: projection.blockingIssues
+        .filter((issue) => !permittedSet.has(issue))
+        .map((issue) => issue.message),
+      warnings: projection.warnings,
+      info: projection.info,
+    },
+    blockingIssues: projection.blockingIssues,
+    permittedEvidenceIssues,
+  };
+}
+
+export function collectMediaReadinessSignals(input: MediaReadinessInput): MediaReadinessSignals {
+  return evaluateMediaReadiness(input).signals;
 }
