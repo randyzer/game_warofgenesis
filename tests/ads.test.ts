@@ -297,17 +297,17 @@ describe("ad composition boundaries", () => {
     expect(html).not.toMatch(/data-ad-|ad-slot|public-home-primary|fixture-bootstrap/i);
   });
 
-  it("identifies V2.6.4 as the current documentation patch line and SOP authority", () => {
+  it("identifies V2.6.5 without mutable release-state claims", () => {
     const readme = readFileSync(new URL("../README.md", import.meta.url), "utf8");
     const qa = readFileSync(new URL("../docs/QA_CHECKLIST.md", import.meta.url), "utf8");
 
-    expect(readme).toMatch(/GAME_SITE_STARTER v2\.6\.4 documentation-correction patch line/i);
-    expect(readme).toMatch(/GAME_SOP v2\.6\.4.*current methodology/i);
-    expect(qa).toMatch(/GAME_SITE_STARTER v2\.6\.4 documentation-correction patch line QA checklist/i);
-    expect(qa).toMatch(/GAME_SOP v2\.6\.4.*production methodology/i);
-    expect(`${readme}\n${qa}`).toMatch(/v2\.6\.3.*released.*frozen/i);
+    expect(readme).toMatch(/GAME_SITE_STARTER v2\.6\.5 documentation-correction patch line/i);
+    expect(readme).toMatch(/GAME_SOP v2\.6\.5.*defines.*methodology/i);
+    expect(qa).toMatch(/GAME_SITE_STARTER v2\.6\.5 documentation-correction patch line QA checklist/i);
+    expect(qa).toMatch(/GAME_SOP v2\.6\.5.*production methodology/i);
+    expect(`${readme}\n${qa}`).toMatch(/v2\.6\.4.*released.*frozen/i);
     expect(`${readme}\n${qa}`).not.toMatch(
-      /implementation candidate|v2\.6\.4\s+(?:is|was|has been)\s+[^.\n]*(?:released|tagged|frozen)/i,
+      /implementation candidate|under preparation|preparing release|unreleased|not released|release pending|not tagged|untagged|tag pending|not frozen|freeze pending|awaiting freeze/i,
     );
   });
 });

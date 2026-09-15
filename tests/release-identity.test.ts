@@ -4,6 +4,8 @@ import { describe, expect, it } from "vitest";
 const currentPatchFiles = [
   "../README.md",
   "../docs/QA_CHECKLIST.md",
+  "../docs/CONTENT_AND_DATA_GUIDE.md",
+  "../public/media/README.md",
 ] as const;
 
 const carriedForwardBaselineDocs = [
@@ -18,7 +20,7 @@ function read(path: string): string {
 }
 
 describe("release identity", () => {
-  it("uses the exact current V2.6.4 patch-line identity in active entrypoints", () => {
+  it("uses the exact V2.6.5 patch-line identity without mutable lifecycle claims", () => {
     for (const path of currentPatchFiles) {
       const source = read(path);
       expect(source).not.toMatch(/^# .*v2\.5\.0/m);
@@ -26,26 +28,26 @@ describe("release identity", () => {
       expect(source).not.toMatch(/`GAME_SOP v2\.5` is the production methodology/);
       expect(source).not.toMatch(/Record the `GAME_SOP v2\.5` commit used for production methodology/);
       expect(source).not.toMatch(/fit satisfy `GAME_SOP v2\.5`/);
-      expect(source).toMatch(/\b(?:GAME_SITE_STARTER|Starter) v2\.6\.4\b/i);
-      expect(source).toMatch(/GAME_SOP v2\.6\.4\b/);
+      expect(source).toMatch(/\b(?:GAME_SITE_STARTER|Starter) v2\.6\.5\b/i);
+      expect(source).toMatch(/GAME_SOP v2\.6\.5\b/);
       expect(source).toMatch(/documentation-correction patch line/i);
       expect(source).not.toMatch(/implementation candidate/i);
       expect(source).not.toMatch(/not yet implemented|not implemented yet/i);
       expect(source).not.toMatch(/IMPLEMENTATION COMPLETE|final Human PASS/i);
       expect(source).not.toMatch(
-        /v2\.6\.4\s+(?:is|was|has been)\s+[^.\n]*(?:released|tagged|frozen)/i,
+        /under preparation|preparing release|unreleased|not released|release pending|not tagged|untagged|tag pending|not frozen|freeze pending|awaiting freeze/i,
       );
     }
   });
 
-  it("records the exact released and frozen V2.6.3 Starter provenance", () => {
+  it("records the exact released and frozen V2.6.4 Starter provenance", () => {
     const readme = read("../README.md");
 
-    expect(readme).toMatch(/V2\.6\.3.*released.*frozen/i);
-    expect(readme).toContain("starter-v2.6.3");
-    expect(readme).toContain("5968306e37491d9ead939e89aa45c2bb513dc14e");
-    expect(readme).toContain("8b18636d7b6727477783c06d158f23e601ca4fe3");
-    expect(readme).toContain("fb1600f4b4b88d6cd6e3541ab06576ed7554dd02");
+    expect(readme).toMatch(/V2\.6\.4.*released.*frozen/i);
+    expect(readme).toContain("starter-v2.6.4");
+    expect(readme).toContain("3138778fa4b4cc0f9daa4687a752de99fd1e6d88");
+    expect(readme).toContain("a619b438c39c82340d3b5408e51328d0a6f99bce");
+    expect(readme).toContain("9ab1d55c2a5db9a1af91a2c4ccef2b3b1e98e9fd");
   });
 
   it("preserves explicit V2.6.2 identity in carried-forward baseline subsystem docs", () => {
@@ -66,7 +68,10 @@ describe("release identity", () => {
     expect(packageLock.version).toBe(packageJson.version);
     expect(packageLock.packages[""].version).toBe(packageJson.version);
     expect(readme).toContain(
-      "`GAME_SITE_STARTER v2.6.4` identifies the current documentation-correction patch line and its `GAME_SOP v2.6.4` compatibility line.",
+      "`GAME_SITE_STARTER v2.6.5` defines this documentation-correction patch line and its `GAME_SOP v2.6.5` compatibility line.",
+    );
+    expect(readme).toContain(
+      "Release status is determined by the repository's authoritative Git refs and annotated release tag, not by lifecycle prose in this document.",
     );
     expect(readme).toContain(
       `\`package.json\` version \`${packageJson.version}\` is the inherited private application/scaffold package metadata version, also recorded at the top level and root package of \`package-lock.json\`.`,

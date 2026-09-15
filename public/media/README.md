@@ -1,11 +1,11 @@
-# Local media — Starter v2.6.4 Documentation-Correction Patch Line
+# Local media — Starter v2.6.5 Documentation-Correction Patch Line
 
 The Starter deliberately ships with an empty `src/data/media/media.json`.
 No media is valid: pages keep their normal text/fact layout without placeholders.
 A broken reference is invalid and fails validation, including references on unpublished pages.
-The V2.6.4 documentation-correction patch line carries forward the released
+The V2.6.5 documentation-correction patch line carries forward the released
 and frozen V2.6.3 Phase C D1-D3 media-readiness projection here as deterministic
-validation support for the current `GAME_SOP v2.6.4` media lifecycle contract. The historical
+validation support for the `GAME_SOP v2.6.5` media lifecycle contract. The historical
 `GAME_SOP v2.6.2` lifecycle and V2.6.2 Phase 1C behavior are baseline provenance
 only.
 
