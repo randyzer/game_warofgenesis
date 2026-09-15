@@ -34,7 +34,7 @@ describe("War of Genesis Phase 0 identity", () => {
       tierLists: false,
       news: false,
       search: true,
-      calculator: false,
+      calculator: true,
       planner: false,
     });
   });
@@ -63,7 +63,8 @@ describe("War of Genesis Phase 0 identity", () => {
     const productionSource = [
       "../game.config.ts",
       "../src/data/page-inventory.json",
-      "../src/content/guides/getting-started.mdx",
+      "../src/content/guides/beginner-guide.mdx",
+      "../src/content/guides/farming.mdx",
       "../src/core/static-page-copy.ts",
       "../src/pages/privacy.astro",
       "../src/pages/terms.astro",

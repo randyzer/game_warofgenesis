@@ -66,6 +66,12 @@ function collectPageCapabilityErrors(page: PageInventoryEntry): string[] {
     case "guides":
       capability = { feature: "guides", pageTypes: ["guide", "hub"] };
       break;
+    case "market":
+      capability = { feature: undefined, pageTypes: ["hub", "guide"] };
+      break;
+    case "builds":
+      capability = { feature: undefined, pageTypes: ["hub"] };
+      break;
     case "tierLists":
       capability = { feature: "tierLists", pageTypes: ["meta"] };
       break;
@@ -81,7 +87,7 @@ function collectPageCapabilityErrors(page: PageInventoryEntry): string[] {
           page.pageType === "calculator" || page.pageType === "planner"
             ? page.pageType
             : undefined,
-        pageTypes: ["calculator", "planner"],
+        pageTypes: ["hub", "calculator", "planner"],
       };
       break;
   }

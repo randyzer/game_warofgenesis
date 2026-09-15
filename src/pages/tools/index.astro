@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { enabledPageCatalog } from "../../core/site-data";
+import { buildToolsHubRouteRecord } from "../../core/optional-routes";
+
+const page = buildToolsHubRouteRecord(enabledPageCatalog);
+const tools = enabledPageCatalog
+  .filter((candidate) => candidate.module === "tools" && candidate.pageType === "calculator")
+  .sort((left, right) => right.priority - left.priority);
+---
+
+<BaseLayout page={page}>
+  <main id="main-content" class="hub-page shell" data-pagefind-body>
+    <header class="hub-page__header reveal reveal--1">
+      <div>
+        <p class="eyebrow">Decision instruments / {tools.length.toString().padStart(2, "0")} available</p>
+        <h1 data-pagefind-meta="title">{page.title}</h1>
+      </div>
+      <p data-pagefind-meta="description">{page.description}</p>
+    </header>
+
+    <div class="tool-index">
+      {tools.map((tool) => (
+        <a href={tool.route}>
+          <span class="eyebrow">Verified policy tool</span>
+          <h2>{tool.title}</h2>
+          <p>{tool.description}</p>
+          <span>Open calculator <span aria-hidden="true">→</span></span>
+        </a>
+      ))}
+    </div>
+
+    <aside class="hub-note">
+      <strong>Scope note</strong>
+      <p>Only implemented tools appear here. No live market feed, price history, accounts, or profit promises are included.</p>
+      <a href="/market/">Read the Steam Market decision guide</a>
+    </aside>
+  </main>
+</BaseLayout>

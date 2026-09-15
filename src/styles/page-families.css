@@ -6,6 +6,14 @@
   --page-accent: var(--color-guides, var(--color-accent));
 }
 
+[data-page-family="market"] {
+  --page-accent: var(--color-market, var(--color-accent));
+}
+
+[data-page-family="builds"] {
+  --page-accent: var(--color-builds, var(--color-accent));
+}
+
 [data-page-family="heroes"] {
   --page-accent: var(--color-heroes, var(--color-accent));
 }

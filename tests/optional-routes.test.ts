@@ -13,13 +13,13 @@ import pageInventoryData from "../src/data/page-inventory.json";
 import { parsePageInventory } from "../src/data/schemas/page-inventory";
 
 const inventory = parsePageInventory(pageInventoryData);
-const gettingStarted = inventory.find(
-  (page) => page.pageId === "guide.getting-started",
+const beginnerGuide = inventory.find(
+  (page) => page.pageId === "guide.beginner-guide",
 )!;
 const guideContent = {
   collection: "guides",
-  id: "getting-started",
-  data: { pageId: gettingStarted.pageId },
+  id: "beginner-guide",
+  data: { pageId: beginnerGuide.pageId },
 };
 
 function catalogWith(
@@ -57,7 +57,7 @@ describe("optional route records", () => {
 
     expect(
       buildGuideRouteRecords(catalog, [
-        { page: gettingStarted, content: guideContent },
+        { page: beginnerGuide, content: guideContent },
       ]),
     ).toEqual([]);
   });
@@ -83,12 +83,12 @@ describe("optional route records", () => {
   it("preserves the existing Guides and Search URLs when enabled", () => {
     const catalog = catalogWith({ guides: true, search: true });
     const guideRecords = buildGuideRouteRecords(catalog, [
-      { page: gettingStarted, content: guideContent },
+      { page: beginnerGuide, content: guideContent },
     ]);
 
     expect(guideRecords.map((record) => record.path)).toEqual([
       undefined,
-      "getting-started",
+      "beginner-guide",
     ]);
     expect(buildSearchRouteRecords(catalog)[0]?.fallbackPage?.route).toBe(
       "/guides/",

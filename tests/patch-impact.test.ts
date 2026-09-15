@@ -15,7 +15,7 @@ describe("findAffectedPageIds", () => {
       throw new Error("Expected demo hero inventory fixture.");
     }
     const guidePage = {
-      ...pageInventory.find((page) => page.pageId === "guide.getting-started")!,
+      ...pageInventory.find((page) => page.pageId === "guide.beginner-guide")!,
       pageId: "guide.hero-counter",
       route: "/guides/hero-counter/",
       primaryKeyword: "demo hero counter",

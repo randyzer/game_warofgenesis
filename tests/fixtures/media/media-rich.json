@@ -27,7 +27,7 @@
   ],
   "pages": [
     {
-      "pageId": "guide.getting-started",
+      "pageId": "guide.beginner-guide",
       "hero": "qa.overview",
       "gallery": ["qa.overview", "qa.detail"],
       "trailer": "qa.trailer"

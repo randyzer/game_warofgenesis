@@ -28,6 +28,8 @@ export const pageTypeSchema = z.enum([
 export const pageModuleSchema = z.enum([
   "core",
   "guides",
+  "market",
+  "builds",
   ...entityModuleKeys,
   "tierLists",
   "news",

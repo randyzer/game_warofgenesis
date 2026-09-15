@@ -14,8 +14,8 @@ import { collectSiteValidationErrors } from "../src/core/site-validation";
 
 const guideContent = {
   collection: "guides",
-  id: "getting-started",
-  data: { pageId: "guide.getting-started" },
+  id: "beginner-guide",
+  data: { pageId: "guide.beginner-guide" },
 };
 
 describe("collectSiteValidationErrors", () => {
@@ -63,7 +63,7 @@ describe("collectSiteValidationErrors", () => {
     });
 
     expect(errors.join("\n")).toMatch(/fixed route.*\//i);
-    expect(errors.join("\n")).toMatch(/content entry.*guide\.getting-started/i);
+    expect(errors.join("\n")).toMatch(/content entry.*guide\.beginner-guide/i);
     expect(errors).toContain(
       'No route family is implemented for enabled page type "hero" (hero.demo-sentinel). Supported page types: home, guide, hub, search, about, privacy, terms, not-found.',
     );
@@ -269,7 +269,7 @@ describe("collectSiteValidationErrors", () => {
     });
 
     expect(errors).toContain(
-      'Page "home" uses unsupported module "unsupported". Supported modules: core, guides, heroes, weapons, items, maps, tierLists, news, search, tools.',
+      'Page "home" uses unsupported module "unsupported". Supported modules: core, guides, market, builds, heroes, weapons, items, maps, tierLists, news, search, tools.',
     );
   });
 });

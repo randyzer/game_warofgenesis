@@ -29,6 +29,8 @@ const pageInventoryUrl = new URL(
 const familyTokenDecisions = {
   core: "--color-accent",
   guides: "--color-guides",
+  market: "--color-market",
+  builds: "--color-builds",
   heroes: "--color-heroes",
   weapons: "--color-weapons",
   items: "--color-items",

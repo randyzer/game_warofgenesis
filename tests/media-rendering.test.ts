@@ -33,7 +33,7 @@ const localVideo = {
   poster: "/media/qa-poster.webp",
 };
 const page = pageInventory.find(
-  (entry) => entry.pageId === "guide.getting-started",
+  (entry) => entry.pageId === "guide.beginner-guide",
 )!;
 const hubPage = pageInventory.find((entry) => entry.pageId === "hub.guides")!;
 

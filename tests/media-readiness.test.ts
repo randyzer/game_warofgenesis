@@ -19,9 +19,9 @@ const validRows = {
   homeResolved:
     "| home | Homepage | HIGH PRIORITY | The homepage hero needs recognizable game identity. | Hero | SEMANTICALLY VERIFIED | VERIFIED | APPROVED | INTEGRATED | PASS | first-party | Media owner | Standard approved integration. |",
   guideResolved:
-    "| guide.getting-started | guide/article | RECOMMENDED | A screenshot helps but the guide is understandable without it. | inline | SEMANTICALLY VERIFIED | VERIFIED | APPROVED | INTEGRATED | PASS | first-party | Guide owner | Standard approved integration. |",
+    "| guide.beginner-guide | guide/article | RECOMMENDED | A screenshot helps but the guide is understandable without it. | inline | SEMANTICALLY VERIFIED | VERIFIED | APPROVED | INTEGRATED | PASS | first-party | Guide owner | Standard approved integration. |",
   guideNoMedia:
-    "| guide.getting-started | guide/article | NO MEDIA NEEDED | This operating guide is useful, comprehensible, and visually complete as text. | none | NOT FOUND | NOT REQUIRED FOR EMBED | APPROVED | NOT INTEGRATED | PASS | original diagram | Guide owner | Approved text-only presentation. |",
+    "| guide.beginner-guide | guide/article | NO MEDIA NEEDED | This operating guide is useful, comprehensible, and visually complete as text. | none | NOT FOUND | NOT REQUIRED FOR EMBED | APPROVED | NOT INTEGRATED | PASS | original diagram | Guide owner | Approved text-only presentation. |",
 };
 
 const canonicalHeaders = [
@@ -278,7 +278,7 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
 
     expect(parsed.errors).toEqual([]);
     expect(parsed.decisions).toHaveLength(1);
-    expect(parsed.decisions[0].pageIdOrRoute).toBe("guide.getting-started");
+    expect(parsed.decisions[0].pageIdOrRoute).toBe("guide.beginner-guide");
     expect(parsed.decisions[0].lineNumber).toBe(markdown.split("\n").indexOf(validRows.guideResolved) + 1);
     expect(signalsFromMarkdown(markdown)).toEqual({ errors: [], warnings: [], info: [] });
   });
@@ -290,7 +290,7 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
     expect(parsed.errors).toEqual([]);
     expect(parsed.decisions).toHaveLength(1);
     expect(parsed.decisions[0]).toMatchObject({
-      pageIdOrRoute: "guide.getting-started", humanDecision: "WAIVED", visualGateState: "PASS",
+      pageIdOrRoute: "guide.beginner-guide", humanDecision: "WAIVED", visualGateState: "PASS",
     });
     expect(signalsFromMarkdown(markdown)).toEqual({ errors: [], warnings: [], info: [] });
   });
@@ -317,9 +317,9 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
     ["home", "HIGH PRIORITY", "errors"],
     ["home", "RECOMMENDED", "info"],
     ["home", "OPTIONAL", "info"],
-    ["guide.getting-started", "HIGH PRIORITY", "errors"],
-    ["guide.getting-started", "RECOMMENDED", "info"],
-    ["guide.getting-started", "OPTIONAL", "info"],
+    ["guide.beginner-guide", "HIGH PRIORITY", "errors"],
+    ["guide.beginner-guide", "RECOMMENDED", "info"],
+    ["guide.beginner-guide", "OPTIONAL", "info"],
   ] as const)("projects explained WAIVED/PENDING for %s %s as %s pending evidence", (page, need, severity) => {
     const cells = rowCells(page === "home" ? validRows.homeResolved : validRows.guideResolved);
     cells[2] = need;
@@ -348,7 +348,7 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
       expect(signals).toEqual({ errors: [], warnings: [], info: [] });
     } else {
       expect(signals.errors).toHaveLength(1);
-      expect(signals.errors[0]).toContain(`blocking Human/visual state for guide.getting-started: WAIVED/${visual}`);
+      expect(signals.errors[0]).toContain(`blocking Human/visual state for guide.beginner-guide: WAIVED/${visual}`);
       expect(signals.warnings).toEqual([]);
       expect(signals.info).toEqual([]);
     }
@@ -474,7 +474,7 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
   it("requires notes for SOP-defined no-media, rights-risk, and non-waived fallback states", () => {
     expect(
       signalsFromMarkdown(table(
-        "| guide.getting-started | guide/article | NO MEDIA NEEDED | This guide remains complete as text. | none | NOT FOUND | NOT REQUIRED FOR EMBED | APPROVED | NOT INTEGRATED | PASS | original diagram | Guide owner |  |",
+        "| guide.beginner-guide | guide/article | NO MEDIA NEEDED | This guide remains complete as text. | none | NOT FOUND | NOT REQUIRED FOR EMBED | APPROVED | NOT INTEGRATED | PASS | original diagram | Guide owner |  |",
       )).errors.join("\n"),
     ).toMatch(/requires notes.*no-media|no-media.*requires notes/i);
 
@@ -486,7 +486,7 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
 
     expect(
       signalsFromMarkdown(table(
-        "| guide.getting-started | guide/article | RECOMMENDED | A screenshot helps. | inline | SEMANTICALLY VERIFIED | VERIFIED | APPROVED | FALLBACK ONLY | PASS | observed | Guide owner |  |",
+        "| guide.beginner-guide | guide/article | RECOMMENDED | A screenshot helps. | inline | SEMANTICALLY VERIFIED | VERIFIED | APPROVED | FALLBACK ONLY | PASS | observed | Guide owner |  |",
       )).errors.join("\n"),
     ).toMatch(/requires notes.*fallback-only|fallback-only.*requires notes/i);
   });
@@ -494,7 +494,7 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
   it("rejects a Human-waived no-media row with blank notes", () => {
     expect(
       signalsFromMarkdown(table(
-        "| guide.getting-started | guide/article | NO MEDIA NEEDED | This guide remains complete as text. | none | NOT FOUND | NOT REQUIRED FOR EMBED | WAIVED | NOT INTEGRATED | PASS | original diagram | Human-approved no-media owner explanation. |  |",
+        "| guide.beginner-guide | guide/article | NO MEDIA NEEDED | This guide remains complete as text. | none | NOT FOUND | NOT REQUIRED FOR EMBED | WAIVED | NOT INTEGRATED | PASS | original diagram | Human-approved no-media owner explanation. |  |",
       )).errors.join("\n"),
     ).toMatch(/requires notes.*no-media|no-media.*requires notes/i);
   });
@@ -502,7 +502,7 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
   it("accepts a Human-waived no-media row with required notes", () => {
     expect(
       signalsFromMarkdown(table(
-        "| guide.getting-started | guide/article | NO MEDIA NEEDED | This guide remains complete as text. | none | NOT FOUND | NOT REQUIRED FOR EMBED | WAIVED | NOT INTEGRATED | PASS | original diagram | Human-approved no-media owner explanation. | Approved intentional no-media exception. |",
+        "| guide.beginner-guide | guide/article | NO MEDIA NEEDED | This guide remains complete as text. | none | NOT FOUND | NOT REQUIRED FOR EMBED | WAIVED | NOT INTEGRATED | PASS | original diagram | Human-approved no-media owner explanation. | Approved intentional no-media exception. |",
       )),
     ).toEqual({ errors: [], warnings: [], info: [] });
   });
@@ -617,13 +617,13 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
 
     expect(
       signalsFromMarkdown(table(
-        "| guide.getting-started | guide/article | NO MEDIA NEEDED |  | none | NOT FOUND | NOT REQUIRED FOR EMBED | APPROVED | NOT INTEGRATED | PASS | original diagram | Guide owner | Missing rationale fixture. |",
+        "| guide.beginner-guide | guide/article | NO MEDIA NEEDED |  | none | NOT FOUND | NOT REQUIRED FOR EMBED | APPROVED | NOT INTEGRATED | PASS | original diagram | Guide owner | Missing rationale fixture. |",
       )).errors.join("\n"),
     ).toMatch(/requires need_rationale/i);
 
     expect(
       signalsFromMarkdown(table(
-        "| guide.getting-started | guide/article | NO MEDIA NEEDED | Text-only guide remains complete. | none | NOT FOUND | UNRESOLVED | APPROVED | NOT INTEGRATED | PASS | original diagram | Guide owner | Conflict fixture. |",
+        "| guide.beginner-guide | guide/article | NO MEDIA NEEDED | Text-only guide remains complete. | none | NOT FOUND | UNRESOLVED | APPROVED | NOT INTEGRATED | PASS | original diagram | Guide owner | Conflict fixture. |",
       )).errors.join("\n"),
     ).toMatch(/NO MEDIA NEEDED.*conflict|UNRESOLVED/i);
   });
@@ -631,19 +631,19 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
   it("projects Human PENDING, REVISE, BLOCK, WAIVED, fallback-only, and approved integration in order", () => {
     expect(
       signalsFromMarkdown(table(
-        "| guide.getting-started | guide/article | RECOMMENDED | A screenshot helps. | inline | FOUND | UNRESOLVED | PENDING | NOT INTEGRATED | PASS | observed | owner |  |",
+        "| guide.beginner-guide | guide/article | RECOMMENDED | A screenshot helps. | inline | FOUND | UNRESOLVED | PENDING | NOT INTEGRATED | PASS | observed | owner |  |",
       )).info.join("\n"),
     ).toMatch(/RECOMMENDED.*pending/i);
 
     expect(
       signalsFromMarkdown(table(
-        "| guide.getting-started | guide/article | RECOMMENDED | A screenshot helps. | inline | FOUND | UNRESOLVED | REVISE | NOT INTEGRATED | PASS | observed | owner | Revise fixture. |",
+        "| guide.beginner-guide | guide/article | RECOMMENDED | A screenshot helps. | inline | FOUND | UNRESOLVED | REVISE | NOT INTEGRATED | PASS | observed | owner | Revise fixture. |",
       )).errors.join("\n"),
     ).toMatch(/REVISE|blocking/i);
 
     expect(
       signalsFromMarkdown(table(
-        "| guide.getting-started | guide/article | RECOMMENDED | A screenshot helps. | inline | FOUND | UNRESOLVED | BLOCK | NOT INTEGRATED | PASS | observed | owner | Block fixture. |",
+        "| guide.beginner-guide | guide/article | RECOMMENDED | A screenshot helps. | inline | FOUND | UNRESOLVED | BLOCK | NOT INTEGRATED | PASS | observed | owner | Block fixture. |",
       )).errors.join("\n"),
     ).toMatch(/BLOCK|blocking/i);
 
@@ -655,13 +655,13 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
 
     expect(
       signalsFromMarkdown(table(
-        "| guide.getting-started | guide/article | RECOMMENDED | A screenshot helps. | inline | FOUND | UNRESOLVED | WAIVED | FALLBACK ONLY | PASS | observed |  |  |",
+        "| guide.beginner-guide | guide/article | RECOMMENDED | A screenshot helps. | inline | FOUND | UNRESOLVED | WAIVED | FALLBACK ONLY | PASS | observed |  |  |",
       )).errors.join("\n"),
     ).toMatch(/WAIVED.*notes|owner_or_defer_reason/i);
 
     expect(
       signalsFromMarkdown(table(
-        "| guide.getting-started | guide/article | RECOMMENDED | A screenshot helps. | inline | SEMANTICALLY VERIFIED | VERIFIED | APPROVED | FALLBACK ONLY | PASS | observed | Guide owner | Fallback-only fixture. |",
+        "| guide.beginner-guide | guide/article | RECOMMENDED | A screenshot helps. | inline | SEMANTICALLY VERIFIED | VERIFIED | APPROVED | FALLBACK ONLY | PASS | observed | Guide owner | Fallback-only fixture. |",
       )).info.join("\n"),
     ).toMatch(/FALLBACK ONLY.*not resolved|fallback-only/i);
 
@@ -680,17 +680,17 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
     ).toMatch(/home.*HIGH PRIORITY.*pending|unresolved/i);
 
     const guide = signalsFromMarkdown(table(
-      "| guide.getting-started | guide/article | HIGH PRIORITY | This guide needs important visual support. | inline | FOUND | UNRESOLVED | PENDING | NOT INTEGRATED | PASS | observed | owner | Pending guide fixture. |",
+      "| guide.beginner-guide | guide/article | HIGH PRIORITY | This guide needs important visual support. | inline | FOUND | UNRESOLVED | PENDING | NOT INTEGRATED | PASS | observed | owner | Pending guide fixture. |",
     ));
     expect(guide.errors.join("\n")).toMatch(
-      /guide\.getting-started.*HIGH PRIORITY.*pending|unresolved/i,
+      /guide\.beginner-guide.*HIGH PRIORITY.*pending|unresolved/i,
     );
   });
 
   it("permits non-home HIGH PRIORITY pending only for evidence purpose", () => {
     const guide = signalsFromMarkdown(
       table(
-        "| guide.getting-started | guide/article | HIGH PRIORITY | This guide needs important visual support. | inline | FOUND | UNRESOLVED | PENDING | NOT INTEGRATED | PASS | observed | owner | Pending guide fixture. |",
+        "| guide.beginner-guide | guide/article | HIGH PRIORITY | This guide needs important visual support. | inline | FOUND | UNRESOLVED | PENDING | NOT INTEGRATED | PASS | observed | owner | Pending guide fixture. |",
       ),
       pageInventory,
       "evidence",
@@ -702,7 +702,7 @@ describe("media readiness V2.6.1 lifecycle projection", () => {
   it("fails closed for unsupported exact state combinations", () => {
     expect(
       signalsFromMarkdown(table(
-        "| guide.getting-started | guide/article | RECOMMENDED | A screenshot helps. | inline | FOUND | VERIFIED | APPROVED | NOT INTEGRATED | PASS | observed | Guide owner | Unsupported combination fixture. |",
+        "| guide.beginner-guide | guide/article | RECOMMENDED | A screenshot helps. | inline | FOUND | VERIFIED | APPROVED | NOT INTEGRATED | PASS | observed | Guide owner | Unsupported combination fixture. |",
       )).errors.join("\n"),
     ).toMatch(/unsupported media lifecycle combination/i);
   });

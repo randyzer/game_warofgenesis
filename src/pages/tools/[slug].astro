@@ -1,5 +1,6 @@
 ---
 import ToolShell from "../../components/ToolShell.astro";
+import SteamMarketFeeTool from "../../components/SteamMarketFeeTool.astro";
 import { buildToolRouteRecords, selectToolPages } from "../../core/page-models";
 import { enabledPageCatalog } from "../../core/site-data";
 import { loadToolDefinition } from "../../core/tool-loader";
@@ -8,7 +9,7 @@ import type { ToolDefinition } from "../../data/schemas/tools";
 
 interface Props {
   record: ToolRouteRecord;
-  definition: ToolDefinition;
+  definition?: ToolDefinition;
 }
 
 export function getStaticPaths() {
@@ -17,7 +18,10 @@ export function getStaticPaths() {
       params: { slug: record.slug },
       props: {
         record,
-        definition: loadToolDefinition(record.slug, record.kind),
+        definition:
+          record.slug === "steam-market-fee-calculator"
+            ? undefined
+            : loadToolDefinition(record.slug, record.kind),
       },
     }),
   );
@@ -26,4 +30,8 @@ export function getStaticPaths() {
 const { record, definition } = Astro.props;
 ---
 
-<ToolShell page={record.page} definition={definition} />
+{record.slug === "steam-market-fee-calculator" ? (
+  <SteamMarketFeeTool page={record.page} />
+) : definition ? (
+  <ToolShell page={record.page} definition={definition} />
+) : null}

@@ -52,10 +52,11 @@ const validConfig: GameConfigInput = {
 };
 
 describe("defineGameConfig", () => {
-  it("does not expose unimplemented builds or codes capabilities", () => {
+  it("exposes the implemented editorial modules without exposing codes", () => {
     expect(featureFlagKeys).not.toContain("builds");
     expect(featureFlagKeys).not.toContain("codes");
-    expect(pageModuleSchema.safeParse("builds").success).toBe(false);
+    expect(pageModuleSchema.safeParse("builds").success).toBe(true);
+    expect(pageModuleSchema.safeParse("market").success).toBe(true);
     expect(pageModuleSchema.safeParse("codes").success).toBe(false);
     expect(pageTypeSchema.safeParse("build").success).toBe(false);
     expect(pageTypeSchema.safeParse("codes").success).toBe(false);

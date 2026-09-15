@@ -19,7 +19,7 @@ import {
 const homePage = pageInventory.find((page) => page.pageId === "home")!;
 const guideHub = pageInventory.find((page) => page.pageId === "hub.guides")!;
 const guidePage = pageInventory.find(
-  (page) => page.pageId === "guide.getting-started",
+  (page) => page.pageId === "guide.beginner-guide",
 )!;
 const guideCatalog = [homePage, guideHub, guidePage];
 

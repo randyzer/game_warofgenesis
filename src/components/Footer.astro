@@ -2,9 +2,34 @@
 import { enabledPageCatalog, siteConfig } from "../core/site-data";
 
 const year = new Date().getUTCFullYear();
-const footerPages = enabledPageCatalog.filter((page) =>
-  ["about", "privacy", "terms"].includes(page.pageId),
-);
+const pageById = new Map(enabledPageCatalog.map((page) => [page.pageId, page]));
+const footerGroups = [
+  {
+    label: "Start",
+    pageIds: [
+      "guide.beginner-guide",
+      "guide.farming",
+      "guide.gear",
+      "hub.builds",
+    ],
+  },
+  {
+    label: "Market & tools",
+    pageIds: [
+      "hub.market",
+      "market.best-items-to-sell",
+      "tool.steam-market-fee-calculator",
+    ],
+  },
+  { label: "Site", pageIds: ["hub.guides", "hub.tools", "search", "about"] },
+  { label: "Legal", pageIds: ["privacy", "terms"] },
+].map((group) => ({
+  ...group,
+  pages: group.pageIds.flatMap((pageId) => {
+    const page = pageById.get(pageId);
+    return page ? [page] : [];
+  }),
+}));
 ---
 
 <footer class="site-footer">
@@ -15,12 +40,17 @@ const footerPages = enabledPageCatalog.filter((page) =>
         {siteConfig.brand.tagline}
       </p>
     </div>
+    <nav class="site-footer__nav" aria-label="Footer navigation">
+      {footerGroups.map((group) => (
+        <section>
+          <strong>{group.label}</strong>
+          {group.pages.map((page) => <a href={page.route}>{page.title}</a>)}
+        </section>
+      ))}
+    </nav>
     <div class="site-footer__meta">
       <p>{siteConfig.brand.name} / {year}</p>
       <p>{siteConfig.brand.tagline}</p>
-      <nav class="site-footer__links" aria-label="Company and legal">
-        {footerPages.map((page) => <a href={page.route}>{page.pageId}</a>)}
-      </nav>
       <a href="/#top">Back to top ↑</a>
     </div>
   </div>

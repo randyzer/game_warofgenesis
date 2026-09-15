@@ -22,18 +22,38 @@ export default defineGameConfig({
   social: {},
   navigation: {
     groups: [
-      { label: "Home", pageId: "home" },
       {
         label: "Guides",
         pageId: "hub.guides",
-        children: ["guide.getting-started"],
+        children: ["guide.beginner-guide", "guide.farming", "guide.gear"],
       },
-      { label: "Search", pageId: "search" },
+      {
+        label: "Market",
+        pageId: "hub.market",
+        children: [
+          "market.best-items-to-sell",
+          "market.how-to-sell-items",
+          "market.steam-market-fees",
+        ],
+      },
+      { label: "Builds", pageId: "hub.builds" },
+      {
+        label: "Tools",
+        pageId: "hub.tools",
+        children: ["tool.steam-market-fee-calculator"],
+      },
     ],
   },
   homepage: {
     displayHeading: "[WoG] War of Genesis: Idle Loot",
-    featuredPageIds: ["guide.getting-started"],
+    featuredPageIds: [
+      "guide.beginner-guide",
+      "guide.farming",
+      "guide.gear",
+      "tool.steam-market-fee-calculator",
+      "hub.builds",
+      "hub.market",
+    ],
   },
   features: {
     guides: true,
@@ -44,7 +64,7 @@ export default defineGameConfig({
     tierLists: false,
     news: false,
     search: true,
-    calculator: false,
+    calculator: true,
     planner: false,
   },
 });

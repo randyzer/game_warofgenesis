@@ -13,6 +13,8 @@
   --color-accent: #4f6f78;
   --color-accent-strong: #31535d;
   --color-guides: var(--color-accent);
+  --color-market: var(--color-accent);
+  --color-builds: var(--color-accent);
   --color-heroes: var(--color-accent);
   --color-weapons: var(--color-accent);
   --color-items: var(--color-accent);

@@ -1,0 +1,176 @@
+---
+import EditorialArticle from "../../components/EditorialArticle.astro";
+import { enabledPageCatalog } from "../../core/site-data";
+import { buildMarketRouteRecords } from "../../core/optional-routes";
+import type { PageInventoryEntry } from "../../data/schemas/page-inventory";
+
+interface Props {
+  page: PageInventoryEntry;
+}
+
+export function getStaticPaths() {
+  return buildMarketRouteRecords(enabledPageCatalog).map((record) => ({
+    params: { slug: record.path },
+    props: { page: record.page },
+  }));
+}
+
+const { page } = Astro.props;
+---
+
+{page.pageId === "hub.market" && (
+  <EditorialArticle page={page} sectionLabel="Market hub / practical guide">
+    <p class="decision-lede">
+      Use the market as a progression decision, not a promise of profit. Confirm that a specific item is marketable, compare its value to your build, and review the final Steam confirmation before listing.
+    </p>
+
+    <aside class="action-panel">
+      <p class="eyebrow">Ready to compare the fee split?</p>
+      <h2>Start with the buyer-facing price</h2>
+      <p>The calculator separates Steam and game fees in integer cents and never rounds an unreachable price into a different listing.</p>
+      <a class="button button--primary" href="/tools/steam-market-fee-calculator/">Open the fee calculator <span aria-hidden="true">→</span></a>
+    </aside>
+
+    <h2>Choose the market task</h2>
+    <div class="decision-grid">
+      <section>
+        <p class="eyebrow">Screen candidates</p>
+        <h3><a href="/market/best-items-to-sell/">Best Items to Sell</a></h3>
+        <p>Use tradability, rarity, demand signals, usefulness, and progression cost to decide what deserves a manual check.</p>
+      </section>
+      <section>
+        <p class="eyebrow">Complete the workflow</p>
+        <h3><a href="/market/how-to-sell-items/">How to Sell Items</a></h3>
+        <p>Follow a bounded listing checklist and verify every final value in Steam.</p>
+      </section>
+      <section>
+        <p class="eyebrow">Understand the math</p>
+        <h3><a href="/market/steam-market-fees/">Steam Market Fees</a></h3>
+        <p>See why the two fee components are calculated separately in integer cents.</p>
+      </section>
+    </div>
+
+    <h2>Check eligibility in the current Steam interface</h2>
+    <p>Market participation is item-specific. Treat the sell action and the confirmation details shown for that item as the current source of truth. An item type appearing on the market does not prove that every copy you hold is eligible.</p>
+
+    <h2>Understand the two price views</h2>
+    <p><strong>Buyer pays</strong> is the total shown to the purchaser. <strong>Seller receives</strong> is the Steam Wallet amount left after the independently calculated Steam and War of Genesis publisher fee components.</p>
+    <p>Because each component has its own minimum and flooring step, exact listing math is stepwise. A shortcut such as dividing by a combined percentage can produce the wrong cent value.</p>
+
+    <h2>Use a deliberate selling flow</h2>
+    <ol>
+      <li>Confirm the exact item is eligible to list.</li>
+      <li>Compare the item's progression and replacement value with your current goal.</li>
+      <li>Check current market information manually in Steam; this wiki does not supply live prices.</li>
+      <li>Estimate the fee split with the calculator.</li>
+      <li>Verify every amount in Steam's confirmation dialog before listing.</li>
+    </ol>
+
+    <h2>Know the boundary of the estimate</h2>
+    <p>The calculator is USD-only and reflects the fee policy verified on September 15, 2026. Steam can change fees, minimums, currency rules, rounding, and listing limits. Steam Wallet funds are not withdrawable cash, and neither this guide nor the calculator is financial or investment advice.</p>
+
+    <h2>Connect the market decision to progression</h2>
+    <p>If keeping an item could strengthen your goal, revisit the <a href="/guides/gear/">Gear Value guide</a>, <a href="/guides/farming/">Farming Guide</a>, and <a href="/builds/">Builds hub</a> before treating the buyer-facing price as the only signal.</p>
+  </EditorialArticle>
+)}
+
+{page.pageId === "market.best-items-to-sell" && (
+  <EditorialArticle page={page} sectionLabel="Market decision guide">
+    <p class="decision-lede">There is no honest static list of today's most valuable items. Use this framework to decide which eligible drops deserve a manual Steam Market check—and which are more useful to keep.</p>
+
+    <aside class="action-panel">
+      <p class="eyebrow">Decision, not ranking</p>
+      <h2>Screen the item before checking a price</h2>
+      <p>A candidate becomes interesting when eligibility, usefulness, replacement difficulty, and visible demand signals point in the same direction.</p>
+      <a class="button button--primary" href="/guides/gear/">Compare keep-or-sell value <span aria-hidden="true">→</span></a>
+    </aside>
+
+    <h2>Five signals worth checking</h2>
+    <div class="decision-grid">
+      <section><p class="eyebrow">01 / Tradability</p><h3>Can this exact copy be listed?</h3><p>Confirm the current sell action for the specific item in Steam. A similar listed item does not prove eligibility.</p></section>
+      <section><p class="eyebrow">02 / Rarity</p><h3>Does it deserve a closer look?</h3><p>Use rarity as a triage signal, never as proof of demand or sale value.</p></section>
+      <section><p class="eyebrow">03 / Demand</p><h3>Is there visible buyer interest?</h3><p>Inspect the current Steam page manually. Listings are asking prices, not evidence that an item will sell.</p></section>
+      <section><p class="eyebrow">04 / Usefulness</p><h3>Does it solve a build problem?</h3><p>Items with a clear role can carry progression value even when the market view looks tempting.</p></section>
+      <section><p class="eyebrow">05 / Replacement</p><h3>What would giving it up cost?</h3><p>Hard-to-replace gear may be worth keeping until your farming setup has a dependable alternative.</p></section>
+    </div>
+
+    <h2>When selling may be worse than keeping</h2>
+    <p>Pause when the item protects a reliable clear, fills a weak slot, supports the build you are testing, or would be difficult to regain. Compare that progression opportunity cost before focusing on the buyer-facing amount.</p>
+
+    <h2>Run the final check</h2>
+    <ol>
+      <li>Use the <a href="/guides/gear/">Gear Value guide</a> to describe what you give up.</li>
+      <li>Review the current item page manually; this site has no live market feed.</li>
+      <li>Follow the <a href="/market/how-to-sell-items/">selling checklist</a>.</li>
+      <li>Use the <a href="/tools/steam-market-fee-calculator/">fee calculator</a> to estimate Wallet proceeds.</li>
+      <li>If replacement is the problem, revisit the <a href="/guides/farming/">Farming Guide</a>.</li>
+    </ol>
+  </EditorialArticle>
+)}
+
+{page.pageId === "market.how-to-sell-items" && (
+  <EditorialArticle page={page} sectionLabel="Listing checklist">
+    <p class="decision-lede">Treat Steam's current item and confirmation screens as authoritative. This checklist helps you prepare a listing without assuming eligibility, a sale, or a fixed return.</p>
+
+    <h2>Before opening the listing flow</h2>
+    <ul>
+      <li>Confirm the game is <strong>[WoG] War of Genesis: Idle Loot</strong> and the item belongs to the correct Steam inventory.</li>
+      <li>Compare the item's progression role with the <a href="/guides/gear/">keep-or-sell framework</a>.</li>
+      <li>Confirm the exact copy currently offers a market action. Eligibility can be item-specific.</li>
+    </ul>
+
+    <h2>Prepare and review the listing</h2>
+    <ol>
+      <li>Open the exact item through Steam's current inventory or market interface.</li>
+      <li>Use the available sell action; if Steam does not provide one, do not assume the item can be listed.</li>
+      <li>Review current market information manually without treating an asking price as a completed sale.</li>
+      <li>Enter the intended amount and compare buyer pays with seller receives.</li>
+      <li>Check the Steam and game fee components, then verify the final Wallet proceeds.</li>
+      <li>Read every confirmation shown by Steam before approving the listing.</li>
+    </ol>
+
+    <aside class="action-panel">
+      <p class="eyebrow">Before you confirm</p>
+      <h2>Estimate the fee split</h2>
+      <p>The calculator applies the verified USD component minimums and rounding rules. Steam's live confirmation remains final.</p>
+      <a class="button button--primary" href="/tools/steam-market-fee-calculator/">Open the fee calculator <span aria-hidden="true">→</span></a>
+    </aside>
+
+    <h2>Safe stopping points</h2>
+    <p>Stop and recheck when the game identity, item eligibility, currency, price view, or confirmation amount is unclear. Do not rely on this guide to bypass Steam restrictions, account holds, confirmations, or other safeguards.</p>
+
+    <p>Need the calculation details? Read <a href="/market/steam-market-fees/">Steam Market Fees Explained</a>. Still choosing an item? Return to the <a href="/market/best-items-to-sell/">sell-candidate framework</a> or the <a href="/market/">Market Guide</a>.</p>
+  </EditorialArticle>
+)}
+
+{page.pageId === "market.steam-market-fees" && (
+  <EditorialArticle page={page} sectionLabel="Fee policy explainer">
+    <p class="decision-lede">For the USD policy verified on September 15, 2026, the buyer-facing total is the seller's item price plus separately calculated Steam and War of Genesis publisher fees.</p>
+
+    <h2>The verified USD components</h2>
+    <div class="decision-grid">
+      <section><p class="eyebrow">Steam component</p><h3>5% with a $0.01 minimum</h3><p>Calculate from seller receives, floor to integer cents, then apply the one-cent minimum.</p></section>
+      <section><p class="eyebrow">Game component</p><h3>10% with a $0.01 minimum</h3><p>Calculate independently from seller receives, floor to integer cents, then apply the one-cent minimum.</p></section>
+      <section><p class="eyebrow">Seller result</p><h3>Steam Wallet proceeds</h3><p>Wallet proceeds are not withdrawable cash. Review the current Steam terms and confirmation before listing.</p></section>
+    </div>
+
+    <h2>Why a flat 15% shortcut can be wrong</h2>
+    <p>The two components have separate flooring and minimum steps. Adding one combined percentage and rounding once can differ by a cent, especially near step boundaries. Some buyer-facing totals are therefore unreachable under the forward calculation.</p>
+
+    <pre><code>steam fee = max($0.01, floor(seller receives × 5%))
+game fee  = max($0.01, floor(seller receives × 10%))
+buyer pays = seller receives + steam fee + game fee</code></pre>
+
+    <aside class="action-panel">
+      <p class="eyebrow">Use the reviewed policy</p>
+      <h2>Calculate in integer cents</h2>
+      <p>The calculator handles both price directions, per-item fees, quantities, and unreachable buyer totals.</p>
+      <a class="button button--primary" href="/tools/steam-market-fee-calculator/">Calculate an estimate <span aria-hidden="true">→</span></a>
+    </aside>
+
+    <h2>Scope and freshness</h2>
+    <p>This explanation covers USD only and is a dated estimate policy, not a guarantee of a future Steam transaction. Fees, minimums, currency behavior, eligibility, and limits can change. Steam's current confirmation is authoritative.</p>
+
+    <p>When the trade-off matters, return to the <a href="/market/">Market Guide</a>, screen the item with the <a href="/market/best-items-to-sell/">sell-candidate framework</a>, and follow the <a href="/market/how-to-sell-items/">listing checklist</a>.</p>
+  </EditorialArticle>
+)}

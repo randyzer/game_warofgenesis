@@ -19,7 +19,7 @@
     "updatedAt": "2026-09-15",
     "primaryKeyword": "war of genesis wiki",
     "tags": ["war of genesis", "farming", "equipment"],
-    "relatedPageIds": ["guide.getting-started"],
+    "relatedPageIds": ["guide.beginner-guide", "guide.farming", "guide.gear", "hub.market", "market.best-items-to-sell", "hub.builds", "hub.tools", "tool.steam-market-fee-calculator"],
     "relatedEntityRefs": [],
     "sources": [
       {
@@ -46,13 +46,13 @@
     "needsReview": false,
     "needsUpdate": false,
     "indexability": "index",
-    "title": "War of Genesis Guides | War of Genesis Wiki",
+    "title": "War of Genesis Guides",
     "description": "Browse sourced War of Genesis: Idle Loot guides as they are reviewed and published.",
     "publishedAt": "2026-09-15",
     "updatedAt": "2026-09-15",
     "primaryKeyword": "war of genesis guides",
     "tags": ["war of genesis", "guides", "idle loot"],
-    "relatedPageIds": ["home", "guide.getting-started"],
+    "relatedPageIds": ["home", "guide.beginner-guide", "guide.farming", "guide.gear"],
     "relatedEntityRefs": [],
     "sources": [
       {
@@ -65,8 +65,8 @@
     "confidence": "high"
   },
   {
-    "pageId": "guide.getting-started",
-    "route": "/guides/getting-started/",
+    "pageId": "guide.beginner-guide",
+    "route": "/guides/beginner-guide/",
     "pageType": "guide",
     "cluster": "onboarding",
     "module": "guides",
@@ -79,24 +79,353 @@
     "needsReview": false,
     "needsUpdate": false,
     "indexability": "index",
-    "title": "Start Here | War of Genesis Wiki",
-    "description": "See what War of Genesis Wiki is being built to answer and which features remain deferred after Phase 0.",
+    "title": "War of Genesis Beginner Guide",
+    "description": "Learn the core progression loop, set practical gear and farming goals, and understand when the Steam Market belongs in your next decision.",
     "publishedAt": "2026-09-15",
     "updatedAt": "2026-09-15",
-    "primaryKeyword": "war of genesis wiki start here",
-    "tags": ["war of genesis", "wiki", "project scope"],
+    "primaryKeyword": "war of genesis beginner guide",
+    "tags": ["war of genesis", "beginner guide", "progression"],
     "contentRef": {
       "collection": "guides",
-      "slug": "getting-started"
+      "slug": "beginner-guide"
     },
-    "relatedPageIds": ["home"],
+    "relatedPageIds": ["hub.guides", "hub.builds", "guide.farming", "guide.gear", "hub.market"],
     "relatedEntityRefs": [],
     "sources": [
       {
-        "sourceUrl": "https://war-of-genesis.wiki/guides/getting-started/",
+        "sourceUrl": "https://war-of-genesis.wiki/guides/beginner-guide/",
         "sourceType": "editorial",
         "accessedAt": "2026-09-15",
-        "evidenceNote": "Phase 0 scope and safety boundaries supplied by the site operator."
+        "evidenceNote": "Editorial progression framework constrained by the approved Phase 1 evidence boundaries."
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "pageId": "guide.farming",
+    "route": "/guides/farming/",
+    "pageType": "guide",
+    "cluster": "progression",
+    "module": "guides",
+    "feature": "guides",
+    "priority": 88,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "index",
+    "title": "War of Genesis Farming Guide",
+    "description": "Use clear qualitative signals to decide whether to advance, stay, or step back while farming for progression, gear, or marketable drops.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "war of genesis farming guide",
+    "tags": ["war of genesis", "farming", "progression"],
+    "contentRef": {
+      "collection": "guides",
+      "slug": "farming"
+    },
+    "relatedPageIds": ["hub.guides", "guide.gear", "hub.market", "market.best-items-to-sell", "tool.steam-market-fee-calculator", "hub.builds"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://war-of-genesis.wiki/guides/farming/",
+        "sourceType": "editorial",
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Qualitative farming decision framework constrained by the approved Phase 1 evidence rules."
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "pageId": "guide.gear",
+    "route": "/guides/gear/",
+    "pageType": "guide",
+    "cluster": "progression",
+    "module": "guides",
+    "feature": "guides",
+    "priority": 87,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "index",
+    "title": "War of Genesis Gear Value & Keep-or-Sell Guide",
+    "description": "Decide whether to equip, keep, upgrade, synthesize, or sell gear by weighing build fit, replacement difficulty, eligibility, and progression value.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "war of genesis gear guide",
+    "tags": ["war of genesis", "gear value", "keep or sell"],
+    "contentRef": {
+      "collection": "guides",
+      "slug": "gear"
+    },
+    "relatedPageIds": ["hub.guides", "hub.builds", "guide.farming", "hub.market", "market.best-items-to-sell", "tool.steam-market-fee-calculator"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://war-of-genesis.wiki/guides/gear/",
+        "sourceType": "editorial",
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Qualitative keep-or-sell decision framework constrained by the approved Phase 1 evidence boundaries; unsupported item rankings and rates are omitted."
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "pageId": "hub.market",
+    "route": "/market/",
+    "pageType": "hub",
+    "cluster": "market",
+    "module": "market",
+    "priority": 92,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "index",
+    "title": "War of Genesis Steam Market Guide",
+    "description": "Understand tradable-item checks, buyer price versus seller proceeds, Steam and publisher fees, and the safest next step before listing.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "war of genesis steam market",
+    "tags": ["war of genesis", "steam market", "selling"],
+    "relatedPageIds": ["market.best-items-to-sell", "market.how-to-sell-items", "market.steam-market-fees", "tool.steam-market-fee-calculator", "guide.gear", "guide.farming", "guide.beginner-guide"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://help.steampowered.com/en/faqs/view/61F0-72B7-9A18-C70B",
+        "sourceType": "official",
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Official Steam Community Market fee, Wallet, and transaction guidance."
+      },
+      {
+        "sourceUrl": "https://steamcommunity.com/market/search?appid=4891320",
+        "sourceType": "official",
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Official app-filtered market used to confirm War of Genesis market activity and identity."
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "pageId": "market.best-items-to-sell",
+    "route": "/market/best-items-to-sell/",
+    "pageType": "guide",
+    "cluster": "market",
+    "module": "market",
+    "priority": 89,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "index",
+    "title": "Best Items to Sell in War of Genesis",
+    "description": "Screen potential sale items by tradability, rarity, demand signals, usefulness, replacement difficulty, and progression opportunity cost.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "war of genesis best items to sell",
+    "tags": ["war of genesis", "best items to sell", "steam market"],
+    "relatedPageIds": ["hub.market", "guide.gear", "tool.steam-market-fee-calculator", "guide.farming", "market.how-to-sell-items"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://steamcommunity.com/market/search?appid=4891320",
+        "sourceType": "official",
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Official app-filtered Steam Market confirms the game identity and provides the live interface players must inspect manually; no prices are copied into this framework."
+      },
+      {
+        "sourceUrl": "https://war-of-genesis.wiki/market/best-items-to-sell/",
+        "sourceType": "editorial",
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Qualitative sell-candidate framework; no current-price, liquidity, or ranking claims are made."
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "pageId": "market.how-to-sell-items",
+    "route": "/market/how-to-sell-items/",
+    "pageType": "guide",
+    "cluster": "market",
+    "module": "market",
+    "priority": 82,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "index",
+    "title": "How to Sell War of Genesis Items on Steam",
+    "description": "Follow a cautious Steam listing workflow for War of Genesis items, from eligibility and price views to fee review and final confirmation.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "how to sell war of genesis items",
+    "tags": ["war of genesis", "sell items", "steam listing"],
+    "relatedPageIds": ["hub.market", "market.best-items-to-sell", "market.steam-market-fees", "tool.steam-market-fee-calculator", "guide.gear"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://help.steampowered.com/en/faqs/view/61F0-72B7-9A18-C70B",
+        "sourceType": "official",
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Official Steam Community Market transaction, fee, Wallet, eligibility, and confirmation guidance."
+      },
+      {
+        "sourceUrl": "https://steamcommunity.com/market/search?appid=4891320",
+        "sourceType": "official",
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Official app-filtered market used to verify War of Genesis: Idle Loot identity and active market context."
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "pageId": "market.steam-market-fees",
+    "route": "/market/steam-market-fees/",
+    "pageType": "guide",
+    "cluster": "market",
+    "module": "market",
+    "priority": 81,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "index",
+    "title": "War of Genesis Steam Market Fees Explained",
+    "description": "Understand the verified USD Steam and War of Genesis fee components, minimums, integer-cent rounding, Wallet proceeds, and estimate limits.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "war of genesis steam market fees",
+    "tags": ["war of genesis", "steam market fees", "seller proceeds"],
+    "relatedPageIds": ["hub.market", "tool.steam-market-fee-calculator", "market.how-to-sell-items", "market.best-items-to-sell", "guide.gear"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://help.steampowered.com/en/faqs/view/61F0-72B7-9A18-C70B",
+        "sourceType": "official",
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Official Steam source for the Steam transaction fee, USD minimum, fee payer, and Wallet treatment."
+      },
+      {
+        "sourceUrl": "https://steamcommunity.com/market/listings/4891320/High-Grade%20Jewel%20of%20Strife",
+        "sourceType": "official",
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Official War of Genesis listing evidence for the game-specific publisher fee used by the versioned policy."
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "pageId": "hub.builds",
+    "route": "/builds/",
+    "pageType": "hub",
+    "cluster": "builds",
+    "module": "builds",
+    "priority": 84,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "index",
+    "title": "War of Genesis Builds Hub",
+    "description": "Choose a build direction from your current goal, farming reliability, gear dependence, and willingness to re-evaluate as your equipment changes.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "war of genesis builds",
+    "tags": ["war of genesis", "builds", "classes"],
+    "relatedPageIds": ["hub.guides", "guide.farming", "guide.gear", "hub.market"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://war-of-genesis.wiki/builds/",
+        "sourceType": "editorial",
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Goal-led build framework that avoids unsupported rankings and numeric optimization claims."
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "pageId": "hub.tools",
+    "route": "/tools/",
+    "pageType": "hub",
+    "cluster": "tools",
+    "module": "tools",
+    "priority": 86,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "index",
+    "title": "War of Genesis Tools Hub",
+    "description": "Open the reviewed War of Genesis calculators available now, with visible assumptions, validation boundaries, and policy verification dates.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "war of genesis tools",
+    "tags": ["war of genesis", "tools", "calculator"],
+    "relatedPageIds": ["tool.steam-market-fee-calculator", "market.steam-market-fees", "hub.market"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://war-of-genesis.wiki/tools/",
+        "sourceType": "editorial",
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Tools index assembled only from implemented, enabled Page Inventory records."
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "pageId": "tool.steam-market-fee-calculator",
+    "route": "/tools/steam-market-fee-calculator/",
+    "pageType": "calculator",
+    "cluster": "market",
+    "module": "tools",
+    "feature": "calculator",
+    "priority": 91,
+    "visibility": "public",
+    "publicationStatus": "published",
+    "contentStatus": "ready",
+    "developmentStatus": "ready",
+    "needsReview": false,
+    "needsUpdate": false,
+    "indexability": "index",
+    "title": "Steam Market Fee Calculator for War of Genesis",
+    "description": "Calculate estimated buyer price, seller proceeds, Steam fees, and War of Genesis publisher fees with verified integer-cent rounding.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "steam market fee calculator",
+    "tags": ["steam market", "fee calculator", "seller proceeds"],
+    "relatedPageIds": ["hub.tools", "hub.market", "market.steam-market-fees", "market.best-items-to-sell", "guide.gear", "guide.farming"],
+    "relatedEntityRefs": [],
+    "sources": [
+      {
+        "sourceUrl": "https://help.steampowered.com/en/faqs/view/61F0-72B7-9A18-C70B",
+        "sourceType": "official",
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Official Steam Market policy source for the Steam fee and USD minimum."
+      },
+      {
+        "sourceUrl": "https://steamcommunity.com/market/listings/4891320/High-Grade%20Jewel%20of%20Strife",
+        "sourceType": "official",
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Official War of Genesis listing source for the game-specific publisher fee."
       }
     ],
     "confidence": "high"

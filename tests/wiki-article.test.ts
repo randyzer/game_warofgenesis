@@ -101,7 +101,7 @@ describe("WikiArticle", () => {
 
   it("renders FAQ after body content without adding its heading to the body TOC", async () => {
     const page = pageInventory.find(
-      (entry) => entry.pageId === "guide.getting-started",
+      (entry) => entry.pageId === "guide.beginner-guide",
     )!;
     const container = await AstroContainer.create();
     const html = await container.renderToString(WikiArticle, {

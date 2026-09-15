@@ -102,7 +102,7 @@ Human waiver/reclassification may alter the methodology outcome only through SOP
 
 | pageId_or_route | page_family | media_need | need_rationale | intended_placement | candidate_state | rights_state | human_decision | integration_state | visual_gate_state | source_or_provenance | owner_or_defer_reason | notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| guide.getting-started | guide/article | RECOMMENDED | A screenshot helps the player. | inline | FOUND | VERIFIED | WAIVED | NOT INTEGRATED | PASS | first-party | Media owner; Human waiver recorded. | Human-approved media debt. |
+| guide.beginner-guide | guide/article | RECOMMENDED | A screenshot helps the player. | inline | FOUND | VERIFIED | WAIVED | NOT INTEGRATED | PASS | first-party | Media owner; Human waiver recorded. | Human-approved media debt. |
 
 ## Third-party Media Failure State
 

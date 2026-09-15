@@ -87,3 +87,62 @@ export function buildSearchRouteRecords(
       return { path: undefined, page, fallbackPage };
     });
 }
+
+function requireSingleHubRoute(
+  catalog: PageInventoryEntry[],
+  module: "market" | "builds" | "tools",
+  route: "/market/" | "/builds/" | "/tools/",
+): PageInventoryEntry {
+  const matches = catalog.filter(
+    (page) =>
+      page.pageType === "hub" &&
+      page.module === module &&
+      page.route === route,
+  );
+
+  if (matches.length !== 1) {
+    throw new Error(
+      `Expected exactly one enabled ${module} hub at ${route}; received ${matches.length}.`,
+    );
+  }
+
+  return matches[0];
+}
+
+export function buildMarketRouteRecord(catalog: PageInventoryEntry[]) {
+  return requireSingleHubRoute(catalog, "market", "/market/");
+}
+
+export interface MarketRouteRecord {
+  path?: string;
+  page: PageInventoryEntry;
+}
+
+export function buildMarketRouteRecords(
+  catalog: PageInventoryEntry[],
+): MarketRouteRecord[] {
+  const hub = buildMarketRouteRecord(catalog);
+  const spokes = catalog
+    .filter((page) => page.module === "market" && page.pageType === "guide")
+    .sort((left, right) => right.priority - left.priority)
+    .map((page) => {
+      const match = page.route.match(/^\/market\/([a-z0-9]+(?:-[a-z0-9]+)*)\/$/);
+      if (!match) {
+        throw new Error(
+          `Market guide "${page.pageId}" must use one /market/{slug}/ segment.`,
+        );
+      }
+
+      return { path: match[1], page };
+    });
+
+  return [{ path: undefined, page: hub }, ...spokes];
+}
+
+export function buildBuildsRouteRecord(catalog: PageInventoryEntry[]) {
+  return requireSingleHubRoute(catalog, "builds", "/builds/");
+}
+
+export function buildToolsHubRouteRecord(catalog: PageInventoryEntry[]) {
+  return requireSingleHubRoute(catalog, "tools", "/tools/");
+}

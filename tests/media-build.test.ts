@@ -26,12 +26,12 @@ const mediaBuildConfig = defineGameConfig({
       {
         label: "Guides",
         pageId: "hub.guides",
-        children: ["guide.getting-started"],
+        children: ["guide.beginner-guide"],
       },
       { label: "Search", pageId: "search" },
     ],
   },
-  homepage: { featuredPageIds: ["guide.getting-started"] },
+  homepage: { featuredPageIds: ["guide.beginner-guide"] },
   features: {
     ...siteConfig.features,
     guides: true,
@@ -42,7 +42,7 @@ const mediaBuildConfig = defineGameConfig({
     tierLists: false,
     news: false,
     search: true,
-    calculator: false,
+    calculator: true,
     planner: false,
   },
 });
@@ -108,7 +108,7 @@ describe("media-rich static build", () => {
   });
 
   it("renders all fixed guide placements and retains no-media pages", () => {
-    const rich = readFileSync(join(fixtureRoot, "dist/guides/getting-started/index.html"), "utf8");
+    const rich = readFileSync(join(fixtureRoot, "dist/guides/beginner-guide/index.html"), "utf8");
     expect(rich.match(/<img\b[^>]*src="\/media\//g)).toHaveLength(3);
     expect(rich.match(/<iframe\b/g)).toHaveLength(1);
     for (const placement of ["hero", "gallery", "trailer"]) expect(rich).toContain(`data-media-placement="${placement}"`);

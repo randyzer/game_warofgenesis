@@ -1,0 +1,73 @@
+---
+import SteamMarketFeeCalculator from "./islands/SteamMarketFeeCalculator";
+import RelatedPages from "./wiki/RelatedPages.astro";
+import Sources from "./wiki/Sources.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { enabledPageCatalog, getRelatedPages, siteConfig } from "../core/site-data";
+import {
+  buildBreadcrumbSchema,
+  buildBreadcrumbTrail,
+  buildCanonicalUrl,
+} from "../core/seo";
+import { STEAM_MARKET_POLICY } from "../core/steam-market-fees";
+import type { PageInventoryEntry } from "../data/schemas/page-inventory";
+
+interface Props {
+  page: PageInventoryEntry;
+}
+
+const { page } = Astro.props;
+const canonical = buildCanonicalUrl(siteConfig, page.route);
+const breadcrumbTrail = buildBreadcrumbTrail(siteConfig, page, enabledPageCatalog);
+const relatedPages = getRelatedPages(page);
+---
+
+<BaseLayout page={page} structuredData={buildBreadcrumbSchema(canonical, breadcrumbTrail)}>
+  <main id="main-content" class="tool-shell fee-tool shell" data-pagefind-body>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        {breadcrumbTrail.map((item, index) => (
+          <li aria-current={index === breadcrumbTrail.length - 1 ? "page" : undefined}>
+            {index === breadcrumbTrail.length - 1 ? item.name : <a href={item.url}>{item.name}</a>}
+          </li>
+        ))}
+      </ol>
+    </nav>
+
+    <header class="tool-shell__header reveal reveal--1">
+      <div>
+        <p class="eyebrow">Steam Market field instrument / USD</p>
+        <h1 data-pagefind-meta="title">{page.title}</h1>
+        <p data-pagefind-meta="description">{page.description}</p>
+      </div>
+      <dl>
+        <div><dt>Policy</dt><dd>{STEAM_MARKET_POLICY.version}</dd></div>
+        <div><dt>Verified</dt><dd>{STEAM_MARKET_POLICY.verifiedAt}</dd></div>
+      </dl>
+    </header>
+
+    <section class="fee-workspace" aria-labelledby="fee-workspace-title">
+      <div class="fee-workspace__context">
+        <p class="eyebrow">What this answers</p>
+        <h2 id="fee-workspace-title">List with the fee split visible</h2>
+        <p>Switch between buyer-facing price and desired seller proceeds. Each unit is calculated independently before quantity totals are multiplied.</p>
+        <ul>
+          <li>Steam fee: 5%</li>
+          <li>Game/publisher fee: 10%</li>
+          <li>Minimum: $0.01 per component</li>
+        </ul>
+      </div>
+      <div class="fee-workspace__surface">
+        <SteamMarketFeeCalculator client:load />
+      </div>
+    </section>
+
+    <aside class="policy-disclaimer">
+      <p class="eyebrow">Estimate boundary</p>
+      <p>Estimate based on Steam Community Market fee behavior verified on September 15, 2026. USD only. Steam may change its fees, minimums, currency rules, rounding, or listing limits. Verify the final amount in Steam's confirmation dialog before listing. Steam Wallet funds are not withdrawable cash. This tool is not financial or investment advice. War of Genesis Wiki is independent and is not affiliated with or endorsed by Valve or the game publisher.</p>
+    </aside>
+
+    <Sources sources={page.sources} />
+    <RelatedPages pages={relatedPages} />
+  </main>
+</BaseLayout>
