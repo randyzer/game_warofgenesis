@@ -2,26 +2,24 @@ import { defineGameConfig } from "./src/config/schema";
 
 export default defineGameConfig({
   brand: {
-    name: "Game Atlas",
-    shortName: "Atlas",
-    mark: "GA",
+    name: "War of Genesis Wiki",
+    shortName: "WoG Wiki",
+    mark: "WoG",
     logoPath: "/logo.svg",
-    tagline: "Clear answers for every session.",
+    tagline: "Farm smarter. Build stronger. Trade with clarity.",
   },
   site: {
-    url: "https://gameatlas.example",
+    url: "https://war-of-genesis.wiki",
     locale: "en",
     timezone: "UTC",
   },
   seo: {
-    defaultTitle: "Game Atlas — Guides, Builds & Game Data",
-    titleTemplate: "%s | Game Atlas",
+    defaultTitle: "War of Genesis Wiki — Farming, Items & Builds",
+    titleTemplate: "%s | War of Genesis Wiki",
     defaultDescription:
-      "A fast, source-aware starter for guides, builds, and game reference data.",
+      "Decision support for [WoG] War of Genesis: Idle Loot farming, equipment, builds, and Steam Market progression.",
   },
-  social: {
-    xHandle: "@gameatlas",
-  },
+  social: {},
   navigation: {
     groups: [
       { label: "Home", pageId: "home" },
@@ -34,6 +32,7 @@ export default defineGameConfig({
     ],
   },
   homepage: {
+    displayHeading: "[WoG] War of Genesis: Idle Loot",
     featuredPageIds: ["guide.getting-started"],
   },
   features: {

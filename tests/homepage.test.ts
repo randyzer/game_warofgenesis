@@ -499,10 +499,12 @@ describe("homepage presentation", () => {
     expect(main).not.toMatch(/data-media-placement|<img\b|<iframe\b/);
   });
 
-  it("keeps the default Starter config on the brand fallback path", () => {
+  it("uses the project's explicit game-facing homepage heading", () => {
     const config = source(gameConfigUrl);
 
-    expect(config).not.toMatch(/displayHeading\s*:/);
+    expect(config).toContain(
+      'displayHeading: "[WoG] War of Genesis: Idle Loot"',
+    );
   });
 
   it("keeps FAQ optional in content and outside Page Inventory", () => {

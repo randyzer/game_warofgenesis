@@ -10,12 +10,12 @@ export interface StaticPageCopy {
 }
 
 const reviewNotice =
-  "This is starter text, not legal advice. Replace it after qualified legal review for your business, jurisdiction, hosting, analytics, advertising, and data practices.";
+  "This project draft is not legal advice. Replace it after qualified legal review for your business, jurisdiction, hosting, analytics, advertising, and data practices.";
 
 const staticPageCopy = {
   about: {
     intro:
-      "Game Atlas is a reusable editorial system for answering game questions with less noise and clearer evidence.",
+      "War of Genesis Wiki is a decision-support reference for [WoG] War of Genesis: Idle Loot players making farming, equipment, build, and trading choices.",
     sections: [
       {
         heading: "Sources before claims",
@@ -39,7 +39,7 @@ const staticPageCopy = {
   },
   privacy: {
     intro:
-      "This starter is static by default and does not include accounts, contact forms, behavioral analytics, advertising pixels, or a customer database.",
+      "War of Genesis Wiki is currently static and does not include accounts, contact forms, behavioral analytics, advertising pixels, or a customer database.",
     reviewNotice,
     sections: [
       {
@@ -57,14 +57,14 @@ const staticPageCopy = {
       {
         heading: "External sources and links",
         paragraphs: [
-          "Evidence links lead to third-party sites with their own policies. Visiting those services is governed by the destination provider, not this starter.",
+          "Evidence links lead to third-party sites with their own policies. Visiting those services is governed by the destination provider, not War of Genesis Wiki.",
         ],
       },
     ],
   },
   terms: {
     intro:
-      "These starter terms describe an informational game guide site. They must be adapted to the operator, content rights, monetization, audience, and governing law.",
+      "These draft terms describe War of Genesis Wiki as an informational game guide site. They must be adapted to the operator, content rights, monetization, audience, and governing law.",
     reviewNotice,
     sections: [
       {

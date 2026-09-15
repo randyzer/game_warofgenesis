@@ -13,20 +13,20 @@
     "needsReview": false,
     "needsUpdate": false,
     "indexability": "index",
-    "title": "Game Atlas — Guides, Builds & Game Data",
-    "description": "Find clear, source-aware game guides and reference data in a fast, focused experience.",
-    "publishedAt": "2026-09-01",
-    "updatedAt": "2026-09-01",
-    "primaryKeyword": "game guides",
-    "tags": ["guides", "reference", "game data"],
+    "title": "War of Genesis Wiki — Farming, Items & Builds",
+    "description": "Make clearer farming, equipment, build, and Steam Market decisions in [WoG] War of Genesis: Idle Loot.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "war of genesis wiki",
+    "tags": ["war of genesis", "farming", "equipment"],
     "relatedPageIds": ["guide.getting-started"],
     "relatedEntityRefs": [],
     "sources": [
       {
-        "sourceUrl": "https://gameatlas.example/",
+        "sourceUrl": "https://war-of-genesis.wiki/",
         "sourceType": "editorial",
-        "accessedAt": "2026-09-01",
-        "evidenceNote": "Starter editorial copy; replace before production launch."
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Phase 0 project positioning supplied by the site operator."
       }
     ],
     "confidence": "high"
@@ -46,20 +46,20 @@
     "needsReview": false,
     "needsUpdate": false,
     "indexability": "index",
-    "title": "Game Guides & Field Notes | Game Atlas",
-    "description": "Browse every published Game Atlas field guide from one fast, source-aware editorial index.",
-    "publishedAt": "2026-09-01",
-    "updatedAt": "2026-09-01",
-    "primaryKeyword": "game guides hub",
-    "tags": ["guides", "hub", "editorial"],
+    "title": "War of Genesis Guides | War of Genesis Wiki",
+    "description": "Browse sourced War of Genesis: Idle Loot guides as they are reviewed and published.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "war of genesis guides",
+    "tags": ["war of genesis", "guides", "idle loot"],
     "relatedPageIds": ["home", "guide.getting-started"],
     "relatedEntityRefs": [],
     "sources": [
       {
-        "sourceUrl": "https://gameatlas.example/guides/",
+        "sourceUrl": "https://war-of-genesis.wiki/guides/",
         "sourceType": "editorial",
-        "accessedAt": "2026-09-01",
-        "evidenceNote": "Starter guide index assembled from the enabled Page Catalog."
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Phase 0 guide index assembled from the enabled Page Catalog."
       }
     ],
     "confidence": "high"
@@ -79,12 +79,12 @@
     "needsReview": false,
     "needsUpdate": false,
     "indexability": "index",
-    "title": "How to Configure This Game Site Starter",
-    "description": "Set the brand, feature flags, page inventory, and sourced facts before publishing your first production game guide.",
-    "publishedAt": "2026-09-01",
-    "updatedAt": "2026-09-01",
-    "primaryKeyword": "game site starter setup",
-    "tags": ["setup", "workflow", "publishing"],
+    "title": "Start Here | War of Genesis Wiki",
+    "description": "See what War of Genesis Wiki is being built to answer and which features remain deferred after Phase 0.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "war of genesis wiki start here",
+    "tags": ["war of genesis", "wiki", "project scope"],
     "contentRef": {
       "collection": "guides",
       "slug": "getting-started"
@@ -93,10 +93,10 @@
     "relatedEntityRefs": [],
     "sources": [
       {
-        "sourceUrl": "https://gameatlas.example/guides/getting-started/",
+        "sourceUrl": "https://war-of-genesis.wiki/guides/getting-started/",
         "sourceType": "editorial",
-        "accessedAt": "2026-09-01",
-        "evidenceNote": "Starter operating instructions maintained with the repository."
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Phase 0 scope and safety boundaries supplied by the site operator."
       }
     ],
     "confidence": "high"
@@ -116,20 +116,20 @@
     "needsReview": false,
     "needsUpdate": false,
     "indexability": "noindex",
-    "title": "Search Game Atlas Guides",
-    "description": "Search the published Game Atlas guide index without sending queries to an external search service.",
-    "publishedAt": "2026-09-01",
-    "updatedAt": "2026-09-01",
-    "primaryKeyword": "search game atlas",
-    "tags": ["search", "guides", "discovery"],
+    "title": "Search War of Genesis Wiki",
+    "description": "Search published War of Genesis Wiki pages without sending queries to an external search service.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "search war of genesis wiki",
+    "tags": ["war of genesis", "search", "guides"],
     "relatedPageIds": ["home", "hub.guides"],
     "relatedEntityRefs": [],
     "sources": [
       {
-        "sourceUrl": "https://gameatlas.example/search/",
+        "sourceUrl": "https://war-of-genesis.wiki/search/",
         "sourceType": "editorial",
-        "accessedAt": "2026-09-01",
-        "evidenceNote": "Starter search shell; Pagefind interaction is attached after build."
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Local Pagefind search shell retained for the project baseline."
       }
     ],
     "confidence": "high"
@@ -148,20 +148,20 @@
     "needsReview": true,
     "needsUpdate": false,
     "indexability": "index",
-    "title": "About Game Atlas Editorial",
-    "description": "Learn how Game Atlas separates editorial decisions, sourced facts, and static delivery for trustworthy game guidance.",
-    "publishedAt": "2026-09-01",
-    "updatedAt": "2026-09-01",
-    "primaryKeyword": "about game atlas",
-    "tags": ["about", "editorial", "method"],
+    "title": "About War of Genesis Wiki",
+    "description": "Learn how War of Genesis Wiki separates sourced facts, editorial decisions, and player-facing recommendations.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "about war of genesis wiki",
+    "tags": ["war of genesis", "about", "editorial"],
     "relatedPageIds": ["home", "hub.guides"],
     "relatedEntityRefs": [],
     "sources": [
       {
-        "sourceUrl": "https://gameatlas.example/about/",
+        "sourceUrl": "https://war-of-genesis.wiki/about/",
         "sourceType": "editorial",
-        "accessedAt": "2026-09-01",
-        "evidenceNote": "Starter editorial-method copy requiring operator review before launch."
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Project editorial-method copy requiring operator review before launch."
       }
     ],
     "confidence": "high"
@@ -180,20 +180,20 @@
     "needsReview": true,
     "needsUpdate": false,
     "indexability": "noindex",
-    "title": "Privacy Policy | Game Atlas",
-    "description": "Review the starter privacy disclosure and replace it with terms appropriate to your business, jurisdiction, and data practices.",
-    "publishedAt": "2026-09-01",
-    "updatedAt": "2026-09-01",
-    "primaryKeyword": "game atlas privacy policy",
+    "title": "Privacy Policy | War of Genesis Wiki",
+    "description": "Review the War of Genesis Wiki privacy draft before any production launch or data-processing change.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "war of genesis wiki privacy policy",
     "tags": ["privacy", "legal", "policy"],
     "relatedPageIds": ["home", "terms"],
     "relatedEntityRefs": [],
     "sources": [
       {
-        "sourceUrl": "https://gameatlas.example/privacy/",
+        "sourceUrl": "https://war-of-genesis.wiki/privacy/",
         "sourceType": "editorial",
-        "accessedAt": "2026-09-01",
-        "evidenceNote": "Non-legal starter disclosure requiring qualified review before launch."
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Non-legal project disclosure requiring qualified review before launch."
       }
     ],
     "confidence": "low"
@@ -212,20 +212,20 @@
     "needsReview": true,
     "needsUpdate": false,
     "indexability": "noindex",
-    "title": "Terms of Use | Game Atlas",
-    "description": "Review the starter terms and replace them with conditions appropriate to your game site, content rights, and jurisdiction.",
-    "publishedAt": "2026-09-01",
-    "updatedAt": "2026-09-01",
-    "primaryKeyword": "game atlas terms of use",
+    "title": "Terms of Use | War of Genesis Wiki",
+    "description": "Review the War of Genesis Wiki terms draft before production use, monetization, or public launch.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "war of genesis wiki terms of use",
     "tags": ["terms", "legal", "policy"],
     "relatedPageIds": ["home", "privacy"],
     "relatedEntityRefs": [],
     "sources": [
       {
-        "sourceUrl": "https://gameatlas.example/terms/",
+        "sourceUrl": "https://war-of-genesis.wiki/terms/",
         "sourceType": "editorial",
-        "accessedAt": "2026-09-01",
-        "evidenceNote": "Non-legal starter terms requiring qualified review before launch."
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Non-legal project terms requiring qualified review before launch."
       }
     ],
     "confidence": "low"
@@ -244,20 +244,20 @@
     "needsReview": false,
     "needsUpdate": false,
     "indexability": "noindex",
-    "title": "Page Not Found | Game Atlas",
-    "description": "The requested page is outside the published Game Atlas index; return to a verified guide or start a new search.",
-    "publishedAt": "2026-09-01",
-    "updatedAt": "2026-09-01",
-    "primaryKeyword": "game atlas page not found",
+    "title": "Page Not Found | War of Genesis Wiki",
+    "description": "The requested page is outside the published War of Genesis Wiki index; return home or start a new search.",
+    "publishedAt": "2026-09-15",
+    "updatedAt": "2026-09-15",
+    "primaryKeyword": "war of genesis wiki page not found",
     "tags": ["error", "navigation", "404"],
     "relatedPageIds": ["home", "search"],
     "relatedEntityRefs": [],
     "sources": [
       {
-        "sourceUrl": "https://gameatlas.example/404.html",
+        "sourceUrl": "https://war-of-genesis.wiki/404.html",
         "sourceType": "editorial",
-        "accessedAt": "2026-09-01",
-        "evidenceNote": "Starter error-page copy derived from the enabled navigation catalog."
+        "accessedAt": "2026-09-15",
+        "evidenceNote": "Project error-page copy derived from the enabled navigation catalog."
       }
     ],
     "confidence": "high"
@@ -291,7 +291,7 @@
     "relatedEntityRefs": [],
     "sources": [
       {
-        "sourceUrl": "https://gameatlas.example/",
+        "sourceUrl": "https://war-of-genesis.wiki/",
         "sourceType": "editorial",
         "accessedAt": "2026-09-01",
         "evidenceNote": "Validation-only demo record; excluded by the heroes feature flag."

@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "game-site-starter",
+  "name": "game-warofgenesis",
   "send_metrics": false,
   "compatibility_date": "2026-09-01",
   "assets": {

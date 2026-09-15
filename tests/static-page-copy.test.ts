@@ -13,11 +13,11 @@ describe("getStaticPageCopy", () => {
   });
 
   it.each(["privacy", "terms"] as const)(
-    "marks %s copy as non-legal starter text requiring review",
+    "marks %s copy as a non-legal project draft requiring review",
     (pageType) => {
       const copy = getStaticPageCopy(pageType);
 
-      expect(copy.reviewNotice).toMatch(/starter/i);
+      expect(copy.reviewNotice).toMatch(/project draft/i);
       expect(copy.reviewNotice).toMatch(/not legal advice/i);
       expect(copy.reviewNotice).toMatch(/qualified.*review/i);
     },

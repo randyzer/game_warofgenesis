@@ -2,26 +2,21 @@
 pageId: guide.getting-started
 ---
 
-This starter keeps publishing decisions separate from prose. Configure those decisions first, then write against a stable page contract.
+War of Genesis Wiki is being prepared as a decision-support reference for [WoG] War of Genesis: Idle Loot. Phase 0 establishes the project identity and publishing foundation; it does not publish unverified game mechanics, market prices, or redeem codes.
 
-## 1. Set the game and brand
+## What this wiki will help answer
 
-Edit `game.config.ts`. Replace the starter name, canonical HTTPS URL, default SEO copy, and social handle. Keep the locale on an English tag such as `en`, `en-US`, or `en-GB` for the global English-market build.
+- Where should I farm?
+- Which equipment should I keep or sell?
+- How valuable is an item after Steam Market fees?
+- Which class or build choice better supports my goals?
 
-Every feature flag is explicit. Turn on only the page families that have reviewed data and a route implementation.
+## Phase 0 scope
 
-## 2. Declare pages before writing them
+This initial local build contains project identity and architecture checks only. Beginner guides, classes, farming guidance, builds, codes, patch notes, and market guidance remain candidates for later sourced work.
 
-Add each intended URL to `src/data/page-inventory.json`. The inventory owns the route, editorial title and description, publishing status, indexability, dates, relationships, and source confidence.
+The first proposed tool is a Steam Market fee and net profit calculator. It is recorded for the MVP but is not enabled or implemented in Phase 0.
 
-For an editorial page, add a `contentRef` that points to its collection and slug. In the MDX file, keep frontmatter focused on `pageId`; do not duplicate inventory metadata.
+## Accuracy boundary
 
-## 3. Add sourced facts by module
-
-Entity data belongs in `src/data/facts/`. Each enabled hero, weapon, item, or map module has its own JSON file and schema. Record source URLs, accessed dates, evidence notes, and confidence with every entity.
-
-Disabled modules need no empty data files. If you enable a module without its required fact file, production validation stops the build.
-
-## 4. Verify before publishing
-
-Run `npm run check` for types and unit tests, then `npm run build` for inventory validation, static output, sitemap generation, and the Pagefind index. Preview the production output when testing search because the development server does not contain a fresh Pagefind index.
+War of Genesis: Idle Loot is treated as a distinct product from War of Genesis: Idle Heroes. Codes or gameplay claims will not be copied between them, and unsourced codes will not be published.
