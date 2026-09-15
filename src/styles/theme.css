@@ -1,17 +1,16 @@
-/*
- * Starter fallback theme.
- * Replace these values with the real game's visual identity before release.
- * The theme mechanism is Stable Core; each game-specific palette belongs to
- * the Flexible Edge.
- */
+/* War of Genesis — Forged chronicle */
 :root {
-  --color-background: #f6f5f1;
-  --color-surface: #e7e4dc;
-  --color-text: #1f2426;
-  --color-text-muted: #697174;
-  --color-primary: #2f4c54;
-  --color-accent: #4f6f78;
-  --color-accent-strong: #31535d;
+  --color-background: #0f171d;
+  --color-surface: #18252c;
+  --color-surface-raised: #222a2d;
+  --color-text: #ece7dc;
+  --color-text-muted: #aeb8ba;
+  --color-primary: #c4a968;
+  --color-secondary: #7894a0;
+  --color-accent: #c4a968;
+  --color-accent-strong: #dcc68f;
+  --color-danger: #c56f61;
+  --color-success: #7f9f72;
   --color-guides: var(--color-accent);
   --color-market: var(--color-accent);
   --color-builds: var(--color-accent);
@@ -22,12 +21,12 @@
   --color-updates: var(--color-accent);
   --color-meta: var(--color-accent);
   --color-tools: var(--color-accent);
-  --color-border: color-mix(in srgb, var(--color-text) 24%, transparent);
-  --color-border-strong: color-mix(in srgb, var(--color-text) 72%, transparent);
+  --color-border: color-mix(in srgb, var(--color-secondary) 38%, transparent);
+  --color-border-strong: color-mix(in srgb, var(--color-secondary) 72%, transparent);
   --color-footer-background: color-mix(in srgb, var(--color-surface) 72%, var(--color-background));
   --color-footer-text: var(--color-text);
   --color-footer-muted: var(--color-text-muted);
   --color-footer-border: var(--color-border-strong);
-  --color-on-primary: #f4f7f5;
-  --color-on-accent: #f8fbfa;
+  --color-on-primary: #10171c;
+  --color-on-accent: #10171c;
 }

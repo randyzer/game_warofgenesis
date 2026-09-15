@@ -30,6 +30,8 @@ const validConfig: GameConfigInput = {
   },
   social: {
     xHandle: "@gameatlas",
+    defaultImagePath: "/og-default.png",
+    defaultImageAlt: "Game Atlas community guide and tools.",
   },
   navigation: {
     primaryPageIds: ["home", "hub.guides", "search"],
@@ -79,6 +81,7 @@ describe("defineGameConfig", () => {
     expect(config.homepage.featuredPageIds).toEqual([
       "guide.getting-started",
     ]);
+    expect(config.social.defaultImagePath).toBe("/og-default.png");
     expect(Object.isFrozen(config)).toBe(true);
   });
 
@@ -165,6 +168,18 @@ describe("defineGameConfig", () => {
         site: { ...validConfig.site, locale: "zh-CN" },
       }),
     ).toThrow(/English/i);
+  });
+
+  it("rejects unsafe or remote social image paths", () => {
+    expect(() =>
+      defineGameConfig({
+        ...validConfig,
+        social: {
+          ...validConfig.social,
+          defaultImagePath: "https://example.com/og.png",
+        },
+      }),
+    ).toThrow(/safe local public image path/i);
   });
 
   it("rejects a config that omits a feature flag", () => {

@@ -13,13 +13,26 @@ describe("getStaticPageCopy", () => {
   });
 
   it.each(["privacy", "terms"] as const)(
-    "marks %s copy as a non-legal project draft requiring review",
+    "publishes truthful %s copy without template instructions",
     (pageType) => {
       const copy = getStaticPageCopy(pageType);
+      const visibleCopy = JSON.stringify(copy);
 
-      expect(copy.reviewNotice).toMatch(/project draft/i);
-      expect(copy.reviewNotice).toMatch(/not legal advice/i);
-      expect(copy.reviewNotice).toMatch(/qualified.*review/i);
+      expect(copy.reviewNotice).toBeUndefined();
+      expect(visibleCopy).not.toMatch(
+        /draft|replace|add your|todo|tbd|placeholder|operator action required/i,
+      );
     },
   );
+
+  it("does not invent operator, contact, or retention facts", () => {
+    const legalCopy = JSON.stringify({
+      privacy: getStaticPageCopy("privacy"),
+      terms: getStaticPageCopy("terms"),
+    });
+
+    expect(legalCopy).not.toMatch(
+      /street address|complaint department|legal representative|retain (?:logs|data) for \d+|retention (?:period )?(?:is|of) \d+/i,
+    );
+  });
 });

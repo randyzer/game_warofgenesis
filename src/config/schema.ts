@@ -122,6 +122,13 @@ export const gameConfigSchema = z
     social: z
       .object({
         xHandle: z.string().regex(/^@[A-Za-z0-9_]{1,15}$/).optional(),
+        defaultImagePath: z
+          .string()
+          .refine(
+            isSafePublicImagePath,
+            "social.defaultImagePath must be a safe local public image path.",
+          ),
+        defaultImageAlt: z.string().trim().min(12).max(160),
       })
       .strict(),
     navigation: navigationSchema,

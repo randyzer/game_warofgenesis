@@ -64,3 +64,15 @@ const { groups, currentRoute } = Astro.props;
     </ul>
   </nav>
 </details>
+
+<script>
+  document.querySelectorAll<HTMLDetailsElement>(".mobile-nav").forEach((menu) => {
+    menu.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape" || !menu.open) return;
+
+      menu.open = false;
+      const toggle = menu.querySelector<HTMLElement>(":scope > summary");
+      toggle?.focus();
+    });
+  });
+</script>

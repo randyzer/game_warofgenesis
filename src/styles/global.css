@@ -25,6 +25,10 @@ body {
   margin: 0;
   min-width: 320px;
   background-color: var(--color-background);
+  background-image:
+    radial-gradient(circle at 16% -12%, color-mix(in srgb, var(--color-accent) 12%, transparent), transparent 34rem),
+    linear-gradient(90deg, color-mix(in srgb, var(--color-secondary) 5%, transparent) 1px, transparent 1px);
+  background-size: auto, 84px 100%;
 }
 
 a {
@@ -69,7 +73,11 @@ select:focus-visible {
 }
 
 .site-header {
+  position: relative;
+  z-index: 60;
   border-bottom: 1px solid var(--color-border-strong);
+  background: color-mix(in srgb, var(--color-background) 92%, transparent);
+  backdrop-filter: blur(18px);
 }
 
 .site-header__inner {
@@ -193,8 +201,8 @@ select:focus-visible {
   margin: 0;
   padding: 8px;
   border: 1px solid var(--color-border-strong);
-  background: var(--color-background);
-  box-shadow: 12px 12px 0 color-mix(in srgb, var(--color-text) 9%, transparent);
+  background: var(--color-surface-raised);
+  box-shadow: 12px 12px 0 color-mix(in srgb, var(--color-background) 70%, transparent);
   list-style: none;
   opacity: 0;
   pointer-events: none;
@@ -267,6 +275,8 @@ select:focus-visible {
   min-height: 44px;
   padding: 11px 13px;
   border: 1px solid var(--color-text);
+  background: var(--color-surface-raised);
+  color: var(--color-text);
   font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -291,8 +301,8 @@ select:focus-visible {
   padding: 8px;
   overflow-y: auto;
   border: 1px solid var(--color-border-strong);
-  background: var(--color-background);
-  box-shadow: 12px 12px 0 color-mix(in srgb, var(--color-text) 9%, transparent);
+  background: var(--color-surface-raised);
+  box-shadow: 12px 12px 0 color-mix(in srgb, var(--color-background) 70%, transparent);
   overscroll-behavior: contain;
 }
 
@@ -374,6 +384,9 @@ select:focus-visible {
   grid-template-columns: minmax(0, 860px);
   gap: clamp(48px, 8vw, 112px);
   align-items: center;
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--color-surface) 68%, transparent), transparent 68%),
+    linear-gradient(180deg, transparent 78%, color-mix(in srgb, var(--color-accent) 5%, transparent));
 }
 
 .game-hero--has-media {
@@ -387,6 +400,8 @@ select:focus-visible {
 
 .game-hero__copy {
   max-width: 760px;
+  padding-left: clamp(0px, 2vw, 24px);
+  border-left: 1px solid var(--color-border);
 }
 
 .game-hero__copy h1 {
@@ -526,14 +541,14 @@ select:focus-visible {
   overflow-wrap: anywhere;
   border: 1px solid var(--color-border-strong);
   flex-direction: column;
-  background: color-mix(in srgb, var(--color-background) 84%, transparent);
+  background: color-mix(in srgb, var(--color-surface-raised) 88%, transparent);
   text-decoration: none;
   transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
 .portal-card:hover {
   border-color: var(--page-accent, var(--color-accent));
-  box-shadow: 7px 7px 0 color-mix(in srgb, var(--color-text) 10%, transparent);
+  box-shadow: 7px 7px 0 color-mix(in srgb, var(--color-background) 72%, transparent);
   transform: translate(-3px, -3px);
 }
 
@@ -655,12 +670,17 @@ select:focus-visible {
   letter-spacing: 0.06em;
   text-decoration: none;
   text-transform: uppercase;
-  transition: transform 160ms ease, box-shadow 160ms ease;
+  transition: background 160ms ease, color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
 }
 
 .button:hover {
-  box-shadow: 5px 5px 0 var(--color-text);
+  box-shadow: 5px 5px 0 var(--color-secondary);
   transform: translate(-3px, -3px);
+}
+
+.button:active {
+  box-shadow: 2px 2px 0 var(--color-secondary);
+  transform: translate(-1px, -1px);
 }
 
 .button--primary {
@@ -669,7 +689,7 @@ select:focus-visible {
 }
 
 .button--quiet {
-  background: transparent;
+  background: var(--color-surface-raised);
 }
 
 .section-rule {
@@ -1560,40 +1580,6 @@ select:focus-visible {
   text-transform: uppercase;
 }
 
-.review-notice {
-  display: grid;
-  max-width: 980px;
-  margin-bottom: 70px;
-  padding: 24px;
-  border: 1px solid var(--color-accent-strong);
-  grid-template-columns: 52px 1fr;
-  gap: 20px;
-  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
-}
-
-.review-notice > span {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  background: var(--color-accent);
-  color: var(--color-on-accent);
-  font-family: var(--mono);
-  font-weight: 700;
-}
-
-.review-notice strong {
-  font-family: var(--display);
-  font-size: 1.3rem;
-}
-
-.review-notice p {
-  max-width: 760px;
-  margin: 7px 0 0;
-  color: color-mix(in srgb, var(--color-text) 55%, var(--color-text-muted));
-  line-height: 1.6;
-}
-
 .static-page__body {
   max-width: 980px;
   border-top: 1px solid var(--color-border-strong);
@@ -1985,6 +1971,7 @@ select:focus-visible {
   border-top: 1px solid var(--color-footer-border, var(--color-border-strong));
   background: var(--color-footer-background, var(--color-surface));
   color: var(--color-footer-text, var(--color-text));
+  background-image: linear-gradient(90deg, color-mix(in srgb, var(--color-accent) 8%, transparent), transparent 44%);
 }
 
 .tool-shell {
@@ -2169,7 +2156,7 @@ select:focus-visible {
   border: 1px solid var(--color-border-strong);
   background:
     linear-gradient(135deg, color-mix(in srgb, var(--page-accent) 12%, transparent), transparent 60%),
-    var(--color-surface);
+    var(--color-surface-raised);
 }
 
 .action-panel h2 {
@@ -2186,6 +2173,7 @@ select:focus-visible {
 .decision-grid section {
   padding: 28px;
   border-right: 1px solid var(--color-border-strong);
+  background: color-mix(in srgb, var(--color-surface) 62%, transparent);
 }
 
 .decision-grid section:last-child {
@@ -2417,7 +2405,7 @@ select:focus-visible {
   min-height: 360px;
   padding: clamp(22px, 4vw, 38px);
   border-top: 4px solid var(--page-accent, var(--color-accent));
-  background: var(--color-surface);
+  background: var(--color-surface-raised);
 }
 
 .fee-results__header {
@@ -2524,8 +2512,8 @@ select:focus-visible {
 .fee-error {
   margin: 0;
   padding: 20px;
-  border: 1px solid var(--color-accent-strong);
-  color: var(--color-accent-strong);
+  border: 1px solid var(--color-danger);
+  color: var(--color-danger);
   font-weight: 700;
 }
 

@@ -18,6 +18,10 @@ interface Props {
 
 const { page, structuredData } = Astro.props;
 const canonical = buildCanonicalUrl(siteConfig, page.route);
+const socialImage = buildCanonicalUrl(
+  siteConfig,
+  siteConfig.social.defaultImagePath,
+);
 const robots =
   page.indexability === "index"
     ? "index, follow, max-image-preview:large"
@@ -50,9 +54,13 @@ const graph = [
     <meta property="og:url" content={canonical} />
     <meta property="og:title" content={page.title} />
     <meta property="og:description" content={page.description} />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:alt" content={siteConfig.social.defaultImageAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={page.title} />
     <meta name="twitter:description" content={page.description} />
+    <meta name="twitter:image" content={socialImage} />
+    <meta name="twitter:image:alt" content={siteConfig.social.defaultImageAlt} />
     {siteConfig.social.xHandle && (
       <meta name="twitter:site" content={siteConfig.social.xHandle} />
     )}

@@ -11,6 +11,7 @@ const mobileUrl = new URL(
   "../src/components/navigation/MobileNav.astro",
   import.meta.url,
 );
+const footerUrl = new URL("../src/components/Footer.astro", import.meta.url);
 const globalStylesUrl = new URL(
   "../src/styles/global.css",
   import.meta.url,
@@ -62,6 +63,22 @@ describe("navigation presentation boundary", () => {
     expect(mobile).not.toMatch(
       /enabledPageCatalog|getPageByRoute|resolveNavigationGroups|primaryPageIds|new Map|\.filter\(/,
     );
+  });
+
+  it("closes an open mobile menu with Escape and returns focus to its toggle", () => {
+    const mobile = source(mobileUrl);
+
+    expect(mobile).toContain('event.key !== "Escape"');
+    expect(mobile).toContain("menu.open = false");
+    expect(mobile).toMatch(/querySelector<HTMLElement>\("?:scope > summary"\)/);
+    expect(mobile).toContain("toggle?.focus()");
+  });
+
+  it("keeps Back to top on the current document", () => {
+    const footer = source(footerUrl);
+
+    expect(footer).toContain('href="#top"');
+    expect(footer).not.toContain('href="/#top"');
   });
 
   it("keeps long mobile navigation inside the viewport", () => {

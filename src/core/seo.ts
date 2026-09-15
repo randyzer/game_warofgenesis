@@ -48,6 +48,10 @@ export function buildBaseSeoGraph(
 ): StructuredDataNode[] {
   const siteUrl = buildCanonicalUrl(config, "/");
   const canonical = buildCanonicalUrl(config, page.route);
+  const socialImage = buildCanonicalUrl(
+    config,
+    config.social.defaultImagePath,
+  );
 
   return [
     {
@@ -62,6 +66,7 @@ export function buildBaseSeoGraph(
       url: siteUrl,
       name: config.brand.name,
       description: config.seo.defaultDescription,
+      image: socialImage,
       inLanguage: config.site.locale,
       publisher: { "@id": `${siteUrl}#organization` },
     },
@@ -71,6 +76,10 @@ export function buildBaseSeoGraph(
       url: canonical,
       name: page.title,
       description: page.description,
+      primaryImageOfPage: {
+        "@type": "ImageObject",
+        url: socialImage,
+      },
       datePublished: page.publishedAt,
       dateModified: page.updatedAt,
       inLanguage: config.site.locale,

@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { readFileSync } from "node:fs";
 
 import {
   buildArticleSchema,
@@ -38,6 +39,12 @@ describe("technical SEO helpers", () => {
     );
   });
 
+  it("builds an absolute default social image URL", () => {
+    expect(buildCanonicalUrl(siteConfig, siteConfig.social.defaultImagePath)).toBe(
+      "https://war-of-genesis.wiki/og-default.png",
+    );
+  });
+
   it("derives breadcrumbs only from enabled route ancestors", () => {
     expect(buildBreadcrumbTrail(siteConfig, guidePage, guideCatalog)).toEqual([
       {
@@ -74,7 +81,28 @@ describe("technical SEO helpers", () => {
       "Article",
     ]);
     expect(new Set(graph.flatMap((node) => node["@id"] ?? []))).toHaveLength(5);
+    expect(graph[1]).toHaveProperty(
+      "image",
+      "https://war-of-genesis.wiki/og-default.png",
+    );
+    expect(graph[2]).toHaveProperty(
+      "primaryImageOfPage.url",
+      "https://war-of-genesis.wiki/og-default.png",
+    );
     expect(graph.at(-1)).not.toHaveProperty("image");
+  });
+
+  it("emits complete Open Graph and Twitter image metadata centrally", () => {
+    const layout = readFileSync(
+      new URL("../src/layouts/BaseLayout.astro", import.meta.url),
+      "utf8",
+    );
+
+    expect(layout).toContain('<meta property="og:image" content={socialImage} />');
+    expect(layout).toContain('<meta property="og:image:alt" content={siteConfig.social.defaultImageAlt} />');
+    expect(layout).toContain('<meta name="twitter:card" content="summary_large_image" />');
+    expect(layout).toContain('<meta name="twitter:image" content={socialImage} />');
+    expect(layout).toContain('<meta name="twitter:image:alt" content={siteConfig.social.defaultImageAlt} />');
   });
 
   it("serializes JSON-LD without allowing a script-closing sequence", () => {

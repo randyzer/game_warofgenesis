@@ -87,12 +87,18 @@ describe("theme tokens", () => {
     }
   });
 
-  it("uses a neutral fallback palette instead of the previous beige green orange identity", () => {
+  it("uses the approved Forged chronicle game-wiki palette", () => {
     const theme = read(themeUrl);
 
-    expect(theme).not.toMatch(/#eee9dc|#ddd6c5|#1f4a3b|#ee4b20|#a92709/i);
-    expect(theme).toMatch(/--color-background:\s*#f6f5f1;/);
-    expect(theme).toMatch(/--color-accent:\s*#4f6f78;/);
+    expect(theme).toMatch(/--color-background:\s*#0f171d;/);
+    expect(theme).toMatch(/--color-surface:\s*#18252c;/);
+    expect(theme).toMatch(/--color-surface-raised:\s*#222a2d;/);
+    expect(theme).toMatch(/--color-text:\s*#ece7dc;/);
+    expect(theme).toMatch(/--color-text-muted:\s*#aeb8ba;/);
+    expect(theme).toMatch(/--color-primary:\s*#c4a968;/);
+    expect(theme).toMatch(/--color-secondary:\s*#7894a0;/);
+    expect(theme).toMatch(/--color-danger:\s*#c56f61;/);
+    expect(theme).toMatch(/--color-success:\s*#7f9f72;/);
   });
 
   it("defines every approved family token as a default base-accent fallback", () => {

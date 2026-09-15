@@ -19,7 +19,11 @@ export default defineGameConfig({
     defaultDescription:
       "Decision support for [WoG] War of Genesis: Idle Loot farming, equipment, builds, and Steam Market progression.",
   },
-  social: {},
+  social: {
+    defaultImagePath: "/og-default.png",
+    defaultImageAlt:
+      "War of Genesis Wiki — independent community guides and tools.",
+  },
   navigation: {
     groups: [
       {
