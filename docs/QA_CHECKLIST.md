@@ -1,12 +1,13 @@
-# GAME_SITE_STARTER v2.6.3 Implementation Candidate QA Checklist
+# GAME_SITE_STARTER v2.6.4 Documentation-Correction Patch Line QA Checklist
 
 Use this checklist after changing config, Runtime Page Inventory, content,
 facts, tools, media, theme, dependencies, or presentation components.
-The V2.6.3 implementation candidate preserves the V2.6.2 Phase 1C Pagefind and
-fresh-evidence contracts and adds the approved provider-neutral monetization
-seam. It is not a released, tagged, or frozen artifact. This
-checklist covers the deterministic checks and still preserves the Human release
-gates.
+V2.6.4 is the current documentation-correction patch line under preparation.
+It preserves the released and frozen V2.6.3 functional baseline at tag
+`starter-v2.6.3` and commit `5968306e37491d9ead939e89aa45c2bb513dc14e`,
+including the V2.6.2 Phase 1C Pagefind and fresh-evidence contracts and the
+approved provider-neutral monetization seam. This checklist covers the
+deterministic checks and still preserves the Human release gates.
 
 Automated checks establish deterministic structural correctness. They do **not**
 prove that content is useful or accurate, that media is visually appropriate,
@@ -16,7 +17,7 @@ gate.
 ## Record provenance first
 
 - [ ] Record the source Starter commit and working branch.
-- [ ] Record the `GAME_SOP v2.6.3` package/reference used for production methodology.
+- [ ] Record the `GAME_SOP v2.6.4` package/reference used for production methodology.
 - [ ] Record the current Master Prompt version.
 - [ ] Record any known version mismatch instead of silently rewriting upstream
       documents.
@@ -269,7 +270,7 @@ Automation cannot approve the following items.
 - [ ] Sources are authoritative enough for the claim and their access dates are
       current.
 - [ ] Competitive coverage, content-family selection, P0/P1/P2 scope, and game
-      fit satisfy `GAME_SOP v2.6.3` and project research.
+      fit satisfy `GAME_SOP v2.6.4` and project research.
 - [ ] Internal review/update flags are cleared only by an authorized human.
 
 ### Media and rights

@@ -1,6 +1,6 @@
 # Content and Data Guide
 
-The Starter v2.6.3 implementation candidate separates publication decisions,
+The Starter v2.6.4 documentation-correction patch line separates publication decisions,
 authored narrative, structured facts, visual assets, configuration, theme, and
 presentation. Keep each value in its owning layer; do not turn Runtime Page
 Inventory into a whole-page CMS. V2.6.2 Phase 1C preserved the Phase C D1-D3
@@ -20,7 +20,7 @@ is historical baseline provenance, not current methodology authority.
 | Media Manifest | `src/data/media/media.json` | Asset records and fixed `hero`/`gallery`/`trailer` placement references |
 | Theme | `src/styles/theme.css` | Game-wide palette and controlled module role tokens |
 | Presentation | Astro components and targeted CSS | Rendering already resolved data |
-| SOP/Human review | `GAME_SOP v2.6.3` and project artifacts | Coverage decisions, research quality, factual/legal/visual approval, release gates |
+| SOP/Human review | `GAME_SOP v2.6.4` and project artifacts | Coverage decisions, research quality, factual/legal/visual approval, release gates |
 
 The dependency direction is one way: presentation consumes these authorities.
 Media, content, facts, homepage sections, and components cannot create or publish
@@ -184,7 +184,7 @@ schema. If no applicable facts exist, omit the section.
 
 ## Media Manifest: visual placement, not publication
 
-The current Starter v2.6.3 implementation candidate keeps the existing media
+The current Starter v2.6.4 documentation-correction patch line keeps the existing media
 contract and Phase C D1-D3 media-readiness projection. It supports
 `docs/MEDIA_DECISION_TABLE.md` for new projects, root `MEDIA_DECISION_TABLE.md`
 for legacy compatibility, duplicate-authority fail-closed validation, exact

@@ -1,7 +1,7 @@
-# GAME_SITE_STARTER v2.6.3 Implementation Candidate
+# GAME_SITE_STARTER v2.6.4 Documentation-Correction Patch Line
 
-Starter v2.6.3 is the current implementation candidate for the static-first
-Astro foundation for media-rich game wikis. It
+Starter v2.6.4 is the current documentation-correction patch line under
+preparation for the static-first Astro foundation for media-rich game wikis. It
 keeps the proven publication, fact, SEO, route, search, and reconciliation core
 while providing a player-facing Wiki portal, grouped navigation, Wiki articles,
 local media, optional FAQ content, neutral theme defaults, and restrained
@@ -12,18 +12,25 @@ does not ship fictional game facts, screenshots, news, or entity databases.
 V2.6.2 Phase 1C added the approved Pagefind and fresh-evidence contracts on top
 of the existing Phase C D1-D3 technical hardening: media
 decision tables are projected deterministically, public source rendering uses a
-safe metadata boundary, and the runtime contract is Node 22 only. The V2.6.3
-implementation candidate adds the disabled-by-default monetization seam; it is
-not a released, tagged, or frozen artifact.
+safe metadata boundary, and the runtime contract is Node 22 only. V2.6.3 added
+the disabled-by-default monetization seam and is the released and frozen
+functional baseline for this documentation-only V2.6.4 patch line.
 
 ## Version provenance
 
 These three artifacts have different responsibilities:
 
-- `GAME_SOP v2.6.3` is the current methodology package identity. Historical
+- `GAME_SOP v2.6.4` is the current methodology package identity. The released
+  and frozen `GAME_SOP v2.6.3` source baseline is tag `GAME_SOP_v2.6.3`, commit
+  `e72a54114edd336fe88d43af444fe2dae72edff8`, tree
+  `e62c85f08bd1a097153380d0e6654042a4a0ad23`, and annotated tag object
+  `823b78006fe2ca45f521f7bf8b46a53235390d68`. Historical
   `GAME_SOP v2.5` references are baseline provenance, not current authority.
-- `GAME_SITE_STARTER v2.6.3` identifies the current Starter implementation
-  candidate and its `GAME_SOP v2.6.3` compatibility line. Phase 1C
+- `GAME_SITE_STARTER v2.6.4` identifies the current documentation-correction patch line and its `GAME_SOP v2.6.4` compatibility line.
+  V2.6.3 is the released and frozen source baseline at tag `starter-v2.6.3`,
+  commit `5968306e37491d9ead939e89aa45c2bb513dc14e`, tree
+  `8b18636d7b6727477783c06d158f23e601ca4fe3`, and annotated tag object
+  `fb1600f4b4b88d6cd6e3541ab06576ed7554dd02`. Phase 1C
   implementation evidence and
   the earlier Phase C D1-D3
   technical implementation evidence is recorded separately; it is not final
@@ -36,8 +43,9 @@ These three artifacts have different responsibilities:
 package metadata version, also recorded at the top level and root package of
 `package-lock.json`. This package metadata value does not identify the Starter
 release or SOP compatibility line. The historical v2.5.0 proposal already records
-`0.1.0`, and the v2.6 Git baseline retains it. The frozen v2.6.2 baseline and
-the v2.6.3 implementation candidate both keep that metadata unchanged.
+`0.1.0`, and the v2.6 Git baseline retains it. The frozen v2.6.2 baseline, the
+released v2.6.3 baseline, and the current v2.6.4 documentation-correction patch
+line all keep that metadata unchanged.
 
 The current package carries forward the approved Starter v2.5.0 scope in
 [`docs/STARTER_V2.5_CHANGE_PROPOSAL.md`](docs/STARTER_V2.5_CHANGE_PROPOSAL.md)
@@ -102,7 +110,7 @@ The implementation uses:
 
 ## Adopt for a real game
 
-1. Record the source Starter commit, `GAME_SOP v2.6.3` package/reference, and
+1. Record the source Starter commit, `GAME_SOP v2.6.4` package/reference, and
    current Master Prompt version in the new project's brief.
 2. Complete the SOP research and human planning gates before changing page
    scope. The Starter does not decide whether a game needs heroes, tier lists,
@@ -163,7 +171,7 @@ Mobile remains one column in both states.
 
 ### Media contract
 
-The current Starter v2.6.3 implementation candidate keeps the existing
+The current Starter v2.6.4 documentation-correction patch line keeps the existing
 fixed-placement media implementation and V2.6.1 Phase C D1-D3 media-readiness
 projection. It
 supports `docs/MEDIA_DECISION_TABLE.md`, legacy root `MEDIA_DECISION_TABLE.md`
