@@ -1,6 +1,6 @@
-# GAME_SITE_STARTER v2.6.2
+# GAME_SITE_STARTER v2.6.3 Implementation Candidate
 
-Starter v2.6.2 is the current implementation target for the static-first
+Starter v2.6.3 is the current implementation candidate for the static-first
 Astro foundation for media-rich game wikis. It
 keeps the proven publication, fact, SEO, route, search, and reconciliation core
 while providing a player-facing Wiki portal, grouped navigation, Wiki articles,
@@ -9,19 +9,22 @@ page-family accents.
 
 The default repository is a small generic adoption example. It deliberately
 does not ship fictional game facts, screenshots, news, or entity databases.
-V2.6.2 Phase 1C adds the approved Pagefind and fresh-evidence contracts on top
+V2.6.2 Phase 1C added the approved Pagefind and fresh-evidence contracts on top
 of the existing Phase C D1-D3 technical hardening: media
 decision tables are projected deterministically, public source rendering uses a
-safe metadata boundary, and the runtime contract is Node 22 only.
+safe metadata boundary, and the runtime contract is Node 22 only. The V2.6.3
+implementation candidate adds the disabled-by-default monetization seam; it is
+not a released, tagged, or frozen artifact.
 
 ## Version provenance
 
 These three artifacts have different responsibilities:
 
-- `GAME_SOP v2.6.2` is the current methodology package identity. Historical
+- `GAME_SOP v2.6.3` is the current methodology package identity. Historical
   `GAME_SOP v2.5` references are baseline provenance, not current authority.
-- `GAME_SITE_STARTER v2.6.2` identifies the current Starter implementation target and its
-  `GAME_SOP v2.6.2` compatibility line. Phase 1C implementation evidence and
+- `GAME_SITE_STARTER v2.6.3` identifies the current Starter implementation
+  candidate and its `GAME_SOP v2.6.3` compatibility line. Phase 1C
+  implementation evidence and
   the earlier Phase C D1-D3
   technical implementation evidence is recorded separately; it is not final
   Human approval.
@@ -33,7 +36,8 @@ These three artifacts have different responsibilities:
 package metadata version, also recorded at the top level and root package of
 `package-lock.json`. This package metadata value does not identify the Starter
 release or SOP compatibility line. The historical v2.5.0 proposal already records
-`0.1.0`, and the v2.6 Git baseline retains it; v2.6.2 keeps that metadata unchanged.
+`0.1.0`, and the v2.6 Git baseline retains it. The frozen v2.6.2 baseline and
+the v2.6.3 implementation candidate both keep that metadata unchanged.
 
 The current package carries forward the approved Starter v2.5.0 scope in
 [`docs/STARTER_V2.5_CHANGE_PROPOSAL.md`](docs/STARTER_V2.5_CHANGE_PROPOSAL.md)
@@ -83,8 +87,9 @@ fail-closed canonical final build and must produce output without that marker.
 | `src/content/**` | Narrative guide/meta/news content and optional authored FAQ | Page identity or publishing decisions |
 | `src/data/facts/**` | Validated patch-sensitive structured facts and provenance | Routes or presentation labels |
 | `src/data/media/media.json` | Local image/local video/YouTube assets and `hero`/`gallery`/`trailer` page mappings | Page publication or arbitrary layout slots |
+| `src/config/ads.ts` | Disabled-by-default monetization decision, typed semantic placements, public slot identity, and optional known dimensions | Page-type policy, provider registry, private credentials, or Runtime Page Inventory |
 | `src/styles/theme.css` | Game-wide palette and page-family role tokens | Arbitrary per-component family keys |
-| Components | Presentation of already resolved data | A second publication or content database |
+| Components | Presentation of already resolved data; `AdSlot.astro` expresses where and `ProjectAd.astro` is the project-owned provider edge | A second publication database, automatic ad placement, or provider orchestration |
 
 The implementation uses:
 
@@ -97,7 +102,7 @@ The implementation uses:
 
 ## Adopt for a real game
 
-1. Record the source Starter commit, `GAME_SOP v2.6.2` package/reference, and
+1. Record the source Starter commit, `GAME_SOP v2.6.3` package/reference, and
    current Master Prompt version in the new project's brief.
 2. Complete the SOP research and human planning gates before changing page
    scope. The Starter does not decide whether a game needs heroes, tier lists,
@@ -110,7 +115,11 @@ The implementation uses:
    tools under `src/data/tools/`, and reviewed local media under `public/media/`.
 6. Replace the neutral fallback palette in `src/styles/theme.css` after game
    visual identity research. Footer colors derive from shared theme tokens.
-7. Run the complete workflow in
+7. Leave `src/config/ads.ts` disabled unless monetization is explicitly approved.
+   When enabled, configure each semantic placement, implement the single
+   project-owned `ProjectAd.astro` provider edge, and verify the provider's
+   slot/key/bootstrap multiplicity rules.
+8. Run the complete workflow in
    [`docs/QA_CHECKLIST.md`](docs/QA_CHECKLIST.md) before any deployment.
 
 Projects upgrading from Starter 1.0 or a 2.1-based copy should follow
@@ -154,8 +163,9 @@ Mobile remains one column in both states.
 
 ### Media contract
 
-The current Starter v2.6.2 implementation keeps the existing fixed-placement media
-implementation and V2.6.1 Phase C D1-D3 media-readiness projection. It
+The current Starter v2.6.3 implementation candidate keeps the existing
+fixed-placement media implementation and V2.6.1 Phase C D1-D3 media-readiness
+projection. It
 supports `docs/MEDIA_DECISION_TABLE.md`, legacy root `MEDIA_DECISION_TABLE.md`
 compatibility, duplicate-authority fail-closed validation, exact lifecycle enum
 validation, Runtime Page Inventory identity resolution, and deterministic
@@ -202,6 +212,40 @@ FAQ items are optional authored Content fields. They are visible when supplied,
 render nothing when empty, do not enter Page Inventory, and currently emit no
 FAQ JSON-LD. QuickFacts is a presentation primitive: projects map validated
 Fact values to `{ label, value }` without adding display labels to Fact schemas.
+
+### Monetization seam
+
+The V2.6.3 Phase 1C implementation adds a narrow provider-neutral boundary:
+`src/components/ads/AdSlot.astro` accepts a typed semantic placement,
+`src/config/ads.ts` decides whether that placement is configured and enabled,
+and `src/components/ads/ProjectAd.astro` is the only project-owned provider
+markup/bootstrap edge. Pages decide **where**; the project edge decides **how**;
+the independent ads config decides **whether**. Ads do not enter
+`game.config.ts`, Runtime Page Inventory, the media manifest, or BaseLayout.
+
+The shipped config is `enabled: false` with no placements, and the shipped
+provider edge is a no-op. The dormant homepage `home-primary` call therefore
+emits no wrapper, provider container, request/bootstrap reference, styling, or
+reserved space. A locally disabled or absent placement has the same literal
+zero-output behavior. `before-footer` is a canonical semantic name available
+for explicit project composition; it is never injected automatically.
+
+Each enabled definition requires a non-empty project/provider instance identity
+and browser-visible public slot identity. Positive width and height supplied
+together reserve responsive aspect-ratio space; unknown dimensions create no
+universal minimum height. Duplicate enabled instance identities and malformed
+dimensions fail deterministic validation. The project provider root must expose
+its configured `data-ad-instance`. Externally loaded bootstrap resources are
+audited by normalized script `src`, including an unmarked duplicate when the
+resource is identified by the provider edge. Inline bootstrap code has no
+resource URL, so it must expose the minimum stable `data-ad-bootstrap` identity.
+A shared bootstrap is emitted once per page rather than once per placement.
+
+Only public client identifiers belong in this seam. API keys, account tokens,
+admin credentials, signing material, and other private secrets must stay out of
+`ads.ts`, `AdSlot.astro`, `ProjectAd.astro`, and generated browser output. A
+provider requiring private server/API integration needs separate architecture;
+do not extend this client seam into a secret-management or provider platform.
 
 ## Feature flags
 

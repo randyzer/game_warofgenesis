@@ -1,0 +1,26 @@
+---
+import type {
+  AdPlacement,
+  AdPlacementDefinition,
+} from "../../../src/config/ads";
+
+interface Props {
+  placement: AdPlacement;
+  definition: AdPlacementDefinition;
+  privateSecretSentinel?: string;
+}
+
+const { placement, definition, privateSecretSentinel } = Astro.props;
+void privateSecretSentinel;
+---
+
+<div
+  data-ad-instance={definition.instanceId}
+  data-ad-provider-fixture={placement}
+  data-public-slot-id={definition.publicSlotId}
+></div>
+<script
+  is:inline
+  data-ad-bootstrap="fixture-bootstrap"
+  src="https://ads.test.invalid/bootstrap.js"
+></script>

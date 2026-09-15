@@ -1,0 +1,14 @@
+---
+import type {
+  AdPlacement,
+  AdPlacementDefinition,
+} from "../../config/ads";
+
+interface Props {
+  placement: AdPlacement;
+  definition: AdPlacementDefinition;
+}
+
+const props = Astro.props;
+void props;
+---

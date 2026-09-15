@@ -1,9 +1,10 @@
-# GAME_SITE_STARTER v2.6.2 Release QA Checklist
+# GAME_SITE_STARTER v2.6.3 Implementation Candidate QA Checklist
 
 Use this checklist after changing config, Runtime Page Inventory, content,
 facts, tools, media, theme, dependencies, or presentation components.
-V2.6.2 Phase 1C preserves the Phase C D1-D3 technical hardening and adds the
-approved normalized Pagefind/evidence-build contracts; this
+The V2.6.3 implementation candidate preserves the V2.6.2 Phase 1C Pagefind and
+fresh-evidence contracts and adds the approved provider-neutral monetization
+seam. It is not a released, tagged, or frozen artifact. This
 checklist covers the deterministic checks and still preserves the Human release
 gates.
 
@@ -15,7 +16,7 @@ gate.
 ## Record provenance first
 
 - [ ] Record the source Starter commit and working branch.
-- [ ] Record the `GAME_SOP v2.6.2` package/reference used for production methodology.
+- [ ] Record the `GAME_SOP v2.6.3` package/reference used for production methodology.
 - [ ] Record the current Master Prompt version.
 - [ ] Record any known version mismatch instead of silently rewriting upstream
       documents.
@@ -134,6 +135,36 @@ Do not continue to release review if any command exits non-zero.
 - [ ] Desktop no-media homepage Hero is a deliberate single-column layout;
       desktop media Hero keeps the split layout; mobile remains one column.
 
+### Monetization seam
+
+- [ ] The shipped `src/config/ads.ts` remains globally disabled with an empty
+      placement map unless monetization is explicitly approved for the project.
+- [ ] Global disablement, local disablement, an absent placement, and an
+      explicitly disabled placement each emit no ad wrapper, provider container,
+      bootstrap/request reference, label, background, or reserved space.
+- [ ] Pages/components express only typed semantic placement intent; provider
+      public identifiers, markup, scripts, and multiplicity behavior remain in
+      the project-owned `ProjectAd.astro` edge/config boundary.
+- [ ] `BaseLayout.astro` does not inject `AdSlot`, provider markup, or automatic
+      `before-footer` inventory. Page type, Runtime Page Inventory, and media
+      schemas do not control ads.
+- [ ] Every enabled placement has a non-empty, unique provider instance identity
+      and browser-visible public slot identity; malformed enabled definitions
+      and invalid dimensions fail closed.
+- [ ] Known positive width/height pairs reserve responsive aspect-ratio space;
+      unknown dimensions do not create a universal minimum height or blank block.
+- [ ] Generated HTML contains at most one occurrence of each semantic placement,
+      provider instance identity, and bootstrap identity per page, with exactly
+      one provider instance for each rendered semantic wrapper.
+- [ ] Every external provider bootstrap resource has one normalized script
+      identity per page, including when an accidental duplicate omits the
+      cooperative marker; inline bootstrap uses a stable `data-ad-bootstrap`
+      identity.
+- [ ] Client output/config contains no private API key, account token, admin
+      credential, signing secret, or internal workflow/review wording.
+- [ ] Automated tests never contact a provider and do not treat inventory,
+      provider HTTP success, creative insertion, or viewability as a CI contract.
+
 ### Generated output, SEO, and budgets
 
 `npm run build` must complete each stage:
@@ -238,7 +269,7 @@ Automation cannot approve the following items.
 - [ ] Sources are authoritative enough for the claim and their access dates are
       current.
 - [ ] Competitive coverage, content-family selection, P0/P1/P2 scope, and game
-      fit satisfy `GAME_SOP v2.6.2` and project research.
+      fit satisfy `GAME_SOP v2.6.3` and project research.
 - [ ] Internal review/update flags are cleared only by an authorized human.
 
 ### Media and rights
@@ -279,6 +310,23 @@ At every size verify:
 - [ ] no unexpected third-party request occurs beyond an intentionally embedded
       YouTube video;
 - [ ] reduced-motion mode keeps content visible and usable.
+
+When monetization is enabled, include a Human Ads Review in the existing Human
+Visual/Release gate:
+
+- [ ] placement is sensible and does not obstruct navigation, controls, core
+      content, or Footer;
+- [ ] desktop/mobile layout has no overflow or unexplained blank/dark region;
+- [ ] known-dimension reservation is proportionate and stable;
+- [ ] equivalent locale pages normally preserve semantic placement intent;
+- [ ] ad count and slot/key/container/bootstrap reuse match the verified
+      provider/project contract;
+- [ ] ordinary-browser delivery is checked when the release claim depends on it,
+      while requested, rendered, and viewable remain separate evidence claims.
+
+Provider delivery uncertainty is recorded as `PROVIDER/ENVIRONMENT CHECK
+REQUIRED` or `HUMAN_BROWSER_CHECK_REQUIRED`; an automated block or HTTP error
+alone is not production-delivery proof and must not become a universal CI gate.
 
 Before commercial release, repeat representative checks in current Safari,
 Chrome, and Firefox, on real touch hardware and with a screen reader where

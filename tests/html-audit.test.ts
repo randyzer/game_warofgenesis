@@ -1,9 +1,11 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  collectAdHtmlAuditErrors,
   collectBuildHtmlAuditErrors,
   collectReferencedAssetPaths,
 } from "../src/core/html-audit";
+import { defineAdsConfig } from "../src/config/ads";
 import {
   enabledPageCatalog,
   getPageByRoute,
@@ -143,5 +145,241 @@ describe("generated HTML audit", () => {
       "/_astro/island.js",
       "/_astro/site.css",
     ]);
+  });
+
+  it("rejects any semantic ad residue while ads are globally disabled", () => {
+    const disabled = defineAdsConfig({ enabled: false, placements: {} });
+    const errors = collectAdHtmlAuditErrors(
+      new Map([
+        [
+          "/",
+          '<section data-ad-placement="home-primary"><div data-ad-instance="home-primary-1"></div></section>',
+        ],
+      ]),
+      disabled,
+    );
+
+    expect(errors.join("\n")).toMatch(/disabled.*ad-specific output/i);
+  });
+
+  it("rejects duplicate placement, instance, and bootstrap identities on one page", () => {
+    const enabled = defineAdsConfig({
+      enabled: true,
+      placements: {
+        "home-primary": {
+          enabled: true,
+          instanceId: "home-primary-1",
+          publicSlotId: "public-home-primary",
+        },
+      },
+    });
+    const repeated = `
+      <section data-ad-placement="home-primary"><div data-ad-instance="home-primary-1"></div></section>
+      <section data-ad-placement="home-primary"><div data-ad-instance="home-primary-1"></div></section>
+      <script data-ad-bootstrap="project-bootstrap"></script>
+      <script data-ad-bootstrap="project-bootstrap"></script>`;
+
+    const errors = collectAdHtmlAuditErrors(new Map([["/", repeated]]), enabled).join("\n");
+
+    expect(errors).toMatch(/duplicate.*placement.*home-primary/i);
+    expect(errors).toMatch(/duplicate.*instance.*home-primary-1/i);
+    expect(errors).toMatch(/duplicate.*bootstrap.*project-bootstrap/i);
+  });
+
+  it("rejects a duplicate external bootstrap when one copy omits the marker", () => {
+    const enabled = defineAdsConfig({
+      enabled: true,
+      placements: {
+        "home-primary": {
+          enabled: true,
+          instanceId: "home-primary-1",
+          publicSlotId: "public-home-primary",
+        },
+      },
+    });
+    const html = `
+      <section data-ad-placement="home-primary">
+        <div data-ad-instance="home-primary-1"></div>
+      </section>
+      <script data-ad-bootstrap="project-bootstrap" src="/provider-bootstrap.js"></script>
+      <script src="/provider-bootstrap.js"></script>`;
+
+    expect(collectAdHtmlAuditErrors(new Map([["/", html]]), enabled).join("\n")).toMatch(
+      /duplicate.*bootstrap.*provider-bootstrap\.js/i,
+    );
+  });
+
+  it("requires one provider instance per enabled semantic wrapper", () => {
+    const enabled = defineAdsConfig({
+      enabled: true,
+      placements: {
+        "home-primary": {
+          enabled: true,
+          instanceId: "home-primary-1",
+          publicSlotId: "public-home-primary",
+        },
+      },
+    });
+
+    const errors = collectAdHtmlAuditErrors(
+      new Map([["/", '<section data-ad-placement="home-primary"></section>']]),
+      enabled,
+    );
+
+    expect(errors.join("\n")).toMatch(/provider instance/i);
+  });
+
+  it("validates provider roots within each wrapper instead of by page-wide totals", () => {
+    const enabled = defineAdsConfig({
+      enabled: true,
+      placements: {
+        "home-primary": {
+          enabled: true,
+          instanceId: "home-primary-1",
+          publicSlotId: "public-home-primary",
+        },
+        "before-footer": {
+          enabled: true,
+          instanceId: "before-footer-1",
+          publicSlotId: "public-before-footer",
+        },
+      },
+    });
+    const html = `
+      <section data-ad-placement="home-primary">
+        <div data-ad-instance="home-primary-1"></div>
+        <div data-ad-instance="before-footer-1"></div>
+      </section>
+      <section data-ad-placement="before-footer"></section>`;
+
+    const errors = collectAdHtmlAuditErrors(new Map([["/", html]]), enabled).join("\n");
+
+    expect(errors).toMatch(/home-primary.*exactly one provider instance.*found 2/i);
+    expect(errors).toMatch(/before-footer.*exactly one provider instance.*found 0/i);
+  });
+
+  it("rejects a provider root outside a semantic ad wrapper", () => {
+    const enabled = defineAdsConfig({ enabled: true, placements: {} });
+
+    expect(
+      collectAdHtmlAuditErrors(
+        new Map([["/", '<div data-ad-instance="orphan-provider-root"></div>']]),
+        enabled,
+      ).join("\n"),
+    ).toMatch(/orphan.*provider instance.*orphan-provider-root/i);
+  });
+
+  it("requires the wrapper provider root to match its configured instance identity", () => {
+    const enabled = defineAdsConfig({
+      enabled: true,
+      placements: {
+        "home-primary": {
+          enabled: true,
+          instanceId: "home-primary-1",
+          publicSlotId: "public-home-primary",
+        },
+      },
+    });
+    const html = `
+      <section data-ad-placement="home-primary">
+        <div data-ad-instance="wrong-provider-instance"></div>
+      </section>`;
+
+    expect(collectAdHtmlAuditErrors(new Map([["/", html]]), enabled).join("\n")).toMatch(
+      /home-primary.*does not match configured identity.*wrong-provider-instance/i,
+    );
+  });
+
+  it("requires a stable identity for inline provider bootstrap inside a wrapper", () => {
+    const enabled = defineAdsConfig({
+      enabled: true,
+      placements: {
+        "home-primary": {
+          enabled: true,
+          instanceId: "home-primary-1",
+          publicSlotId: "public-home-primary",
+        },
+      },
+    });
+    const html = `
+      <section data-ad-placement="home-primary">
+        <div data-ad-instance="home-primary-1"></div>
+        <script>globalThis.providerBootstrap = true;</script>
+      </section>`;
+
+    expect(collectAdHtmlAuditErrors(new Map([["/", html]]), enabled).join("\n")).toMatch(
+      /inline ad bootstrap.*stable.*data-ad-bootstrap/i,
+    );
+  });
+
+  it("accepts multiple valid wrappers and ignores unrelated duplicate scripts", () => {
+    const enabled = defineAdsConfig({
+      enabled: true,
+      placements: {
+        "home-primary": {
+          enabled: true,
+          instanceId: "home-primary-1",
+          publicSlotId: "public-home-primary",
+        },
+        "before-footer": {
+          enabled: true,
+          instanceId: "before-footer-1",
+          publicSlotId: "public-before-footer",
+        },
+      },
+    });
+    const html = `
+      <section data-ad-placement="home-primary">
+        <div data-ad-instance="home-primary-1"></div>
+      </section>
+      <section data-ad-placement="before-footer">
+        <div data-ad-instance="before-footer-1"></div>
+      </section>
+      <script data-ad-bootstrap="project-bootstrap" src="/provider-bootstrap.js"></script>
+      <script src="/unrelated-app.js"></script>
+      <script src="/unrelated-app.js"></script>`;
+
+    expect(collectAdHtmlAuditErrors(new Map([["/", html]]), enabled)).toEqual([]);
+  });
+
+  it("accepts one configured semantic placement and provider instance", () => {
+    const enabled = defineAdsConfig({
+      enabled: true,
+      placements: {
+        "home-primary": {
+          enabled: true,
+          instanceId: "home-primary-1",
+          publicSlotId: "public-home-primary",
+        },
+      },
+    });
+    const html = `
+      <section data-ad-placement="home-primary">
+        <div data-ad-instance="home-primary-1"></div>
+      </section>
+      <script data-ad-bootstrap="project-bootstrap"></script>`;
+
+    expect(collectAdHtmlAuditErrors(new Map([["/", html]]), enabled)).toEqual([]);
+  });
+
+  it("rejects private credential-shaped ad attributes", () => {
+    const enabled = defineAdsConfig({
+      enabled: true,
+      placements: {
+        "home-primary": {
+          enabled: true,
+          instanceId: "home-primary-1",
+          publicSlotId: "public-home-primary",
+        },
+      },
+    });
+    const html = `
+      <section data-ad-placement="home-primary">
+        <div data-ad-instance="home-primary-1" data-ad-api-key="private-value"></div>
+      </section>`;
+
+    expect(collectAdHtmlAuditErrors(new Map([["/", html]]), enabled).join("\n")).toMatch(
+      /private credential/i,
+    );
   });
 });

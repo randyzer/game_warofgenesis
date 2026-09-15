@@ -1,10 +1,13 @@
 import { existsSync, readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 
-const currentStarterFiles = [
+const currentCandidateFiles = [
   "../README.md",
-  "../docs/CONTENT_AND_DATA_GUIDE.md",
   "../docs/QA_CHECKLIST.md",
+] as const;
+
+const carriedForwardBaselineDocs = [
+  "../docs/CONTENT_AND_DATA_GUIDE.md",
   "../public/media/README.md",
 ] as const;
 
@@ -15,19 +18,29 @@ function read(path: string): string {
 }
 
 describe("release identity", () => {
-  it("uses the exact current Starter release identity in active docs", () => {
-    for (const path of currentStarterFiles) {
+  it("uses the exact current Starter candidate identity in Phase 1C entrypoints", () => {
+    for (const path of currentCandidateFiles) {
       const source = read(path);
       expect(source).not.toMatch(/^# .*v2\.5\.0/m);
       expect(source).not.toMatch(/\bStarter v2\.5\.0 is\b/);
       expect(source).not.toMatch(/`GAME_SOP v2\.5` is the production methodology/);
       expect(source).not.toMatch(/Record the `GAME_SOP v2\.5` commit used for production methodology/);
       expect(source).not.toMatch(/fit satisfy `GAME_SOP v2\.5`/);
-      expect(source).toMatch(/\b(?:GAME_SITE_STARTER|Starter) v2\.6\.2\b/);
-      expect(source).toMatch(/GAME_SOP v2\.6\.2\b/);
-      expect(source).toMatch(/Phase C|D1-D3/i);
+      expect(source).toMatch(/\b(?:GAME_SITE_STARTER|Starter) v2\.6\.3\b/i);
+      expect(source).toMatch(/GAME_SOP v2\.6\.3\b/);
+      expect(source).toMatch(/implementation candidate/i);
       expect(source).not.toMatch(/not yet implemented|not implemented yet/i);
       expect(source).not.toMatch(/IMPLEMENTATION COMPLETE|final Human PASS/i);
+      expect(source).not.toMatch(/v2\.6\.3.*(?:released|tagged|frozen)/i);
+    }
+  });
+
+  it("preserves explicit V2.6.2 identity in carried-forward baseline subsystem docs", () => {
+    for (const path of carriedForwardBaselineDocs) {
+      const source = read(path);
+      expect(source).toMatch(/\b(?:GAME_SITE_STARTER|Starter) v2\.6\.2\b/i);
+      expect(source).toMatch(/GAME_SOP v2\.6\.2\b/);
+      expect(source).toMatch(/Phase C|D1-D3/i);
     }
   });
 
@@ -40,7 +53,7 @@ describe("release identity", () => {
     expect(packageLock.version).toBe(packageJson.version);
     expect(packageLock.packages[""].version).toBe(packageJson.version);
     expect(readme).toContain(
-      "`GAME_SITE_STARTER v2.6.2` identifies the current Starter implementation target and its `GAME_SOP v2.6.2` compatibility line.",
+      "`GAME_SITE_STARTER v2.6.3` identifies the current Starter implementation candidate and its `GAME_SOP v2.6.3` compatibility line.",
     );
     expect(readme).toContain(
       `\`package.json\` version \`${packageJson.version}\` is the inherited private application/scaffold package metadata version, also recorded at the top level and root package of \`package-lock.json\`.`,

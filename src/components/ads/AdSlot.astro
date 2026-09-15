@@ -1,0 +1,32 @@
+---
+import { adsConfig, resolveAdPlacement, type AdPlacement } from "../../config/ads";
+import ProjectAd from "./ProjectAd.astro";
+
+interface Props {
+  placement: AdPlacement;
+  enabled?: boolean;
+  label?: string;
+}
+
+const {
+  placement,
+  enabled = true,
+  label = "Advertisement",
+} = Astro.props;
+const definition = resolveAdPlacement(adsConfig, placement, enabled);
+const reservationStyle =
+  definition?.width !== undefined && definition.height !== undefined
+    ? `--ad-slot-width: ${definition.width}; --ad-slot-height: ${definition.height}; width: min(100%, calc(var(--ad-slot-width) * 1px)); aspect-ratio: var(--ad-slot-width) / var(--ad-slot-height); max-width: 100%; overflow: hidden; contain: layout;`
+    : "max-width: 100%; overflow: hidden; contain: layout;";
+---
+
+{definition && (
+  <section
+    class="ad-slot"
+    data-ad-placement={placement}
+    aria-label={label}
+    style={reservationStyle}
+  >
+    <ProjectAd placement={placement} definition={definition} />
+  </section>
+)}

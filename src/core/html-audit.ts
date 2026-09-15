@@ -1,4 +1,5 @@
 import type { GameConfig } from "../config/schema";
+import { adsConfig, type AdsConfig } from "../config/ads";
 import type { PageInventoryEntry } from "../data/schemas/page-inventory";
 import { buildCanonicalUrl } from "./seo";
 
@@ -198,6 +199,229 @@ function duplicateValueErrors(
   );
 }
 
+function duplicateAdAttributeErrors(
+  route: string,
+  values: string[],
+  label: "placement" | "instance" | "bootstrap",
+): string[] {
+  const seen = new Set<string>();
+  const duplicates = new Set<string>();
+  for (const value of values) {
+    if (seen.has(value)) duplicates.add(value);
+    seen.add(value);
+  }
+  return [...duplicates].map(
+    (value) => `[${route}] Duplicate ad ${label} identity: ${value}`,
+  );
+}
+
+interface AdWrapperStructure {
+  placement: string;
+  instanceIds: string[];
+}
+
+interface AdScriptStructure {
+  attributes: Map<string, string>;
+  insideAdWrapper: boolean;
+}
+
+interface AdHtmlStructure {
+  attributes: Map<string, string>[];
+  wrappers: AdWrapperStructure[];
+  orphanInstanceIds: string[];
+  scripts: AdScriptStructure[];
+}
+
+const voidHtmlTags = new Set([
+  "area",
+  "base",
+  "br",
+  "col",
+  "embed",
+  "hr",
+  "img",
+  "input",
+  "link",
+  "meta",
+  "param",
+  "source",
+  "track",
+  "wbr",
+]);
+
+function inspectAdHtmlStructure(html: string): AdHtmlStructure {
+  const attributes: Map<string, string>[] = [];
+  const wrappers: AdWrapperStructure[] = [];
+  const orphanInstanceIds: string[] = [];
+  const scripts: AdScriptStructure[] = [];
+  const stack: Array<{ tagName: string; wrapper?: AdWrapperStructure }> = [];
+  const structuralHtml = html.replace(
+    /(<(?:script|style)\b[^>]*>)[\s\S]*?(<\/(?:script|style)\s*>)/gi,
+    "$1$2",
+  );
+
+  for (const match of structuralHtml.matchAll(/<\/?([a-z][\w:-]*)\b[^>]*>/gi)) {
+    const tag = match[0];
+    const tagName = match[1].toLocaleLowerCase("en");
+    if (/^<\//.test(tag)) {
+      const openingIndex = stack.findLastIndex((entry) => entry.tagName === tagName);
+      if (openingIndex >= 0) stack.splice(openingIndex);
+      continue;
+    }
+
+    const tagAttributes = attributesFromTag(tag);
+    attributes.push(tagAttributes);
+    const activeWrapper = stack.findLast((entry) => entry.wrapper)?.wrapper;
+    const instanceId = tagAttributes.get("data-ad-instance");
+    if (instanceId) {
+      if (activeWrapper) activeWrapper.instanceIds.push(instanceId);
+      else orphanInstanceIds.push(instanceId);
+    }
+
+    const placement = tagAttributes.get("data-ad-placement");
+    const wrapper = placement ? { placement, instanceIds: [] } : undefined;
+    if (wrapper) wrappers.push(wrapper);
+    if (tagName === "script") {
+      scripts.push({ attributes: tagAttributes, insideAdWrapper: Boolean(activeWrapper) });
+    }
+
+    if (!voidHtmlTags.has(tagName) && !/\/\s*>$/.test(tag)) {
+      stack.push({ tagName, wrapper });
+    }
+  }
+
+  return { attributes, wrappers, orphanInstanceIds, scripts };
+}
+
+function normalizeScriptResourceIdentity(src: string): string {
+  const trimmed = src.trim();
+  try {
+    const url = new URL(trimmed, "https://ad-audit.invalid/");
+    url.hash = "";
+    return url.href;
+  } catch {
+    return trimmed;
+  }
+}
+
+function duplicateAdBootstrapResourceErrors(
+  route: string,
+  scripts: AdScriptStructure[],
+): string[] {
+  const resourceScripts = scripts.flatMap(({ attributes, insideAdWrapper }) => {
+    const src = attributes.get("src")?.trim();
+    if (!src) return [];
+    return [{
+      identity: normalizeScriptResourceIdentity(src),
+      src,
+      identifiesAdBootstrap: insideAdWrapper || attributes.has("data-ad-bootstrap"),
+    }];
+  });
+  const adBootstrapResources = new Set(
+    resourceScripts
+      .filter((script) => script.identifiesAdBootstrap)
+      .map((script) => script.identity),
+  );
+
+  return [...adBootstrapResources].flatMap((identity) => {
+    const matches = resourceScripts.filter((script) => script.identity === identity);
+    return matches.length > 1
+      ? [`[${route}] Duplicate ad bootstrap resource identity: ${matches[0].src}`]
+      : [];
+  });
+}
+
+export function collectAdHtmlAuditErrors(
+  htmlByRoute: Map<string, string>,
+  config: AdsConfig<string>,
+): string[] {
+  const errors: string[] = [];
+
+  for (const [route, html] of htmlByRoute) {
+    const structure = inspectAdHtmlStructure(html);
+    const { attributes, wrappers, orphanInstanceIds, scripts } = structure;
+    const hasAdOutput = attributes.some((tag) =>
+      [...tag.keys()].some((name) => name.startsWith("data-ad-")),
+    );
+
+    if (!config.enabled) {
+      if (hasAdOutput) {
+        errors.push(`[${route}] Globally disabled ads emitted ad-specific output.`);
+      }
+      continue;
+    }
+
+    for (const tag of attributes) {
+      if (
+        [...tag.keys()].some((name) =>
+          /^data-ad-(?:api-key|secret|token|password|private-key)$/i.test(name),
+        )
+      ) {
+        errors.push(`[${route}] Ad output contains a private credential attribute.`);
+      }
+    }
+
+    const placements = wrappers.map((wrapper) => wrapper.placement);
+    const instances = attributes.flatMap((tag) => {
+      const value = tag.get("data-ad-instance");
+      return value ? [value] : [];
+    });
+    const bootstraps = attributes.flatMap((tag) => {
+      const value = tag.get("data-ad-bootstrap");
+      return value ? [value] : [];
+    });
+
+    errors.push(
+      ...duplicateAdAttributeErrors(route, placements, "placement"),
+      ...duplicateAdAttributeErrors(route, instances, "instance"),
+      ...duplicateAdAttributeErrors(route, bootstraps, "bootstrap"),
+      ...duplicateAdBootstrapResourceErrors(route, scripts),
+    );
+
+    for (const wrapper of wrappers) {
+      const definition = config.placements[wrapper.placement];
+      if (!definition?.enabled) {
+        errors.push(
+          `[${route}] Ad placement is not enabled in config: ${wrapper.placement}`,
+        );
+      }
+      if (wrapper.instanceIds.length !== 1) {
+        errors.push(
+          `[${route}] Ad placement ${wrapper.placement} requires exactly one provider instance; found ${wrapper.instanceIds.length}.`,
+        );
+      } else if (
+        definition?.enabled &&
+        wrapper.instanceIds[0] !== definition.instanceId
+      ) {
+        errors.push(
+          `[${route}] Ad placement ${wrapper.placement} provider instance does not match configured identity: ${wrapper.instanceIds[0]}.`,
+        );
+      }
+    }
+
+    for (const instanceId of orphanInstanceIds) {
+      errors.push(
+        `[${route}] Orphan ad provider instance exists outside a semantic ad wrapper: ${instanceId}`,
+      );
+    }
+
+    for (const { attributes: script, insideAdWrapper } of scripts) {
+      if (
+        insideAdWrapper &&
+        !script.get("src")?.trim() &&
+        !script.get("data-ad-bootstrap")?.trim()
+      ) {
+        errors.push(
+          `[${route}] Inline ad bootstrap requires a stable data-ad-bootstrap identity.`,
+        );
+      }
+    }
+
+  }
+
+  return errors;
+}
+
 export function collectBuildHtmlAuditErrors({
   config,
   pages,
@@ -206,6 +430,8 @@ export function collectBuildHtmlAuditErrors({
   const knownRoutes = new Set(pages.map((page) => page.route));
   const analyses = new Map<string, HtmlPageAnalysis>();
   const errors: string[] = [];
+
+  errors.push(...collectAdHtmlAuditErrors(htmlByRoute, adsConfig));
 
   for (const page of pages) {
     const html = htmlByRoute.get(page.route);

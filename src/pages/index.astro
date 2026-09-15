@@ -3,6 +3,7 @@ import GameHero from "../components/home/GameHero.astro";
 import PageCollection from "../components/home/PageCollection.astro";
 import WikiCategories from "../components/home/WikiCategories.astro";
 import { buildHomepageModel } from "../components/home/home-model";
+import AdSlot from "../components/ads/AdSlot.astro";
 import GameMedia from "../components/media/GameMedia.astro";
 import ScreenshotGallery from "../components/media/ScreenshotGallery.astro";
 import FAQ from "../components/wiki/FAQ.astro";
@@ -41,6 +42,8 @@ const displayHeading = siteConfig.homepage.displayHeading ?? siteConfig.brand.na
       heroMedia={homepage.media.heroMedia}
       browseTarget={homepage.categories.length > 0 ? "#browse-by-category" : undefined}
     />
+
+    <AdSlot placement="home-primary" />
 
     {homepage.quickFacts.length > 0 && (
       <div class="shell">
