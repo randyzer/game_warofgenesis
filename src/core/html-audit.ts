@@ -1,5 +1,6 @@
 import type { GameConfig } from "../config/schema";
 import { adsConfig, type AdsConfig } from "../config/ads";
+import { googleAnalyticsConfig } from "../config/analytics";
 import type { PageInventoryEntry } from "../data/schemas/page-inventory";
 import { buildCanonicalUrl } from "./seo";
 
@@ -442,8 +443,12 @@ export function collectExternalScriptErrors(
   route: string,
   html: string,
   config: AdsConfig<string> = adsConfig,
+  analytics = googleAnalyticsConfig,
 ): string[] {
   const allowedAdSources = enabledAdBootstrapSources(config);
+  const allowedAnalyticsSource = analytics?.scriptSrc
+    ? normalizeScriptResourceIdentity(analytics.scriptSrc)
+    : null;
 
   return openingTags(html, "script").flatMap((tag) => {
     const attributes = attributesFromTag(tag);
@@ -453,7 +458,10 @@ export function collectExternalScriptErrors(
     const isReviewedAdBootstrap =
       Boolean(attributes.get("data-ad-bootstrap")?.trim()) &&
       allowedAdSources.has(normalizeScriptResourceIdentity(src));
-    return isReviewedAdBootstrap
+    const isReviewedAnalyticsBootstrap =
+      attributes.get("data-analytics-provider") === "google-analytics" &&
+      allowedAnalyticsSource === normalizeScriptResourceIdentity(src);
+    return isReviewedAdBootstrap || isReviewedAnalyticsBootstrap
       ? []
       : [`[${route}] External script reference is not allowed by default.`];
   });

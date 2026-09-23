@@ -32,12 +32,18 @@ credential is committed to the repository.
 | --- | --- | --- |
 | `PUBLIC_ADSTERRA_KEY` | Yes, to show ads | 32-character hex key of the Adsterra ad unit |
 | `PUBLIC_ADSTERRA_DOMAIN` | No | Delivery-domain override for the invoke script |
+| `PUBLIC_GA_MEASUREMENT_ID` | No | Optional override for the project GA4 Measurement ID |
 
 The build fails closed: when `PUBLIC_ADSTERRA_KEY` is unset or malformed, the
 generated HTML contains no ad container, no provider script, and no reserved
 space. Set the variable for every environment that should serve ads (on Vercel,
 Production plus any Preview environment you verify), then redeploy, because the
 value is inlined at build time.
+
+Google Analytics defaults to the project Measurement ID in
+`src/config/analytics.ts`. Set `PUBLIC_GA_MEASUREMENT_ID` only when an
+environment needs to override that value, then redeploy because the value is
+inlined at build time.
 
 Verify a deployment by fetching a page and checking for exactly one ad wrapper
 and one bootstrap script:

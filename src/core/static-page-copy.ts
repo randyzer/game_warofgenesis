@@ -47,8 +47,8 @@ const staticPageCopy = {
       {
         heading: "Site measurement and advertising",
         paragraphs: [
-          "The site displays advertising delivered by Adsterra, a third-party ad network. The Adsterra script loads from its own domain in your browser.",
-          "Adsterra can process ordinary technical request data such as IP address, user agent, referring page, and cookie or device identifiers under its own policies. This site does not receive or store visitor names, email addresses, or payment information.",
+          "The site uses Google Analytics 4 to measure aggregate traffic and displays advertising delivered by Adsterra, a third-party ad network. Their scripts load from their own domains in your browser.",
+          "Google and Adsterra can process ordinary technical request data such as IP address, user agent, referring page, and cookie or device identifiers under their own policies. This site does not receive or store visitor names, email addresses, or payment information.",
         ],
       },
       {

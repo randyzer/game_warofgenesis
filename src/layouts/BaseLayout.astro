@@ -1,6 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import { googleAnalyticsConfig } from "../config/analytics";
 import { siteConfig } from "../core/site-data";
 import {
   buildBaseSeoGraph,
@@ -63,6 +64,22 @@ const graph = [
     <meta name="twitter:image:alt" content={siteConfig.social.defaultImageAlt} />
     {siteConfig.social.xHandle && (
       <meta name="twitter:site" content={siteConfig.social.xHandle} />
+    )}
+
+    {googleAnalyticsConfig && (
+      <>
+        <script
+          is:inline
+          async
+          data-analytics-provider="google-analytics"
+          src={googleAnalyticsConfig.scriptSrc}
+        ></script>
+        <script
+          is:inline
+          data-analytics-bootstrap="google-analytics"
+          set:html={googleAnalyticsConfig.initScript}
+        ></script>
+      </>
     )}
 
     <script
