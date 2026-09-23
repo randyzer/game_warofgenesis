@@ -422,6 +422,43 @@ export function collectAdHtmlAuditErrors(
   return errors;
 }
 
+function enabledAdBootstrapSources(config: AdsConfig<string>): Set<string> {
+  if (!config.enabled) return new Set();
+  return new Set(
+    Object.values(config.placements).flatMap((definition) =>
+      definition?.enabled && definition.provider
+        ? [normalizeScriptResourceIdentity(definition.provider.scriptSrc)]
+        : [],
+    ),
+  );
+}
+
+/**
+ * External scripts stay banned by default. The only exception is a reviewed ad
+ * bootstrap whose src matches an enabled placement provider and that declares a
+ * data-ad-bootstrap identity, so an arbitrary third-party script still fails.
+ */
+export function collectExternalScriptErrors(
+  route: string,
+  html: string,
+  config: AdsConfig<string> = adsConfig,
+): string[] {
+  const allowedAdSources = enabledAdBootstrapSources(config);
+
+  return openingTags(html, "script").flatMap((tag) => {
+    const attributes = attributesFromTag(tag);
+    const src = attributes.get("src")?.trim() ?? "";
+    if (!/^https?:\/\//i.test(src)) return [];
+
+    const isReviewedAdBootstrap =
+      Boolean(attributes.get("data-ad-bootstrap")?.trim()) &&
+      allowedAdSources.has(normalizeScriptResourceIdentity(src));
+    return isReviewedAdBootstrap
+      ? []
+      : [`[${route}] External script reference is not allowed by default.`];
+  });
+}
+
 export function collectBuildHtmlAuditErrors({
   config,
   pages,

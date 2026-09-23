@@ -10,6 +10,7 @@ import {
 } from "../core/seo";
 import type { PageInventoryEntry } from "../data/schemas/page-inventory";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import AdSlot from "./ads/AdSlot.astro";
 
 interface Props {
   page: PageInventoryEntry;
@@ -70,6 +71,8 @@ const structuredData = [
           )}
         </dl>
       </header>
+
+      <AdSlot placement="article-after-intro" />
 
       <div class="article__layout wiki-article__layout--single">
         <div class="prose"><slot /></div>

@@ -9,6 +9,23 @@ interface Props {
   definition: AdPlacementDefinition;
 }
 
-const props = Astro.props;
-void props;
+const { placement, definition } = Astro.props;
+const provider = definition.provider ?? null;
 ---
+
+{provider && (
+  <div
+    data-ad-instance={definition.instanceId}
+    data-ad-provider={placement}
+    data-public-slot-id={definition.publicSlotId}
+  >
+    <div id={provider.containerId}></div>
+    <script
+      is:inline
+      async
+      data-cfasync="false"
+      data-ad-bootstrap={provider.bootstrapId}
+      src={provider.scriptSrc}
+    ></script>
+  </div>
+)}

@@ -23,6 +23,30 @@ changing a production alias, attaching a production domain, and changing DNS
 are separate external writes that each require explicit authorization. An
 upload authorization does not authorize any of those actions.
 
+## Advertising environment variables
+
+Ad delivery is configured entirely through public build-time variables. No ad
+credential is committed to the repository.
+
+| Variable | Required | Meaning |
+| --- | --- | --- |
+| `PUBLIC_ADSTERRA_KEY` | Yes, to show ads | 32-character hex key of the Adsterra ad unit |
+| `PUBLIC_ADSTERRA_DOMAIN` | No | Delivery-domain override for the invoke script |
+
+The build fails closed: when `PUBLIC_ADSTERRA_KEY` is unset or malformed, the
+generated HTML contains no ad container, no provider script, and no reserved
+space. Set the variable for every environment that should serve ads (on Vercel,
+Production plus any Preview environment you verify), then redeploy, because the
+value is inlined at build time.
+
+Verify a deployment by fetching a page and checking for exactly one ad wrapper
+and one bootstrap script:
+
+```bash
+curl -s https://war-of-genesis.wiki/ | grep -o 'data-ad-placement="[^"]*"'
+curl -s https://war-of-genesis.wiki/ | grep -c 'invoke.js'
+```
+
 ## Cloudflare Workers static assets
 
 Wrangler 4 is pinned as a development dependency. `wrangler.jsonc` serves only

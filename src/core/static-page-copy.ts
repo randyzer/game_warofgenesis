@@ -47,7 +47,8 @@ const staticPageCopy = {
       {
         heading: "Site measurement and advertising",
         paragraphs: [
-          "Behavioral analytics and advertising are not currently enabled. The site does not use advertising pixels or an ad network in its published interface.",
+          "The site uses Google Analytics to measure aggregate traffic, and it displays advertising delivered by Adsterra, a third-party ad network. Both load scripts from their own domains in your browser.",
+          "Those third-party services can process ordinary technical request data such as IP address, user agent, referring page, and cookie or device identifiers, under their own policies. This site does not receive or store visitor names, email addresses, or payment information.",
         ],
       },
       {

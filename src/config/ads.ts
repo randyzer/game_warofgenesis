@@ -1,11 +1,22 @@
+import { adsterraUnitFromEnv, type AdsterraUnit } from "./adsterra";
+
 export const canonicalAdPlacements = ["home-primary", "before-footer"] as const;
 
 // Add reviewed project-specific literal placements here. Keep the list small.
-export const projectAdPlacements = [] as const satisfies readonly string[];
+export const projectAdPlacements = ["article-after-intro"] as const satisfies readonly string[];
 
 export type CanonicalAdPlacement = (typeof canonicalAdPlacements)[number];
 export type ProjectAdPlacement = (typeof projectAdPlacements)[number];
 export type AdPlacement = CanonicalAdPlacement | ProjectAdPlacement;
+
+export interface AdProviderDefinition {
+  /** Provider bootstrap script URL. Public by design; never a private credential. */
+  scriptSrc: string;
+  /** DOM id the provider script fills with its creative. */
+  containerId: string;
+  /** Stable audit identity for the bootstrap resource. */
+  bootstrapId: string;
+}
 
 export interface AdPlacementDefinition {
   enabled: boolean;
@@ -13,6 +24,7 @@ export interface AdPlacementDefinition {
   publicSlotId: string;
   width?: number;
   height?: number;
+  provider?: AdProviderDefinition;
 }
 
 export interface AdsConfig<Placement extends string = AdPlacement> {
@@ -80,7 +92,37 @@ export function resolveAdPlacement<Placement extends string>(
   return definition?.enabled ? definition : null;
 }
 
-export const adsConfig: AdsConfig = defineAdsConfig({
-  enabled: false,
-  placements: {},
-});
+/**
+ * Maps one Adsterra unit onto the semantic placements that carry it.
+ * Each route renders at most one placement, so the single provider container id
+ * and bootstrap resource stay unique per page.
+ */
+export function buildAdsterraAdsConfig(unit: AdsterraUnit | null): AdsConfig {
+  if (!unit) return defineAdsConfig({ enabled: false, placements: {} });
+
+  const provider: AdProviderDefinition = {
+    scriptSrc: unit.scriptSrc,
+    containerId: unit.containerId,
+    bootstrapId: `adsterra-${unit.key}`,
+  };
+
+  return defineAdsConfig({
+    enabled: true,
+    placements: {
+      "home-primary": {
+        enabled: true,
+        instanceId: "adsterra-home-primary",
+        publicSlotId: unit.containerId,
+        provider,
+      },
+      "article-after-intro": {
+        enabled: true,
+        instanceId: "adsterra-article-after-intro",
+        publicSlotId: unit.containerId,
+        provider,
+      },
+    },
+  });
+}
+
+export const adsConfig: AdsConfig = buildAdsterraAdsConfig(adsterraUnitFromEnv());

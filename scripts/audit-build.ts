@@ -5,7 +5,11 @@ import {
 } from "node:fs";
 import { join, resolve } from "node:path";
 
-import { collectBuildHtmlAuditErrors, collectReferencedAssetPaths } from "../src/core/html-audit";
+import {
+  collectBuildHtmlAuditErrors,
+  collectExternalScriptErrors,
+  collectReferencedAssetPaths,
+} from "../src/core/html-audit";
 import { routeToOutputFile } from "../src/core/output-reconciliation";
 import {
   collectPagefindBudgetErrors,
@@ -121,9 +125,7 @@ for (const page of enabledPageCatalog) {
   if (!interactivePageTypes.has(page.pageType) && jsBytes > 0) {
     errors.push(`[${page.route}] Static page unexpectedly references client JavaScript.`);
   }
-  if (/<script\b[^>]*\bsrc=["']https?:\/\//i.test(html)) {
-    errors.push(`[${page.route}] External script reference is not allowed by default.`);
-  }
+  errors.push(...collectExternalScriptErrors(page.route, html));
 }
 
 warnings.push(
