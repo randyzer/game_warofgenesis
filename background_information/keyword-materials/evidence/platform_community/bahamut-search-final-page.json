@@ -1,0 +1,12 @@
+{
+  "title": "search.gamer.com.tw",
+  "url": "chrome-error://chromewebdata/",
+  "text": "This site can’t be reached\n\nsearch.gamer.com.tw unexpectedly closed the connection.\n\nTry:\n\nChecking the connection\nChecking the proxy and the firewall\nERR_CONNECTION_CLOSED\nReload\nDetails",
+  "links": [
+    {
+      "text": "Checking the proxy and the firewall",
+      "url": "chrome-error://chromewebdata/#buttons"
+    }
+  ],
+  "access_date": "2026-10-10"
+}

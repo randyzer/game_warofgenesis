@@ -1,0 +1,481 @@
+{
+  "title": "Equipment | War of Genesis: Idle Loot Wiki",
+  "url": "https://warofgenesis.wiki/equipment",
+  "text": "Skip to content\nGENESIS\nARCHIVE\n\nWar of Genesis: Idle Loot\n\nEXPLORE\nOverview\nStages\nMonsters\nGold Bar\nCOLLECTION\nCharacters\nSkills\nEquipment\nItems\nWings, Runes & Pets\nMachina\nPassive Skills\nRelics\nAltar\nCompare\nPROGRESSION\nGrowth Systems\nBattlefield\nCompetition\nQuests\nContent Unlocks\nTOOLS & GUIDES\nFarming simulator\nLeveling Calculator\nCombat Calculator\nREFERENCE\nStats & Formulas\nGame settings\nData & sources\nPrivacy Policy\nFan-Made Legal Notice\nClient snapshot v1245\nData & sources\nEquipment\nSearch\nSupport\nLanguage\nEnglish (EN)\nIndonesia (ID)\n简体中文 (CN)\n繁體中文 (TW)\n한국어 (KR)\n日本語 (JP)\nPortuguês (BR)\nไทย (TH)\nРусский (RU)\nTürkçe (TR)\nEspañol (ES)\nEquipment\n\nEvery Equip_table row. Filter by type, slot, class, tier and required level.\n\nSearch\nType\nAll\nGear\nAccessory\nSlot\nAll\nWeapon\nOff-Hand\nHelmet\nArmor\nGloves\nBoots\nCloak\nPauldrons\nRing\nEarrings\nNecklace\nBracelet\nBelt\nBrooch\nClass\nAll\nKnight\nRanger\nWizard\nAll classes\nTier\nAll\nTier 1\nTier 2\nTier 3\nTier 4\nTier 5\nTier 6\nRequired Level\nAll\n1\n10\n15\n20\n25\n30\n35\n40\n45\n50\n55\n60\n65\n70\n75\n80\n85\n90\n95\n100\n105\n\n1,872 results\n\nName\tTier\tSlot\tClass\tRequired Level\tAbilities\tJewel slots\tDismantle value\nIron Sword\nID 201001\n\tTier 1\tWeapon\tKnight\t1\tAttack +5\t0\t\nGold\n×100\n\nIron Sword\nID 201002\n\tTier 2\tWeapon\tKnight\t1\tAttack +8\t0\t\nGold\n×300\n\nIron Sword\nID 201003\n\tTier 3\tWeapon\tKnight\t1\tAttack +11\t1\t\nRare Equipment Fragment\n×60\n\nIron Sword\nID 201004\n\tTier 4\tWeapon\tKnight\t1\tAttack +20\nAccuracy +1\t2\t\nHeroic Equipment Fragment\n×120\n\nIron Sword\nID 201005\n\tTier 5\tWeapon\tKnight\t1\tAttack +25\nAccuracy +1.2\nLightning Hit +0.5\t3\t\nLegendary Equipment Fragment\n×240\n\nIron Sword\nID 201006\n\tTier 6\tWeapon\tKnight\t1\tAttack +33\nAccuracy +1.6\nLightning Hit +0.7\nLightning Damage +0.8%\t4\t\nMythic Equipment Fragment\n×480\n\nShort Bow\nID 202001\n\tTier 1\tWeapon\tRanger\t1\tAttack +5\t0\t\nGold\n×100\n\nShort Bow\nID 202002\n\tTier 2\tWeapon\tRanger\t1\tAttack +8\t0\t\nGold\n×300\n\nShort Bow\nID 202003\n\tTier 3\tWeapon\tRanger\t1\tAttack +11\t1\t\nRare Equipment Fragment\n×60\n\nShort Bow\nID 202004\n\tTier 4\tWeapon\tRanger\t1\tAttack +20\nAccuracy +1\t2\t\nHeroic Equipment Fragment\n×120\n\nShort Bow\nID 202005\n\tTier 5\tWeapon\tRanger\t1\tAttack +25\nAccuracy +1.2\nPoison Hit +0.5\t3\t\nLegendary Equipment Fragment\n×240\n\nShort Bow\nID 202006\n\tTier 6\tWeapon\tRanger\t1\tAttack +33\nAccuracy +1.6\nPoison Hit +0.7\nPoison Damage +0.8%\t4\t\nMythic Equipment Fragment\n×480\n\nSilver Staff\nID 203001\n\tTier 1\tWeapon\tWizard\t1\tAttack +5\t0\t\nGold\n×100\n\nSilver Staff\nID 203002\n\tTier 2\tWeapon\tWizard\t1\tAttack +8\t0\t\nGold\n×300\n\nSilver Staff\nID 203003\n\tTier 3\tWeapon\tWizard\t1\tAttack +11\t1\t\nRare Equipment Fragment\n×60\n\nSilver Staff\nID 203004\n\tTier 4\tWeapon\tWizard\t1\tAttack +20\nCritical Damage +1%\t2\t\nHeroic Equipment Fragment\n×120\n\nSilver Staff\nID 203005\n\tTier 5\tWeapon\tWizard\t1\tAttack +25\nCritical Damage +1.2%\nFire Hit +0.5\t3\t\nLegendary Equipment Fragment\n×240\n\nSilver Staff\nID 203006\n\tTier 6\tWeapon\tWizard\t1\tAttack +33\nCritical Damage +1.6%\nFire Hit +0.7\nFire Damage +0.8%\t4\t\nMythic Equipment Fragment\n×480\n\nIron Shield\nID 204001\n\tTier 1\tOff-Hand\tKnight\t1\tDefense +11\t0\t\nGold\n×100\n\nIron Shield\nID 204002\n\tTier 2\tOff-Hand\tKnight\t1\tDefense +16\t0\t\nGold\n×300\n\nIron Shield\nID 204003\n\tTier 3\tOff-Hand\tKnight\t1\tDefense +23\t1\t\nRare Equipment Fragment\n×60\n\nIron Shield\nID 204004\n\tTier 4\tOff-Hand\tKnight\t1\tDefense +40\nBlock +0.8\t2\t\nHeroic Equipment Fragment\n×120\n\nIron Shield\nID 204005\n\tTier 5\tOff-Hand\tKnight\t1\tDefense +50\nBlock +1\nHP +0.8%\t3\t\nLegendary Equipment Fragment\n×240\n\nIron Shield\nID 204006\n\tTier 6\tOff-Hand\tKnight\t1\tDefense +67\nBlock +1.3\nHP +1.1%\nDefense +0.6%\t4\t\nMythic Equipment Fragment\n×480\n\nWooden Quiver\nID 205001\n\tTier 1\tOff-Hand\tRanger\t1\tAttack +5\t0\t\nGold\n×100\n\nWooden Quiver\nID 205002\n\tTier 2\tOff-Hand\tRanger\t1\tAttack +8\t0\t\nGold\n×300\n\nWooden Quiver\nID 205003\n\tTier 3\tOff-Hand\tRanger\t1\tAttack +11\t1\t\nRare Equipment Fragment\n×60\n\nWooden Quiver\nID 205004\n\tTier 4\tOff-Hand\tRanger\t1\tAttack +20\nAttack Speed +0.2%\t2\t\nHeroic Equipment Fragment\n×120\n\nWooden Quiver\nID 205005\n\tTier 5\tOff-Hand\tRanger\t1\tAttack +25\nAttack Speed +0.3%\nAttack +0.8%\t3\t\nLegendary Equipment Fragment\n×240\n\nWooden Quiver\nID 205006\n\tTier 6\tOff-Hand\tRanger\t1\tAttack +33\nAttack Speed +0.4%\nAttack +1.1%\nNatural Recovery Amount +2\t4\t\nMythic Equipment Fragment\n×480\n\nCommon Spellbook\nID 206001\n\tTier 1\tOff-Hand\tWizard\t1\tAttack +5\t0\t\nGold\n×100\n\nCommon Spellbook\nID 206002\n\tTier 2\tOff-Hand\tWizard\t1\tAttack +8\t0\t\nGold\n×300\n\nCommon Spellbook\nID 206003\n\tTier 3\tOff-Hand\tWizard\t1\tAttack +11\t1\t\nRare Equipment Fragment\n×60\n\nCommon Spellbook\nID 206004\n\tTier 4\tOff-Hand\tWizard\t1\tAttack +20\nCritical Hit +0.5\t2\t\nHeroic Equipment Fragment\n×120\n\nCommon Spellbook\nID 206005\n\tTier 5\tOff-Hand\tWizard\t1\tAttack +25\nCritical Hit +0.6\nCritical Damage +1%\t3\t\nLegendary Equipment Fragment\n×240\n\nCommon Spellbook\nID 206006\n\tTier 6\tOff-Hand\tWizard\t1\tAttack +33\nCritical Hit +0.8\nCritical Damage +1.4%\nAttack +0.6%\t4\t\nMythic Equipment Fragment\n×480\n\nWorn Helmet\nID 207001\n\tTier 1\tHelmet\tAll classes\t1\tDefense +11\t0\t\nGold\n×100\n\nWorn Helmet\nID 207002\n\tTier 2\tHelmet\tAll classes\t1\tDefense +16\t0\t\nGold\n×300\n\nWorn Helmet\nID 207003\n\tTier 3\tHelmet\tAll classes\t1\tDefense +23\t1\t\nRare Equipment Fragment\n×60\n\nWorn Helmet\nID 207004\n\tTier 4\tHelmet\tAll classes\t1\tDefense +40\nHP +200\t2\t\nHeroic Equipment Fragment\n×120\nPrevious\n1 / 47\nNext\n↑\nGenesis Archive / Independent game wiki\nPrivacy Policy\nFan-Made Legal Notice",
+  "links": [
+    {
+      "text": "Skip to content",
+      "url": "https://warofgenesis.wiki/equipment#content"
+    },
+    {
+      "text": "GENESIS\nARCHIVE",
+      "url": "https://warofgenesis.wiki/"
+    },
+    {
+      "text": "Overview",
+      "url": "https://warofgenesis.wiki/"
+    },
+    {
+      "text": "Stages",
+      "url": "https://warofgenesis.wiki/stages"
+    },
+    {
+      "text": "Monsters",
+      "url": "https://warofgenesis.wiki/monsters"
+    },
+    {
+      "text": "Gold Bar",
+      "url": "https://warofgenesis.wiki/gold"
+    },
+    {
+      "text": "Characters",
+      "url": "https://warofgenesis.wiki/heroes"
+    },
+    {
+      "text": "Skills",
+      "url": "https://warofgenesis.wiki/skills"
+    },
+    {
+      "text": "Equipment",
+      "url": "https://warofgenesis.wiki/equipment"
+    },
+    {
+      "text": "Items",
+      "url": "https://warofgenesis.wiki/items"
+    },
+    {
+      "text": "Wings, Runes & Pets",
+      "url": "https://warofgenesis.wiki/companions"
+    },
+    {
+      "text": "Machina",
+      "url": "https://warofgenesis.wiki/machina"
+    },
+    {
+      "text": "Passive Skills",
+      "url": "https://warofgenesis.wiki/passives"
+    },
+    {
+      "text": "Relics",
+      "url": "https://warofgenesis.wiki/relics"
+    },
+    {
+      "text": "Altar",
+      "url": "https://warofgenesis.wiki/altar"
+    },
+    {
+      "text": "Compare",
+      "url": "https://warofgenesis.wiki/compare"
+    },
+    {
+      "text": "Growth Systems",
+      "url": "https://warofgenesis.wiki/growth"
+    },
+    {
+      "text": "Battlefield",
+      "url": "https://warofgenesis.wiki/battlefield"
+    },
+    {
+      "text": "Competition",
+      "url": "https://warofgenesis.wiki/competition"
+    },
+    {
+      "text": "Quests",
+      "url": "https://warofgenesis.wiki/quests"
+    },
+    {
+      "text": "Content Unlocks",
+      "url": "https://warofgenesis.wiki/unlocks"
+    },
+    {
+      "text": "Farming simulator",
+      "url": "https://warofgenesis.wiki/farming"
+    },
+    {
+      "text": "Leveling Calculator",
+      "url": "https://warofgenesis.wiki/leveling"
+    },
+    {
+      "text": "Combat Calculator",
+      "url": "https://warofgenesis.wiki/calculator"
+    },
+    {
+      "text": "Stats & Formulas",
+      "url": "https://warofgenesis.wiki/stats"
+    },
+    {
+      "text": "Game settings",
+      "url": "https://warofgenesis.wiki/systems"
+    },
+    {
+      "text": "Data & sources",
+      "url": "https://warofgenesis.wiki/sources"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://warofgenesis.wiki/privacy"
+    },
+    {
+      "text": "Fan-Made Legal Notice",
+      "url": "https://warofgenesis.wiki/legal"
+    },
+    {
+      "text": "Data & sources",
+      "url": "https://warofgenesis.wiki/sources"
+    },
+    {
+      "text": "Support",
+      "url": "https://buymeacoffee.com/arianshirone"
+    },
+    {
+      "text": "Iron Sword",
+      "url": "https://warofgenesis.wiki/equipment/201001"
+    },
+    {
+      "text": "Gold\n×100",
+      "url": "https://warofgenesis.wiki/items/1000"
+    },
+    {
+      "text": "Iron Sword",
+      "url": "https://warofgenesis.wiki/equipment/201002"
+    },
+    {
+      "text": "Gold\n×300",
+      "url": "https://warofgenesis.wiki/items/1000"
+    },
+    {
+      "text": "Iron Sword",
+      "url": "https://warofgenesis.wiki/equipment/201003"
+    },
+    {
+      "text": "Rare Equipment Fragment\n×60",
+      "url": "https://warofgenesis.wiki/items/11030"
+    },
+    {
+      "text": "Iron Sword",
+      "url": "https://warofgenesis.wiki/equipment/201004"
+    },
+    {
+      "text": "Heroic Equipment Fragment\n×120",
+      "url": "https://warofgenesis.wiki/items/11040"
+    },
+    {
+      "text": "Iron Sword",
+      "url": "https://warofgenesis.wiki/equipment/201005"
+    },
+    {
+      "text": "Legendary Equipment Fragment\n×240",
+      "url": "https://warofgenesis.wiki/items/11050"
+    },
+    {
+      "text": "Iron Sword",
+      "url": "https://warofgenesis.wiki/equipment/201006"
+    },
+    {
+      "text": "Mythic Equipment Fragment\n×480",
+      "url": "https://warofgenesis.wiki/items/11060"
+    },
+    {
+      "text": "Short Bow",
+      "url": "https://warofgenesis.wiki/equipment/202001"
+    },
+    {
+      "text": "Gold\n×100",
+      "url": "https://warofgenesis.wiki/items/1000"
+    },
+    {
+      "text": "Short Bow",
+      "url": "https://warofgenesis.wiki/equipment/202002"
+    },
+    {
+      "text": "Gold\n×300",
+      "url": "https://warofgenesis.wiki/items/1000"
+    },
+    {
+      "text": "Short Bow",
+      "url": "https://warofgenesis.wiki/equipment/202003"
+    },
+    {
+      "text": "Rare Equipment Fragment\n×60",
+      "url": "https://warofgenesis.wiki/items/11030"
+    },
+    {
+      "text": "Short Bow",
+      "url": "https://warofgenesis.wiki/equipment/202004"
+    },
+    {
+      "text": "Heroic Equipment Fragment\n×120",
+      "url": "https://warofgenesis.wiki/items/11040"
+    },
+    {
+      "text": "Short Bow",
+      "url": "https://warofgenesis.wiki/equipment/202005"
+    },
+    {
+      "text": "Legendary Equipment Fragment\n×240",
+      "url": "https://warofgenesis.wiki/items/11050"
+    },
+    {
+      "text": "Short Bow",
+      "url": "https://warofgenesis.wiki/equipment/202006"
+    },
+    {
+      "text": "Mythic Equipment Fragment\n×480",
+      "url": "https://warofgenesis.wiki/items/11060"
+    },
+    {
+      "text": "Silver Staff",
+      "url": "https://warofgenesis.wiki/equipment/203001"
+    },
+    {
+      "text": "Gold\n×100",
+      "url": "https://warofgenesis.wiki/items/1000"
+    },
+    {
+      "text": "Silver Staff",
+      "url": "https://warofgenesis.wiki/equipment/203002"
+    },
+    {
+      "text": "Gold\n×300",
+      "url": "https://warofgenesis.wiki/items/1000"
+    },
+    {
+      "text": "Silver Staff",
+      "url": "https://warofgenesis.wiki/equipment/203003"
+    },
+    {
+      "text": "Rare Equipment Fragment\n×60",
+      "url": "https://warofgenesis.wiki/items/11030"
+    },
+    {
+      "text": "Silver Staff",
+      "url": "https://warofgenesis.wiki/equipment/203004"
+    },
+    {
+      "text": "Heroic Equipment Fragment\n×120",
+      "url": "https://warofgenesis.wiki/items/11040"
+    },
+    {
+      "text": "Silver Staff",
+      "url": "https://warofgenesis.wiki/equipment/203005"
+    },
+    {
+      "text": "Legendary Equipment Fragment\n×240",
+      "url": "https://warofgenesis.wiki/items/11050"
+    },
+    {
+      "text": "Silver Staff",
+      "url": "https://warofgenesis.wiki/equipment/203006"
+    },
+    {
+      "text": "Mythic Equipment Fragment\n×480",
+      "url": "https://warofgenesis.wiki/items/11060"
+    },
+    {
+      "text": "Iron Shield",
+      "url": "https://warofgenesis.wiki/equipment/204001"
+    },
+    {
+      "text": "Gold\n×100",
+      "url": "https://warofgenesis.wiki/items/1000"
+    },
+    {
+      "text": "Iron Shield",
+      "url": "https://warofgenesis.wiki/equipment/204002"
+    },
+    {
+      "text": "Gold\n×300",
+      "url": "https://warofgenesis.wiki/items/1000"
+    },
+    {
+      "text": "Iron Shield",
+      "url": "https://warofgenesis.wiki/equipment/204003"
+    },
+    {
+      "text": "Rare Equipment Fragment\n×60",
+      "url": "https://warofgenesis.wiki/items/11030"
+    },
+    {
+      "text": "Iron Shield",
+      "url": "https://warofgenesis.wiki/equipment/204004"
+    },
+    {
+      "text": "Heroic Equipment Fragment\n×120",
+      "url": "https://warofgenesis.wiki/items/11040"
+    },
+    {
+      "text": "Iron Shield",
+      "url": "https://warofgenesis.wiki/equipment/204005"
+    },
+    {
+      "text": "Legendary Equipment Fragment\n×240",
+      "url": "https://warofgenesis.wiki/items/11050"
+    },
+    {
+      "text": "Iron Shield",
+      "url": "https://warofgenesis.wiki/equipment/204006"
+    },
+    {
+      "text": "Mythic Equipment Fragment\n×480",
+      "url": "https://warofgenesis.wiki/items/11060"
+    },
+    {
+      "text": "Wooden Quiver",
+      "url": "https://warofgenesis.wiki/equipment/205001"
+    },
+    {
+      "text": "Gold\n×100",
+      "url": "https://warofgenesis.wiki/items/1000"
+    },
+    {
+      "text": "Wooden Quiver",
+      "url": "https://warofgenesis.wiki/equipment/205002"
+    },
+    {
+      "text": "Gold\n×300",
+      "url": "https://warofgenesis.wiki/items/1000"
+    },
+    {
+      "text": "Wooden Quiver",
+      "url": "https://warofgenesis.wiki/equipment/205003"
+    },
+    {
+      "text": "Rare Equipment Fragment\n×60",
+      "url": "https://warofgenesis.wiki/items/11030"
+    },
+    {
+      "text": "Wooden Quiver",
+      "url": "https://warofgenesis.wiki/equipment/205004"
+    },
+    {
+      "text": "Heroic Equipment Fragment\n×120",
+      "url": "https://warofgenesis.wiki/items/11040"
+    },
+    {
+      "text": "Wooden Quiver",
+      "url": "https://warofgenesis.wiki/equipment/205005"
+    },
+    {
+      "text": "Legendary Equipment Fragment\n×240",
+      "url": "https://warofgenesis.wiki/items/11050"
+    },
+    {
+      "text": "Wooden Quiver",
+      "url": "https://warofgenesis.wiki/equipment/205006"
+    },
+    {
+      "text": "Mythic Equipment Fragment\n×480",
+      "url": "https://warofgenesis.wiki/items/11060"
+    },
+    {
+      "text": "Common Spellbook",
+      "url": "https://warofgenesis.wiki/equipment/206001"
+    },
+    {
+      "text": "Gold\n×100",
+      "url": "https://warofgenesis.wiki/items/1000"
+    },
+    {
+      "text": "Common Spellbook",
+      "url": "https://warofgenesis.wiki/equipment/206002"
+    },
+    {
+      "text": "Gold\n×300",
+      "url": "https://warofgenesis.wiki/items/1000"
+    },
+    {
+      "text": "Common Spellbook",
+      "url": "https://warofgenesis.wiki/equipment/206003"
+    },
+    {
+      "text": "Rare Equipment Fragment\n×60",
+      "url": "https://warofgenesis.wiki/items/11030"
+    },
+    {
+      "text": "Common Spellbook",
+      "url": "https://warofgenesis.wiki/equipment/206004"
+    },
+    {
+      "text": "Heroic Equipment Fragment\n×120",
+      "url": "https://warofgenesis.wiki/items/11040"
+    },
+    {
+      "text": "Common Spellbook",
+      "url": "https://warofgenesis.wiki/equipment/206005"
+    },
+    {
+      "text": "Legendary Equipment Fragment\n×240",
+      "url": "https://warofgenesis.wiki/items/11050"
+    },
+    {
+      "text": "Common Spellbook",
+      "url": "https://warofgenesis.wiki/equipment/206006"
+    },
+    {
+      "text": "Mythic Equipment Fragment\n×480",
+      "url": "https://warofgenesis.wiki/items/11060"
+    },
+    {
+      "text": "Worn Helmet",
+      "url": "https://warofgenesis.wiki/equipment/207001"
+    },
+    {
+      "text": "Gold\n×100",
+      "url": "https://warofgenesis.wiki/items/1000"
+    },
+    {
+      "text": "Worn Helmet",
+      "url": "https://warofgenesis.wiki/equipment/207002"
+    },
+    {
+      "text": "Gold\n×300",
+      "url": "https://warofgenesis.wiki/items/1000"
+    },
+    {
+      "text": "Worn Helmet",
+      "url": "https://warofgenesis.wiki/equipment/207003"
+    },
+    {
+      "text": "Rare Equipment Fragment\n×60",
+      "url": "https://warofgenesis.wiki/items/11030"
+    },
+    {
+      "text": "Worn Helmet",
+      "url": "https://warofgenesis.wiki/equipment/207004"
+    },
+    {
+      "text": "Heroic Equipment Fragment\n×120",
+      "url": "https://warofgenesis.wiki/items/11040"
+    },
+    {
+      "text": "Home",
+      "url": "https://warofgenesis.wiki/"
+    },
+    {
+      "text": "Stages",
+      "url": "https://warofgenesis.wiki/stages"
+    },
+    {
+      "text": "Heroes",
+      "url": "https://warofgenesis.wiki/heroes"
+    },
+    {
+      "text": "Calc",
+      "url": "https://warofgenesis.wiki/calculator"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://warofgenesis.wiki/privacy"
+    },
+    {
+      "text": "Fan-Made Legal Notice",
+      "url": "https://warofgenesis.wiki/legal"
+    },
+    {
+      "text": "Dukung website ini",
+      "url": "https://buymeacoffee.com/arianshirone"
+    }
+  ],
+  "access_date": "2026-10-10",
+  "requested_url": "https://warofgenesis.wiki/equipment"
+}

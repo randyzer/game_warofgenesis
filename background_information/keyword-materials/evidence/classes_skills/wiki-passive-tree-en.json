@@ -1,0 +1,409 @@
+{
+  "title": "Passive skill tree — War of Genesis: Idle Loot Wiki",
+  "url": "https://www.warofgenesis.gg/passive-skills",
+  "text": "Skip to content\nWar of Genesis\nIDLE LOOT WIKI\nLink game\nEnglish\nDATABASE\nHeroes\n33\nEquipment\n1,872\nCompanions\n90\nItems\n207\nSkills\n215\nMonsters\n1,602\nStages\n400\nEffects & procs\nSYSTEMS\nPassive tree\nCollections\n20\nAltar\nMachina\n5\nAccount growth\nAbility Unlock\nWorkshop\nJewels\n14\nGacha & boxes\nShop\nQuests\nBattlefield\nMarket\nTOOLS\nAll calculators\nCombat calculator\nFarm planner\nDrop finder\nWall finder\nGear upgrades\nBIS finder\nBox calculator\nCharacter sheet\nStat playground\nInventory value\nREFERENCE\nStat glossary\n159\nConstants\nFormulas\n113\nRaw tables\n51\n\nSYSTEMS\n\nPassive skill tree\n\nThe account-wide passive tree: 40 nodes, each levelled with gold and materials for a permanent stat bonus.\n\n40 nodes\n\nStrength\n50 levels\nAttack Per Plus\nFortitude\n50 levels\nDefense Per Plus\nVitality\n50 levels\nHPPer Plus\nSwiftness\n25 levels\nAttack Speed Per Plus\nSprint\n10 levels\nMove Speed Per Plus\nPrecision\n50 levels\nCritical Rate Plus\nCritical Strike\n50 levels\nCritical Damage Plus\nFocus\n50 levels\nHit Rate Plus\nAgility\n50 levels\nEvasion Plus\nSubjugation\n50 levels\nPvE Attack Per Plus\nExpedition Defense\n50 levels\nPvE Defense Per Plus\nGiant Slayer\n50 levels\nBoss Damage Per Plus\nAmplification\n50 levels\nDamage Per Plus\nProtection\n50 levels\nDamage Per Minus\nDuel\n50 levels\nPvP Attack Per Plus\nCombat Defense\n50 levels\nPvP Defense Per Plus\nCritical Defense\n50 levels\nCritical Damage Resist\nInsulation\n50 levels\nShock Damage Resist\nHeat Resistance\n50 levels\nBurn Damage Resist\nAntidote\n50 levels\nPoison Damage Resist\nIron Skin\n50 levels\nCritical Rate Resist\nIndomitable\n10 levels\nStun Resist\nLightning Resistance\n50 levels\nShock Rate Resist\nFire Resistance\n50 levels\nBurn Rate Resist\nImmunity\n50 levels\nPoison Rate Resist\nCooldown Acceleration\n20 levels\nSkill Cool Time Per Minus\nPiercing\n50 levels\nBlock Ignor\nRegeneration\n50 levels\nRecovery Amount Per Plus\nInventory Expansion\n100 levels\nInventory Plus\nStorage Expansion\n4 levels\nStorage Plus\nVault Expansion\n50 levels\nGold Storage Plus\nHunt Time Reduction\n10 levels\nMob Kill Cnt Minus\nEquipment Recycling\n20 levels\nGear Sell Cnt Per Plus\nAccessory Recycling\n20 levels\nAccessory Sell Cnt Per Plus\nWing Recycling\n20 levels\nWing Sell Cnt Per Plus\nRune Recycling\n20 levels\nRune Sell Cnt Per Plus\nPet Summon Ticket Recycling\n20 levels\nPet Sell Cnt Per Plus\nShock Defense\n50 levels\nDebuff Shock Resist\nBurn Defense\n50 levels\nDebuff Burn Resist\nPoison Defense\n50 levels\nDebuff Poison Resist\nWar of Genesis\nIDLE LOOT WIKI\n\nAn unofficial reference for War of Genesis: Idle Loot. Every number on this site is read out of the shipped client — not estimated, not crowd-sourced.\n\nDiscord\nReddit\nSteam\nPROVENANCE\nGame build\nv1.0.1\nTable build\n1245\nEngine\nUnity 6000.0.59f2 (IL2CPP)\nTables read\n51\nHow this is made →\n17 LANGUAGES\nEnglish\n한국어\n日本語\n简体中文\n繁體中文\nFrançais\nDeutsch\nEspañol\nItaliano\nPortuguês\nPolski\nРусский\nУкраїнська\nTürkçe\nไทย\nTiếng Việt\nIndonesia\n\nUnofficial fan wiki. War of Genesis: Idle Loot is © Newnormal Soft / LINE Games.\n\nBack to top ↑",
+  "links": [
+    {
+      "text": "Skip to content",
+      "url": "https://www.warofgenesis.gg/passive-skills#main"
+    },
+    {
+      "text": "War of Genesis\nIDLE LOOT WIKI",
+      "url": "https://www.warofgenesis.gg/"
+    },
+    {
+      "text": "Heroes\n33",
+      "url": "https://www.warofgenesis.gg/heroes"
+    },
+    {
+      "text": "Equipment\n1,872",
+      "url": "https://www.warofgenesis.gg/equipment"
+    },
+    {
+      "text": "Companions\n90",
+      "url": "https://www.warofgenesis.gg/companions"
+    },
+    {
+      "text": "Items\n207",
+      "url": "https://www.warofgenesis.gg/items"
+    },
+    {
+      "text": "Skills\n215",
+      "url": "https://www.warofgenesis.gg/skills"
+    },
+    {
+      "text": "Monsters\n1,602",
+      "url": "https://www.warofgenesis.gg/monsters"
+    },
+    {
+      "text": "Stages\n400",
+      "url": "https://www.warofgenesis.gg/stages"
+    },
+    {
+      "text": "Effects & procs",
+      "url": "https://www.warofgenesis.gg/effects"
+    },
+    {
+      "text": "Passive tree",
+      "url": "https://www.warofgenesis.gg/passive-skills"
+    },
+    {
+      "text": "Collections\n20",
+      "url": "https://www.warofgenesis.gg/passives"
+    },
+    {
+      "text": "Altar",
+      "url": "https://www.warofgenesis.gg/altar"
+    },
+    {
+      "text": "Machina\n5",
+      "url": "https://www.warofgenesis.gg/machina"
+    },
+    {
+      "text": "Account growth",
+      "url": "https://www.warofgenesis.gg/growth"
+    },
+    {
+      "text": "Ability Unlock",
+      "url": "https://www.warofgenesis.gg/growth/ability-unlock"
+    },
+    {
+      "text": "Workshop",
+      "url": "https://www.warofgenesis.gg/workshop"
+    },
+    {
+      "text": "Jewels\n14",
+      "url": "https://www.warofgenesis.gg/jewels"
+    },
+    {
+      "text": "Gacha & boxes",
+      "url": "https://www.warofgenesis.gg/gacha"
+    },
+    {
+      "text": "Shop",
+      "url": "https://www.warofgenesis.gg/shop"
+    },
+    {
+      "text": "Quests",
+      "url": "https://www.warofgenesis.gg/quests"
+    },
+    {
+      "text": "Battlefield",
+      "url": "https://www.warofgenesis.gg/content"
+    },
+    {
+      "text": "Market",
+      "url": "https://www.warofgenesis.gg/market"
+    },
+    {
+      "text": "All calculators",
+      "url": "https://www.warofgenesis.gg/tools"
+    },
+    {
+      "text": "Combat calculator",
+      "url": "https://www.warofgenesis.gg/tools/damage"
+    },
+    {
+      "text": "Farm planner",
+      "url": "https://www.warofgenesis.gg/tools/farm"
+    },
+    {
+      "text": "Drop finder",
+      "url": "https://www.warofgenesis.gg/tools/drops"
+    },
+    {
+      "text": "Wall finder",
+      "url": "https://www.warofgenesis.gg/tools/readiness"
+    },
+    {
+      "text": "Gear upgrades",
+      "url": "https://www.warofgenesis.gg/tools/upgrades"
+    },
+    {
+      "text": "BIS finder",
+      "url": "https://www.warofgenesis.gg/tools/bis"
+    },
+    {
+      "text": "Box calculator",
+      "url": "https://www.warofgenesis.gg/tools/boxes"
+    },
+    {
+      "text": "Character sheet",
+      "url": "https://www.warofgenesis.gg/tools/sheet"
+    },
+    {
+      "text": "Stat playground",
+      "url": "https://www.warofgenesis.gg/tools/stats"
+    },
+    {
+      "text": "Inventory value",
+      "url": "https://www.warofgenesis.gg/inventory"
+    },
+    {
+      "text": "Stat glossary\n159",
+      "url": "https://www.warofgenesis.gg/stats"
+    },
+    {
+      "text": "Constants",
+      "url": "https://www.warofgenesis.gg/constants"
+    },
+    {
+      "text": "Formulas\n113",
+      "url": "https://www.warofgenesis.gg/formulas"
+    },
+    {
+      "text": "Raw tables\n51",
+      "url": "https://www.warofgenesis.gg/database"
+    },
+    {
+      "text": "Strength\n50 levels\nAttack Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/strength"
+    },
+    {
+      "text": "Fortitude\n50 levels\nDefense Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/fortitude"
+    },
+    {
+      "text": "Vitality\n50 levels\nHPPer Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/vitality"
+    },
+    {
+      "text": "Swiftness\n25 levels\nAttack Speed Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/swiftness"
+    },
+    {
+      "text": "Sprint\n10 levels\nMove Speed Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/sprint"
+    },
+    {
+      "text": "Precision\n50 levels\nCritical Rate Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/precision"
+    },
+    {
+      "text": "Critical Strike\n50 levels\nCritical Damage Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/critical-strike"
+    },
+    {
+      "text": "Focus\n50 levels\nHit Rate Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/focus"
+    },
+    {
+      "text": "Agility\n50 levels\nEvasion Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/agility"
+    },
+    {
+      "text": "Subjugation\n50 levels\nPvE Attack Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/subjugation"
+    },
+    {
+      "text": "Expedition Defense\n50 levels\nPvE Defense Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/expedition-defense"
+    },
+    {
+      "text": "Giant Slayer\n50 levels\nBoss Damage Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/giant-slayer"
+    },
+    {
+      "text": "Amplification\n50 levels\nDamage Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/amplification"
+    },
+    {
+      "text": "Protection\n50 levels\nDamage Per Minus",
+      "url": "https://www.warofgenesis.gg/passive-skills/protection"
+    },
+    {
+      "text": "Duel\n50 levels\nPvP Attack Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/duel"
+    },
+    {
+      "text": "Combat Defense\n50 levels\nPvP Defense Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/combat-defense"
+    },
+    {
+      "text": "Critical Defense\n50 levels\nCritical Damage Resist",
+      "url": "https://www.warofgenesis.gg/passive-skills/critical-defense"
+    },
+    {
+      "text": "Insulation\n50 levels\nShock Damage Resist",
+      "url": "https://www.warofgenesis.gg/passive-skills/insulation"
+    },
+    {
+      "text": "Heat Resistance\n50 levels\nBurn Damage Resist",
+      "url": "https://www.warofgenesis.gg/passive-skills/heat-resistance"
+    },
+    {
+      "text": "Antidote\n50 levels\nPoison Damage Resist",
+      "url": "https://www.warofgenesis.gg/passive-skills/antidote"
+    },
+    {
+      "text": "Iron Skin\n50 levels\nCritical Rate Resist",
+      "url": "https://www.warofgenesis.gg/passive-skills/iron-skin"
+    },
+    {
+      "text": "Indomitable\n10 levels\nStun Resist",
+      "url": "https://www.warofgenesis.gg/passive-skills/indomitable"
+    },
+    {
+      "text": "Lightning Resistance\n50 levels\nShock Rate Resist",
+      "url": "https://www.warofgenesis.gg/passive-skills/lightning-resistance"
+    },
+    {
+      "text": "Fire Resistance\n50 levels\nBurn Rate Resist",
+      "url": "https://www.warofgenesis.gg/passive-skills/fire-resistance"
+    },
+    {
+      "text": "Immunity\n50 levels\nPoison Rate Resist",
+      "url": "https://www.warofgenesis.gg/passive-skills/immunity"
+    },
+    {
+      "text": "Cooldown Acceleration\n20 levels\nSkill Cool Time Per Minus",
+      "url": "https://www.warofgenesis.gg/passive-skills/cooldown-acceleration"
+    },
+    {
+      "text": "Piercing\n50 levels\nBlock Ignor",
+      "url": "https://www.warofgenesis.gg/passive-skills/piercing"
+    },
+    {
+      "text": "Regeneration\n50 levels\nRecovery Amount Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/regeneration"
+    },
+    {
+      "text": "Inventory Expansion\n100 levels\nInventory Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/inventory-expansion"
+    },
+    {
+      "text": "Storage Expansion\n4 levels\nStorage Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/storage-expansion"
+    },
+    {
+      "text": "Vault Expansion\n50 levels\nGold Storage Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/vault-expansion"
+    },
+    {
+      "text": "Hunt Time Reduction\n10 levels\nMob Kill Cnt Minus",
+      "url": "https://www.warofgenesis.gg/passive-skills/hunt-time-reduction"
+    },
+    {
+      "text": "Equipment Recycling\n20 levels\nGear Sell Cnt Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/equipment-recycling"
+    },
+    {
+      "text": "Accessory Recycling\n20 levels\nAccessory Sell Cnt Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/accessory-recycling"
+    },
+    {
+      "text": "Wing Recycling\n20 levels\nWing Sell Cnt Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/wing-recycling"
+    },
+    {
+      "text": "Rune Recycling\n20 levels\nRune Sell Cnt Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/rune-recycling"
+    },
+    {
+      "text": "Pet Summon Ticket Recycling\n20 levels\nPet Sell Cnt Per Plus",
+      "url": "https://www.warofgenesis.gg/passive-skills/pet-summon-ticket-recycling"
+    },
+    {
+      "text": "Shock Defense\n50 levels\nDebuff Shock Resist",
+      "url": "https://www.warofgenesis.gg/passive-skills/shock-defense"
+    },
+    {
+      "text": "Burn Defense\n50 levels\nDebuff Burn Resist",
+      "url": "https://www.warofgenesis.gg/passive-skills/burn-defense"
+    },
+    {
+      "text": "Poison Defense\n50 levels\nDebuff Poison Resist",
+      "url": "https://www.warofgenesis.gg/passive-skills/poison-defense"
+    },
+    {
+      "text": "Discord",
+      "url": "https://discord.gg/XQf2VF6AwD"
+    },
+    {
+      "text": "Reddit",
+      "url": "https://reddit.com/r/warofgenesisidleloot"
+    },
+    {
+      "text": "Steam",
+      "url": "https://store.steampowered.com/app/4891320/"
+    },
+    {
+      "text": "How this is made →",
+      "url": "https://www.warofgenesis.gg/about"
+    },
+    {
+      "text": "English",
+      "url": "https://www.warofgenesis.gg/passive-skills"
+    },
+    {
+      "text": "한국어",
+      "url": "https://www.warofgenesis.gg/ko/passive-skills"
+    },
+    {
+      "text": "日本語",
+      "url": "https://www.warofgenesis.gg/ja/passive-skills"
+    },
+    {
+      "text": "简体中文",
+      "url": "https://www.warofgenesis.gg/zh-hans/passive-skills"
+    },
+    {
+      "text": "繁體中文",
+      "url": "https://www.warofgenesis.gg/zh-hant/passive-skills"
+    },
+    {
+      "text": "Français",
+      "url": "https://www.warofgenesis.gg/fr/passive-skills"
+    },
+    {
+      "text": "Deutsch",
+      "url": "https://www.warofgenesis.gg/de/passive-skills"
+    },
+    {
+      "text": "Español",
+      "url": "https://www.warofgenesis.gg/es/passive-skills"
+    },
+    {
+      "text": "Italiano",
+      "url": "https://www.warofgenesis.gg/it/passive-skills"
+    },
+    {
+      "text": "Português",
+      "url": "https://www.warofgenesis.gg/pt/passive-skills"
+    },
+    {
+      "text": "Polski",
+      "url": "https://www.warofgenesis.gg/pl/passive-skills"
+    },
+    {
+      "text": "Русский",
+      "url": "https://www.warofgenesis.gg/ru/passive-skills"
+    },
+    {
+      "text": "Українська",
+      "url": "https://www.warofgenesis.gg/uk/passive-skills"
+    },
+    {
+      "text": "Türkçe",
+      "url": "https://www.warofgenesis.gg/tr/passive-skills"
+    },
+    {
+      "text": "ไทย",
+      "url": "https://www.warofgenesis.gg/th/passive-skills"
+    },
+    {
+      "text": "Tiếng Việt",
+      "url": "https://www.warofgenesis.gg/vi/passive-skills"
+    },
+    {
+      "text": "Indonesia",
+      "url": "https://www.warofgenesis.gg/id/passive-skills"
+    },
+    {
+      "text": "Back to top ↑",
+      "url": "https://www.warofgenesis.gg/passive-skills#top"
+    }
+  ],
+  "access_date": "2026-10-10",
+  "requested_url": "https://www.warofgenesis.gg/passive-skills"
+}

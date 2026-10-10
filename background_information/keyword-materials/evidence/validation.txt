@@ -1,0 +1,9 @@
+WARNING: Final keyword count is 61; confirm the raw input has fewer than 10 or more than 20 valid intents
+OK: 61 keywords and material files passed structural validation
+
+原始记录122条：每条审计恰好一次
+最终关键词61个：每项恰好一个素材文件
+原始文件SHA-256未改变
+全部成果及证据未包含当前SERPER_API_KEY值
+所有引用URL具有本轮已读正文或元数据记录
+状态：55 PARTIAL、6 BLOCKED；缺字幕按用户选择保留PARTIAL

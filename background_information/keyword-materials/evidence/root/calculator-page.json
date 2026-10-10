@@ -1,0 +1,165 @@
+{
+  "title": "Combat Calculator | War of Genesis: Idle Loot Wiki",
+  "url": "https://warofgenesis.wiki/calculator",
+  "text": "Skip to content\nGENESIS\nARCHIVE\n\nWar of Genesis: Idle Loot\n\nEXPLORE\nOverview\nStages\nMonsters\nGold Bar\nCOLLECTION\nCharacters\nSkills\nEquipment\nItems\nWings, Runes & Pets\nMachina\nPassive Skills\nRelics\nAltar\nCompare\nPROGRESSION\nGrowth Systems\nBattlefield\nCompetition\nQuests\nContent Unlocks\nTOOLS & GUIDES\nFarming simulator\nLeveling Calculator\nCombat Calculator\nREFERENCE\nStats & Formulas\nGame settings\nData & sources\nPrivacy Policy\nFan-Made Legal Notice\nClient snapshot v1245\nData & sources\nCombat Calculator\nSearch\nSupport\nLanguage\nEnglish (EN)\nIndonesia (ID)\n简体中文 (CN)\n繁體中文 (TW)\n한국어 (KR)\n日本語 (JP)\nPortuguês (BR)\nไทย (TH)\nРусский (RU)\nTürkçe (TR)\nEspañol (ES)\nCombat Calculator\n\nUses the client's calcFinal_* functions verbatim (see Stats & Formulas). Damage shown is the pre-roll value; the game multiplies each hit by a random 0.95–1.05.\n\nCopy Shareable Link\nExport JSON\nImport JSON\nReset build\nAttacker\nClass\nKnight\nRanger\nWizard\nCharacter\nIyolin Pendragon · Tier 1\nJoan Cartwright · Tier 1\nKashutar Gunter · Tier 2\nElizabeth Pendragon · Tier 2\nKarls Brandt · Tier 3\nRoberto de Medici · Tier 3\nCrow · Tier 4\nShakbari of War · Tier 4\nIce Pendragon · Tier 5\nCyrano Bernstein · Tier 5\nBlack Prince · Tier 6\nDetailed Stats\nUser level\nDetailed Stats\nAttack 4,946 · HP 31,520\n\nEnter combat stats excluding the passive skills selected below. Permanent and temporary bonuses from those skills are added automatically. Leave fields empty to use character base stats.\n\nAttack Speed\nFinal_AttackSpeed\nMovement Speed\nFinal_MoveSpeed\nAccuracy\nFinal_HitRate\nEvasion\nFinal_Evasion\nAttack Range\nFinal_AttackDistance\nAttack\nAttack_Plus\nAttack\nAttackPer_Plus\n%\nDefense\nDefense_Plus\nDefense\nDefensePer_Plus\n%\nHP\nHP_Plus\nHP\nHPPer_Plus\n%\nCritical Hit\nFinal_CriticalRate\nCritical Damage\nFinal_CriticalDamage\nCritical Resistance\nCriticalRate_Resist\nCrit Dmg Res\nCriticalDamage_Resist\n%\nSkill Cooldown\nSkillCoolTimePer_Minus\n%\nDamage\nDamagePer_Plus\n%\nDamage Taken\nDamagePer_Minus\n%\nFinal Damage\nEndDamagePer_Plus\n%\nFinal Dmg Taken Dec\nEndDamagePer_Minus\n%\nBoss DMG\nBossDamagePer_Plus\n%\nNatural Recovery Amount\nRecoveryAmount_Plus\nNatural Recovery Amount\nRecoveryAmountPer_Plus\n%\nNatural Recovery Interval\nRecoveryTimePer_Minus\n%\nStun Duration\nStunTime_Resist\n%\nStun Hit\nStunRate_Plus\n%\nStun Resistance\nStun_Resist\n%\nLightning Hit\nShockRate_Plus\nLightning Damage\nShockDamage_Plus\n%\nLightning Resistance\nShockRate_Resist + AttributeRate_Resist\nLightning Dmg Res\nShockDamage_Resist + AttributeDamage_Resist\n%\nShock\nDebuffShock_Plus\nShock Resistance\nDebuffShock_Resist\nFire Hit\nBurnRate_Plus\nFire Damage\nBurnDamage_Plus\n%\nFire Resistance\nBurnRate_Resist + AttributeRate_Resist\nFire Dmg Res\nBurnDamage_Resist + AttributeDamage_Resist\n%\nBurn\nDebuffBurn_Plus\nBurn Resistance\nDebuffBurn_Resist\nPoison Hit\nPoisonRate_Plus\nPoison Damage\nPoisonDamage_Plus\n%\nPoison Resistance\nPoisonRate_Resist + AttributeRate_Resist\nPoison Damage Resistance\nPoisonDamage_Resist + AttributeDamage_Resist\n%\nPoison\nDebuffPoison_Plus\nPoison Resistance\nDebuffPoison_Resist\nBlock\nBlockRate_Plus\nIgnore Block\nBlock_Ignor\nPvE Attack Power\nPvE_Attack_Plus\nPvE Attack Power\nPvE_AttackPer_Plus\n%\nPvE Defense\nPvE_Defense_Plus\nPvE Defense\nPvE_DefensePer_Plus\n%\nPvE Dmg Dealt\nPvE_DamagePer_Plus\n%\nPvE Dmg Taken\nPvE_DamagePer_Minus\n%\nPvP Dmg Dealt\nPvP_DamagePer_Plus\n%\nPvP Dmg Taken\nPvP_DamagePer_Minus\n%\nPvP Attack Power\nPvP_Attack_Plus\nPvP Attack Power\nPvP_AttackPer_Plus\n%\nPvP Defense\nPvP_Defense_Plus\nPvP Defense\nPvP_DefensePer_Plus\n%\nActive skills\nSkill slots: 6 · UserLevel_table.SkillSlotCnt\n\nOne skill per slot. Each skill is cast once per Final_SkillCoolTime while basic attacks continue; rotation DPS adds them together.\n\n⚔\nBasic attack\nDamageRate 100% · 0.95s · 337,989 DPS (100%)\n1\n— Empty slot —\nMoon Cleave\nFormation Flame\nDivine Spear\nMoon Slash\nShield Charge\nEarth Smash\nHigh-Speed Flurry\nBarricade\nGodslayer Spear\nTitan's Fist\nTime Reversal\nVanguard\nLightning Armor\nLv.10\n2\n— Empty slot —\nMoon Cleave\nFormation Flame\nDivine Spear\nMoon Slash\nShield Charge\nEarth Smash\nHigh-Speed Flurry\nBarricade\nGodslayer Spear\nTitan's Fist\nTime Reversal\nVanguard\nLightning Armor\nLv.10\n3\n— Empty slot —\nMoon Cleave\nFormation Flame\nDivine Spear\nMoon Slash\nShield Charge\nEarth Smash\nHigh-Speed Flurry\nBarricade\nGodslayer Spear\nTitan's Fist\nTime Reversal\nVanguard\nLightning Armor\nLv.10\n4\n— Empty slot —\nMoon Cleave\nFormation Flame\nDivine Spear\nMoon Slash\nShield Charge\nEarth Smash\nHigh-Speed Flurry\nBarricade\nGodslayer Spear\nTitan's Fist\nTime Reversal\nVanguard\nLightning Armor\nLv.10\n5\n— Empty slot —\nMoon Cleave\nFormation Flame\nDivine Spear\nMoon Slash\nShield Charge\nEarth Smash\nHigh-Speed Flurry\nBarricade\nGodslayer Spear\nTitan's Fist\nTime Reversal\nVanguard\nLightning Armor\nLv.10\n6\n— Empty slot —\nMoon Cleave\nFormation Flame\nDivine Spear\nMoon Slash\nShield Charge\nEarth Smash\nHigh-Speed Flurry\nBarricade\nGodslayer Spear\nTitan's Fist\nTime Reversal\nVanguard\nLightning Armor\nLv.10\nClass passives\n\nChoose passive skills and levels. Their bonuses, triggers, duration, stacks, healing and cooldown changes are calculated automatically. Use stats before the selected passive bonuses.\n\nAdd passive\n— Add passive —\nFighting Spirit\nThunderbolt\nVitality\nFierce Assault\nLightning Boost\nPursuit\nBattle Spirit\nFortitude\nEndurance\nShield of Conviction\nPerfect Defense\nLife Drain\nSurvival Instinct\nImmortality\nIron Wall Defense\nTough Body\nDeflect\nLethal Lightning\nSwiftness\nHealing Touch\nArtisan's Armor\n\ntotal cost: None\n\nTarget\nStage\nRaid\nWorld Boss\nArena\nStage\nNormal 1-1 · Ancient Ruins Entrance\nNormal 1-2 · Collapsed Path\nNormal 1-3 · Stone Pillar Path\nNormal 1-4 · Sealed Plaza\nNormal 1-5 · Ancient Altar\nNormal 1-6 · Deep Corridor\nNormal 1-7 · Ancient Temple\nNormal 1-8 · King's Tomb\nNormal 1-9 · Sealing Chamber\nNormal 1-10 · Heart of the Ruins\nNormal 2-1 · Forest Entrance\nNormal 2-2 · Vinewood\nNormal 2-3 · Great Tree Grove\nNormal 2-4 · Misty Valley\nNormal 2-5 · Poison Swamp\nNormal 2-6 · Root Path\nNormal 2-7 · Spirit Forest\nNormal 2-8 · Deep Forest\nNormal 2-9 · Forest of Life\nNormal 2-10 · Beneath the World Tree\nNormal 3-1 · Prison Entrance\nNormal 3-2 · Cell Block\nNormal 3-3 · Execution Grounds\nNormal 3-4 · Iron Gate Corridor\nNormal 3-5 · Torture Chamber\nNormal 3-6 · Guard Room\nNormal 3-7 · Sealed Prison\nNormal 3-8 · Interrogation Chamber\nNormal 3-9 · Underground Prison\nNormal 3-10 · Warden's Office\nNormal 4-1 · Ice Castle Gate\nNormal 4-2 · Snowy Path\nNormal 4-3 · Ice Corridor\nNormal 4-4 · Frozen Garden\nNormal 4-5 · Crystal Hall\nNormal 4-6 · Frost Corridor\nNormal 4-7 · Throne Path\nNormal 4-8 · Ice Hall\nNormal 4-9 · Frozen Throne\nNormal 4-10 · King's Chamber\nHard 1-1 · Ancient Ruins Entrance\nHard 1-2 · Collapsed Path\nHard 1-3 · Stone Pillar Path\nHard 1-4 · Sealed Plaza\nHard 1-5 · Ancient Altar\nHard 1-6 · Deep Corridor\nHard 1-7 · Ancient Temple\nHard 1-8 · King's Tomb\nHard 1-9 · Sealing Chamber\nHard 1-10 · Heart of the Ruins\nHard 2-1 · Forest Entrance\nHard 2-2 · Vinewood\nHard 2-3 · Great Tree Grove\nHard 2-4 · Misty Valley\nHard 2-5 · Poison Swamp\nHard 2-6 · Root Path\nHard 2-7 · Spirit Forest\nHard 2-8 · Deep Forest\nHard 2-9 · Forest of Life\nHard 2-10 · Beneath the World Tree\nHard 3-1 · Prison Entrance\nHard 3-2 · Cell Block\nHard 3-3 · Execution Grounds\nHard 3-4 · Iron Gate Corridor\nHard 3-5 · Torture Chamber\nHard 3-6 · Guard Room\nHard 3-7 · Sealed Prison\nHard 3-8 · Interrogation Chamber\nHard 3-9 · Underground Prison\nHard 3-10 · Warden's Office\nHard 4-1 · Ice Castle Gate\nHard 4-2 · Snowy Path\nHard 4-3 · Ice Corridor\nHard 4-4 · Frozen Garden\nHard 4-5 · Crystal Hall\nHard 4-6 · Frost Corridor\nHard 4-7 · Throne Path\nHard 4-8 · Ice Hall\nHard 4-9 · Frozen Throne\nHard 4-10 · King's Chamber\nVery Hard 1-1 · Ancient Ruins Entrance\nVery Hard 1-2 · Collapsed Path\nVery Hard 1-3 · Stone Pillar Path\nVery Hard 1-4 · Sealed Plaza\nVery Hard 1-5 · Ancient Altar\nVery Hard 1-6 · Deep Corridor\nVery Hard 1-7 · Ancient Temple\nVery Hard 1-8 · King's Tomb\nVery Hard 1-9 · Sealing Chamber\nVery Hard 1-10 · Heart of the Ruins\nVery Hard 2-1 · Forest Entrance\nVery Hard 2-2 · Vinewood\nVery Hard 2-3 · Great Tree Grove\nVery Hard 2-4 · Misty Valley\nVery Hard 2-5 · Poison Swamp\nVery Hard 2-6 · Root Path\nVery Hard 2-7 · Spirit Forest\nVery Hard 2-8 · Deep Forest\nVery Hard 2-9 · Forest of Life\nVery Hard 2-10 · Beneath the World Tree\nVery Hard 3-1 · Prison Entrance\nVery Hard 3-2 · Cell Block\nVery Hard 3-3 · Execution Grounds\nVery Hard 3-4 · Iron Gate Corridor\nVery Hard 3-5 · Torture Chamber\nVery Hard 3-6 · Guard Room\nVery Hard 3-7 · Sealed Prison\nVery Hard 3-8 · Interrogation Chamber\nVery Hard 3-9 · Underground Prison\nVery Hard 3-10 · Warden's Office\nVery Hard 4-1 · Ice Castle Gate\nVery Hard 4-2 · Snowy Path\nVery Hard 4-3 · Ice Corridor\nVery Hard 4-4 · Frozen Garden\nVery Hard 4-5 · Crystal Hall\nVery Hard 4-6 · Frost Corridor\nVery Hard 4-7 · Throne Path\nVery Hard 4-8 · Ice Hall\nVery Hard 4-9 · Frozen Throne\nVery Hard 4-10 · King's Chamber\nNightmare 1-1 · Ancient Ruins Entrance\nNightmare 1-2 · Collapsed Path\nNightmare 1-3 · Stone Pillar Path\nNightmare 1-4 · Sealed Plaza\nNightmare 1-5 · Ancient Altar\nNightmare 1-6 · Deep Corridor\nNightmare 1-7 · Ancient Temple\nNightmare 1-8 · King's Tomb\nNightmare 1-9 · Sealing Chamber\nNightmare 1-10 · Heart of the Ruins\nNightmare 2-1 · Forest Entrance\nNightmare 2-2 · Vinewood\nNightmare 2-3 · Great Tree Grove\nNightmare 2-4 · Misty Valley\nNightmare 2-5 · Poison Swamp\nNightmare 2-6 · Root Path\nNightmare 2-7 · Spirit Forest\nNightmare 2-8 · Deep Forest\nNightmare 2-9 · Forest of Life\nNightmare 2-10 · Beneath the World Tree\nNightmare 3-1 · Prison Entrance\nNightmare 3-2 · Cell Block\nNightmare 3-3 · Execution Grounds\nNightmare 3-4 · Iron Gate Corridor\nNightmare 3-5 · Torture Chamber\nNightmare 3-6 · Guard Room\nNightmare 3-7 · Sealed Prison\nNightmare 3-8 · Interrogation Chamber\nNightmare 3-9 · Underground Prison\nNightmare 3-10 · Warden's Office\nNightmare 4-1 · Ice Castle Gate\nNightmare 4-2 · Snowy Path\nNightmare 4-3 · Ice Corridor\nNightmare 4-4 · Frozen Garden\nNightmare 4-5 · Crystal Hall\nNightmare 4-6 · Frost Corridor\nNightmare 4-7 · Throne Path\nNightmare 4-8 · Ice Hall\nNightmare 4-9 · Frozen Throne\nNightmare 4-10 · King's Chamber\nHell 1-1 · Ancient Ruins Entrance\nHell 1-2 · Collapsed Path\nHell 1-3 · Stone Pillar Path\nHell 1-4 · Sealed Plaza\nHell 1-5 · Ancient Altar\nHell 1-6 · Deep Corridor\nHell 1-7 · Ancient Temple\nHell 1-8 · King's Tomb\nHell 1-9 · Sealing Chamber\nHell 1-10 · Heart of the Ruins\nHell 2-1 · Forest Entrance\nHell 2-2 · Vinewood\nHell 2-3 · Great Tree Grove\nHell 2-4 · Misty Valley\nHell 2-5 · Poison Swamp\nHell 2-6 · Root Path\nHell 2-7 · Spirit Forest\nHell 2-8 · Deep Forest\nHell 2-9 · Forest of Life\nHell 2-10 · Beneath the World Tree\nHell 3-1 · Prison Entrance\nHell 3-2 · Cell Block\nHell 3-3 · Execution Grounds\nHell 3-4 · Iron Gate Corridor\nHell 3-5 · Torture Chamber\nHell 3-6 · Guard Room\nHell 3-7 · Sealed Prison\nHell 3-8 · Interrogation Chamber\nHell 3-9 · Underground Prison\nHell 3-10 · Warden's Office\nHell 4-1 · Ice Castle Gate\nHell 4-2 · Snowy Path\nHell 4-3 · Ice Corridor\nHell 4-4 · Frozen Garden\nHell 4-5 · Crystal Hall\nHell 4-6 · Frost Corridor\nHell 4-7 · Throne Path\nHell 4-8 · Ice Hall\nHell 4-9 · Frozen Throne\nHell 4-10 · King's Chamber\nDespair 1-1 · Ancient Ruins Entrance\nDespair 1-2 · Collapsed Path\nDespair 1-3 · Stone Pillar Path\nDespair 1-4 · Sealed Plaza\nDespair 1-5 · Ancient Altar\nDespair 1-6 · Deep Corridor\nDespair 1-7 · Ancient Temple\nDespair 1-8 · King's Tomb\nDespair 1-9 · Sealing Chamber\nDespair 1-10 · Heart of the Ruins\nDespair 2-1 · Forest Entrance\nDespair 2-2 · Vinewood\nDespair 2-3 · Great Tree Grove\nDespair 2-4 · Misty Valley\nDespair 2-5 · Poison Swamp\nDespair 2-6 · Root Path\nDespair 2-7 · Spirit Forest\nDespair 2-8 · Deep Forest\nDespair 2-9 · Forest of Life\nDespair 2-10 · Beneath the World Tree\nDespair 3-1 · Prison Entrance\nDespair 3-2 · Cell Block\nDespair 3-3 · Execution Grounds\nDespair 3-4 · Iron Gate Corridor\nDespair 3-5 · Torture Chamber\nDespair 3-6 · Guard Room\nDespair 3-7 · Sealed Prison\nDespair 3-8 · Interrogation Chamber\nDespair 3-9 · Underground Prison\nDespair 3-10 · Warden's Office\nDespair 4-1 · Ice Castle Gate\nDespair 4-2 · Snowy Path\nDespair 4-3 · Ice Corridor\nDespair 4-4 · Frozen Garden\nDespair 4-5 · Crystal Hall\nDespair 4-6 · Frost Corridor\nDespair 4-7 · Throne Path\nDespair 4-8 · Ice Hall\nDespair 4-9 · Frozen Throne\nDespair 4-10 · King's Chamber\nAbyss 1-1 · Ancient Ruins Entrance\nAbyss 1-2 · Collapsed Path\nAbyss 1-3 · Stone Pillar Path\nAbyss 1-4 · Sealed Plaza\nAbyss 1-5 · Ancient Altar\nAbyss 1-6 · Deep Corridor\nAbyss 1-7 · Ancient Temple\nAbyss 1-8 · King's Tomb\nAbyss 1-9 · Sealing Chamber\nAbyss 1-10 · Heart of the Ruins\nAbyss 2-1 · Forest Entrance\nAbyss 2-2 · Vinewood\nAbyss 2-3 · Great Tree Grove\nAbyss 2-4 · Misty Valley\nAbyss 2-5 · Poison Swamp\nAbyss 2-6 · Root Path\nAbyss 2-7 · Spirit Forest\nAbyss 2-8 · Deep Forest\nAbyss 2-9 · Forest of Life\nAbyss 2-10 · Beneath the World Tree\nAbyss 3-1 · Prison Entrance\nAbyss 3-2 · Cell Block\nAbyss 3-3 · Execution Grounds\nAbyss 3-4 · Iron Gate Corridor\nAbyss 3-5 · Torture Chamber\nAbyss 3-6 · Guard Room\nAbyss 3-7 · Sealed Prison\nAbyss 3-8 · Interrogation Chamber\nAbyss 3-9 · Underground Prison\nAbyss 3-10 · Warden's Office\nAbyss 4-1 · Ice Castle Gate\nAbyss 4-2 · Snowy Path\nAbyss 4-3 · Ice Corridor\nAbyss 4-4 · Frozen Garden\nAbyss 4-5 · Crystal Hall\nAbyss 4-6 · Frost Corridor\nAbyss 4-7 · Throne Path\nAbyss 4-8 · Ice Hall\nAbyss 4-9 · Frozen Throne\nAbyss 4-10 · King's Chamber\nChaos 1-1 · Ancient Ruins Entrance\nChaos 1-2 · Collapsed Path\nChaos 1-3 · Stone Pillar Path\nChaos 1-4 · Sealed Plaza\nChaos 1-5 · Ancient Altar\nChaos 1-6 · Deep Corridor\nChaos 1-7 · Ancient Temple\nChaos 1-8 · King's Tomb\nChaos 1-9 · Sealing Chamber\nChaos 1-10 · Heart of the Ruins\nChaos 2-1 · Forest Entrance\nChaos 2-2 · Vinewood\nChaos 2-3 · Great Tree Grove\nChaos 2-4 · Misty Valley\nChaos 2-5 · Poison Swamp\nChaos 2-6 · Root Path\nChaos 2-7 · Spirit Forest\nChaos 2-8 · Deep Forest\nChaos 2-9 · Forest of Life\nChaos 2-10 · Beneath the World Tree\nChaos 3-1 · Prison Entrance\nChaos 3-2 · Cell Block\nChaos 3-3 · Execution Grounds\nChaos 3-4 · Iron Gate Corridor\nChaos 3-5 · Torture Chamber\nChaos 3-6 · Guard Room\nChaos 3-7 · Sealed Prison\nChaos 3-8 · Interrogation Chamber\nChaos 3-9 · Underground Prison\nChaos 3-10 · Warden's Office\nChaos 4-1 · Ice Castle Gate\nChaos 4-2 · Snowy Path\nChaos 4-3 · Ice Corridor\nChaos 4-4 · Frozen Garden\nChaos 4-5 · Crystal Hall\nChaos 4-6 · Frost Corridor\nChaos 4-7 · Throne Path\nChaos 4-8 · Ice Hall\nChaos 4-9 · Frozen Throne\nChaos 4-10 · King's Chamber\nCatastrophe 1-1 · Ancient Ruins Entrance\nCatastrophe 1-2 · Collapsed Path\nCatastrophe 1-3 · Stone Pillar Path\nCatastrophe 1-4 · Sealed Plaza\nCatastrophe 1-5 · Ancient Altar\nCatastrophe 1-6 · Deep Corridor\nCatastrophe 1-7 · Ancient Temple\nCatastrophe 1-8 · King's Tomb\nCatastrophe 1-9 · Sealing Chamber\nCatastrophe 1-10 · Heart of the Ruins\nCatastrophe 2-1 · Forest Entrance\nCatastrophe 2-2 · Vinewood\nCatastrophe 2-3 · Great Tree Grove\nCatastrophe 2-4 · Misty Valley\nCatastrophe 2-5 · Poison Swamp\nCatastrophe 2-6 · Root Path\nCatastrophe 2-7 · Spirit Forest\nCatastrophe 2-8 · Deep Forest\nCatastrophe 2-9 · Forest of Life\nCatastrophe 2-10 · Beneath the World Tree\nCatastrophe 3-1 · Prison Entrance\nCatastrophe 3-2 · Cell Block\nCatastrophe 3-3 · Execution Grounds\nCatastrophe 3-4 · Iron Gate Corridor\nCatastrophe 3-5 · Torture Chamber\nCatastrophe 3-6 · Guard Room\nCatastrophe 3-7 · Sealed Prison\nCatastrophe 3-8 · Interrogation Chamber\nCatastrophe 3-9 · Underground Prison\nCatastrophe 3-10 · Warden's Office\nCatastrophe 4-1 · Ice Castle Gate\nCatastrophe 4-2 · Snowy Path\nCatastrophe 4-3 · Ice Corridor\nCatastrophe 4-4 · Frozen Garden\nCatastrophe 4-5 · Crystal Hall\nCatastrophe 4-6 · Frost Corridor\nCatastrophe 4-7 · Throne Path\nCatastrophe 4-8 · Ice Hall\nCatastrophe 4-9 · Frozen Throne\nCatastrophe 4-10 · King's Chamber\nDoom 1-1 · Ancient Ruins Entrance\nDoom 1-2 · Collapsed Path\nDoom 1-3 · Stone Pillar Path\nDoom 1-4 · Sealed Plaza\nDoom 1-5 · Ancient Altar\nDoom 1-6 · Deep Corridor\nDoom 1-7 · Ancient Temple\nDoom 1-8 · King's Tomb\nDoom 1-9 · Sealing Chamber\nDoom 1-10 · Heart of the Ruins\nDoom 2-1 · Forest Entrance\nDoom 2-2 · Vinewood\nDoom 2-3 · Great Tree Grove\nDoom 2-4 · Misty Valley\nDoom 2-5 · Poison Swamp\nDoom 2-6 · Root Path\nDoom 2-7 · Spirit Forest\nDoom 2-8 · Deep Forest\nDoom 2-9 · Forest of Life\nDoom 2-10 · Beneath the World Tree\nDoom 3-1 · Prison Entrance\nDoom 3-2 · Cell Block\nDoom 3-3 · Execution Grounds\nDoom 3-4 · Iron Gate Corridor\nDoom 3-5 · Torture Chamber\nDoom 3-6 · Guard Room\nDoom 3-7 · Sealed Prison\nDoom 3-8 · Interrogation Chamber\nDoom 3-9 · Underground Prison\nDoom 3-10 · Warden's Office\nDoom 4-1 · Ice Castle Gate\nDoom 4-2 · Snowy Path\nDoom 4-3 · Ice Corridor\nDoom 4-4 · Frozen Garden\nDoom 4-5 · Crystal Hall\nDoom 4-6 · Frost Corridor\nDoom 4-7 · Throne Path\nDoom 4-8 · Ice Hall\nDoom 4-9 · Frozen Throne\nDoom 4-10 · King's Chamber\nMonster\nDark Knight · HP 550\nMonster 111101 · HP 55\nMonster 211101 · HP 55\nMonster 311101 · HP 55\n…or any monster ID\nUse PvP damage formula\nDark Knight Boss\nnpc_gaysirdarkknight_male_high_001 · ID 411101\nATK 299\nDEF 35\nHP 550\nHIT 90\nEVA 80\nReq HIT ≥100\nROTATION DPS\n337,989\nCombat simulation\nCLEAR CHANCE\n100%\nTime limit: 60s\nTIME TO KILL\n0.1s\nAverage of successful trials\nTIME TO DIE\n—\nOnly deaths within the time limit\nNATURAL RECOVERY\n0\nAverage HP restored per battle\n\nEstimate from 16 repeatable trials in 0.1-second steps. Triggers depend on actual hits, HP and cooldowns. Stationary single-target combat; movement and animation timing are simplified. Raid and World Boss runs retain buffs between levels.\n\nRotation DPS\nSkill\tDPS\t%\nBasic attack\t337,989\t100%\nAttacker final stats\n\nIncludes selected permanent passives. Temporary effects are included in the simulation results above.\n\nAttack\nFinal_Attack\n\t4,946\nDefense\nFinal_Defense\n\t5,935\nHP\nFinal_HP\n\t31,520\nAttack Speed\nFinal_AttackSpeed\n\t105\n0.95 s/attack · 1.05 attacks/s\n\nMovement Speed\nFinal_MoveSpeed\n\t600\nAttack Range\nFinal_AttackDistance\n\t2\nAccuracy\nFinal_HitRate\n\t150\nEvasion\nFinal_Evasion\n\t140\nCritical Hit\nFinal_CriticalRate\n\t5\nCritical Damage\nFinal_CriticalDamage\n\t160%\nNatural recovery\nFinal_RecoveryAmount\n\t30\nevery 10s\n\nCombat Power\nFinal_CP\n\t45,896\nTarget final stats\nAttack\nFinal_Attack\n\t299\nDefense\nFinal_Defense\n\t35\nHP\nFinal_HP\n\t550\nAttack Speed\nFinal_AttackSpeed\n\t160\n0.63 s/attack · 1.6 attacks/s\n\nMovement Speed\nFinal_MoveSpeed\n\t850\nAttack Range\nFinal_AttackDistance\n\t1.5\nAccuracy\nFinal_HitRate\n\t90\nEvasion\nFinal_Evasion\n\t80\nCritical Hit\nFinal_CriticalRate\n\t10\nCritical Damage\nFinal_CriticalDamage\n\t160%\nNatural recovery\nFinal_RecoveryAmount\n\t0\nevery 10s\n\nCombat Power\nFinal_CP\n\t4,672\n↑\nGenesis Archive / Independent game wiki\nPrivacy Policy\nFan-Made Legal Notice",
+  "links": [
+    {
+      "text": "Skip to content",
+      "url": "https://warofgenesis.wiki/calculator#content"
+    },
+    {
+      "text": "GENESIS\nARCHIVE",
+      "url": "https://warofgenesis.wiki/"
+    },
+    {
+      "text": "Overview",
+      "url": "https://warofgenesis.wiki/"
+    },
+    {
+      "text": "Stages",
+      "url": "https://warofgenesis.wiki/stages"
+    },
+    {
+      "text": "Monsters",
+      "url": "https://warofgenesis.wiki/monsters"
+    },
+    {
+      "text": "Gold Bar",
+      "url": "https://warofgenesis.wiki/gold"
+    },
+    {
+      "text": "Characters",
+      "url": "https://warofgenesis.wiki/heroes"
+    },
+    {
+      "text": "Skills",
+      "url": "https://warofgenesis.wiki/skills"
+    },
+    {
+      "text": "Equipment",
+      "url": "https://warofgenesis.wiki/equipment"
+    },
+    {
+      "text": "Items",
+      "url": "https://warofgenesis.wiki/items"
+    },
+    {
+      "text": "Wings, Runes & Pets",
+      "url": "https://warofgenesis.wiki/companions"
+    },
+    {
+      "text": "Machina",
+      "url": "https://warofgenesis.wiki/machina"
+    },
+    {
+      "text": "Passive Skills",
+      "url": "https://warofgenesis.wiki/passives"
+    },
+    {
+      "text": "Relics",
+      "url": "https://warofgenesis.wiki/relics"
+    },
+    {
+      "text": "Altar",
+      "url": "https://warofgenesis.wiki/altar"
+    },
+    {
+      "text": "Compare",
+      "url": "https://warofgenesis.wiki/compare"
+    },
+    {
+      "text": "Growth Systems",
+      "url": "https://warofgenesis.wiki/growth"
+    },
+    {
+      "text": "Battlefield",
+      "url": "https://warofgenesis.wiki/battlefield"
+    },
+    {
+      "text": "Competition",
+      "url": "https://warofgenesis.wiki/competition"
+    },
+    {
+      "text": "Quests",
+      "url": "https://warofgenesis.wiki/quests"
+    },
+    {
+      "text": "Content Unlocks",
+      "url": "https://warofgenesis.wiki/unlocks"
+    },
+    {
+      "text": "Farming simulator",
+      "url": "https://warofgenesis.wiki/farming"
+    },
+    {
+      "text": "Leveling Calculator",
+      "url": "https://warofgenesis.wiki/leveling"
+    },
+    {
+      "text": "Combat Calculator",
+      "url": "https://warofgenesis.wiki/calculator"
+    },
+    {
+      "text": "Stats & Formulas",
+      "url": "https://warofgenesis.wiki/stats"
+    },
+    {
+      "text": "Game settings",
+      "url": "https://warofgenesis.wiki/systems"
+    },
+    {
+      "text": "Data & sources",
+      "url": "https://warofgenesis.wiki/sources"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://warofgenesis.wiki/privacy"
+    },
+    {
+      "text": "Fan-Made Legal Notice",
+      "url": "https://warofgenesis.wiki/legal"
+    },
+    {
+      "text": "Data & sources",
+      "url": "https://warofgenesis.wiki/sources"
+    },
+    {
+      "text": "Support",
+      "url": "https://buymeacoffee.com/arianshirone"
+    },
+    {
+      "text": "Dark Knight Boss\nnpc_gaysirdarkknight_male_high_001 · ID 411101\nATK 299\nDEF 35\nHP 550\nHIT 90\nEVA 80\nReq HIT ≥100",
+      "url": "https://warofgenesis.wiki/monsters/411101"
+    },
+    {
+      "text": "Home",
+      "url": "https://warofgenesis.wiki/"
+    },
+    {
+      "text": "Stages",
+      "url": "https://warofgenesis.wiki/stages"
+    },
+    {
+      "text": "Heroes",
+      "url": "https://warofgenesis.wiki/heroes"
+    },
+    {
+      "text": "Calc",
+      "url": "https://warofgenesis.wiki/calculator"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://warofgenesis.wiki/privacy"
+    },
+    {
+      "text": "Fan-Made Legal Notice",
+      "url": "https://warofgenesis.wiki/legal"
+    },
+    {
+      "text": "Dukung website ini",
+      "url": "https://buymeacoffee.com/arianshirone"
+    }
+  ],
+  "access_date": "2026-10-10",
+  "requested_url": "https://warofgenesis.wiki/calculator"
+}

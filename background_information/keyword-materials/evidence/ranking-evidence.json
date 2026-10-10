@@ -1,0 +1,466 @@
+{
+  "War of Genesis: Idle Loot guide": {
+    "matching_title_count": 7,
+    "query_evidence": [
+      "serper-guide.json"
+    ],
+    "matching_titles": [
+      "Best beginner tips and tricks for War of Genesis: Idle Loot",
+      "Complete Relic Guide: War Of Genesis: Idle Loot",
+      "War Of Genesis: Idle Loot Essential Tips & Tricks",
+      "War of Genesis Idle Loot Relics Guide and Tier List",
+      "War of Genesis: Idle Loot Advance Guide is out! Vid link in ...",
+      "War of Genesis: Idle Loot Advance Guide!",
+      "War of Genesis: Idle Loot Starter Guide!"
+    ]
+  },
+  "War of Genesis: Idle Loot overview": {
+    "matching_title_count": 1,
+    "query_evidence": [
+      "evidence/loot_guide/overview-serper.json"
+    ],
+    "matching_titles": [
+      "Complete Breakdown of NEW RPG: War of Genesis Idle Loot"
+    ]
+  },
+  "War of Genesis: Idle Loot wiki": {
+    "matching_title_count": 1,
+    "query_evidence": [
+      "evidence/loot_guide/wiki-serper.json"
+    ],
+    "matching_titles": [
+      "War of Genesis: Idle Loot Wiki | Genesis Archive"
+    ]
+  },
+  "War of Genesis: Idle Loot database": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/loot_guide/database-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot builds": {
+    "matching_title_count": 1,
+    "query_evidence": [
+      "evidence/loot_guide/builds-serper.json"
+    ],
+    "matching_titles": [
+      "War of Genesis: Idle Loot Class Discussion"
+    ]
+  },
+  "War of Genesis: Idle Loot vs Path of Idle Old Gods Rising": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/loot_guide/vs-Path-of-Idle-Old-Gods-Rising-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot best class": {
+    "matching_title_count": 3,
+    "query_evidence": [
+      "evidence/classes_skills/serper-best-class.json"
+    ],
+    "matching_titles": [
+      "War of Genesis: Idle Loot Class Discussion",
+      "War of Genesis: Idle Loot class tier list",
+      "War of Genesis: Idle Loot class tier list for PvE and PvP"
+    ]
+  },
+  "War of Genesis: Idle Loot classes": {
+    "matching_title_count": 3,
+    "query_evidence": [
+      "evidence/classes_skills/serper-classes.json"
+    ],
+    "matching_titles": [
+      "War of Genesis: Idle Loot Class Discussion",
+      "War of Genesis: Idle Loot class tier list",
+      "War of Genesis: Idle Loot class tier list for PvE and PvP"
+    ]
+  },
+  "War of Genesis: Idle Loot ranger build": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/classes_skills/serper-ranger-build.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot ranger": {
+    "matching_title_count": 1,
+    "query_evidence": [
+      "evidence/classes_skills/serper-ranger.json"
+    ],
+    "matching_titles": [
+      "War of Genesis: Idle Loot - Advance Ranger Guide! Stay Ahead ..."
+    ]
+  },
+  "War of Genesis: Idle Loot ranger skills": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/classes_skills/serper-ranger-skills.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot knight build": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/classes_skills/serper-knight-build.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot wizard build": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/classes_skills/serper-wizard-build.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot wizard": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/classes_skills/serper-wizard.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot skill tree": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/classes_skills/serper-skill-tree.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot skill allocation": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/classes_skills/serper-skill-allocation.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot skills": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/classes_skills/serper-skills.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot best skills": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/classes_skills/serper-best-skills.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot poison damage": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/classes_skills/serper-poison-damage.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot shadow step": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/classes_skills/serper-shadow-step.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot adventurer skills": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/classes_skills/serper-adventurer-skills.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot drop rates": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/loot_guide/drop-rates-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot items": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/loot_guide/items-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot gold bars": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/loot_guide/gold-bars-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot gold bar drop rate": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/loot_guide/gold-bar-drop-rate-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot T5 to T6 synthesis chance": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/loot_guide/T5-to-T6-synthesis-chance-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot auto gem synthesis": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/loot_guide/auto-gem-synthesis-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot vault": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/loot_guide/vault-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot diamond bags": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/loot_guide/diamond-bags-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot pets": {
+    "matching_title_count": 1,
+    "query_evidence": [
+      "evidence/loot_guide/pets-serper.json"
+    ],
+    "matching_titles": [
+      "Complete Pets Guide: War Of Genesis: Idle Loot"
+    ]
+  },
+  "War of Genesis: Idle Loot offline rewards": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/loot_guide/offline-rewards-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot market": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/root/market-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot market buying": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/root/market-buying-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot money making": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/root/money-making-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot developer market revenue": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/root/developer-market-revenue-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot mobile": {
+    "matching_title_count": 2,
+    "query_evidence": [
+      "evidence/platform_community/mobile-serper.json"
+    ],
+    "matching_titles": [
+      "War of Genesis: Idle Heroes - App Store",
+      "War of Genesis: Idle Heroes | Gameplay (Android/iOS)"
+    ]
+  },
+  "War of Genesis: Idle Loot mobile storage requirements": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/platform_community/mobile-storage-requirements-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot always on top": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/platform_community/always-on-top-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot login problems": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/platform_community/login-problems-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot stuck": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/platform_community/stuck-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot profile": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/platform_community/profile-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot in-app purchases": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/platform_community/in-app-purchases-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot refunds": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/platform_community/refunds-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot discord": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/platform_community/discord-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot bahamut": {
+    "matching_title_count": 1,
+    "query_evidence": [
+      "evidence/platform_community/bahamut-serper.json"
+    ],
+    "matching_titles": [
+      "Rage of Bahamut: Genesis"
+    ]
+  },
+  "War of Genesis: Idle Loot reddit": {
+    "matching_title_count": 0,
+    "query_evidence": [],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot 5ch": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/platform_community/5ch-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot threads": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/platform_community/threads-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot player count": {
+    "matching_title_count": 3,
+    "query_evidence": [
+      "evidence/platform_community/player-count-serper.json"
+    ],
+    "matching_titles": [
+      "War of Genesis: Idle Loot Live Player Count & Statistics 2026",
+      "[WoG] War of Genesis: Idle Loot Live Player Count",
+      "[WoG] War of Genesis: Idle Loot Player Count - Steam Charts"
+    ]
+  },
+  "War of Genesis: Idle Loot reviews": {
+    "matching_title_count": 1,
+    "query_evidence": [
+      "evidence/platform_community/reviews-serper.json"
+    ],
+    "matching_titles": [
+      "War of Genesis: Idle Loot user reviews"
+    ]
+  },
+  "War of Genesis: Idle Loot tools": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/root/tools-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot github": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/root/github-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot mods": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/root/mods-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot plugins": {
+    "matching_title_count": 1,
+    "query_evidence": [
+      "evidence/root/plugins-serper.json"
+    ],
+    "matching_titles": [
+      "[Release] War of Genesis Idle Loot"
+    ]
+  },
+  "War of Genesis: Idle Loot trainers": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/root/trainers-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot cheat engine": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/root/cheat-engine-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot cheats": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/root/cheats-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot unknowncheats": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/root/unknowncheats-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot 3dm": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/root/3dm-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot crypto mining": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/platform_community/crypto-mining-serper.json"
+    ],
+    "matching_titles": []
+  },
+  "War of Genesis: Idle Loot safety": {
+    "matching_title_count": 0,
+    "query_evidence": [
+      "evidence/platform_community/safety-serper.json"
+    ],
+    "matching_titles": []
+  }
+}

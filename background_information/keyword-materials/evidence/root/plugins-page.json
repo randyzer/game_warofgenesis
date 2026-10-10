@@ -1,0 +1,597 @@
+{
+  "title": "[Release] War of Genesis Idle Loot",
+  "url": "https://www.unknowncheats.me/forum/other-games/775440-war-genesis-idle-loot.html",
+  "text": "\t\n\t\t\t\t\t\n\n\n\t \tUnKnoWnCheaTs - Multiplayer Game Hacking and Cheats\nOther Gaming\nOther Games\n\n [Release] War of Genesis Idle Loot\nadvertisements\n\t\nUser Name:\n\tPassword:\n\nRemember Me?\t\n\n\n \n Reddit\n Twitter\n Facebook\n \n\tThread Tools \nWar of Genesis Idle Loot\n 6th October 2026, 02:48 PM\t  #1\n\nsamkagan1993\nMember\n\n\n\n\n\nJoin Date: Jan 2018\nPosts: 74\nReputation: 969\nRep Power: 214\n\nPoints: 8,178, Level: 10\n\t\t\nLevel up: 53%, 522 Points needed\n\t\t\nActivity: 19.4%\n\t\t\nLast Achievements\n\t\nWar of Genesis Idle Loot\nHow to use :\n1. Find and Download BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.787+7cb1246.zip.\n2. Extract BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.787+7cb1246.zip to Folder War of Genesis Idle Loot.\n3. Download BlacksmithProbe.dll, and put inside \"War of Genesis Idle Loot\\BepInEx\\plugins\".\n4. Run it once, and blacksmith.probe.cfg will appear inside folder \"War of Genesis Idle Loot\\BepInEx\\config\"\n\nFeature :\n1. Auto Combine\n\nUnlockHigherTier: Unlock Auto Combine above tier 2 (Magic).\nMaxRating: Highest tier available in the Auto Combine dropdown.\nIncludeStorage: Also use items from Storage. Locked and equipped items are skipped.\n\n2. Auto Reconnect\n\nEnabled: Press Retry automatically when the connection is lost.\nDelaySec: Seconds before the first retry. Doubles each attempt, max 5 minutes.\nMaxRetry: Max retries in a row before showing the popup.\n\n3. Auto Sort\n\nEnabled: Sort the Inventory automatically. Clears the 'New' marker.\nIntervalSec: Seconds between sorts.\n\n4. Auto Training\n\nEnabled: Level up the cheapest Training whenever gold is enough.\nReserveGold: Gold to keep after each level up.\nIntervalMs: Milliseconds between level ups.\n\n5. Logging\n\nCombineLog: Log every combine to BepInEx/WoGAuto_Combine.log.\n\n6. Stage Export\n\nDumpStageTable: Export stage gold/exp data to BepInEx/WoGAuto_Stages.csv.\n\nDump IL2CPP + Javascript :\n\nhttps://www.unknowncheats.me/forum/d...=file&id=58295\n\nSource Code :\n\n\n\n\n\n\nLink Download : https://www.unknowncheats.me/forum/d...=file&id=58280 Approved\nLast edited by samkagan1993; 7th October 2026 at 03:06 AM.\n\n\nsamkagan1993 is online now\n\t\n 6th October 2026, 02:52 PM\t  #2\n\nrhaym\nJr. Downloads Moderator\n\n\n\n\nJoin Date: Jul 2024\nLocation: Westros\nPosts: 2,742\nReputation: 44519\nRep Power: 126\n\nRecognitions\n Contest Winner (1)\n File Analyzer\n\nPoints: 63,442, Level: 37\n\t\t\nLevel up: 28%, 2,758 Points needed\n\t\t\nActivity: 99.6%\n\t\t\nLast Achievements\n\t\nFile Approved\nSHA256: 197278e3afc59938abcdc3071ed6ba3e66ca399c12d75a656b5d9cb1531be2f6 - BlacksmithProbe.dll\nInterested in how we analyze files? Click here to find out.\n\n\nDownload: https://www.unknowncheats.me/forum/d...=file&id=58280\n\nThanks for sharing!\n__________________\n\nWhen the snows fall and the white winds blow, the lone wolf dies, but the pack survives.\n\n\n\n\nrhaym is online now\n\t\n 6th October 2026, 07:42 PM\t  #3\n\njaodegwapo\nPosting Well\n\n\n\n\n\nJoin Date: Jan 2018\nLocation: Philippines\nPosts: 33\nReputation: -19\nRep Power: 0\n\nPoints: 6,550, Level: 9\n\t\t\nLevel up: 5%, 1,050 Points needed\n\t\t\nActivity: 2.8%\n\t\t\nLast Achievements\n\t\nthank you for this!\n\nis there any chance you can make speed hack for this game?\n\nis there any chance you can make speed hack for this game?\n__________________\n\n:motiass:\n\n\njaodegwapo is offline\n\t\n 7th October 2026, 02:01 AM\t  #4\n\nAlabasca\nPosting Well\n\n\n\n\n\nJoin Date: Oct 2018\nPosts: 33\nReputation: 517\nRep Power: 195\n\nPoints: 6,445, Level: 8\n\t\t\nLevel up: 95%, 55 Points needed\n\t\t\nActivity: 11.1%\n\t\t\nLast Achievements\n\t\nSo I try today, game not loaded up, it boot up the bepin ex then close instantly, game not start\nLast edited by Alabasca; 7th October 2026 at 02:04 AM.\n\n\nAlabasca is offline\n\t\n 7th October 2026, 02:11 AM\t  #5\n\nsamkagan1993\nMember\n\n\n\n\n\nThreadstarter\nJoin Date: Jan 2018\nPosts: 74\nReputation: 969\nRep Power: 214\n\nPoints: 8,178, Level: 10\n\t\t\nLevel up: 53%, 522 Points needed\n\t\t\nActivity: 19.4%\n\t\t\nLast Achievements\n\t\nQuote:\nOriginally Posted by jaodegwapo \nthank you for this!\n\nis there any chance you can make speed hack for this game?\n\nis there any chance you can make speed hack for this game?\nSorry, This game is mostly server-side, and it features a JavaScript-based anti-cheat system.\n\n\nQuote:\nOriginally Posted by Alabasca \nSo I try today, game not loaded up, it boot up the bepin ex then close instantly, game not start\nCan you send log LogOutput.log inside folder BepInEx ?\n\n\nsamkagan1993 is online now\n\t\n 7th October 2026, 02:51 AM\t  #6\n\nAlabasca\nPosting Well\n\n\n\n\n\nJoin Date: Oct 2018\nPosts: 33\nReputation: 517\nRep Power: 195\n\nPoints: 6,445, Level: 8\n\t\t\nLevel up: 95%, 55 Points needed\n\t\t\nActivity: 11.1%\n\t\t\nLast Achievements\n\t\nQuote:\nOriginally Posted by samkagan1993 \nSorry, This game is mostly server-side, and it features a JavaScript-based anti-cheat system.\n\n\n\nCan you send log LogOutput.log inside folder BepInEx ?\n[Message: Preloader] BepInEx 6.0.0-be.697 - Genesis\n[Message: Preloader] Built from commit 53625800b86f6c68751445248260edf0b27a71c2\n[Info : BepInEx] System platform: Windows 10 64-bit\n[Info : BepInEx] Process bitness: 64-bit (x64)\n[Info : BepInEx] Running under Unity 6000.0.59f2\n[Info : BepInEx] Runtime version: 6.0.7\n[Info : BepInEx] Runtime information: .NET 6.0.7\n[Message:InteropManager] Downloading unity base libraries\n[Message:InteropManager] Extracting downloaded unity base libraries\n[Message:InteropManager] Running Cpp2IL to generate dummy assemblies\n[Info : Cpp2IL] [Library] Initializing Metadata...\n[Error :InteropManager] Failed to generate Il2Cpp interop assemblies: Cpp2IL.Core.Exceptions.LibCpp2ILInitializationException: Fatal Exception initializing LibCpp2IL!\n---> System.FormatException: Unsupported metadata version found! We support 23-29, got 31\nat LibCpp2IL.Metadata.Il2CppMetadata.ReadFrom(Byte[] bytes, UnityVersion unityVersion) in /home/runner/work/Cpp2IL/Cpp2IL/LibCpp2IL/Metadata/Il2CppMetadata.cs:line 71\nat LibCpp2IL.LibCpp2IlMain.Initialize(Byte[] binaryBytes, Byte[] metadataBytes, UnityVersion unityVersion) in /home/runner/work/Cpp2IL/Cpp2IL/LibCpp2IL/LibCpp2IlMain.cs:line 149\nat Cpp2IL.Core.Cpp2IlApi.InitializeLibCpp2Il(String assemblyPath, String metadataPath, UnityVersion unityVersion, Boolean allowUserToInputAddresses) in /_/Cpp2IL.Core/Cpp2IlApi.cs:line 62\n--- End of inner exception stack trace ---\nat Cpp2IL.Core.Cpp2IlApi.InitializeLibCpp2Il(String assemblyPath, String metadataPath, UnityVersion unityVersion, Boolean allowUserToInputAddresses) in /_/Cpp2IL.Core/Cpp2IlApi.cs:line 68\nat BepInEx.Unity.IL2CPP.Il2CppInteropManager.RunCpp2Il() in /home/runner/work/BepInEx/BepInEx/Runtimes/Unity/BepInEx.Unity.IL2CPP/Il2CppInteropManager.cs:line 304\nat BepInEx.Unity.IL2CPP.Il2CppInteropManager.GenerateInteropAssemblies() in /home/runner/work/BepInEx/BepInEx/Runtimes/Unity/BepInEx.Unity.IL2CPP/Il2CppInteropManager.cs:line 236\n[Info : Preloader] 0 patcher plugins loaded\n[Info : Preloader] 0 assemblies discovered\n[Message:AssemblyPatcher] Executing 0 patch(es)\n[Message: BepInEx] Chainloader initialized\n\nI use BepInEx-Unity.IL2CPP-win-x64-6.0.0-pre.2\nLast edited by Alabasca; 7th October 2026 at 02:52 AM.\n\n\nAlabasca is offline\n\t\n 7th October 2026, 03:06 AM\t  #7\n\nsamkagan1993\nMember\n\n\n\n\n\nThreadstarter\nJoin Date: Jan 2018\nPosts: 74\nReputation: 969\nRep Power: 214\n\nPoints: 8,178, Level: 10\n\t\t\nLevel up: 53%, 522 Points needed\n\t\t\nActivity: 19.4%\n\t\t\nLast Achievements\n\t\nQuote:\nOriginally Posted by Alabasca \n[Message: Preloader] BepInEx 6.0.0-be.697 - Genesis\n[Message: Preloader] Built from commit 53625800b86f6c68751445248260edf0b27a71c2\n[Info : BepInEx] System platform: Windows 10 64-bit\n[Info : BepInEx] Process bitness: 64-bit (x64)\n[Info : BepInEx] Running under Unity 6000.0.59f2\n[Info : BepInEx] Runtime version: 6.0.7\n[Info : BepInEx] Runtime information: .NET 6.0.7\n[Message:InteropManager] Downloading unity base libraries\n[Message:InteropManager] Extracting downloaded unity base libraries\n[Message:InteropManager] Running Cpp2IL to generate dummy assemblies\n[Info : Cpp2IL] [Library] Initializing Metadata...\n[Error :InteropManager] Failed to generate Il2Cpp interop assemblies: Cpp2IL.Core.Exceptions.LibCpp2ILInitializationException: Fatal Exception initializing LibCpp2IL!\n---> System.FormatException: Unsupported metadata version found! We support 23-29, got 31\nat LibCpp2IL.Metadata.Il2CppMetadata.ReadFrom(Byte[] bytes, UnityVersion unityVersion) in /home/runner/work/Cpp2IL/Cpp2IL/LibCpp2IL/Metadata/Il2CppMetadata.cs:line 71\nat LibCpp2IL.LibCpp2IlMain.Initialize(Byte[] binaryBytes, Byte[] metadataBytes, UnityVersion unityVersion) in /home/runner/work/Cpp2IL/Cpp2IL/LibCpp2IL/LibCpp2IlMain.cs:line 149\nat Cpp2IL.Core.Cpp2IlApi.InitializeLibCpp2Il(String assemblyPath, String metadataPath, UnityVersion unityVersion, Boolean allowUserToInputAddresses) in /_/Cpp2IL.Core/Cpp2IlApi.cs:line 62\n--- End of inner exception stack trace ---\nat Cpp2IL.Core.Cpp2IlApi.InitializeLibCpp2Il(String assemblyPath, String metadataPath, UnityVersion unityVersion, Boolean allowUserToInputAddresses) in /_/Cpp2IL.Core/Cpp2IlApi.cs:line 68\nat BepInEx.Unity.IL2CPP.Il2CppInteropManager.RunCpp2Il() in /home/runner/work/BepInEx/BepInEx/Runtimes/Unity/BepInEx.Unity.IL2CPP/Il2CppInteropManager.cs:line 304\nat BepInEx.Unity.IL2CPP.Il2CppInteropManager.GenerateInteropAssemblies() in /home/runner/work/BepInEx/BepInEx/Runtimes/Unity/BepInEx.Unity.IL2CPP/Il2CppInteropManager.cs:line 236\n[Info : Preloader] 0 patcher plugins loaded\n[Info : Preloader] 0 assemblies discovered\n[Message:AssemblyPatcher] Executing 0 patch(es)\n[Message: BepInEx] Chainloader initialized\n\nI use BepInEx-Unity.IL2CPP-win-x64-6.0.0-pre.2\nOhh sorry, try BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.787+7cb1246.zip.\n\n\nsamkagan1993 is online now\n\t\n 7th October 2026, 05:01 AM\t  #8\n\nAlabasca\nPosting Well\n\n\n\n\n\nJoin Date: Oct 2018\nPosts: 33\nReputation: 517\nRep Power: 195\n\nPoints: 6,445, Level: 8\n\t\t\nLevel up: 95%, 55 Points needed\n\t\t\nActivity: 11.1%\n\t\t\nLast Achievements\n\t\ngame maintenance\n\n\nAlabasca is offline\n\t\n 7th October 2026, 02:49 PM\t  #9\n\nHX73D\nForum Moderator & File Analyzer\n\n\n\n\nJoin Date: Dec 2022\nPosts: 603\nReputation: 16993\nRep Power: 116\n\nRecognitions\n Donator (2)\n File Analyzer\n Contest Winner (1)\n\nPoints: 50,147, Level: 33\n\t\t\nLevel up: 64%, 1,253 Points needed\n\t\t\nActivity: 99.3%\n\t\t\nLast Achievements\n\t\nFile Approved\nSHA256: d9960450dc2d03f7a421afdf35780af95aeebe33aee8df4b6789c8d34e4ad837 - src_main.bundle.zip\nInterested in how we analyze files? Click here to find out.\n\n\nDownload: https://www.unknowncheats.me/forum/d...=file&id=58294\n\nThanks for sharing!\n__________________\n\n——————————————————————————————\nDownloads • Rules • FAQ\n\nNew here? Quick help: Upload a File · Can't Download? · Can't Post / PM?\n\nGot questions? Send me a PM\nWant to help our team? See how you can join\n——————————————————————————————\n\n\nHX73D is offline\n\t\n 7th October 2026, 03:07 PM\t  #10\n\nHX73D\nForum Moderator & File Analyzer\n\n\n\n\nJoin Date: Dec 2022\nPosts: 603\nReputation: 16993\nRep Power: 116\n\nRecognitions\n Donator (2)\n File Analyzer\n Contest Winner (1)\n\nPoints: 50,147, Level: 33\n\t\t\nLevel up: 64%, 1,253 Points needed\n\t\t\nActivity: 99.3%\n\t\t\nLast Achievements\n\t\nFile Approved\nSHA256: d33c99a263856fb694fedc5775ddd7ec675fb9fbaa810cd43f38079eac216504 - dump_il2cpp+js.zip\nInterested in how we analyze files? Click here to find out.\n\n\nDownload: https://www.unknowncheats.me/forum/d...=file&id=58295\n\nThanks for sharing!\n__________________\n\n——————————————————————————————\nDownloads • Rules • FAQ\n\nNew here? Quick help: Upload a File · Can't Download? · Can't Post / PM?\n\nGot questions? Send me a PM\nWant to help our team? See how you can join\n——————————————————————————————\n\n\nHX73D is offline\n\t\n 7th October 2026, 06:13 PM\t  #11\n\njohnnyboi67\nJunior Member\n\n\n\n\n\nJoin Date: Sep 2026\nPosts: 50\nReputation: 10\nRep Power: 2\n\nPoints: 233, Level: 1\n\t\t\nLevel up: 59%, 167 Points needed\n\t\t\nActivity: 55.6%\n\t\t\n\t\nQuote:\nOriginally Posted by samkagan1993 \nSorry, This game is mostly server-side, and it features a JavaScript-based anti-cheat system.\n\n\n\nCan you send log LogOutput.log inside folder BepInEx ?\nomg thank you so much your our savior lol been begging\n[WoG] War of Genesis: Idle Loot\n\n\njohnnyboi67 is offline\n\t\n 7th October 2026, 09:42 PM\t  #12\n\nnole98\nn00bie\n\n\n\n\n\nJoin Date: Aug 2026\nPosts: 1\nReputation: 10\nRep Power: 5\n\nPoints: 1, Level: 1\n\t\t\nLevel up: 0%, 1 Points needed\n\t\t\nActivity: 0%\n\t\t\n\t\nQuote:\nOriginally Posted by samkagan1993 \nHow to use :\n1. Find and Download BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.787+7cb1246.zip.\n2. Extract BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.787+7cb1246.zip to Folder War of Genesis Idle Loot.\n3. Download BlacksmithProbe.dll, and put inside \"War of Genesis Idle Loot\\BepInEx\\plugins\".\n4. Run it once, and blacksmith.probe.cfg will appear inside folder \"War of Genesis Idle Loot\\BepInEx\\config\"\n\nFeature :\n1. Auto Combine\n\nUnlockHigherTier: Unlock Auto Combine above tier 2 (Magic).\nMaxRating: Highest tier available in the Auto Combine dropdown.\nIncludeStorage: Also use items from Storage. Locked and equipped items are skipped.\n\n2. Auto Reconnect\n\nEnabled: Press Retry automatically when the connection is lost.\nDelaySec: Seconds before the first retry. Doubles each attempt, max 5 minutes.\nMaxRetry: Max retries in a row before showing the popup.\n\n3. Auto Sort\n\nEnabled: Sort the Inventory automatically. Clears the 'New' marker.\nIntervalSec: Seconds between sorts.\n\n4. Auto Training\n\nEnabled: Level up the cheapest Training whenever gold is enough.\nReserveGold: Gold to keep after each level up.\nIntervalMs: Milliseconds between level ups.\n\n5. Logging\n\nCombineLog: Log every combine to BepInEx/WoGAuto_Combine.log.\n\n6. Stage Export\n\nDumpStageTable: Export stage gold/exp data to BepInEx/WoGAuto_Stages.csv.\n\nDump IL2CPP + Javascript :\n\nhttps://www.unknowncheats.me/forum/d...=file&id=58295\n\nSource Code :\n\n\n\n\n\n\nLink Download : https://www.unknowncheats.me/forum/d...=file&id=58280 Approved\nHey! Love your work! I'm sorry i'm new so i stumbled this post and I'm quite annoyed how the game devs doesnt put more options for auto-combine in the game.\n\nI was wondering if we can change or stop auto selecting \"TRAINING\" and conserve gold?\n\nThanks!\n\n\nnole98 is offline\n\t\n 8th October 2026, 12:43 AM\t  #13\n\nsamkagan1993\nMember\n\n\n\n\n\nThreadstarter\nJoin Date: Jan 2018\nPosts: 74\nReputation: 969\nRep Power: 214\n\nPoints: 8,178, Level: 10\n\t\t\nLevel up: 53%, 522 Points needed\n\t\t\nActivity: 19.4%\n\t\t\nLast Achievements\n\t\nQuote:\nOriginally Posted by nole98 \nHey! Love your work! I'm sorry i'm new so i stumbled this post and I'm quite annoyed how the game devs doesnt put more options for auto-combine in the game.\n\nI was wondering if we can change or stop auto selecting \"TRAINING\" and conserve gold?\n\nThanks!\n\nYou can disable from blacksmith.probe.cfg inside folder BepInEx/Config.\n\n\nsamkagan1993 is online now\n\t\n 8th October 2026, 09:26 AM\t  #14\n\nKKADENUG\nPosting Well\n\n\n\n\n\nJoin Date: Dec 2022\nPosts: 32\nReputation: 56\nRep Power: 93\n\nPoints: 2,906, Level: 5\n\t\t\nLevel up: 14%, 694 Points needed\n\t\t\nActivity: 8.3%\n\t\t\nLast Achievements\n\t\nQuote:\nOriginally Posted by samkagan1993 \nOhh sorry, try BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.787+7cb1246.zip.\nGreat post, but is it possible to use a \"god mode\" feature or something like that?\n\n\nKKADENUG is offline\n\t\n Yesterday, 06:03 AM\t  #15\n\numut1992\nn00bie\n\n\n\n\n\nJoin Date: Jun 2016\nPosts: 17\nReputation: 136\nRep Power: 251\n\nPoints: 7,748, Level: 10\n\t\t\nLevel up: 14%, 952 Points needed\n\t\t\nActivity: 8.3%\n\t\t\nLast Achievements\n\t\nany chance to get banned?\n\n\numut1992 is offline\n\t\n Yesterday, 08:42 AM\t  #16\n\nAlabasca\nPosting Well\n\n\n\n\n\nJoin Date: Oct 2018\nPosts: 33\nReputation: 517\nRep Power: 195\n\nPoints: 6,445, Level: 8\n\t\t\nLevel up: 95%, 55 Points needed\n\t\t\nActivity: 11.1%\n\t\t\nLast Achievements\n\t\nQuote:\nOriginally Posted by umut1992 \nany chance to get banned?\nanything got a risk, but I dont think for this one, it just auto click for training, sort out and unlock the blacksmith, not touching to the game\n\n\nAlabasca is offline\n\t\n Yesterday, 09:30 AM\t  #17\n\ngarvard4\nn00bie\n\n\n\n\n\nJoin Date: Nov 2023\nPosts: 3\nReputation: 10\nRep Power: 71\n\nPoints: 2,141, Level: 4\n\t\t\nLevel up: 6%, 659 Points needed\n\t\t\nActivity: 0%\n\t\t\nLast Achievements\n\t\nGood job. But is there any way to add a feature that automatically checks the boxes for upgrading weapon tiers across the board?\n\n\ngarvard4 is offline\n\t\n Yesterday, 09:33 AM\t  #18\n\nsamkagan1993\nMember\n\n\n\n\n\nThreadstarter\nJoin Date: Jan 2018\nPosts: 74\nReputation: 969\nRep Power: 214\n\nPoints: 8,178, Level: 10\n\t\t\nLevel up: 53%, 522 Points needed\n\t\t\nActivity: 19.4%\n\t\t\nLast Achievements\n\t\nQuote:\nOriginally Posted by KKADENUG \nGreat post, but is it possible to use a \"god mode\" feature or something like that?\nSorry, i tried but cannot. Everything is server-side.\n\n\nQuote:\nOriginally Posted by umut1992 \nany chance to get banned?\nI've been using it for two weeks, and everything has been fine so far. It only unlocks the blacksmith tier and auto-functions; it doesn't modify character stats, monsters, or PvP mechanics.\n\n\nsamkagan1993 is online now\n\t\n Yesterday, 09:45 AM\t  #19\n\numut1992\nn00bie\n\n\n\n\n\nJoin Date: Jun 2016\nPosts: 17\nReputation: 136\nRep Power: 251\n\nPoints: 7,748, Level: 10\n\t\t\nLevel up: 14%, 952 Points needed\n\t\t\nActivity: 8.3%\n\t\t\nLast Achievements\n\t\nQuote:\nOriginally Posted by samkagan1993 \nSorry, i tried but cannot. Everything is server-side.\n\n\n\nI've been using it for two weeks, and everything has been fine so far. It only unlocks the blacksmith tier and auto-functions; it doesn't modify character stats, monsters, or PvP mechanics.\nthank you brother good job ! \n\n\numut1992 is offline\n\t\n \n Reddit\n Twitter\n Facebook\n\n\nSimilar Threads\nThread\tThread Starter\tForum\tReplies\tLast Post\n[Request] [WoG] War of Genesis: Idle Loot\ttab1ta0000\tOther MMORPG and Strategy\t47\t6th October 2026 06:43 PM\n[Question] Loot Run and Loot climb into cannon\tThAtkid12\tSea of Thieves\t1\t9th May 2023 07:23 PM\n[Help] Genesis A.D WH\tqjtxwork\tOther FPS Games\t6\t3rd October 2010 06:49 AM\nTop 10 Genesis Games Of All Time\tmonkey6666\tOff Topic\t3\t9th June 2006 01:43 PM\n\n\nTags\nauto, combine, genesis, idle, war, level, enabled, sort, retry, training\n\n\n« Previous Thread | Next Thread »\n\n\n\t\nForum Jump\n\nUser Control Panel\nPrivate Messages\nSubscriptions\nWho's Online\nSearch Forums\nForums Home\nGeneral UC\n    Information and Announcements\n        Member of the Month\n    Forum General\n        Introductions\n    Off Topic\n        Music and Videos\n        Spam\n    Forum Feedback\nFirst-Person Shooters\n    ARC Raiders\n    ARMA Series\n        ARMA 2\n            ARMA 2 Scripting\n            Source Code\n            Tutorials\n        ARMA 3\n            Source Code\n            Tutorials\n        DayZ SA\n            Source Code\n            Tutorials\n    All Points Bulletin\n        APB:RU (Innova)\n        Source Code\n        Tutorials\n    Alliance of Valiant Arms\n    America's Army Operations\n        America's Army Operations 2.x\n            2.x Coding and Tutorials\n        America's Army Operations 3.x\n            3.x Coding and Tutorials\n            Tutorials\n        America's Army: Proving Grounds\n    Apex Legends\n    Battlefield Series\n        Battlefield 1942\n        Battlefield Vietnam\n        Battlefield 2\n        Battlefield 2142\n        Battlefield Bad Company 2\n        Battlefield Heroes\n        Battlefield Play4Free\n        Battlefield 3\n        Battlefield 4\n        Battlefield Hardline\n        Battlefield 1\n        Battlefield V\n        Battlefield 2042\n        Battlefield 6\n    Call of Duty Series\n        Call Of Duty 1\n        Call of Duty 2\n        Call of Duty 4: Modern Warfare\n        Call of Duty 5: World at War\n        Call of Duty 6: Modern Warfare 2\n            Call of Duty 6: Code Section\n            Call of Duty 6: alterIWnet\n            Source Code\n            Tutorials\n        Call of Duty: Black Ops\n        Call of Duty: Modern Warfare 3\n            Source Code\n            Tutorials\n        Call of Duty: Black Ops 2\n        Call of Duty: Black Ops 3\n        Call of Duty: Ghosts\n            Source Code\n            Tutorials\n        Call of Duty: Advanced Warfare\n        Call of Duty: Black Ops 4\n        Call of Duty: Modern Warfare\n        Call of Duty: Black Ops Cold War\n        Call of Duty: Vanguard\n        Call of Duty: Modern Warfare II\n        Call of Duty: Modern Warfare III\n        Call of Duty: Black Ops 6\n        Call of Duty: Black Ops 7\n    Combat Arms\n        Source Code\n        Tutorials\n    Counter Strike\n        CounterStrike Source\n        CounterStrike 1.5, 1.6 and Mods\n        Counterstrike Global Offensive\n            CS:GO Releases\n        Counter-Strike 2\n            Counter-Strike 2 Releases\n    Crysis Series\n        Crysis\n        Crysis 2\n        Crysis 3\n    Day of Defeat\n    Deadlock\n    Escape from Tarkov\n    FEAR\n    Far Cry\n        Far Cry 2\n    Grand Theft Auto V\n        Alternative Online Mods\n    H1Z1\n    Halo\n    HELLDIVERS 2\n    Joint Operations & DFX\n    Marvel Rivals\n    Medal Of Honor Series\n        Allied Assault\n            Educational\\Informational\n        Breakthrough\n        SpearHead\n        Medal of Honor 2010\n        Medal of Honor: Warfighter\n    Operation 7\n    Overwatch\n    Paladins\n    Palworld\n    Payday 2\n        Payday: The Heist\n    Payday 3\n    PlanetSide 2\n    Quake Series\n        Coding Section\n        Quake 1 - 4\n        Quake 3 - 4 Mods\n        Quake Live\n        Quake Champions\n    Rainbow Six Siege\n    Radical Heights\n    Red Dead Redemption 2\n    Rust\n    Rules of Survival\n        RoS Releases\n    Sea of Thieves\n    Splitgate\n    Star Wars Battlefront\n    Star Wars Battlefront 2\n    Sudden Attack\n    Swat 4\n    Titanfall\n    Team Fortress 2\n        Source Code\n        Tutorials\n    THE FINALS\n    Tom Clancy's The Division\n    Unreal Tournament\n        UT 99\n        UT 2K4\n        UT 3\n    War Inc\n    War Rock\n    Wardogs\n    Warface\n    xDefiant\n    Other FPS Games\n        Alien vs Predator\n        BattleBit Remastered\n        Black Hawk Down\n            Source Code\n            Tutorials\n        Combat Master\n        ET: Quake Wars\n        Farlight 84\n        Frontlines: FOW\n        Garry's Mod\n        Ghost Recon\n        Half Life\n        Insurgency\n        Raven Shield\n        Ring of Elysium\n        RTCW Series\n            Return To Castle Wolfenstein\n            Return To Castle Wolfenstein 2\n        Scum\n        Soldier Of Fortune 2\n        Star Wars Jedi Knight\nMMO and Strategy Games\n    Among Us\n    Command & Conquer Series\n        Generals and Zero Hour\n        Renegade\n        Red Alert 3\n        Tiberium Wars\n        Command and Conquer 4\n        Other\n    Diablo Series\n    Elite: Dangerous\n    Genshin Impact\n    Guild Wars\n        Guild Wars 2\n    Gunbound\n    GunZ\n    Infestation Survivor Stories Series\n        Infestation Survivor Stories: Classic\n            ISS Emulators\n        Infestation Survivor Stories: Aftermath\n        Infestation Survivor Stories: NewZ\n        Infestation Survivor Stories: World\n        ISS Coding\n    Lethal Company\n    Maple Story\n    Minecraft\n    Palia\n    Phasmophobia\n    New World\n    Ragnarok\n    Roblox\n    RuneScape\n    Tower of Fantasy\n    Transformice\n    World of Warcraft\n        Wow Exploits Guides\n        Wow Hacks and Bots\n    Other MMORPG and Strategy\n        Age of Empires\n        Neverwinter\n        Rakion\n        SilkRoad\n        WarCraft 3\n        Warhammer\nAnti-Cheat Software & Programming\n    General Programming and Reversing\n    Programming for Beginners\n    Anti-Cheat Research\n    Assembly\n    C and C++\n    C#\n    Game Development\n    Rust (Language)\n    Direct3D\n        D3D Tutorials and Source\n    Game Engine Programming\n        Quake 3 and 4\n        FrostBite\n        Source Engine\n        Unreal Engine 2\n        Unreal Engine 3\n        Unreal Engine 4\n        Unity\n    OpenGL\n        OGL Tutorials and Source\n    VB.NET\n    Web and Scripting\n        mIRC\n        HTML\n        PHP\n        Java\n        Javascript\nOther Gaming\n    Other Games\n    Console Gaming\n        XBOX\n        PlayStation\n        Nintendo\n    Smart Devices\n        Android\n        iOS\nHardware and Software\n    PC Hardware\n    PC Software\n    Other Hardware\n    Other Software\nGraphic Design\n    General Graphics\n    Signatures and Avatars\n    Wallpapers\nSingle Player Cheats\n    Cheat Engine Tables\n    Cheat Engine Support\n    Other Single Player Games\n\n\n\nAll times are GMT. The time now is 05:55 AM.\nCopyright ©2000-2026, Unknowncheats™\nDMCA\nTerms of Use - Privacy Policy - Forum Rules\nno new posts",
+  "links": [
+    {
+      "text": "UnKnoWnCheaTs - Multiplayer Game Hacking and Cheats",
+      "url": "https://www.unknowncheats.me/forum/index.php"
+    },
+    {
+      "text": "Other Gaming",
+      "url": "https://www.unknowncheats.me/forum/other-gaming/"
+    },
+    {
+      "text": "Other Games",
+      "url": "https://www.unknowncheats.me/forum/other-games/"
+    },
+    {
+      "text": "Reddit",
+      "url": "http://reddit.com/submit?url=https%3A%2F%2Fwww.unknowncheats.me%2Fforum%2Fshowthread.php%3Ft%3D775440&title=War+of+Genesis+Idle+Loot"
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/intent/tweet?text=War+of+Genesis+Idle+Loot&url=https%3A%2F%2Fwww.unknowncheats.me%2Fforum%2Fshowthread.php%3Ft%3D775440"
+    },
+    {
+      "text": "Facebook",
+      "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.unknowncheats.me%2Fforum%2Fshowthread.php%3Ft%3D775440"
+    },
+    {
+      "text": "Thread Tools",
+      "url": "https://www.unknowncheats.me/forum/other-games/775440-war-genesis-idle-loot.html?nojs=1#goto_threadtools"
+    },
+    {
+      "text": "1",
+      "url": "https://www.unknowncheats.me/forum/4821177-post1.html"
+    },
+    {
+      "text": "samkagan1993",
+      "url": "https://www.unknowncheats.me/forum/members/2229739.html"
+    },
+    {
+      "text": "https://www.unknowncheats.me/forum/d...=file&id=58295",
+      "url": "https://www.unknowncheats.me/forum/downloads.php?do=file&id=58295"
+    },
+    {
+      "text": "https://api.nuget.org/v3/index.json;",
+      "url": "https://api.nuget.org/v3/index.json;"
+    },
+    {
+      "text": "https://nuget.bepinex.dev/v3/index.json",
+      "url": "https://nuget.bepinex.dev/v3/index.json"
+    },
+    {
+      "text": "https://www.unknowncheats.me/forum/d...=file&id=58280",
+      "url": "https://www.unknowncheats.me/forum/downloads.php?do=file&id=58280"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/2229739.html"
+    },
+    {
+      "text": "Find More Posts by samkagan1993",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=2229739"
+    },
+    {
+      "text": "2",
+      "url": "https://www.unknowncheats.me/forum/4821184-post2.html"
+    },
+    {
+      "text": "rhaym",
+      "url": "https://www.unknowncheats.me/forum/members/6262081.html"
+    },
+    {
+      "text": "Contest Winner",
+      "url": "https://www.unknowncheats.me/forum/members/6262081.html?tab=myawards#aw_issue3325"
+    },
+    {
+      "text": "File Analyzer",
+      "url": "https://www.unknowncheats.me/forum/members/6262081.html?tab=myawards#aw_issue3247"
+    },
+    {
+      "text": "Click here to find out.",
+      "url": "https://www.unknowncheats.me/forum/faq.php?faq=uc_dl_faq"
+    },
+    {
+      "text": "https://www.unknowncheats.me/forum/d...=file&id=58280",
+      "url": "https://www.unknowncheats.me/forum/downloads.php?do=file&id=58280"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/6262081.html"
+    },
+    {
+      "text": "Find More Posts by rhaym",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=6262081"
+    },
+    {
+      "text": "3",
+      "url": "https://www.unknowncheats.me/forum/4821455-post3.html"
+    },
+    {
+      "text": "jaodegwapo",
+      "url": "https://www.unknowncheats.me/forum/members/2249444.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/2249444.html"
+    },
+    {
+      "text": "Find More Posts by jaodegwapo",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=2249444"
+    },
+    {
+      "text": "4",
+      "url": "https://www.unknowncheats.me/forum/4821761-post4.html"
+    },
+    {
+      "text": "Alabasca",
+      "url": "https://www.unknowncheats.me/forum/members/2556330.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/2556330.html"
+    },
+    {
+      "text": "Find More Posts by Alabasca",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=2556330"
+    },
+    {
+      "text": "5",
+      "url": "https://www.unknowncheats.me/forum/4821767-post5.html"
+    },
+    {
+      "text": "samkagan1993",
+      "url": "https://www.unknowncheats.me/forum/members/2229739.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/2229739.html"
+    },
+    {
+      "text": "Find More Posts by samkagan1993",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=2229739"
+    },
+    {
+      "text": "6",
+      "url": "https://www.unknowncheats.me/forum/4821811-post6.html"
+    },
+    {
+      "text": "Alabasca",
+      "url": "https://www.unknowncheats.me/forum/members/2556330.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/2556330.html"
+    },
+    {
+      "text": "Find More Posts by Alabasca",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=2556330"
+    },
+    {
+      "text": "7",
+      "url": "https://www.unknowncheats.me/forum/4821819-post7.html"
+    },
+    {
+      "text": "samkagan1993",
+      "url": "https://www.unknowncheats.me/forum/members/2229739.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/2229739.html"
+    },
+    {
+      "text": "Find More Posts by samkagan1993",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=2229739"
+    },
+    {
+      "text": "8",
+      "url": "https://www.unknowncheats.me/forum/4821886-post8.html"
+    },
+    {
+      "text": "Alabasca",
+      "url": "https://www.unknowncheats.me/forum/members/2556330.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/2556330.html"
+    },
+    {
+      "text": "Find More Posts by Alabasca",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=2556330"
+    },
+    {
+      "text": "9",
+      "url": "https://www.unknowncheats.me/forum/4822298-post9.html"
+    },
+    {
+      "text": "HX73D",
+      "url": "https://www.unknowncheats.me/forum/members/5117795.html"
+    },
+    {
+      "text": "Donator",
+      "url": "https://www.unknowncheats.me/forum/members/5117795.html?tab=myawards#aw_issue2872"
+    },
+    {
+      "text": "File Analyzer",
+      "url": "https://www.unknowncheats.me/forum/members/5117795.html?tab=myawards#aw_issue3084"
+    },
+    {
+      "text": "Contest Winner",
+      "url": "https://www.unknowncheats.me/forum/members/5117795.html?tab=myawards#aw_issue2673"
+    },
+    {
+      "text": "Click here to find out.",
+      "url": "https://www.unknowncheats.me/forum/faq.php?faq=uc_dl_faq"
+    },
+    {
+      "text": "https://www.unknowncheats.me/forum/d...=file&id=58294",
+      "url": "https://www.unknowncheats.me/forum/downloads.php?do=file&id=58294"
+    },
+    {
+      "text": "Downloads",
+      "url": "https://www.unknowncheats.me/forum/downloads.php"
+    },
+    {
+      "text": "Rules",
+      "url": "https://www.unknowncheats.me/forum/faq.php?faq=vb_faq#faq_rules"
+    },
+    {
+      "text": "FAQ",
+      "url": "https://www.unknowncheats.me/forum/faq.php"
+    },
+    {
+      "text": "Upload a File",
+      "url": "https://www.unknowncheats.me/forum/downloads.php?do=add&cat="
+    },
+    {
+      "text": "Can't Download?",
+      "url": "https://www.unknowncheats.me/forum/faq.php?faq=uc_dl_faq#faq_dl2"
+    },
+    {
+      "text": "Can't Post / PM?",
+      "url": "https://www.unknowncheats.me/forum/faq.php?faq=uc_forum_faq#faq_f2"
+    },
+    {
+      "text": "Send me a PM",
+      "url": "https://www.unknowncheats.me/forum/private.php?do=newpm&u=5117795"
+    },
+    {
+      "text": "See how you can join",
+      "url": "https://www.unknowncheats.me/forum/information-and-announcements/196807-difference-moderators.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/5117795.html"
+    },
+    {
+      "text": "Find More Posts by HX73D",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=5117795"
+    },
+    {
+      "text": "10",
+      "url": "https://www.unknowncheats.me/forum/4822318-post10.html"
+    },
+    {
+      "text": "HX73D",
+      "url": "https://www.unknowncheats.me/forum/members/5117795.html"
+    },
+    {
+      "text": "Donator",
+      "url": "https://www.unknowncheats.me/forum/members/5117795.html?tab=myawards#aw_issue2872"
+    },
+    {
+      "text": "File Analyzer",
+      "url": "https://www.unknowncheats.me/forum/members/5117795.html?tab=myawards#aw_issue3084"
+    },
+    {
+      "text": "Contest Winner",
+      "url": "https://www.unknowncheats.me/forum/members/5117795.html?tab=myawards#aw_issue2673"
+    },
+    {
+      "text": "Click here to find out.",
+      "url": "https://www.unknowncheats.me/forum/faq.php?faq=uc_dl_faq"
+    },
+    {
+      "text": "https://www.unknowncheats.me/forum/d...=file&id=58295",
+      "url": "https://www.unknowncheats.me/forum/downloads.php?do=file&id=58295"
+    },
+    {
+      "text": "Downloads",
+      "url": "https://www.unknowncheats.me/forum/downloads.php"
+    },
+    {
+      "text": "Rules",
+      "url": "https://www.unknowncheats.me/forum/faq.php?faq=vb_faq#faq_rules"
+    },
+    {
+      "text": "FAQ",
+      "url": "https://www.unknowncheats.me/forum/faq.php"
+    },
+    {
+      "text": "Upload a File",
+      "url": "https://www.unknowncheats.me/forum/downloads.php?do=add&cat="
+    },
+    {
+      "text": "Can't Download?",
+      "url": "https://www.unknowncheats.me/forum/faq.php?faq=uc_dl_faq#faq_dl2"
+    },
+    {
+      "text": "Can't Post / PM?",
+      "url": "https://www.unknowncheats.me/forum/faq.php?faq=uc_forum_faq#faq_f2"
+    },
+    {
+      "text": "Send me a PM",
+      "url": "https://www.unknowncheats.me/forum/private.php?do=newpm&u=5117795"
+    },
+    {
+      "text": "See how you can join",
+      "url": "https://www.unknowncheats.me/forum/information-and-announcements/196807-difference-moderators.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/5117795.html"
+    },
+    {
+      "text": "Find More Posts by HX73D",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=5117795"
+    },
+    {
+      "text": "11",
+      "url": "https://www.unknowncheats.me/forum/4822525-post11.html"
+    },
+    {
+      "text": "johnnyboi67",
+      "url": "https://www.unknowncheats.me/forum/members/7545260.html"
+    },
+    {
+      "text": "[WoG] War of Genesis: Idle Loot",
+      "url": "https://www.unknowncheats.me/forum/other-mmorpg-and-strategy/771553-wog-war-genesis-idle-loot.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/7545260.html"
+    },
+    {
+      "text": "Find More Posts by johnnyboi67",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=7545260"
+    },
+    {
+      "text": "12",
+      "url": "https://www.unknowncheats.me/forum/4822712-post12.html"
+    },
+    {
+      "text": "nole98",
+      "url": "https://www.unknowncheats.me/forum/members/7480171.html"
+    },
+    {
+      "text": "https://www.unknowncheats.me/forum/d...=file&id=58295",
+      "url": "https://www.unknowncheats.me/forum/downloads.php?do=file&id=58295"
+    },
+    {
+      "text": "https://api.nuget.org/v3/index.json;",
+      "url": "https://api.nuget.org/v3/index.json;"
+    },
+    {
+      "text": "https://nuget.bepinex.dev/v3/index.json",
+      "url": "https://nuget.bepinex.dev/v3/index.json"
+    },
+    {
+      "text": "https://www.unknowncheats.me/forum/d...=file&id=58280",
+      "url": "https://www.unknowncheats.me/forum/downloads.php?do=file&id=58280"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/7480171.html"
+    },
+    {
+      "text": "Find More Posts by nole98",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=7480171"
+    },
+    {
+      "text": "13",
+      "url": "https://www.unknowncheats.me/forum/4822879-post13.html"
+    },
+    {
+      "text": "samkagan1993",
+      "url": "https://www.unknowncheats.me/forum/members/2229739.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/2229739.html"
+    },
+    {
+      "text": "Find More Posts by samkagan1993",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=2229739"
+    },
+    {
+      "text": "14",
+      "url": "https://www.unknowncheats.me/forum/4823185-post14.html"
+    },
+    {
+      "text": "KKADENUG",
+      "url": "https://www.unknowncheats.me/forum/members/5128031.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/5128031.html"
+    },
+    {
+      "text": "Find More Posts by KKADENUG",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=5128031"
+    },
+    {
+      "text": "15",
+      "url": "https://www.unknowncheats.me/forum/4824388-post15.html"
+    },
+    {
+      "text": "umut1992",
+      "url": "https://www.unknowncheats.me/forum/members/1564259.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/1564259.html"
+    },
+    {
+      "text": "Find More Posts by umut1992",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=1564259"
+    },
+    {
+      "text": "16",
+      "url": "https://www.unknowncheats.me/forum/4824528-post16.html"
+    },
+    {
+      "text": "Alabasca",
+      "url": "https://www.unknowncheats.me/forum/members/2556330.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/2556330.html"
+    },
+    {
+      "text": "Find More Posts by Alabasca",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=2556330"
+    },
+    {
+      "text": "17",
+      "url": "https://www.unknowncheats.me/forum/4824579-post17.html"
+    },
+    {
+      "text": "garvard4",
+      "url": "https://www.unknowncheats.me/forum/members/5797657.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/5797657.html"
+    },
+    {
+      "text": "Find More Posts by garvard4",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=5797657"
+    },
+    {
+      "text": "18",
+      "url": "https://www.unknowncheats.me/forum/4824581-post18.html"
+    },
+    {
+      "text": "samkagan1993",
+      "url": "https://www.unknowncheats.me/forum/members/2229739.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/2229739.html"
+    },
+    {
+      "text": "Find More Posts by samkagan1993",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=2229739"
+    },
+    {
+      "text": "19",
+      "url": "https://www.unknowncheats.me/forum/4824588-post19.html"
+    },
+    {
+      "text": "umut1992",
+      "url": "https://www.unknowncheats.me/forum/members/1564259.html"
+    },
+    {
+      "text": "View Public Profile",
+      "url": "https://www.unknowncheats.me/forum/members/1564259.html"
+    },
+    {
+      "text": "Find More Posts by umut1992",
+      "url": "https://www.unknowncheats.me/forum/search.php?do=finduser&u=1564259"
+    },
+    {
+      "text": "Reddit",
+      "url": "http://reddit.com/submit?url=https%3A%2F%2Fwww.unknowncheats.me%2Fforum%2Fshowthread.php%3Ft%3D775440&title=War+of+Genesis+Idle+Loot"
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/intent/tweet?text=War+of+Genesis+Idle+Loot&url=https%3A%2F%2Fwww.unknowncheats.me%2Fforum%2Fshowthread.php%3Ft%3D775440"
+    },
+    {
+      "text": "Facebook",
+      "url": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.unknowncheats.me%2Fforum%2Fshowthread.php%3Ft%3D775440"
+    },
+    {
+      "text": "[WoG] War of Genesis: Idle Loot",
+      "url": "https://www.unknowncheats.me/forum/other-mmorpg-and-strategy/771553-wog-war-genesis-idle-loot.html"
+    },
+    {
+      "text": "Loot Run and Loot climb into cannon",
+      "url": "https://www.unknowncheats.me/forum/sea-of-thieves/582865-loot-run-loot-climb-cannon.html"
+    },
+    {
+      "text": "Genesis A.D WH",
+      "url": "https://www.unknowncheats.me/forum/other-fps-games/65706-genesis-wh.html"
+    },
+    {
+      "text": "Top 10 Genesis Games Of All Time",
+      "url": "https://www.unknowncheats.me/forum/off-topic/39433-top-10-genesis-games-time.html"
+    },
+    {
+      "text": "Tags",
+      "url": "https://www.unknowncheats.me/forum/tags/"
+    },
+    {
+      "text": "auto",
+      "url": "https://www.unknowncheats.me/forum/tags/auto.html"
+    },
+    {
+      "text": "combine",
+      "url": "https://www.unknowncheats.me/forum/tags/combine.html"
+    },
+    {
+      "text": "genesis",
+      "url": "https://www.unknowncheats.me/forum/tags/genesis.html"
+    },
+    {
+      "text": "idle",
+      "url": "https://www.unknowncheats.me/forum/tags/idle.html"
+    },
+    {
+      "text": "war",
+      "url": "https://www.unknowncheats.me/forum/tags/war.html"
+    },
+    {
+      "text": "level",
+      "url": "https://www.unknowncheats.me/forum/tags/level.html"
+    },
+    {
+      "text": "enabled",
+      "url": "https://www.unknowncheats.me/forum/tags/enabled.html"
+    },
+    {
+      "text": "sort",
+      "url": "https://www.unknowncheats.me/forum/tags/sort.html"
+    },
+    {
+      "text": "retry",
+      "url": "https://www.unknowncheats.me/forum/tags/retry.html"
+    },
+    {
+      "text": "training",
+      "url": "https://www.unknowncheats.me/forum/tags/training.html"
+    },
+    {
+      "text": "Previous Thread",
+      "url": "https://www.unknowncheats.me/forum/other-games/775440-war-genesis-idle-loot-prev-thread.html"
+    },
+    {
+      "text": "Next Thread",
+      "url": "https://www.unknowncheats.me/forum/other-games/775440-war-genesis-idle-loot-next-thread.html"
+    },
+    {
+      "text": "Show Printable Version",
+      "url": "https://www.unknowncheats.me/forum/printthread.php?t=775440"
+    },
+    {
+      "text": "DMCA",
+      "url": "https://www.unknowncheats.me/forum/tou.html#dmca"
+    },
+    {
+      "text": "Terms of Use",
+      "url": "https://www.unknowncheats.me/forum/tou.html"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://www.unknowncheats.me/forum/pp.html"
+    },
+    {
+      "text": "Forum Rules",
+      "url": "https://www.unknowncheats.me/forum/faq.php?faq=vb_faq#faq_rules"
+    }
+  ],
+  "access_date": "2026-10-10",
+  "requested_url": "https://www.unknowncheats.me/forum/other-games/775440-war-genesis-idle-loot.html"
+}

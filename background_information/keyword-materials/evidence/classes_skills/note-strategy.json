@@ -1,0 +1,173 @@
+{
+  "title": "War of Genesis: Idle Loot Strategy Summary｜Toki",
+  "url": "https://note.com/rich_zinnia7311/n/nc3dc7e1137e6?hl=en",
+  "text": "メインコンテンツへスキップ\nWar of Genesis: Idle Loot Strategy Summary\nToki\n2026年9月15日 19:36\n\nHello. Since the release of TBH, many TBH-like games have appeared, but War of Genesis: Idle Loot stands out among them for its exceptional quality and is gaining attention. Therefore, I have decided to summarize some strategies. I have tried making sections related to PvP and similar topics paid content this time, but you don't need to see them at all to enjoy this game. Specifically, in about 3500 characters, I discuss the game's damage calculation formula, PvP strategies, and PvP accuracy calculations at level 60. Other PvE strategies are available for free. If you have any questions, I am streaming, so please ask there. Also, there is no DPS change due to FPS changes in this game.\n\n[WoG] War of Genesis: Idle Loot on Steam Just leave it running. The rest takes care of itself. In a sm store.steampowered.com\n\nAdditionally, the information in this article is based on data site information, so it may differ from actual in-game values.\nhttps://warofgenesis.wiki\n\nTable of Contents\n・About Item Sales\n・About In-App Purchases\n・About Elements\n・Characters\n・Blacksmith/Relics\n・Training\n・Combat Power Ranking\n・Raid / Alliance / Alliance Member Ranking / Training Ground\n・World Boss / Ability Unlocking\n・Arena\nすべて表示\n・About Item Sales\n\nFirst, I would like to write about item sales, which I think many people are curious about. Items are listed using diamonds that can be obtained every 4 hours in the game. Since one item is required per listing, you can list one item on the market every 4 hours, but if you use an item called a Diamond Bag, you can obtain 5 diamonds, allowing you to increase the number of listings. Also, since diamonds can be used for an upgrade element for character stats called the Altar, top-tier players are buying these Diamond Bags one after another to upgrade, making them high-priced items. There is also an item called a Gold Bar that grants 100 million gold when used, and since this gold can be converted into stats through an element called Training, this is also a high-priced item that can exceed 10,000 yen when prices are high.\n\nThese Diamond Bags and Gold Bars can be obtained when defeating stage bosses at a rate of 0.036% for diamonds and 0.012% for gold bars, but since the probability is maximized at Hard difficulty 1-1, I would like to progress up to that point.\n\nAlso, as for equipment that sells, Tier 4 accessories for level 40, which is the current volume zone, are selling for around 200 yen, and these are items you can get several of if you leave the game idling in higher stages for a day. T5 items, made by synthesizing four T4s, are also expensive, and in particular, level 40 T5 belts with a boss kill EXP bonus exceed 2000 yen. Furthermore, in this game, the rarity increases the number of equipable Jewels—which are what you would call decorations in TBH—so low-level accessories are also in high demand, making accessory synthesis a source of income.\n\nBy the way, for the stages you farm, you should choose the highest level you can currently reach where the stage clear speed does not change. Although the item acquisition rate for T3 items increases slightly at 0-10, the difference is negligible, and since the difference in EXP grows as the stages increase, you should farm in the highest place you can go.\n\n・About In-App Purchases\n\nThere are two types of purchases in this game: in-game shop purchases and market purchases. First, regarding in-game purchases, up to four are unlocked as you progress through the stages, but they are all a flat 152 yen. I think you can earn about 600 yen quickly, so I think it's fine to buy them. Among them, the Blessing of the First Journey has exceptional effects, so you should buy at least this.\n\nRegarding market purchases, if red equipment (T4) that you can equip is being sold cheaply, I think it's fine to buy it to advance. In the low-level range, each piece should be selling for about 10 yen. If you are aiming for the top of the rankings or want to advance to higher stages quickly, one Gold Bar is the most cost-effective. It might seem counterintuitive since Gold Bars themselves are very expensive and you are playing this game to sell Gold Bars, but investing in the first Gold Bar is better for stat growth than buying any other item. (That's why it's expensive)\nBy using a Gold Bar, you receive 100 million in-game gold, which allows you to permanently increase your stats in the Training section mentioned later. The stats gained from this investment are exceptional; specifically, almost everyone in the top 100 of the current combat power rankings and in-game rankings has used one Gold Bar. I have kept within the top 100 in all rankings without using a Gold Bar since the release, but by the fourth day, staying around 100th place became tight, so I think this is the limit. Since the rewards change when you enter the top 100, those aiming for the top 100 should buy a Gold Bar. However, it is not at all necessary to just play the game, so please use it wisely. As an aside, the current number one has invested roughly 8 million yen in Gold Bars and diamonds by the fourth day.\n\nDiamonds can also be used to increase stats at the Altar, but it is not recommended unless you are wealthy because it is inefficient unless you consume a large amount. However, up to Altar level 15, the value gained in real numbers is large, so it is good to raise it.\n\n・About Elements\n・Characters\n\nThere are 10 characters for each class, and they become available for purchase once your own character level meets the requirements. Just by owning each character, your stats increase, so unlock characters for jobs you don't play as well.The stats of the characters themselves also jump up as their level increases, so it is generally desirable to use the highest-tier characters.\n\n・Blacksmith/Relics\n\nAt the Blacksmith, you can synthesize/dismantle equipment and equip Jewels. The level increases with each synthesis, and after synthesis, higher-tier items become easier to obtain. You can see the probability by hovering the cursor over the synthesis result, so use that as a reference. Note that in synthesis, items like level 45 (i.e., level ending in 5) are treated as having +5 levels. For example, level 45 is treated as level 50.\n\nBy synthesizing and dismantling, you can obtain equipment fragments, and by saving these, you can perform various upgrades.\n\nFor example, if you enhance T3 equipment relics, the amount of EXP gained increases. Higher-tier items also have equipment drop rates, so let's synthesize and collect fragments. Fragments appear more frequently the higher the item level is.\nBy the way, since synthesis and dismantling are treated the same internally, the increase in currency upon dismantling found in Training is also reflected in synthesis. Therefore, it is generally better to proceed with synthesis rather than dismantling.\n\n・Training\n\nIn Training, you can use gold to increase specific stats.\nThere are some that require reaching a specified level in prerequisite training to unlock, so check the conditions and unlock them. At first, the cost is low, and by raising them evenly, your character's stats and combat power will increase, but once you have raised them to a certain point, in PvE, you should prioritize raising those labeled Attack, Defense, HP, Evasion, and Accuracy.\nI will discuss the details in the PvP section, but because of this game's damage calculation formula, the investment value of anything other than these is lower compared to them, so I think it is best to focus on these five stats. You don't need to worry about damage reduction until you are farming Ruin difficulty and the like. If Evasion and Accuracy are sufficient for that stage, there is no need to boost them, so you can leave them for later. After that, you should take things like warehouse expansion and hunting time reduction.\n\n・Combat Power Ranking\n\nThere are multiple ranking elements in this game, and one of them is the Combat Power Ranking. Combat power is calculated by upgrading equipment and stats, and you receive buffs based on your combat power ranking among all players.\n\nWhile the buffs are more effective the higher you rank, you can consider yourself as having received powerful buffs if you are within the top 101–500. Ranking higher than that requires a certain amount of investment, and you don't necessarily get buff values that justify the cost. Also, since it updates daily, I think it's better not to worry about it too much. It is difficult to catch up to the top players because their combat power is already calculated based on the buffs they have received.\n\nBy the way, it is often thought that Mage is the best if you want to boost your combat power, but if you have managed to gain decent defense and health, the Knight with all passives taken will increase it the most. (This is because the combat power reflection rate of these two stats is high.)\n\n・Raid / Alliance / Alliance Member Ranking / Training Ground\n\nRaids have a set duration and alternate in a 4-day cycle with the World Boss, which will be described later. You can participate in a raid by selecting your alliance from the mark next to the name on the portrait. Even though it's called a raid, you don't cooperate with other people; it's a mode where you compete for the limit of damage you can deal by continuously hitting a level 1 boss solo. The level increases as you go, and you can enter as many times as you want during the period, so feel free to do it. Also, Raids, World Bosses, and Arenas are divided into rank tiers, so it is possible for latecomers to aim for the top.\n\nThe image is of a World Boss with the same specifications.\n\nAs a reward, you can get pet gacha tickets. The higher you rank, the more you get, so do your best.\n\nYou can increase your stats by using the Proof of Training, which is a raid participation reward, at the Training Ground. The training level increases each time you consume a proof, and higher tiers are unlocked. It goes up to UR. It is a system that can significantly boost your attack power, so try your best to collect them. If you lock the stats you want and reroll, the consumption of proofs increases, but since the experience points increase with the amount consumed, go ahead and lock them and spin away without worrying.\n\nThere is something called an Alliance Ranking, and if the alliance you belong to takes 1st place, you can use items like siege weapons that come with drop rate buffs for one week. You cannot change alliances during the raid period, so it is better to join a strong-looking alliance. Last time, Taiwan took 1st place, so all the top-ranked players switched to Taiwan. That is why the rankings are full of Taiwan.\n\nBy the way, since the raid boss starts at level 1, its stats are low. If you lower its defense with fire and gain elemental damage with lightning and poison, you can deal incredible damage, so make sure to equip gear that can boost these elements for raids and World Bosses. You can grant them through pets and jewels.Note: Due to an update, the poison judgment against level 1 raid bosses has been corrected, so the damage will be lower than before.\n\n・World Boss / Ability Unlocking\n\nThe World Boss has almost the same specifications as the raid, with the difference being that you can get wing gacha tickets as ranking rewards and that alliances are not involved.\n\nWhen you participate in a World Boss, you can receive Unlocking Stones, which you can use to unlock abilities. This also has almost the same specifications as the Training Ground, but here, if you line up the same panels in a row vertically, horizontally, or diagonally out of the 9 squares, a special mod is granted, so it is ideal to consolidate them with the same ones as much as possible. Attack power is recommended.\n\n\n・Arena\n\nThe Arena is a player-versus-player content where you fight 1vs1 against clones of actual players. You can enter by using the 3 entry tickets distributed daily. (If you have purchased the Gladiator's Contract in the shop, you get +2 tickets daily.) You can earn a maximum of 20 points by defeating your opponent, and the higher your rank, the more rune gacha tickets you get. Also, you can receive Aether as an arena participation reward, which you can use to exchange for gacha tickets that yield high-rarity pets, wings, and runes, or to get siege weapons. By the way, the daily challenge attempts disappear, so make sure to use them up.\n\nIn the Arena, your rating will drop even if you are attacked by an opponent, so unless there is a significant difference, it is difficult to win against an opponent with a PvP setup using a PvE character.\nI will touch on the details of PvP strategy in the paid section.\n\n・Pets, Wings, and Runes\n\nPets, wings, and runes are items that can be equipped on characters. In addition to having effects just by owning them, they have unique effects when equipped. Even just collecting the possession effects will dramatically increase your combat power, so do your best to collect them. Also, the gacha tickets you get for ranking high in Raids, World Bosses, and Arenas can be traded on the market, so you can get them by trying hard to rank high or by buying them on the market. At the time of writing, they are not yet in circulation, but in a week, they will reach the Gold rank tier, and top players will receive tradeable gacha tickets, so they might flow into the market.\n\nBy the way, currently, the experience gain increase for the Lesser Child pet is not functioning when verified in Normal 1-1, so let's wait for a fix. There is a possibility that other experience-increasing pets also have bugs. As a result of having the Noble Cat verified, it also has no EXP increase effect.\nFixed in the update on the 17th.\n\n・Recommended Characters and Builds (PvE)\n\nFor early game progression, I recommend starting as a Wizard. Thanks to the 'Mastery Staff' passive, you can boost your attack power, and since you can basically one-shot trash mobs, you can speed up your progress significantly.\n\nIt is best to allocate your points like this until level 14.\n\nIf you feel stuck as a Wizard, it is best to switch to a Ranger. Once enemy attacks start to hurt, taking the 'Quick Step' passive, which increases evasion, will make the damage negligible for a while. Specifically, since enemy accuracy is about 95 in Very Hard 1-10, if you use Erica (available at level 20) and max out Quick Step, you will be able to dodge about 54.5% of enemy attacks without needing any other evasion buffs. Given the behavior of enemy auto-attacks, the speed of skill activation, and the ability to stack accuracy, I believe most people are still progressing as Rangers even now (in the 45-50 level range). Aim to max out Quick Step and Blood Fight for your passives, and for active skills, raise Rapid Fire if you want to increase evasion, or Stone Arrow if you lack firepower. By the way, due to the damage calculation formula in this game, Blood Fight becomes less effective after Hell 4-10, so once you pass that, you should reallocate those points to a different passive.\n\nIn this game, since skill cooldowns reset during boss fights, the order of skills is also important. Try to be creative, such as activating Stone Arrow's attack power boost first, then using Rapid Fire to increase evasion.\n\nAs you progress through stages, enemy accuracy, your evasion, and their critical coefficients increase, so the Ranger, who can stack these, seems likely to remain the top choice for a while. I will touch on the details of accuracy and evasion in the paid PvP section, but as an example, you need 550 evasion to dodge 50% of enemy attacks in Hell 4-10.\n\nFor gems to equip, it is generally best to use ones that increase attack power, HP, and defense. As a compromise, it is good to stack damage reduction or critical damage reduction for high-difficulty stages. You can also use damage increase if you have extra slots. Investing in your own critical rate is likely not worth it, as enemy critical resistance jumps up as you progress through stages. Whether to prioritize defense or HP depends on your own evasion, but they are generally of equal value, so it is efficient to look at your detailed stats and raise the one with the lower percentage (after securing defense and HP from the equipment itself).\nAlso, by equipping a Lucky Gem, you can lower the equipment level requirement. Keep in mind that you can ignore the level cap by equipping it once and then overwriting the gem.Due to an update, the equipment will now be unequipped if you overwrite it.\n\n\nFor accessories, it is good to stack accuracy and the like on the left three, but if you are just running Hell stages, you don't need to worry too much as you will generally have enough accuracy if you stack a reasonable amount. The Despair 4-10 boss has 300 evasion, so you might not hit consistently unless you have 400 accuracy. If you are aiming for raids, it is also good to include elemental accuracy to aim for high rolls. Remember that if you want to invest in elements, the investment efficiency decreases for elements other than the one your character possesses. For the right three, movement speed contributes the most if you want to increase combat power. However, most people struggle because they lack evasion, so it is better to stack evasion.\n\nI don't think many people have enough pets to have a choice, but be aware that experience-related pets are generally not reflected. Fixed.\n\nIf you have secured enough HP and defense through equipment, the Knight can currently achieve the highest combat power in the game by taking all passives. Therefore, those aiming for the rankings might want to secure Knight weapons and sub-weapons.\n\n\nI would like to conclude the PvE explanation here. This is frequently asked, so if you want to know more details, please ask during my streams or on Discord and I will answer. Thank you to everyone who provided information. I am also active on X and streaming, so please check those out if you'd like. I am also keeping an eye on various new games, not just this one, and sharing them on X and elsewhere, so please follow me if you are interested in new games.\n\ntoki2_ - Twitch 格ゲーとかハクスラとか。吃音注意。承認欲求に飢えたモンスターなんだよ。 VOICEVOX:ずんだもん — toki2_ s www.twitch.tv\n\nContact: toki63164@gmail.com\n\nFrom here on is the paid section, where I will explain the damage calculation formula for this game, PvP strategies, and how to calculate PvP accuracy at level 60. In the formula explanation, I discuss which damage effects are strong in this game. I have also created an accuracy/evasion reference table, and the entire paid section is about 3500 characters long. I have already missed out on the top 100 in PvP myself, so I hope you enjoy this as a piece of reading material.\n\n#ゲーム\n#解説\n#攻略\n#放置ゲーム\n#WOG\n \n \n\nToki\n\n \n \nトップ\nゲーム\nPCゲーム\nあなたへのおすすめ\nnoteプレミアム\nnote pro\nヘルプ\nプライバシー\nクリエイターへのお問い合わせ\nフィードバック\nご利用規約\n通常ポイント利用特約\n加盟店規約\n資金決済法に基づく表示\n特商法表記\n投資情報の免責事項",
+  "links": [
+    {
+      "text": "メインコンテンツへスキップ",
+      "url": "https://note.com/rich_zinnia7311/n/nc3dc7e1137e6?hl=en#main-content"
+    },
+    {
+      "text": "Toki",
+      "url": "https://note.com/rich_zinnia7311"
+    },
+    {
+      "text": "[WoG] War of Genesis: Idle Loot on Steam Just leave it running. The rest takes care of itself. In a sm store.steampowered.com",
+      "url": "https://store.steampowered.com/app/4891320/WoG_War_of_Genesis_Idle_Loot/"
+    },
+    {
+      "text": "https://warofgenesis.wiki",
+      "url": "https://warofgenesis.wiki/"
+    },
+    {
+      "text": "・About Item Sales",
+      "url": "https://note.com/rich_zinnia7311/n/nc3dc7e1137e6?hl=en#e50c40c1-49e2-4a04-9325-d09c1d08bb22"
+    },
+    {
+      "text": "・About In-App Purchases",
+      "url": "https://note.com/rich_zinnia7311/n/nc3dc7e1137e6?hl=en#8fc1ba3b-8d8b-423f-ac9c-f93187456dc9"
+    },
+    {
+      "text": "・About Elements",
+      "url": "https://note.com/rich_zinnia7311/n/nc3dc7e1137e6?hl=en#4e3cfba5-e5e2-42e6-a6a7-25904a2de6fe"
+    },
+    {
+      "text": "・Characters",
+      "url": "https://note.com/rich_zinnia7311/n/nc3dc7e1137e6?hl=en#65ad19d9-30f7-44aa-8450-6339c65ff960"
+    },
+    {
+      "text": "・Blacksmith/Relics",
+      "url": "https://note.com/rich_zinnia7311/n/nc3dc7e1137e6?hl=en#ae4ddcb9-a69a-4c79-8891-dd8076cdba37"
+    },
+    {
+      "text": "・Training",
+      "url": "https://note.com/rich_zinnia7311/n/nc3dc7e1137e6?hl=en#ba425fa4-4388-463a-8ac4-024b6371c40f"
+    },
+    {
+      "text": "・Combat Power Ranking",
+      "url": "https://note.com/rich_zinnia7311/n/nc3dc7e1137e6?hl=en#d7783431-8b3e-43c6-b817-c228436bd565"
+    },
+    {
+      "text": "・Raid / Alliance / Alliance Member Ranking / Training Ground",
+      "url": "https://note.com/rich_zinnia7311/n/nc3dc7e1137e6?hl=en#00b3cee3-6f10-44f3-bb99-e3fde8237ac1"
+    },
+    {
+      "text": "・World Boss / Ability Unlocking",
+      "url": "https://note.com/rich_zinnia7311/n/nc3dc7e1137e6?hl=en#485e8017-7655-4822-bea6-90f063f61e7b"
+    },
+    {
+      "text": "・Arena",
+      "url": "https://note.com/rich_zinnia7311/n/nc3dc7e1137e6?hl=en#3d2065d1-65cc-4cc5-b4e2-f18165ad55d0"
+    },
+    {
+      "text": "toki2_ - Twitch 格ゲーとかハクスラとか。吃音注意。承認欲求に飢えたモンスターなんだよ。 VOICEVOX:ずんだもん — toki2_ s www.twitch.tv",
+      "url": "https://www.twitch.tv/toki2_"
+    },
+    {
+      "text": "#ゲーム",
+      "url": "https://note.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0"
+    },
+    {
+      "text": "#解説",
+      "url": "https://note.com/hashtag/%E8%A7%A3%E8%AA%AC"
+    },
+    {
+      "text": "#攻略",
+      "url": "https://note.com/hashtag/%E6%94%BB%E7%95%A5"
+    },
+    {
+      "text": "#放置ゲーム",
+      "url": "https://note.com/hashtag/%E6%94%BE%E7%BD%AE%E3%82%B2%E3%83%BC%E3%83%A0"
+    },
+    {
+      "text": "#WOG",
+      "url": "https://note.com/hashtag/WOG"
+    },
+    {
+      "text": "#ゲーム",
+      "url": "https://note.com/hashtag/%E3%82%B2%E3%83%BC%E3%83%A0"
+    },
+    {
+      "text": "#解説",
+      "url": "https://note.com/hashtag/%E8%A7%A3%E8%AA%AC"
+    },
+    {
+      "text": "#攻略",
+      "url": "https://note.com/hashtag/%E6%94%BB%E7%95%A5"
+    },
+    {
+      "text": "#放置ゲーム",
+      "url": "https://note.com/hashtag/%E6%94%BE%E7%BD%AE%E3%82%B2%E3%83%BC%E3%83%A0"
+    },
+    {
+      "text": "#WOG",
+      "url": "https://note.com/hashtag/WOG"
+    },
+    {
+      "text": "Toki",
+      "url": "https://note.com/rich_zinnia7311"
+    },
+    {
+      "text": "トップ",
+      "url": "https://note.com/"
+    },
+    {
+      "text": "ゲーム",
+      "url": "https://note.com/topic/games"
+    },
+    {
+      "text": "PCゲーム",
+      "url": "https://note.com/tag/PC%E3%82%B2%E3%83%BC%E3%83%A0"
+    },
+    {
+      "text": "noteプレミアム",
+      "url": "https://premium.lp-note.com/"
+    },
+    {
+      "text": "note pro",
+      "url": "https://pro.lp-note.com/?utm_source=notecom&utm_medium=footer"
+    },
+    {
+      "text": "ヘルプ",
+      "url": "https://help-note.com/hc/ja"
+    },
+    {
+      "text": "プライバシー",
+      "url": "https://terms.help-note.com/hc/ja/articles/44948981050649"
+    },
+    {
+      "text": "クリエイターへのお問い合わせ",
+      "url": "https://note.com/rich_zinnia7311/message"
+    },
+    {
+      "text": "フィードバック",
+      "url": "https://help-note.com/hc/ja/requests/new?ticket_form_id=360000081181"
+    },
+    {
+      "text": "ご利用規約",
+      "url": "https://terms.help-note.com/hc/ja/articles/44943817565465"
+    },
+    {
+      "text": "通常ポイント利用特約",
+      "url": "https://note.com/terms/paid_point"
+    },
+    {
+      "text": "加盟店規約",
+      "url": "https://note.com/terms/seller_creators"
+    },
+    {
+      "text": "資金決済法に基づく表示",
+      "url": "https://note.com/terms/payment_service_act"
+    },
+    {
+      "text": "特商法表記",
+      "url": "https://note.com/rich_zinnia7311/terms/specified"
+    },
+    {
+      "text": "投資情報の免責事項",
+      "url": "https://note.com/terms/investment_disclaimer"
+    }
+  ],
+  "access_date": "2026-10-10",
+  "requested_url": "https://note.com/rich_zinnia7311/n/nc3dc7e1137e6?hl=en"
+}

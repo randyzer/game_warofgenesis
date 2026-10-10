@@ -1,0 +1,13 @@
+{
+  "access_date": "2026-10-10",
+  "reddit": {
+    "active_backend": null,
+    "status": "off",
+    "diagnosis": "doctor与command -v确认OpenCLI/rdt-cli不存在；未降级其他后端"
+  },
+  "threads": "站内Search页要求登录；未取得浏览器访问所需登录态",
+  "bahamut": "首页可读，搜索控件真实提交后search.gamer.com.tw ERR_CONNECTION_CLOSED",
+  "discord": "官方邀请打开后标题正确但body为空；未取得服务器频道内容",
+  "youtube_subtitles": "父任务共享字幕HTTP429；metadata成功，停止字幕重试",
+  "5ch": "站内搜索成功，线程正文与242回帖取得，单线程不做全市场判断"
+}

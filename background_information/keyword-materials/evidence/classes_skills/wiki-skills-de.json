@@ -1,0 +1,633 @@
+{
+  "title": "Skills — War of Genesis: Idle Loot Wiki",
+  "url": "https://www.warofgenesis.gg/de/skills",
+  "text": "Skip to content\nWar of Genesis\nIDLE LOOT WIKI\nLink game\nDeutsch\nDATABASE\nHeroes\n33\nEquipment\n1,872\nCompanions\n90\nItems\n207\nSkills\n215\nMonsters\n1,602\nStages\n400\nEffects & procs\nSYSTEMS\nPassive tree\nCollections\n20\nAltar\nMachina\n5\nAccount growth\nAbility Unlock\nWorkshop\nJewels\n14\nGacha & boxes\nShop\nQuests\nBattlefield\nMarket\nTOOLS\nAll calculators\nCombat calculator\nFarm planner\nDrop finder\nWall finder\nGear upgrades\nBIS finder\nBox calculator\nCharacter sheet\nStat playground\nInventory value\nREFERENCE\nStat glossary\n159\nConstants\nFormulas\n113\nRaw tables\n51\n\nDATABASE\n\nSkills\n\nHero, monster, gear and companion skills — cooldown, targets and the per-level value curve from Skill_table.\n\nUSED BY\nAll\nHeroSkill\n108\nMobSkill\n12\nPetSkill\n30\nWingSkill\n30\nRuneSkill\n30\nMachinaSkill\n5\nCLASS\nAll\nKnight\n36\nArcher\n36\nMage\n36\nMonster\n12\nAll\n95\nGRADE\nAll\nNormal\n120\nMagic\n15\nRare\n15\nHero\n18\nLegend\n16\nMyth\n16\n\n215 skills · showing first 96\n\nKnight — basic attack\nHeroSkill · 0 levels\nMoon Cleave\nHeroSkill · 10 levels· 20s cd\nFormation Flame\nHeroSkill · 10 levels· 26s cd\nDivine Spear\nHeroSkill · 10 levels· 24s cd\nMoon Slash\nHeroSkill · 10 levels· 25s cd\nShield Charge\nHeroSkill · 10 levels· 25s cd\nEarth Smash\nHeroSkill · 10 levels· 30s cd\nBoiling Blood\nHeroSkill · 10 levels· 30s cd\nHigh-Speed Flurry\nHeroSkill · 10 levels· 25s cd\nBarricade\nHeroSkill · 10 levels· 24s cd\nGodslayer Spear\nHeroSkill · 10 levels· 22s cd\nTitan's Fist\nHeroSkill · 10 levels· 20s cd\nTime Reversal\nHeroSkill · 10 levels· 28s cd\nVanguard\nHeroSkill · 10 levels· 32s cd\nLightning Armor\nHeroSkill · 10 levels· 30s cd\nFighting Spirit\nHeroSkill · 10 levels\nThunderbolt\nHeroSkill · 10 levels\nVitality\nHeroSkill · 10 levels\nFierce Assault\nHeroSkill · 10 levels\nLightning Boost\nHeroSkill · 10 levels\nPursuit\nHeroSkill · 10 levels\nBattle Spirit\nHeroSkill · 10 levels\nFortitude\nHeroSkill · 10 levels\nEndurance\nHeroSkill · 10 levels\nShield of Conviction\nHeroSkill · 10 levels\nPerfect Defense\nHeroSkill · 10 levels\nLife Drain\nHeroSkill · 10 levels\nSurvival Instinct\nHeroSkill · 10 levels\nImmortality\nHeroSkill · 10 levels\nIron Wall Defense\nHeroSkill · 10 levels\nTough Body\nHeroSkill · 10 levels\nDeflect\nHeroSkill · 10 levels\nLethal Lightning\nHeroSkill · 10 levels\nSchnelligkeit\nHeroSkill · 10 levels\nHealing Touch\nHeroSkill · 10 levels\nArtisan's Armor\nHeroSkill · 10 levels\nArcher — basic attack\nHeroSkill · 0 levels\nFirst Strike\nHeroSkill · 10 levels· 20s cd\nRapid Fire\nHeroSkill · 10 levels· 26s cd\nWatcher\nHeroSkill · 10 levels· 24s cd\nDouble Down\nHeroSkill · 10 levels· 25s cd\nBoom Shot\nHeroSkill · 10 levels· 25s cd\nFull Focus Shot\nHeroSkill · 10 levels· 30s cd\nHit Mark\nHeroSkill · 10 levels· 30s cd\nArrow Rain\nHeroSkill · 10 levels· 25s cd\nStone Arrow\nHeroSkill · 10 levels· 24s cd\nPoisoned\nHeroSkill · 10 levels· 22s cd\nCombat Focus\nHeroSkill · 10 levels· 20s cd\nSnipe\nHeroSkill · 10 levels· 28s cd\nFire Jester\nHeroSkill · 10 levels· 32s cd\nPoison Blood\nHeroSkill · 10 levels· 30s cd\nBleed\nHeroSkill · 10 levels\nCounterattack\nHeroSkill · 10 levels\nShadow Step\nHeroSkill · 10 levels\nExpose Weakness\nHeroSkill · 10 levels\nSharpshooter\nHeroSkill · 10 levels\nTake Cover\nHeroSkill · 10 levels\nLimit Break\nHeroSkill · 10 levels\nLethal Poison\nHeroSkill · 10 levels\nVergiftung\nHeroSkill · 10 levels\nOne More Time!\nHeroSkill · 10 levels\nQuick Reload\nHeroSkill · 10 levels\nGhost Steps\nHeroSkill · 10 levels\nPoison Arrow\nHeroSkill · 10 levels\nBloody Battle\nHeroSkill · 10 levels\nQuick Step\nHeroSkill · 10 levels\nHawk Eye\nHeroSkill · 10 levels\nTödliches Gift\nHeroSkill · 10 levels\nPrecision Aim\nHeroSkill · 10 levels\nLong Shot\nHeroSkill · 10 levels\nSpecial Bullet\nHeroSkill · 10 levels\nRiesenjagd\nHeroSkill · 10 levels\nMage — basic attack\nHeroSkill · 0 levels\nDark Blast\nHeroSkill · 10 levels· 20s cd\nFlame Storm\nHeroSkill · 10 levels· 26s cd\nArcane Burst\nHeroSkill · 10 levels· 24s cd\nTitan Seal\nHeroSkill · 10 levels· 25s cd\nRoar\nHeroSkill · 10 levels· 25s cd\nMind Control\nHeroSkill · 10 levels· 30s cd\nDivine Judgment\nHeroSkill · 10 levels· 30s cd\nHoly Blow\nHeroSkill · 10 levels· 25s cd\nFireball\nHeroSkill · 10 levels· 24s cd\nLava Swamp\nHeroSkill · 10 levels· 22s cd\nMental Breakdown\nHeroSkill · 10 levels· 20s cd\nMeteor Summon\nHeroSkill · 10 levels· 28s cd\nOmnipotence\nHeroSkill · 10 levels· 32s cd\nBreath of Fire\nHeroSkill · 10 levels· 30s cd\nPrayer\nHeroSkill · 10 levels\nBrand\nHeroSkill · 10 levels\nMana Drain\nHeroSkill · 10 levels\nBreath of Life\nHeroSkill · 10 levels\nMana Circulation\nHeroSkill · 10 levels\nSpell Chain\nHeroSkill · 10 levels\nHeat Amplification\nHeroSkill · 10 levels\nInferno\nHeroSkill · 10 levels\nMana Pierce\nHeroSkill · 10 levels\nShow more\nWar of Genesis\nIDLE LOOT WIKI\n\nAn unofficial reference for War of Genesis: Idle Loot. Every number on this site is read out of the shipped client — not estimated, not crowd-sourced.\n\nDiscord\nReddit\nSteam\nPROVENANCE\nGame build\nv1.0.1\nTable build\n1245\nEngine\nUnity 6000.0.59f2 (IL2CPP)\nTables read\n51\nHow this is made →\n17 LANGUAGES\nEnglish\n한국어\n日本語\n简体中文\n繁體中文\nFrançais\nDeutsch\nEspañol\nItaliano\nPortuguês\nPolski\nРусский\nУкраїнська\nTürkçe\nไทย\nTiếng Việt\nIndonesia\n\nUnofficial fan wiki. War of Genesis: Idle Loot is © Newnormal Soft / LINE Games.\n\nBack to top ↑",
+  "links": [
+    {
+      "text": "Skip to content",
+      "url": "https://www.warofgenesis.gg/de/skills#main"
+    },
+    {
+      "text": "War of Genesis\nIDLE LOOT WIKI",
+      "url": "https://www.warofgenesis.gg/de"
+    },
+    {
+      "text": "Heroes\n33",
+      "url": "https://www.warofgenesis.gg/de/heroes"
+    },
+    {
+      "text": "Equipment\n1,872",
+      "url": "https://www.warofgenesis.gg/de/equipment"
+    },
+    {
+      "text": "Companions\n90",
+      "url": "https://www.warofgenesis.gg/de/companions"
+    },
+    {
+      "text": "Items\n207",
+      "url": "https://www.warofgenesis.gg/de/items"
+    },
+    {
+      "text": "Skills\n215",
+      "url": "https://www.warofgenesis.gg/de/skills"
+    },
+    {
+      "text": "Monsters\n1,602",
+      "url": "https://www.warofgenesis.gg/de/monsters"
+    },
+    {
+      "text": "Stages\n400",
+      "url": "https://www.warofgenesis.gg/de/stages"
+    },
+    {
+      "text": "Effects & procs",
+      "url": "https://www.warofgenesis.gg/de/effects"
+    },
+    {
+      "text": "Passive tree",
+      "url": "https://www.warofgenesis.gg/de/passive-skills"
+    },
+    {
+      "text": "Collections\n20",
+      "url": "https://www.warofgenesis.gg/de/passives"
+    },
+    {
+      "text": "Altar",
+      "url": "https://www.warofgenesis.gg/de/altar"
+    },
+    {
+      "text": "Machina\n5",
+      "url": "https://www.warofgenesis.gg/de/machina"
+    },
+    {
+      "text": "Account growth",
+      "url": "https://www.warofgenesis.gg/de/growth"
+    },
+    {
+      "text": "Ability Unlock",
+      "url": "https://www.warofgenesis.gg/de/growth/ability-unlock"
+    },
+    {
+      "text": "Workshop",
+      "url": "https://www.warofgenesis.gg/de/workshop"
+    },
+    {
+      "text": "Jewels\n14",
+      "url": "https://www.warofgenesis.gg/de/jewels"
+    },
+    {
+      "text": "Gacha & boxes",
+      "url": "https://www.warofgenesis.gg/de/gacha"
+    },
+    {
+      "text": "Shop",
+      "url": "https://www.warofgenesis.gg/de/shop"
+    },
+    {
+      "text": "Quests",
+      "url": "https://www.warofgenesis.gg/de/quests"
+    },
+    {
+      "text": "Battlefield",
+      "url": "https://www.warofgenesis.gg/de/content"
+    },
+    {
+      "text": "Market",
+      "url": "https://www.warofgenesis.gg/de/market"
+    },
+    {
+      "text": "All calculators",
+      "url": "https://www.warofgenesis.gg/de/tools"
+    },
+    {
+      "text": "Combat calculator",
+      "url": "https://www.warofgenesis.gg/de/tools/damage"
+    },
+    {
+      "text": "Farm planner",
+      "url": "https://www.warofgenesis.gg/de/tools/farm"
+    },
+    {
+      "text": "Drop finder",
+      "url": "https://www.warofgenesis.gg/de/tools/drops"
+    },
+    {
+      "text": "Wall finder",
+      "url": "https://www.warofgenesis.gg/de/tools/readiness"
+    },
+    {
+      "text": "Gear upgrades",
+      "url": "https://www.warofgenesis.gg/de/tools/upgrades"
+    },
+    {
+      "text": "BIS finder",
+      "url": "https://www.warofgenesis.gg/de/tools/bis"
+    },
+    {
+      "text": "Box calculator",
+      "url": "https://www.warofgenesis.gg/de/tools/boxes"
+    },
+    {
+      "text": "Character sheet",
+      "url": "https://www.warofgenesis.gg/de/tools/sheet"
+    },
+    {
+      "text": "Stat playground",
+      "url": "https://www.warofgenesis.gg/de/tools/stats"
+    },
+    {
+      "text": "Inventory value",
+      "url": "https://www.warofgenesis.gg/de/inventory"
+    },
+    {
+      "text": "Stat glossary\n159",
+      "url": "https://www.warofgenesis.gg/de/stats"
+    },
+    {
+      "text": "Constants",
+      "url": "https://www.warofgenesis.gg/de/constants"
+    },
+    {
+      "text": "Formulas\n113",
+      "url": "https://www.warofgenesis.gg/de/formulas"
+    },
+    {
+      "text": "Raw tables\n51",
+      "url": "https://www.warofgenesis.gg/de/database"
+    },
+    {
+      "text": "Knight — basic attack\nHeroSkill · 0 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/knight-basic-attack"
+    },
+    {
+      "text": "Moon Cleave\nHeroSkill · 10 levels· 20s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/moon-cleave"
+    },
+    {
+      "text": "Formation Flame\nHeroSkill · 10 levels· 26s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/formation-flame"
+    },
+    {
+      "text": "Divine Spear\nHeroSkill · 10 levels· 24s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/divine-spear"
+    },
+    {
+      "text": "Moon Slash\nHeroSkill · 10 levels· 25s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/moon-slash"
+    },
+    {
+      "text": "Shield Charge\nHeroSkill · 10 levels· 25s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/shield-charge"
+    },
+    {
+      "text": "Earth Smash\nHeroSkill · 10 levels· 30s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/earth-smash"
+    },
+    {
+      "text": "Boiling Blood\nHeroSkill · 10 levels· 30s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/boiling-blood"
+    },
+    {
+      "text": "High-Speed Flurry\nHeroSkill · 10 levels· 25s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/high-speed-flurry"
+    },
+    {
+      "text": "Barricade\nHeroSkill · 10 levels· 24s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/barricade"
+    },
+    {
+      "text": "Godslayer Spear\nHeroSkill · 10 levels· 22s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/godslayer-spear"
+    },
+    {
+      "text": "Titan's Fist\nHeroSkill · 10 levels· 20s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/titan-s-fist"
+    },
+    {
+      "text": "Time Reversal\nHeroSkill · 10 levels· 28s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/time-reversal"
+    },
+    {
+      "text": "Vanguard\nHeroSkill · 10 levels· 32s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/vanguard"
+    },
+    {
+      "text": "Lightning Armor\nHeroSkill · 10 levels· 30s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/lightning-armor"
+    },
+    {
+      "text": "Fighting Spirit\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/fighting-spirit"
+    },
+    {
+      "text": "Thunderbolt\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/thunderbolt"
+    },
+    {
+      "text": "Vitality\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/vitality"
+    },
+    {
+      "text": "Fierce Assault\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/fierce-assault"
+    },
+    {
+      "text": "Lightning Boost\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/lightning-boost"
+    },
+    {
+      "text": "Pursuit\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/pursuit"
+    },
+    {
+      "text": "Battle Spirit\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/battle-spirit"
+    },
+    {
+      "text": "Fortitude\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/fortitude"
+    },
+    {
+      "text": "Endurance\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/endurance"
+    },
+    {
+      "text": "Shield of Conviction\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/shield-of-conviction"
+    },
+    {
+      "text": "Perfect Defense\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/perfect-defense"
+    },
+    {
+      "text": "Life Drain\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/life-drain"
+    },
+    {
+      "text": "Survival Instinct\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/survival-instinct"
+    },
+    {
+      "text": "Immortality\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/immortality"
+    },
+    {
+      "text": "Iron Wall Defense\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/iron-wall-defense"
+    },
+    {
+      "text": "Tough Body\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/tough-body"
+    },
+    {
+      "text": "Deflect\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/deflect"
+    },
+    {
+      "text": "Lethal Lightning\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/lethal-lightning"
+    },
+    {
+      "text": "Schnelligkeit\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/swiftness"
+    },
+    {
+      "text": "Healing Touch\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/healing-touch"
+    },
+    {
+      "text": "Artisan's Armor\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/artisan-s-armor"
+    },
+    {
+      "text": "Archer — basic attack\nHeroSkill · 0 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/archer-basic-attack"
+    },
+    {
+      "text": "First Strike\nHeroSkill · 10 levels· 20s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/first-strike"
+    },
+    {
+      "text": "Rapid Fire\nHeroSkill · 10 levels· 26s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/rapid-fire"
+    },
+    {
+      "text": "Watcher\nHeroSkill · 10 levels· 24s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/watcher"
+    },
+    {
+      "text": "Double Down\nHeroSkill · 10 levels· 25s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/double-down"
+    },
+    {
+      "text": "Boom Shot\nHeroSkill · 10 levels· 25s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/boom-shot"
+    },
+    {
+      "text": "Full Focus Shot\nHeroSkill · 10 levels· 30s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/full-focus-shot"
+    },
+    {
+      "text": "Hit Mark\nHeroSkill · 10 levels· 30s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/hit-mark"
+    },
+    {
+      "text": "Arrow Rain\nHeroSkill · 10 levels· 25s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/arrow-rain"
+    },
+    {
+      "text": "Stone Arrow\nHeroSkill · 10 levels· 24s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/stone-arrow"
+    },
+    {
+      "text": "Poisoned\nHeroSkill · 10 levels· 22s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/poisoned"
+    },
+    {
+      "text": "Combat Focus\nHeroSkill · 10 levels· 20s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/combat-focus"
+    },
+    {
+      "text": "Snipe\nHeroSkill · 10 levels· 28s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/snipe"
+    },
+    {
+      "text": "Fire Jester\nHeroSkill · 10 levels· 32s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/fire-jester"
+    },
+    {
+      "text": "Poison Blood\nHeroSkill · 10 levels· 30s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/poison-blood"
+    },
+    {
+      "text": "Bleed\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/bleed"
+    },
+    {
+      "text": "Counterattack\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/counterattack"
+    },
+    {
+      "text": "Shadow Step\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/shadow-step"
+    },
+    {
+      "text": "Expose Weakness\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/expose-weakness"
+    },
+    {
+      "text": "Sharpshooter\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/sharpshooter"
+    },
+    {
+      "text": "Take Cover\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/take-cover"
+    },
+    {
+      "text": "Limit Break\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/limit-break"
+    },
+    {
+      "text": "Lethal Poison\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/lethal-poison"
+    },
+    {
+      "text": "Vergiftung\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/poison"
+    },
+    {
+      "text": "One More Time!\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/one-more-time"
+    },
+    {
+      "text": "Quick Reload\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/quick-reload"
+    },
+    {
+      "text": "Ghost Steps\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/ghost-steps"
+    },
+    {
+      "text": "Poison Arrow\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/poison-arrow"
+    },
+    {
+      "text": "Bloody Battle\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/bloody-battle"
+    },
+    {
+      "text": "Quick Step\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/quick-step"
+    },
+    {
+      "text": "Hawk Eye\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/hawk-eye"
+    },
+    {
+      "text": "Tödliches Gift\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/deadly-poison"
+    },
+    {
+      "text": "Precision Aim\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/precision-aim"
+    },
+    {
+      "text": "Long Shot\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/long-shot"
+    },
+    {
+      "text": "Special Bullet\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/special-bullet"
+    },
+    {
+      "text": "Riesenjagd\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/giant-hunter"
+    },
+    {
+      "text": "Mage — basic attack\nHeroSkill · 0 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/mage-basic-attack"
+    },
+    {
+      "text": "Dark Blast\nHeroSkill · 10 levels· 20s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/dark-blast"
+    },
+    {
+      "text": "Flame Storm\nHeroSkill · 10 levels· 26s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/flame-storm"
+    },
+    {
+      "text": "Arcane Burst\nHeroSkill · 10 levels· 24s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/arcane-burst"
+    },
+    {
+      "text": "Titan Seal\nHeroSkill · 10 levels· 25s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/titan-seal"
+    },
+    {
+      "text": "Roar\nHeroSkill · 10 levels· 25s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/roar"
+    },
+    {
+      "text": "Mind Control\nHeroSkill · 10 levels· 30s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/mind-control"
+    },
+    {
+      "text": "Divine Judgment\nHeroSkill · 10 levels· 30s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/divine-judgment"
+    },
+    {
+      "text": "Holy Blow\nHeroSkill · 10 levels· 25s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/holy-blow"
+    },
+    {
+      "text": "Fireball\nHeroSkill · 10 levels· 24s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/fireball"
+    },
+    {
+      "text": "Lava Swamp\nHeroSkill · 10 levels· 22s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/lava-swamp"
+    },
+    {
+      "text": "Mental Breakdown\nHeroSkill · 10 levels· 20s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/mental-breakdown"
+    },
+    {
+      "text": "Meteor Summon\nHeroSkill · 10 levels· 28s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/meteor-summon"
+    },
+    {
+      "text": "Omnipotence\nHeroSkill · 10 levels· 32s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/omnipotence"
+    },
+    {
+      "text": "Breath of Fire\nHeroSkill · 10 levels· 30s cd",
+      "url": "https://www.warofgenesis.gg/de/skills/breath-of-fire"
+    },
+    {
+      "text": "Prayer\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/prayer"
+    },
+    {
+      "text": "Brand\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/brand"
+    },
+    {
+      "text": "Mana Drain\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/mana-drain"
+    },
+    {
+      "text": "Breath of Life\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/breath-of-life"
+    },
+    {
+      "text": "Mana Circulation\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/mana-circulation"
+    },
+    {
+      "text": "Spell Chain\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/spell-chain"
+    },
+    {
+      "text": "Heat Amplification\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/heat-amplification"
+    },
+    {
+      "text": "Inferno\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/inferno"
+    },
+    {
+      "text": "Mana Pierce\nHeroSkill · 10 levels",
+      "url": "https://www.warofgenesis.gg/de/skills/mana-pierce"
+    },
+    {
+      "text": "Discord",
+      "url": "https://discord.gg/XQf2VF6AwD"
+    },
+    {
+      "text": "Reddit",
+      "url": "https://reddit.com/r/warofgenesisidleloot"
+    },
+    {
+      "text": "Steam",
+      "url": "https://store.steampowered.com/app/4891320/"
+    },
+    {
+      "text": "How this is made →",
+      "url": "https://www.warofgenesis.gg/de/about"
+    },
+    {
+      "text": "English",
+      "url": "https://www.warofgenesis.gg/skills"
+    },
+    {
+      "text": "한국어",
+      "url": "https://www.warofgenesis.gg/ko/skills"
+    },
+    {
+      "text": "日本語",
+      "url": "https://www.warofgenesis.gg/ja/skills"
+    },
+    {
+      "text": "简体中文",
+      "url": "https://www.warofgenesis.gg/zh-hans/skills"
+    },
+    {
+      "text": "繁體中文",
+      "url": "https://www.warofgenesis.gg/zh-hant/skills"
+    },
+    {
+      "text": "Français",
+      "url": "https://www.warofgenesis.gg/fr/skills"
+    },
+    {
+      "text": "Deutsch",
+      "url": "https://www.warofgenesis.gg/de/skills"
+    },
+    {
+      "text": "Español",
+      "url": "https://www.warofgenesis.gg/es/skills"
+    },
+    {
+      "text": "Italiano",
+      "url": "https://www.warofgenesis.gg/it/skills"
+    },
+    {
+      "text": "Português",
+      "url": "https://www.warofgenesis.gg/pt/skills"
+    },
+    {
+      "text": "Polski",
+      "url": "https://www.warofgenesis.gg/pl/skills"
+    },
+    {
+      "text": "Русский",
+      "url": "https://www.warofgenesis.gg/ru/skills"
+    },
+    {
+      "text": "Українська",
+      "url": "https://www.warofgenesis.gg/uk/skills"
+    },
+    {
+      "text": "Türkçe",
+      "url": "https://www.warofgenesis.gg/tr/skills"
+    },
+    {
+      "text": "ไทย",
+      "url": "https://www.warofgenesis.gg/th/skills"
+    },
+    {
+      "text": "Tiếng Việt",
+      "url": "https://www.warofgenesis.gg/vi/skills"
+    },
+    {
+      "text": "Indonesia",
+      "url": "https://www.warofgenesis.gg/id/skills"
+    },
+    {
+      "text": "Back to top ↑",
+      "url": "https://www.warofgenesis.gg/de/skills#top"
+    }
+  ],
+  "access_date": "2026-10-10",
+  "requested_url": "https://www.warofgenesis.gg/de/skills"
+}

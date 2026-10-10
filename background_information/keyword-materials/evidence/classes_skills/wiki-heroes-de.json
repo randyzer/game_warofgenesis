@@ -1,0 +1,381 @@
+{
+  "title": "Heroes — War of Genesis: Idle Loot Wiki",
+  "url": "https://www.warofgenesis.gg/de/heroes",
+  "text": "Skip to content\nWar of Genesis\nIDLE LOOT WIKI\nLink game\nDeutsch\nDATABASE\nHeroes\n33\nEquipment\n1,872\nCompanions\n90\nItems\n207\nSkills\n215\nMonsters\n1,602\nStages\n400\nEffects & procs\nSYSTEMS\nPassive tree\nCollections\n20\nAltar\nMachina\n5\nAccount growth\nAbility Unlock\nWorkshop\nJewels\n14\nGacha & boxes\nShop\nQuests\nBattlefield\nMarket\nTOOLS\nAll calculators\nCombat calculator\nFarm planner\nDrop finder\nWall finder\nGear upgrades\nBIS finder\nBox calculator\nCharacter sheet\nStat playground\nInventory value\nREFERENCE\nStat glossary\n159\nConstants\nFormulas\n113\nRaw tables\n51\n\nDATABASE\n\nHeroes\n\nThe 33 playable characters, with the base stats the game rolls every other number from.\n\nCLASS\nAll\nKnight\n11\nArcher\n11\nMage\n11\nGRADE\nAll\nNormal\n6\nMagic\n6\nRare\n6\nHero\n6\nLegend\n6\nMyth\n3\n\n33 heroes\n\nBlack Prince\nKnight\nMelee\nATK 4.95K\nDEF 5.93K\nHP 31.52K\nEmpress Christina\nArcher\nRanged\nATK 5.5K\nDEF 5.71K\nHP 30.35K\nBeradin\nMage\nMagic\nATK 6.04K\nDEF 5.5K\nHP 29.18K\nIce Pendragon\nKnight\nMelee\nATK 2.52K\nDEF 3.03K\nHP 16.08K\nCyrano Bernstein\nKnight\nMelee\nATK 3.53K\nDEF 4.24K\nHP 22.51K\nAnne Millennium\nArcher\nRanged\nATK 2.8K\nDEF 2.92K\nHP 15.49K\nChristian de Medici\nArcher\nRanged\nATK 3.92K\nDEF 4.08K\nHP 21.68K\nOphelia Buckingham\nMage\nMagic\nATK 3.08K\nDEF 2.8K\nHP 14.89K\nDiablo\nMage\nMagic\nATK 4.32K\nDEF 3.92K\nHP 20.85K\nCrow\nKnight\nMelee\nATK 1.29K\nDEF 1.54K\nHP 8.21K\nShakbari of War\nKnight\nMelee\nATK 1.8K\nDEF 2.16K\nHP 11.49K\nJane Shore\nArcher\nRanged\nATK 1.43K\nDEF 1.49K\nHP 7.9K\nCordelia Austin\nArcher\nRanged\nATK 2K\nDEF 2.08K\nHP 11.06K\nEstet Dode\nMage\nMagic\nATK 1.57K\nDEF 1.43K\nHP 7.6K\nLina Macloren\nMage\nMagic\nATK 2.2K\nDEF 2K\nHP 10.64K\nKarls Brandt\nKnight\nMelee\nATK 656\nDEF 788\nHP 4.19K\nRoberto de Medici\nKnight\nMelee\nATK 919\nDEF 1.1K\nHP 5.86K\nChris\nArcher\nRanged\nATK 729\nDEF 759\nHP 4.03K\nKana Milanovich\nArcher\nRanged\nATK 1.02K\nDEF 1.06K\nHP 5.64K\nKarim Nidia\nMage\nMagic\nATK 802\nDEF 729\nHP 3.88K\nEsmeralda\nMage\nMagic\nATK 1.12K\nDEF 1.02K\nHP 5.43K\nKashutar Gunter\nKnight\nMelee\nATK 335\nDEF 402\nHP 2.13K\nElizabeth Pendragon\nKnight\nMelee\nATK 469\nDEF 563\nHP 2.99K\nErica Myers\nArcher\nRanged\nATK 372\nDEF 387\nHP 2.06K\nAriana Weaver\nArcher\nRanged\nATK 521\nDEF 542\nHP 2.88K\nKaja Amigo\nMage\nMagic\nATK 409\nDEF 372\nHP 1.98K\nDalia Ygritte\nMage\nMagic\nATK 573\nDEF 521\nHP 2.77K\nIyolin Pendragon\nKnight\nMelee\nATK 171\nDEF 205\nHP 1.09K\nJoan Cartwright\nKnight\nMelee\nATK 239\nDEF 287\nHP 1.52K\nRiona Willard\nArcher\nRanged\nATK 190\nDEF 197\nHP 1.05K\nCecily Narejuno\nArcher\nRanged\nATK 266\nDEF 276\nHP 1.47K\nHaya Belle\nMage\nMagic\nATK 209\nDEF 190\nHP 1.01K\nEnnil Dia\nMage\nMagic\nATK 292\nDEF 266\nHP 1.41K\nWar of Genesis\nIDLE LOOT WIKI\n\nAn unofficial reference for War of Genesis: Idle Loot. Every number on this site is read out of the shipped client — not estimated, not crowd-sourced.\n\nDiscord\nReddit\nSteam\nPROVENANCE\nGame build\nv1.0.1\nTable build\n1245\nEngine\nUnity 6000.0.59f2 (IL2CPP)\nTables read\n51\nHow this is made →\n17 LANGUAGES\nEnglish\n한국어\n日本語\n简体中文\n繁體中文\nFrançais\nDeutsch\nEspañol\nItaliano\nPortuguês\nPolski\nРусский\nУкраїнська\nTürkçe\nไทย\nTiếng Việt\nIndonesia\n\nUnofficial fan wiki. War of Genesis: Idle Loot is © Newnormal Soft / LINE Games.\n\nBack to top ↑",
+  "links": [
+    {
+      "text": "Skip to content",
+      "url": "https://www.warofgenesis.gg/de/heroes#main"
+    },
+    {
+      "text": "War of Genesis\nIDLE LOOT WIKI",
+      "url": "https://www.warofgenesis.gg/de"
+    },
+    {
+      "text": "Heroes\n33",
+      "url": "https://www.warofgenesis.gg/de/heroes"
+    },
+    {
+      "text": "Equipment\n1,872",
+      "url": "https://www.warofgenesis.gg/de/equipment"
+    },
+    {
+      "text": "Companions\n90",
+      "url": "https://www.warofgenesis.gg/de/companions"
+    },
+    {
+      "text": "Items\n207",
+      "url": "https://www.warofgenesis.gg/de/items"
+    },
+    {
+      "text": "Skills\n215",
+      "url": "https://www.warofgenesis.gg/de/skills"
+    },
+    {
+      "text": "Monsters\n1,602",
+      "url": "https://www.warofgenesis.gg/de/monsters"
+    },
+    {
+      "text": "Stages\n400",
+      "url": "https://www.warofgenesis.gg/de/stages"
+    },
+    {
+      "text": "Effects & procs",
+      "url": "https://www.warofgenesis.gg/de/effects"
+    },
+    {
+      "text": "Passive tree",
+      "url": "https://www.warofgenesis.gg/de/passive-skills"
+    },
+    {
+      "text": "Collections\n20",
+      "url": "https://www.warofgenesis.gg/de/passives"
+    },
+    {
+      "text": "Altar",
+      "url": "https://www.warofgenesis.gg/de/altar"
+    },
+    {
+      "text": "Machina\n5",
+      "url": "https://www.warofgenesis.gg/de/machina"
+    },
+    {
+      "text": "Account growth",
+      "url": "https://www.warofgenesis.gg/de/growth"
+    },
+    {
+      "text": "Ability Unlock",
+      "url": "https://www.warofgenesis.gg/de/growth/ability-unlock"
+    },
+    {
+      "text": "Workshop",
+      "url": "https://www.warofgenesis.gg/de/workshop"
+    },
+    {
+      "text": "Jewels\n14",
+      "url": "https://www.warofgenesis.gg/de/jewels"
+    },
+    {
+      "text": "Gacha & boxes",
+      "url": "https://www.warofgenesis.gg/de/gacha"
+    },
+    {
+      "text": "Shop",
+      "url": "https://www.warofgenesis.gg/de/shop"
+    },
+    {
+      "text": "Quests",
+      "url": "https://www.warofgenesis.gg/de/quests"
+    },
+    {
+      "text": "Battlefield",
+      "url": "https://www.warofgenesis.gg/de/content"
+    },
+    {
+      "text": "Market",
+      "url": "https://www.warofgenesis.gg/de/market"
+    },
+    {
+      "text": "All calculators",
+      "url": "https://www.warofgenesis.gg/de/tools"
+    },
+    {
+      "text": "Combat calculator",
+      "url": "https://www.warofgenesis.gg/de/tools/damage"
+    },
+    {
+      "text": "Farm planner",
+      "url": "https://www.warofgenesis.gg/de/tools/farm"
+    },
+    {
+      "text": "Drop finder",
+      "url": "https://www.warofgenesis.gg/de/tools/drops"
+    },
+    {
+      "text": "Wall finder",
+      "url": "https://www.warofgenesis.gg/de/tools/readiness"
+    },
+    {
+      "text": "Gear upgrades",
+      "url": "https://www.warofgenesis.gg/de/tools/upgrades"
+    },
+    {
+      "text": "BIS finder",
+      "url": "https://www.warofgenesis.gg/de/tools/bis"
+    },
+    {
+      "text": "Box calculator",
+      "url": "https://www.warofgenesis.gg/de/tools/boxes"
+    },
+    {
+      "text": "Character sheet",
+      "url": "https://www.warofgenesis.gg/de/tools/sheet"
+    },
+    {
+      "text": "Stat playground",
+      "url": "https://www.warofgenesis.gg/de/tools/stats"
+    },
+    {
+      "text": "Inventory value",
+      "url": "https://www.warofgenesis.gg/de/inventory"
+    },
+    {
+      "text": "Stat glossary\n159",
+      "url": "https://www.warofgenesis.gg/de/stats"
+    },
+    {
+      "text": "Constants",
+      "url": "https://www.warofgenesis.gg/de/constants"
+    },
+    {
+      "text": "Formulas\n113",
+      "url": "https://www.warofgenesis.gg/de/formulas"
+    },
+    {
+      "text": "Raw tables\n51",
+      "url": "https://www.warofgenesis.gg/de/database"
+    },
+    {
+      "text": "Black Prince\nKnight\nMelee\nATK 4.95K\nDEF 5.93K\nHP 31.52K",
+      "url": "https://www.warofgenesis.gg/de/heroes/black-prince"
+    },
+    {
+      "text": "Empress Christina\nArcher\nRanged\nATK 5.5K\nDEF 5.71K\nHP 30.35K",
+      "url": "https://www.warofgenesis.gg/de/heroes/empress-christina"
+    },
+    {
+      "text": "Beradin\nMage\nMagic\nATK 6.04K\nDEF 5.5K\nHP 29.18K",
+      "url": "https://www.warofgenesis.gg/de/heroes/beradin"
+    },
+    {
+      "text": "Ice Pendragon\nKnight\nMelee\nATK 2.52K\nDEF 3.03K\nHP 16.08K",
+      "url": "https://www.warofgenesis.gg/de/heroes/ice-pendragon"
+    },
+    {
+      "text": "Cyrano Bernstein\nKnight\nMelee\nATK 3.53K\nDEF 4.24K\nHP 22.51K",
+      "url": "https://www.warofgenesis.gg/de/heroes/cyrano-bernstein"
+    },
+    {
+      "text": "Anne Millennium\nArcher\nRanged\nATK 2.8K\nDEF 2.92K\nHP 15.49K",
+      "url": "https://www.warofgenesis.gg/de/heroes/anne-millennium"
+    },
+    {
+      "text": "Christian de Medici\nArcher\nRanged\nATK 3.92K\nDEF 4.08K\nHP 21.68K",
+      "url": "https://www.warofgenesis.gg/de/heroes/christian-de-medici"
+    },
+    {
+      "text": "Ophelia Buckingham\nMage\nMagic\nATK 3.08K\nDEF 2.8K\nHP 14.89K",
+      "url": "https://www.warofgenesis.gg/de/heroes/ophelia-buckingham"
+    },
+    {
+      "text": "Diablo\nMage\nMagic\nATK 4.32K\nDEF 3.92K\nHP 20.85K",
+      "url": "https://www.warofgenesis.gg/de/heroes/diablo"
+    },
+    {
+      "text": "Crow\nKnight\nMelee\nATK 1.29K\nDEF 1.54K\nHP 8.21K",
+      "url": "https://www.warofgenesis.gg/de/heroes/crow"
+    },
+    {
+      "text": "Shakbari of War\nKnight\nMelee\nATK 1.8K\nDEF 2.16K\nHP 11.49K",
+      "url": "https://www.warofgenesis.gg/de/heroes/shakbari-of-war"
+    },
+    {
+      "text": "Jane Shore\nArcher\nRanged\nATK 1.43K\nDEF 1.49K\nHP 7.9K",
+      "url": "https://www.warofgenesis.gg/de/heroes/jane-shore"
+    },
+    {
+      "text": "Cordelia Austin\nArcher\nRanged\nATK 2K\nDEF 2.08K\nHP 11.06K",
+      "url": "https://www.warofgenesis.gg/de/heroes/cordelia-austin"
+    },
+    {
+      "text": "Estet Dode\nMage\nMagic\nATK 1.57K\nDEF 1.43K\nHP 7.6K",
+      "url": "https://www.warofgenesis.gg/de/heroes/estet-dode"
+    },
+    {
+      "text": "Lina Macloren\nMage\nMagic\nATK 2.2K\nDEF 2K\nHP 10.64K",
+      "url": "https://www.warofgenesis.gg/de/heroes/lina-macloren"
+    },
+    {
+      "text": "Karls Brandt\nKnight\nMelee\nATK 656\nDEF 788\nHP 4.19K",
+      "url": "https://www.warofgenesis.gg/de/heroes/karls-brandt"
+    },
+    {
+      "text": "Roberto de Medici\nKnight\nMelee\nATK 919\nDEF 1.1K\nHP 5.86K",
+      "url": "https://www.warofgenesis.gg/de/heroes/roberto-de-medici"
+    },
+    {
+      "text": "Chris\nArcher\nRanged\nATK 729\nDEF 759\nHP 4.03K",
+      "url": "https://www.warofgenesis.gg/de/heroes/chris"
+    },
+    {
+      "text": "Kana Milanovich\nArcher\nRanged\nATK 1.02K\nDEF 1.06K\nHP 5.64K",
+      "url": "https://www.warofgenesis.gg/de/heroes/kana-milanovich"
+    },
+    {
+      "text": "Karim Nidia\nMage\nMagic\nATK 802\nDEF 729\nHP 3.88K",
+      "url": "https://www.warofgenesis.gg/de/heroes/karim-nidia"
+    },
+    {
+      "text": "Esmeralda\nMage\nMagic\nATK 1.12K\nDEF 1.02K\nHP 5.43K",
+      "url": "https://www.warofgenesis.gg/de/heroes/esmeralda"
+    },
+    {
+      "text": "Kashutar Gunter\nKnight\nMelee\nATK 335\nDEF 402\nHP 2.13K",
+      "url": "https://www.warofgenesis.gg/de/heroes/kashutar-gunter"
+    },
+    {
+      "text": "Elizabeth Pendragon\nKnight\nMelee\nATK 469\nDEF 563\nHP 2.99K",
+      "url": "https://www.warofgenesis.gg/de/heroes/elizabeth-pendragon"
+    },
+    {
+      "text": "Erica Myers\nArcher\nRanged\nATK 372\nDEF 387\nHP 2.06K",
+      "url": "https://www.warofgenesis.gg/de/heroes/erica-myers"
+    },
+    {
+      "text": "Ariana Weaver\nArcher\nRanged\nATK 521\nDEF 542\nHP 2.88K",
+      "url": "https://www.warofgenesis.gg/de/heroes/ariana-weaver"
+    },
+    {
+      "text": "Kaja Amigo\nMage\nMagic\nATK 409\nDEF 372\nHP 1.98K",
+      "url": "https://www.warofgenesis.gg/de/heroes/kaja-amigo"
+    },
+    {
+      "text": "Dalia Ygritte\nMage\nMagic\nATK 573\nDEF 521\nHP 2.77K",
+      "url": "https://www.warofgenesis.gg/de/heroes/dalia-ygritte"
+    },
+    {
+      "text": "Iyolin Pendragon\nKnight\nMelee\nATK 171\nDEF 205\nHP 1.09K",
+      "url": "https://www.warofgenesis.gg/de/heroes/iyolin-pendragon"
+    },
+    {
+      "text": "Joan Cartwright\nKnight\nMelee\nATK 239\nDEF 287\nHP 1.52K",
+      "url": "https://www.warofgenesis.gg/de/heroes/joan-cartwright"
+    },
+    {
+      "text": "Riona Willard\nArcher\nRanged\nATK 190\nDEF 197\nHP 1.05K",
+      "url": "https://www.warofgenesis.gg/de/heroes/riona-willard"
+    },
+    {
+      "text": "Cecily Narejuno\nArcher\nRanged\nATK 266\nDEF 276\nHP 1.47K",
+      "url": "https://www.warofgenesis.gg/de/heroes/cecily-narejuno"
+    },
+    {
+      "text": "Haya Belle\nMage\nMagic\nATK 209\nDEF 190\nHP 1.01K",
+      "url": "https://www.warofgenesis.gg/de/heroes/haya-belle"
+    },
+    {
+      "text": "Ennil Dia\nMage\nMagic\nATK 292\nDEF 266\nHP 1.41K",
+      "url": "https://www.warofgenesis.gg/de/heroes/ennil-dia"
+    },
+    {
+      "text": "Discord",
+      "url": "https://discord.gg/XQf2VF6AwD"
+    },
+    {
+      "text": "Reddit",
+      "url": "https://reddit.com/r/warofgenesisidleloot"
+    },
+    {
+      "text": "Steam",
+      "url": "https://store.steampowered.com/app/4891320/"
+    },
+    {
+      "text": "How this is made →",
+      "url": "https://www.warofgenesis.gg/de/about"
+    },
+    {
+      "text": "English",
+      "url": "https://www.warofgenesis.gg/heroes"
+    },
+    {
+      "text": "한국어",
+      "url": "https://www.warofgenesis.gg/ko/heroes"
+    },
+    {
+      "text": "日本語",
+      "url": "https://www.warofgenesis.gg/ja/heroes"
+    },
+    {
+      "text": "简体中文",
+      "url": "https://www.warofgenesis.gg/zh-hans/heroes"
+    },
+    {
+      "text": "繁體中文",
+      "url": "https://www.warofgenesis.gg/zh-hant/heroes"
+    },
+    {
+      "text": "Français",
+      "url": "https://www.warofgenesis.gg/fr/heroes"
+    },
+    {
+      "text": "Deutsch",
+      "url": "https://www.warofgenesis.gg/de/heroes"
+    },
+    {
+      "text": "Español",
+      "url": "https://www.warofgenesis.gg/es/heroes"
+    },
+    {
+      "text": "Italiano",
+      "url": "https://www.warofgenesis.gg/it/heroes"
+    },
+    {
+      "text": "Português",
+      "url": "https://www.warofgenesis.gg/pt/heroes"
+    },
+    {
+      "text": "Polski",
+      "url": "https://www.warofgenesis.gg/pl/heroes"
+    },
+    {
+      "text": "Русский",
+      "url": "https://www.warofgenesis.gg/ru/heroes"
+    },
+    {
+      "text": "Українська",
+      "url": "https://www.warofgenesis.gg/uk/heroes"
+    },
+    {
+      "text": "Türkçe",
+      "url": "https://www.warofgenesis.gg/tr/heroes"
+    },
+    {
+      "text": "ไทย",
+      "url": "https://www.warofgenesis.gg/th/heroes"
+    },
+    {
+      "text": "Tiếng Việt",
+      "url": "https://www.warofgenesis.gg/vi/heroes"
+    },
+    {
+      "text": "Indonesia",
+      "url": "https://www.warofgenesis.gg/id/heroes"
+    },
+    {
+      "text": "Back to top ↑",
+      "url": "https://www.warofgenesis.gg/de/heroes#top"
+    }
+  ],
+  "access_date": "2026-10-10",
+  "requested_url": "https://www.warofgenesis.gg/de/heroes"
+}

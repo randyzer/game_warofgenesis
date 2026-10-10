@@ -1,0 +1,1009 @@
+{
+  "title": "Growth Systems | War of Genesis: Idle Loot Wiki",
+  "url": "https://warofgenesis.wiki/growth",
+  "text": "Skip to content\nGENESIS\nARCHIVE\n\nWar of Genesis: Idle Loot\n\nEXPLORE\nOverview\nStages\nMonsters\nGold Bar\nCOLLECTION\nCharacters\nSkills\nEquipment\nItems\nWings, Runes & Pets\nMachina\nPassive Skills\nRelics\nAltar\nCompare\nPROGRESSION\nGrowth Systems\nBattlefield\nCompetition\nQuests\nContent Unlocks\nTOOLS & GUIDES\nFarming simulator\nLeveling Calculator\nCombat Calculator\nREFERENCE\nStats & Formulas\nGame settings\nData & sources\nPrivacy Policy\nFan-Made Legal Notice\nClient snapshot v1245\nData & sources\nGrowth Systems\nSearch\nSupport\nLanguage\nEnglish (EN)\nIndonesia (ID)\n简体中文 (CN)\n繁體中文 (TW)\n한국어 (KR)\n日本語 (JP)\nPortuguês (BR)\nไทย (TH)\nРусский (RU)\nTürkçe (TR)\nEspañol (ES)\nGrowth Systems\n\nAccount-wide progression tables: user levels, diamond production, Training Ground, Altar, synthesis and equipment level reduction.\n\nUser levels\n\nUserLevel_table: EXP needed per level, skill slots and level-up rewards.\n\nLv\tEXP to next\tSkill slots\tRewards\tUnlocked at this level\n1\t252\nΣ 252\n\t1\tNone\tIyolin Pendragon, Riona Willard, Haya Belle, Moon Cleave, High-Speed Flurry, First Strike, Arrow Rain, Dark Blast, Holy Blow\n2\t326\nΣ 578\n\t2\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n3\t640\nΣ 1,218\n\t2\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tTraining\n4\t960\nΣ 2,178\n\t2\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n5\t1,500\nΣ 3,678\n\t3\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tFormation Flame, Fighting Spirit, Shield of Conviction, Iron Wall Defense, Rapid Fire, Bleed, Ghost Steps, Quick Step, Flame Storm, Prayer, Chain Casting, Master's Staff\n6\t1,980\nΣ 5,658\n\t3\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n7\t2,736\nΣ 8,394\n\t3\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tAltar\n8\t3,744\nΣ 12,138\n\t3\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n9\t5,040\nΣ 17,178\n\t3\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n10\t4,500\nΣ 21,678\n\t3\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tJoan Cartwright, Cecily Narejuno, Ennil Dia\n11\t15,070\nΣ 36,748\n\t3\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tAlliance, Chat\n12\t15,756\nΣ 52,504\n\t3\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tRelic\n13\t16,456\nΣ 68,960\n\t3\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tEquip Level\n14\t17,172\nΣ 86,132\n\t3\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n15\t18,228\nΣ 104,360\n\t4\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tBarricade, Endurance, Tough Body, Stone Arrow, Quick Reload, Hawk Eye, Fireball, Mana Pierce, Battle Experience\n16\t19,314\nΣ 123,674\n\t4\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n17\t20,430\nΣ 144,104\n\t4\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tAuto Synthesis\n18\t24,360\nΣ 168,464\n\t4\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n19\t29,151\nΣ 197,615\n\t4\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tMarketplace\n20\t40,656\nΣ 238,271\n\t4\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tKashutar Gunter, Erica Myers, Kaja Amigo\n21\t102,740\nΣ 341,011\n\t4\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n22\t149,500\nΣ 490,511\n\t4\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n23\t217,327\nΣ 707,838\n\t4\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n24\t307,137\nΣ 1,014,975\n\t4\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n25\t433,350\nΣ 1,448,325\n\t5\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tDivine Spear, Vitality, Fortitude, Watcher, Counterattack, Bloody Battle, Arcane Burst, Brand, Barrier Break\n26\t583,790\nΣ 2,032,115\n\t5\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n27\t759,376\nΣ 2,791,491\n\t5\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n28\t961,027\nΣ 3,752,518\n\t5\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n29\t1,189,659\nΣ 4,942,177\n\t5\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n30\t1,446,192\nΣ 6,388,369\n\t5\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tElizabeth Pendragon, Ariana Weaver, Dalia Ygritte\n31\t2,587,435\nΣ 8,975,804\n\t5\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n32\t3,055,136\nΣ 12,030,940\n\t5\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n33\t3,601,533\nΣ 15,632,473\n\t5\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n34\t4,229,164\nΣ 19,861,637\n\t5\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n35\t4,940,568\nΣ 24,802,205\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tMoon Slash, Godslayer Spear, Perfect Defense, Deflect, Double Down, Poisoned, Lethal Poison, Deadly Poison, Titan Seal, Lava Swamp, Inferno, Sharp Strike\n36\t5,738,281\nΣ 30,540,486\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n37\t6,624,842\nΣ 37,165,328\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n38\t7,602,789\nΣ 44,768,117\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n39\t8,674,660\nΣ 53,442,777\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n40\t9,842,994\nΣ 63,285,771\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tKarls Brandt, Chris, Karim Nidia\n41\t15,587,222\nΣ 78,872,993\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n42\t17,501,896\nΣ 96,374,889\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n43\t19,561,363\nΣ 115,936,252\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n44\t21,769,077\nΣ 137,705,329\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n45\t24,128,496\nΣ 161,833,825\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tTitan's Fist, Thunderbolt, Lethal Lightning, Combat Focus, Shadow Step, Precision Aim, Mental Breakdown, Mana Drain, Ignition\n46\t26,643,074\nΣ 188,476,899\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n47\t29,316,268\nΣ 217,793,167\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n48\t32,151,535\nΣ 249,944,702\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n49\t35,322,861\nΣ 285,267,563\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n50\t38,838,888\nΣ 324,106,451\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tRoberto de Medici, Kana Milanovich, Esmeralda\n51\t57,560,705\nΣ 381,667,156\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n52\t63,254,501\nΣ 444,921,657\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n53\t69,446,222\nΣ 514,367,879\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n54\t76,147,343\nΣ 590,515,222\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n55\t83,369,339\nΣ 673,884,561\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tShield Charge, Fierce Assault, Swiftness, Boom Shot, Expose Weakness, Long Shot, Roar, Breath of Life, Mana Amplification\n56\t91,123,685\nΣ 765,008,246\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n57\t99,421,856\nΣ 864,430,102\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n58\t108,275,328\nΣ 972,705,430\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n59\t117,976,524\nΣ 1,090,681,954\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n60\t128,544,570\nΣ 1,219,226,524\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tCrow, Jane Shore, Estet Dode\n61\t183,092,022\nΣ 1,402,318,546\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n62\t199,237,008\nΣ 1,601,555,554\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n63\t216,587,844\nΣ 1,818,143,398\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n64\t235,169,280\nΣ 2,053,312,678\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n65\t255,006,066\nΣ 2,308,318,744\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tTime Reversal, Life Drain, Healing Touch, Snipe, Poison, Special Bullet, Meteor Summon, Execution, Skill Tome\n66\t276,122,952\nΣ 2,584,441,696\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n67\t298,544,688\nΣ 2,882,986,384\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n68\t322,296,024\nΣ 3,205,282,408\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n69\t348,202,710\nΣ 3,553,485,118\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n70\t376,309,296\nΣ 3,929,794,414\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tShakbari of War, Cordelia Austin, Lina Macloren\n71\t519,008,864\nΣ 4,448,803,278\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n72\t560,621,770\nΣ 5,009,425,048\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n73\t605,206,582\nΣ 5,614,631,630\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n74\t652,819,593\nΣ 6,267,451,223\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n75\t703,517,100\nΣ 6,970,968,323\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tEarth Smash, Vanguard, Lightning Boost, Full Focus Shot, Fire Jester, Sharpshooter, Mind Control, Omnipotence, Mana Circulation\n76\t757,355,396\nΣ 7,728,323,719\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n77\t814,390,777\nΣ 8,542,714,496\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n78\t874,679,539\nΣ 9,417,394,035\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n79\t941,042,625\nΣ 10,358,436,660\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n80\t1,013,877,432\nΣ 11,372,314,092\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tIce Pendragon, Anne Millennium, Ophelia Buckingham\n81\t1,366,972,339\nΣ 12,739,286,431\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n82\t1,474,578,566\nΣ 14,213,864,997\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n83\t1,590,729,753\nΣ 15,804,594,750\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n84\t1,715,580,700\nΣ 17,520,175,450\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n85\t1,849,286,208\nΣ 19,369,461,658\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tBoiling Blood, Pursuit, Survival Instinct, Artisan's Armor, Hit Mark, Take Cover, One More Time!, Giant Hunter, Divine Judgment, Spell Chain, Willpower, Elemental Convergence\n86\t1,992,001,075\nΣ 21,361,462,733\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n87\t2,143,880,102\nΣ 23,505,342,835\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n88\t2,305,078,089\nΣ 25,810,420,924\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n89\t2,484,666,316\nΣ 28,295,087,240\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n90\t2,681,488,944\nΣ 30,976,576,184\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tCyrano Bernstein, Christian de Medici, Diablo\n91\t3,557,432,642\nΣ 34,534,008,826\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n92\t3,842,421,220\nΣ 38,376,430,046\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n93\t4,149,681,199\nΣ 42,526,111,245\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n94\t4,507,917,177\nΣ 47,034,028,422\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n95\t4,965,597,156\nΣ 51,999,625,578\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tLightning Armor, Battle Spirit, Immortality, Poison Blood, Limit Break, Poison Arrow, Breath of Fire, Heat Amplification, Resurrection\n96\t5,572,443,134\nΣ 57,572,068,712\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n97\t6,379,431,112\nΣ 63,951,499,824\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n98\t7,487,259,091\nΣ 71,438,758,915\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n99\t8,999,133,069\nΣ 80,437,891,984\n\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\t\n100\t—\t6\t\nKnight Skill Points\n×1\nRanger Skill Points\n×1\nWizard Skill Points\n×1\n\tBlack Prince, Empress Christina, Beradin\nDiaGrowth (3000 levels)\n\nDiaGrowth_table: 3,000 levels paid with diamonds; each level adds one stat.\n\nStat\tTotal at max level\tlevels\nAttack\nAttack_Plus\n\t5,625\t225\nDefense\nDefense_Plus\n\t11,250\t225\nHP\nHP_Plus\n\t56,250\t225\nAccuracy\nHitRate_Plus\n\t180\t150\nEvasion\nEvasion_Plus\n\t180\t150\nAttack\nAttackPer_Plus\n\t225%\t225\nDefense\nDefensePer_Plus\n\t225%\t225\nHP\nHPPer_Plus\n\t225%\t225\nBoss DMG\nBossDamagePer_Plus\n\t45%\t75\nDamage\nDamagePer_Plus\n\t37.5%\t75\nDamage Taken\nDamagePer_Minus\n\t37.5%\t75\nNatural Recovery Amount\nRecoveryAmount_Plus\n\t225\t75\nCritical Hit\nCriticalRate_Plus\n\t45\t75\nCritical Damage\nCriticalDamage_Plus\n\t90%\t75\nLightning Damage\nShockDamage_Plus\n\t90%\t75\nPoison Damage\nPoisonDamage_Plus\n\t90%\t75\nFire Damage\nBurnDamage_Plus\n\t90%\t75\nCritical Resistance\nCriticalRate_Resist\n\t45\t75\nCrit Dmg Res\nCriticalDamage_Resist\n\t90%\t75\nLightning Dmg Res\nShockDamage_Resist\n\t90%\t75\nFire Dmg Res\nBurnDamage_Resist\n\t90%\t75\nPoison Damage Resistance\nPoisonDamage_Resist\n\t90%\t75\nPvE Attack Power\nPvE_AttackPer_Plus\n\t90%\t75\nPvE Defense\nPvE_DefensePer_Plus\n\t90%\t75\nPvP Attack Power\nPvP_AttackPer_Plus\n\t90%\t75\nPvP Defense\nPvP_DefensePer_Plus\n\t90%\t75\nLevel table\n(Sawmill)\n\nSawmillLevel_table / SawmillRank_table: level with logs, then roll a rank; each rank rolls one stat from the list.\n\nRank chance by level\nRank\tStat\tValue\n Rank E\tAttack\t1.2%\n Rank E\tDefense\t1.2%\n Rank E\tHP\t1.2%\n Rank E\tBoss DMG\t0.7%\n Rank E\tDamage\t0.6%\n Rank E\tDamage Taken\t0.6%\n Rank E\tLightning Damage\t1.5%\n Rank E\tPoison Damage\t1.5%\n Rank E\tFire Damage\t1.5%\n Rank E\tLightning Dmg Res\t1.5%\n Rank E\tPoison Damage Resistance\t1.5%\n Rank E\tFire Dmg Res\t1.5%\n Rank D\tAttack\t1.8%\n Rank D\tDefense\t1.8%\n Rank D\tHP\t1.8%\n Rank D\tBoss DMG\t1.1%\n Rank D\tDamage\t0.9%\n Rank D\tDamage Taken\t0.9%\n Rank D\tLightning Damage\t2.2%\n Rank D\tPoison Damage\t2.2%\n Rank D\tFire Damage\t2.2%\n Rank D\tLightning Dmg Res\t2.2%\n Rank D\tPoison Damage Resistance\t2.2%\n Rank D\tFire Dmg Res\t2.2%\n Rank C\tAttack\t3%\n Rank C\tDefense\t3%\n Rank C\tHP\t3%\n Rank C\tBoss DMG\t1.8%\n Rank C\tDamage\t1.5%\n Rank C\tDamage Taken\t1.5%\n Rank C\tLightning Damage\t3.7%\n Rank C\tPoison Damage\t3.7%\n Rank C\tFire Damage\t3.7%\n Rank C\tLightning Dmg Res\t3.7%\n Rank C\tPoison Damage Resistance\t3.7%\n Rank C\tFire Dmg Res\t3.7%\n Rank B\tAttack\t4.8%\n Rank B\tDefense\t4.8%\n Rank B\tHP\t4.8%\n Rank B\tBoss DMG\t3%\n Rank B\tDamage\t2.4%\n Rank B\tDamage Taken\t2.4%\n Rank B\tLightning Damage\t6%\n Rank B\tPoison Damage\t6%\n Rank B\tFire Damage\t6%\n Rank B\tLightning Dmg Res\t6%\n Rank B\tPoison Damage Resistance\t6%\n Rank B\tFire Dmg Res\t6%\n Rank A\tAttack\t6.6%\n Rank A\tDefense\t6.6%\n Rank A\tHP\t6.6%\n Rank A\tBoss DMG\t4.1%\n Rank A\tDamage\t3.3%\n Rank A\tDamage Taken\t3.3%\n Rank A\tLightning Damage\t8.2%\n Rank A\tPoison Damage\t8.2%\n Rank A\tFire Damage\t8.2%\n Rank A\tLightning Dmg Res\t8.2%\n Rank A\tPoison Damage Resistance\t8.2%\n Rank A\tFire Dmg Res\t8.2%\n Rank S\tAttack\t8.4%\n Rank S\tDefense\t8.4%\n Rank S\tHP\t8.4%\n Rank S\tBoss DMG\t5.2%\n Rank S\tDamage\t4.2%\n Rank S\tDamage Taken\t4.2%\n Rank S\tLightning Damage\t10.5%\n Rank S\tPoison Damage\t10.5%\n Rank S\tFire Damage\t10.5%\n Rank S\tLightning Dmg Res\t10.5%\n Rank S\tPoison Damage Resistance\t10.5%\n Rank S\tFire Dmg Res\t10.5%\n Rank SS\tAttack\t10.2%\n Rank SS\tDefense\t10.2%\n Rank SS\tHP\t10.2%\n Rank SS\tBoss DMG\t6.3%\n Rank SS\tDamage\t5.1%\n Rank SS\tDamage Taken\t5.1%\n Rank SS\tLightning Damage\t12.7%\n Rank SS\tPoison Damage\t12.7%\n Rank SS\tFire Damage\t12.7%\n Rank SS\tLightning Dmg Res\t12.7%\n Rank SS\tPoison Damage Resistance\t12.7%\n Rank SS\tFire Dmg Res\t12.7%\n Rank SSS\tAttack\t12%\n Rank SSS\tDefense\t12%\n Rank SSS\tHP\t12%\n Rank SSS\tBoss DMG\t7.5%\n Rank SSS\tDamage\t6%\n Rank SSS\tDamage Taken\t6%\n Rank SSS\tLightning Damage\t15%\n Rank SSS\tPoison Damage\t15%\n Rank SSS\tFire Damage\t15%\n Rank SSS\tLightning Dmg Res\t15%\n Rank SSS\tPoison Damage Resistance\t15%\n Rank SSS\tFire Dmg Res\t15%\n Rank SR\tAttack\t15%\n Rank SR\tDefense\t15%\n Rank SR\tHP\t15%\n Rank SR\tBoss DMG\t9.3%\n Rank SR\tDamage\t7.5%\n Rank SR\tDamage Taken\t7.5%\n Rank SR\tLightning Damage\t18.7%\n Rank SR\tPoison Damage\t18.7%\n Rank SR\tFire Damage\t18.7%\n Rank SR\tLightning Dmg Res\t18.7%\n Rank SR\tPoison Damage Resistance\t18.7%\n Rank SR\tFire Dmg Res\t18.7%\n Rank UR\tAttack\t18%\n Rank UR\tDefense\t18%\n Rank UR\tHP\t18%\n Rank UR\tBoss DMG\t11.2%\n Rank UR\tDamage\t9%\n Rank UR\tDamage Taken\t9%\n Rank UR\tLightning Damage\t22.5%\n Rank UR\tPoison Damage\t22.5%\n Rank UR\tFire Damage\t22.5%\n Rank UR\tLightning Dmg Res\t22.5%\n Rank UR\tPoison Damage Resistance\t22.5%\n Rank UR\tFire Dmg Res\t22.5%\n Rank LR\tAttack\t21.6%\n Rank LR\tDefense\t21.6%\n Rank LR\tHP\t21.6%\n Rank LR\tBoss DMG\t13.5%\n Rank LR\tDamage\t10.8%\n Rank LR\tDamage Taken\t10.8%\n Rank LR\tLightning Damage\t27%\n Rank LR\tPoison Damage\t27%\n Rank LR\tFire Damage\t27%\n Rank LR\tLightning Dmg Res\t27%\n Rank LR\tPoison Damage Resistance\t27%\n Rank LR\tFire Dmg Res\t27%\n(Seal)\n\nSealLevel_table / SealRank_table: Altar ranks give one fixed stat; the linked Bingo rank is the combination bonus.\n\nRank chance by level\nRank\tStat\tValue\t(Bingo)\n Rank E\tAttack\t2\tAttack 0.6%\n Rank E\tDefense\t5\tDefense 0.6%\n Rank E\tHP\t27\tHP 0.6%\n Rank E\tDamage Taken\t0.2%\tDamage 0.3%\n Rank E\tLightning Damage\t0.5%\tShock 0.4\n Rank E\tPoison Damage\t0.5%\tPoison 0.4\n Rank E\tFire Damage\t0.5%\tBurn 0.4\n Rank E\tLightning Dmg Res\t0.5%\tShock Resistance 0.4\n Rank E\tPoison Damage Resistance\t0.5%\tPoison Resistance 0.4\n Rank E\tFire Dmg Res\t0.5%\tBurn Resistance 0.4\n Rank D\tAttack\t5\tAttack 1%\n Rank D\tDefense\t11\tDefense 1%\n Rank D\tHP\t55\tHP 1%\n Rank D\tDamage Taken\t0.3%\tDamage 0.5%\n Rank D\tLightning Damage\t0.8%\tShock 0.6\n Rank D\tPoison Damage\t0.8%\tPoison 0.6\n Rank D\tFire Damage\t0.8%\tBurn 0.6\n Rank D\tLightning Dmg Res\t0.8%\tShock Resistance 0.6\n Rank D\tPoison Damage Resistance\t0.8%\tPoison Resistance 0.6\n Rank D\tFire Dmg Res\t0.8%\tBurn Resistance 0.6\n Rank C\tAttack\t8\tAttack 1.6%\n Rank C\tDefense\t16\tDefense 1.6%\n Rank C\tHP\t83\tHP 1.6%\n Rank C\tDamage Taken\t0.5%\tDamage 0.8%\n Rank C\tLightning Damage\t1.3%\tShock 1\n Rank C\tPoison Damage\t1.3%\tPoison 1\n Rank C\tFire Damage\t1.3%\tBurn 1\n Rank C\tLightning Dmg Res\t1.3%\tShock Resistance 1\n Rank C\tPoison Damage Resistance\t1.3%\tPoison Resistance 1\n Rank C\tFire Dmg Res\t1.3%\tBurn Resistance 1\n Rank B\tAttack\t13\tAttack 2.6%\n Rank B\tDefense\t27\tDefense 2.6%\n Rank B\tHP\t138\tHP 2.6%\n Rank B\tDamage Taken\t0.8%\tDamage 1.3%\n Rank B\tLightning Damage\t2.2%\tShock 1.6\n Rank B\tPoison Damage\t2.2%\tPoison 1.6\n Rank B\tFire Damage\t2.2%\tBurn 1.6\n Rank B\tLightning Dmg Res\t2.2%\tShock Resistance 1.6\n Rank B\tPoison Damage Resistance\t2.2%\tPoison Resistance 1.6\n Rank B\tFire Dmg Res\t2.2%\tBurn Resistance 1.6\n Rank A\tAttack\t22\tAttack 3.6%\n Rank A\tDefense\t44\tDefense 3.6%\n Rank A\tHP\t222\tHP 3.6%\n Rank A\tDamage Taken\t1.2%\tDamage 1.8%\n Rank A\tLightning Damage\t3%\tShock 2.2\n Rank A\tPoison Damage\t3%\tPoison 2.2\n Rank A\tFire Damage\t3%\tBurn 2.2\n Rank A\tLightning Dmg Res\t3%\tShock Resistance 2.2\n Rank A\tPoison Damage Resistance\t3%\tPoison Resistance 2.2\n Rank A\tFire Dmg Res\t3%\tBurn Resistance 2.2\n Rank S\tAttack\t33\tAttack 4.6%\n Rank S\tDefense\t66\tDefense 4.6%\n Rank S\tHP\t333\tHP 4.6%\n Rank S\tDamage Taken\t1.5%\tDamage 2.3%\n Rank S\tLightning Damage\t3.8%\tShock 2.9\n Rank S\tPoison Damage\t3.8%\tPoison 2.9\n Rank S\tFire Damage\t3.8%\tBurn 2.9\n Rank S\tLightning Dmg Res\t3.8%\tShock Resistance 2.9\n Rank S\tPoison Damage Resistance\t3.8%\tPoison Resistance 2.9\n Rank S\tFire Dmg Res\t3.8%\tBurn Resistance 2.9\n Rank SS\tAttack\t50\tAttack 5.6%\n Rank SS\tDefense\t100\tDefense 5.6%\n Rank SS\tHP\t500\tHP 5.6%\n Rank SS\tDamage Taken\t1.8%\tDamage 2.8%\n Rank SS\tLightning Damage\t4.7%\tShock 3.5\n Rank SS\tPoison Damage\t4.7%\tPoison 3.5\n Rank SS\tFire Damage\t4.7%\tBurn 3.5\n Rank SS\tLightning Dmg Res\t4.7%\tShock Resistance 3.5\n Rank SS\tPoison Damage Resistance\t4.7%\tPoison Resistance 3.5\n Rank SS\tFire Dmg Res\t4.7%\tBurn Resistance 3.5\n Rank SSS\tAttack\t66\tAttack 6.6%\n Rank SSS\tDefense\t133\tDefense 6.6%\n Rank SSS\tHP\t666\tHP 6.6%\n Rank SSS\tDamage Taken\t2.2%\tDamage 3.3%\n Rank SSS\tLightning Damage\t5.5%\tShock 4.1\n Rank SSS\tPoison Damage\t5.5%\tPoison 4.1\n Rank SSS\tFire Damage\t5.5%\tBurn 4.1\n Rank SSS\tLightning Dmg Res\t5.5%\tShock Resistance 4.1\n Rank SSS\tPoison Damage Resistance\t5.5%\tPoison Resistance 4.1\n Rank SSS\tFire Dmg Res\t5.5%\tBurn Resistance 4.1\n Rank SR\tAttack\t66\tAttack 8.3%\n Rank SR\tDefense\t133\tDefense 8.3%\n Rank SR\tHP\t666\tHP 8.3%\n Rank SR\tDamage Taken\t2.7%\tDamage 4.1%\n Rank SR\tLightning Damage\t6.9%\tShock 5.2\n Rank SR\tPoison Damage\t6.9%\tPoison 5.2\n Rank SR\tFire Damage\t6.9%\tBurn 5.2\n Rank SR\tLightning Dmg Res\t6.9%\tShock Resistance 5.2\n Rank SR\tPoison Damage Resistance\t6.9%\tPoison Resistance 5.2\n Rank SR\tFire Dmg Res\t6.9%\tBurn Resistance 5.2\n Rank UR\tAttack\t88\tAttack 10%\n Rank UR\tDefense\t177\tDefense 10%\n Rank UR\tHP\t888\tHP 10%\n Rank UR\tDamage Taken\t3.3%\tDamage 5%\n Rank UR\tLightning Damage\t8.3%\tShock 6.2\n Rank UR\tPoison Damage\t8.3%\tPoison 6.2\n Rank UR\tFire Damage\t8.3%\tBurn 6.2\n Rank UR\tLightning Dmg Res\t8.3%\tShock Resistance 6.2\n Rank UR\tPoison Damage Resistance\t8.3%\tPoison Resistance 6.2\n Rank UR\tFire Dmg Res\t8.3%\tBurn Resistance 6.2\n Rank LR\tAttack\t111\tAttack 12%\n Rank LR\tDefense\t222\tDefense 12%\n Rank LR\tHP\t1,111\tHP 12%\n Rank LR\tDamage Taken\t4%\tDamage 6%\n Rank LR\tLightning Damage\t10%\tShock 7.5\n Rank LR\tPoison Damage\t10%\tPoison 7.5\n Rank LR\tFire Damage\t10%\tBurn 7.5\n Rank LR\tLightning Dmg Res\t10%\tShock Resistance 7.5\n Rank LR\tPoison Damage Resistance\t10%\tPoison Resistance 7.5\n Rank LR\tFire Dmg Res\t10%\tBurn Resistance 7.5\n· Synthesis\n\nFusion_table: combine MaterialRatingCnt items of the given tier and level; success gives the next tier, and NextLevelRate is the chance of a higher level.\n\nContent\tMaterial tier\tMaterial level\tMaterials\tSuccess rate\tNext level chance (success / fail)\tEXP gain\nGear\tTier 1\t1\t6\t100%\t5% / 5%\t\nEquipment Synthesis EXP\n×2\n\nGear\tTier 2\t1\t6\t90%\t5% / 5%\t\nEquipment Synthesis EXP\n×6\n\nGear\tTier 3\t1\t6\t70%\t5% / 5%\t\nEquipment Synthesis EXP\n×18\n\nGear\tTier 4\t1\t6\t50%\t5% / 5%\t\nEquipment Synthesis EXP\n×54\n\nGear\tTier 5\t1\t6\t30%\t5% / 5%\t\nEquipment Synthesis EXP\n×162\n\nGear\tTier 1\t10\t6\t100%\t5% / 5%\t\nEquipment Synthesis EXP\n×2\n\nGear\tTier 2\t10\t6\t90%\t5% / 5%\t\nEquipment Synthesis EXP\n×6\n\nGear\tTier 3\t10\t6\t70%\t5% / 5%\t\nEquipment Synthesis EXP\n×18\n\nGear\tTier 4\t10\t6\t50%\t5% / 5%\t\nEquipment Synthesis EXP\n×54\n\nGear\tTier 5\t10\t6\t30%\t5% / 5%\t\nEquipment Synthesis EXP\n×162\n\nGear\tTier 1\t20\t6\t100%\t5% / 5%\t\nEquipment Synthesis EXP\n×2\n\nGear\tTier 2\t20\t6\t90%\t5% / 5%\t\nEquipment Synthesis EXP\n×6\n\nGear\tTier 3\t20\t6\t70%\t5% / 5%\t\nEquipment Synthesis EXP\n×18\n\nGear\tTier 4\t20\t6\t50%\t5% / 5%\t\nEquipment Synthesis EXP\n×54\n\nGear\tTier 5\t20\t6\t30%\t5% / 5%\t\nEquipment Synthesis EXP\n×162\n\nGear\tTier 1\t30\t6\t100%\t5% / 5%\t\nEquipment Synthesis EXP\n×2\n\nGear\tTier 2\t30\t6\t90%\t5% / 5%\t\nEquipment Synthesis EXP\n×6\n\nGear\tTier 3\t30\t6\t70%\t5% / 5%\t\nEquipment Synthesis EXP\n×18\n\nGear\tTier 4\t30\t6\t50%\t5% / 5%\t\nEquipment Synthesis EXP\n×54\n\nGear\tTier 5\t30\t6\t30%\t5% / 5%\t\nEquipment Synthesis EXP\n×162\n\nGear\tTier 1\t40\t6\t100%\t5% / 5%\t\nEquipment Synthesis EXP\n×2\n\nGear\tTier 2\t40\t6\t90%\t5% / 5%\t\nEquipment Synthesis EXP\n×6\n\nGear\tTier 3\t40\t6\t70%\t5% / 5%\t\nEquipment Synthesis EXP\n×18\n\nGear\tTier 4\t40\t6\t50%\t5% / 5%\t\nEquipment Synthesis EXP\n×54\n\nGear\tTier 5\t40\t6\t30%\t5% / 5%\t\nEquipment Synthesis EXP\n×162\n\nGear\tTier 1\t50\t6\t100%\t5% / 5%\t\nEquipment Synthesis EXP\n×2\n\nGear\tTier 2\t50\t6\t90%\t5% / 5%\t\nEquipment Synthesis EXP\n×6\n\nGear\tTier 3\t50\t6\t70%\t5% / 5%\t\nEquipment Synthesis EXP\n×18\n\nGear\tTier 4\t50\t6\t50%\t5% / 5%\t\nEquipment Synthesis EXP\n×54\n\nGear\tTier 5\t50\t6\t30%\t5% / 5%\t\nEquipment Synthesis EXP\n×162\n\nGear\tTier 1\t60\t6\t100%\t5% / 5%\t\nEquipment Synthesis EXP\n×2\n\nGear\tTier 2\t60\t6\t90%\t5% / 5%\t\nEquipment Synthesis EXP\n×6\n\nGear\tTier 3\t60\t6\t70%\t5% / 5%\t\nEquipment Synthesis EXP\n×18\n\nGear\tTier 4\t60\t6\t50%\t5% / 5%\t\nEquipment Synthesis EXP\n×54\n\nGear\tTier 5\t60\t6\t30%\t5% / 5%\t\nEquipment Synthesis EXP\n×162\n\nGear\tTier 1\t70\t6\t100%\t5% / 5%\t\nEquipment Synthesis EXP\n×2\n\nGear\tTier 2\t70\t6\t90%\t5% / 5%\t\nEquipment Synthesis EXP\n×6\n\nGear\tTier 3\t70\t6\t70%\t5% / 5%\t\nEquipment Synthesis EXP\n×18\n\nGear\tTier 4\t70\t6\t50%\t5% / 5%\t\nEquipment Synthesis EXP\n×54\n\nGear\tTier 5\t70\t6\t30%\t5% / 5%\t\nEquipment Synthesis EXP\n×162\n\nGear\tTier 1\t80\t6\t100%\t5% / 5%\t\nEquipment Synthesis EXP\n×2\n\nGear\tTier 2\t80\t6\t90%\t5% / 5%\t\nEquipment Synthesis EXP\n×6\n\nGear\tTier 3\t80\t6\t70%\t5% / 5%\t\nEquipment Synthesis EXP\n×18\n\nGear\tTier 4\t80\t6\t50%\t5% / 5%\t\nEquipment Synthesis EXP\n×54\n\nGear\tTier 5\t80\t6\t30%\t5% / 5%\t\nEquipment Synthesis EXP\n×162\n\nGear\tTier 1\t90\t6\t100%\t5% / 5%\t\nEquipment Synthesis EXP\n×2\n\nGear\tTier 2\t90\t6\t90%\t5% / 5%\t\nEquipment Synthesis EXP\n×6\n\nGear\tTier 3\t90\t6\t70%\t5% / 5%\t\nEquipment Synthesis EXP\n×18\n\nGear\tTier 4\t90\t6\t50%\t5% / 5%\t\nEquipment Synthesis EXP\n×54\n\nGear\tTier 5\t90\t6\t30%\t5% / 5%\t\nEquipment Synthesis EXP\n×162\n\nGear\tTier 1\t100\t6\t100%\t0% / 0%\t\nEquipment Synthesis EXP\n×2\n\nGear\tTier 2\t100\t6\t90%\t0% / 0%\t\nEquipment Synthesis EXP\n×6\n\nGear\tTier 3\t100\t6\t70%\t0% / 0%\t\nEquipment Synthesis EXP\n×18\n\nGear\tTier 4\t100\t6\t50%\t0% / 0%\t\nEquipment Synthesis EXP\n×54\n\nGear\tTier 5\t100\t6\t30%\t0% / 0%\t\nEquipment Synthesis EXP\n×162\n\nAccessory\tTier 1\t10\t3\t100%\t5% / 5%\t\nAccessory Synthesis EXP\n×30\n\nAccessory\tTier 2\t10\t3\t90%\t5% / 5%\t\nAccessory Synthesis EXP\n×90\n\nAccessory\tTier 3\t10\t3\t70%\t5% / 5%\t\nAccessory Synthesis EXP\n×270\n\nAccessory\tTier 4\t10\t3\t50%\t5% / 5%\t\nAccessory Synthesis EXP\n×810\n\nAccessory\tTier 5\t10\t3\t30%\t5% / 5%\t\nAccessory Synthesis EXP\n×2,430\n\nAccessory\tTier 1\t20\t3\t100%\t5% / 5%\t\nAccessory Synthesis EXP\n×30\n\nAccessory\tTier 2\t20\t3\t90%\t5% / 5%\t\nAccessory Synthesis EXP\n×90\n\nAccessory\tTier 3\t20\t3\t70%\t5% / 5%\t\nAccessory Synthesis EXP\n×270\n\nAccessory\tTier 4\t20\t3\t50%\t5% / 5%\t\nAccessory Synthesis EXP\n×810\n\nAccessory\tTier 5\t20\t3\t30%\t5% / 5%\t\nAccessory Synthesis EXP\n×2,430\n\nAccessory\tTier 1\t30\t3\t100%\t5% / 5%\t\nAccessory Synthesis EXP\n×30\n\nAccessory\tTier 2\t30\t3\t90%\t5% / 5%\t\nAccessory Synthesis EXP\n×90\n\nAccessory\tTier 3\t30\t3\t70%\t5% / 5%\t\nAccessory Synthesis EXP\n×270\n\nAccessory\tTier 4\t30\t3\t50%\t5% / 5%\t\nAccessory Synthesis EXP\n×810\n\nAccessory\tTier 5\t30\t3\t30%\t5% / 5%\t\nAccessory Synthesis EXP\n×2,430\n\nAccessory\tTier 1\t40\t3\t100%\t5% / 5%\t\nAccessory Synthesis EXP\n×30\n\nAccessory\tTier 2\t40\t3\t90%\t5% / 5%\t\nAccessory Synthesis EXP\n×90\n\nAccessory\tTier 3\t40\t3\t70%\t5% / 5%\t\nAccessory Synthesis EXP\n×270\n\nAccessory\tTier 4\t40\t3\t50%\t5% / 5%\t\nAccessory Synthesis EXP\n×810\n\nAccessory\tTier 5\t40\t3\t30%\t5% / 5%\t\nAccessory Synthesis EXP\n×2,430\n\nAccessory\tTier 1\t50\t3\t100%\t5% / 5%\t\nAccessory Synthesis EXP\n×30\n\nAccessory\tTier 2\t50\t3\t90%\t5% / 5%\t\nAccessory Synthesis EXP\n×90\n\nAccessory\tTier 3\t50\t3\t70%\t5% / 5%\t\nAccessory Synthesis EXP\n×270\n\nAccessory\tTier 4\t50\t3\t50%\t5% / 5%\t\nAccessory Synthesis EXP\n×810\n\nAccessory\tTier 5\t50\t3\t30%\t5% / 5%\t\nAccessory Synthesis EXP\n×2,430\n\nAccessory\tTier 1\t60\t3\t100%\t5% / 5%\t\nAccessory Synthesis EXP\n×30\n\nAccessory\tTier 2\t60\t3\t90%\t5% / 5%\t\nAccessory Synthesis EXP\n×90\n\nAccessory\tTier 3\t60\t3\t70%\t5% / 5%\t\nAccessory Synthesis EXP\n×270\n\nAccessory\tTier 4\t60\t3\t50%\t5% / 5%\t\nAccessory Synthesis EXP\n×810\n\nAccessory\tTier 5\t60\t3\t30%\t5% / 5%\t\nAccessory Synthesis EXP\n×2,430\n\nAccessory\tTier 1\t70\t3\t100%\t5% / 5%\t\nAccessory Synthesis EXP\n×30\n\nAccessory\tTier 2\t70\t3\t90%\t5% / 5%\t\nAccessory Synthesis EXP\n×90\n\nAccessory\tTier 3\t70\t3\t70%\t5% / 5%\t\nAccessory Synthesis EXP\n×270\n\nAccessory\tTier 4\t70\t3\t50%\t5% / 5%\t\nAccessory Synthesis EXP\n×810\n\nAccessory\tTier 5\t70\t3\t30%\t5% / 5%\t\nAccessory Synthesis EXP\n×2,430\n\nAccessory\tTier 1\t80\t3\t100%\t5% / 5%\t\nAccessory Synthesis EXP\n×30\n\nAccessory\tTier 2\t80\t3\t90%\t5% / 5%\t\nAccessory Synthesis EXP\n×90\n\nAccessory\tTier 3\t80\t3\t70%\t5% / 5%\t\nAccessory Synthesis EXP\n×270\n\nAccessory\tTier 4\t80\t3\t50%\t5% / 5%\t\nAccessory Synthesis EXP\n×810\n\nAccessory\tTier 5\t80\t3\t30%\t5% / 5%\t\nAccessory Synthesis EXP\n×2,430\n\nAccessory\tTier 1\t90\t3\t100%\t5% / 5%\t\nAccessory Synthesis EXP\n×30\n\nAccessory\tTier 2\t90\t3\t90%\t5% / 5%\t\nAccessory Synthesis EXP\n×90\n\nAccessory\tTier 3\t90\t3\t70%\t5% / 5%\t\nAccessory Synthesis EXP\n×270\n\nAccessory\tTier 4\t90\t3\t50%\t5% / 5%\t\nAccessory Synthesis EXP\n×810\n\nAccessory\tTier 5\t90\t3\t30%\t5% / 5%\t\nAccessory Synthesis EXP\n×2,430\n\nAccessory\tTier 1\t100\t3\t100%\t0% / 0%\t\nAccessory Synthesis EXP\n×30\n\nAccessory\tTier 2\t100\t3\t90%\t0% / 0%\t\nAccessory Synthesis EXP\n×90\n\nAccessory\tTier 3\t100\t3\t70%\t0% / 0%\t\nAccessory Synthesis EXP\n×270\n\nAccessory\tTier 4\t100\t3\t50%\t0% / 0%\t\nAccessory Synthesis EXP\n×810\n\nAccessory\tTier 5\t100\t3\t30%\t0% / 0%\t\nAccessory Synthesis EXP\n×2,430\n\nJewel\tTier 1\t1\t6\t100%\t0% / 0%\t\nJewel Synthesis EXP\n×30\n\nJewel\tTier 2\t1\t6\t90%\t0% / 0%\t\nJewel Synthesis EXP\n×90\n\nJewel\tTier 3\t1\t6\t70%\t0% / 0%\t\nJewel Synthesis EXP\n×270\n\nJewel\tTier 4\t1\t6\t50%\t0% / 0%\t\nJewel Synthesis EXP\n×810\n\nJewel\tTier 5\t1\t6\t30%\t0% / 0%\t\nJewel Synthesis EXP\n×2,430\n\nPet\tTier 1\t1\t4\t100%\t0% / 0%\t\nPet Synthesis EXP\n×227\n\nPet\tTier 2\t1\t4\t90%\t0% / 0%\t\nPet Synthesis EXP\n×908\n\nPet\tTier 3\t1\t4\t70%\t0% / 0%\t\nPet Synthesis EXP\n×3,632\n\nPet\tTier 4\t1\t4\t50%\t0% / 0%\t\nPet Synthesis EXP\n×14,528\n\nPet\tTier 5\t1\t4\t30%\t0% / 0%\t\nPet Synthesis EXP\n×58,112\n\nWing\tTier 1\t1\t4\t100%\t0% / 0%\t\nWings Synthesis EXP\n×178\n\nWing\tTier 2\t1\t4\t90%\t0% / 0%\t\nWings Synthesis EXP\n×712\n\nWing\tTier 3\t1\t4\t70%\t0% / 0%\t\nWings Synthesis EXP\n×2,848\n\nWing\tTier 4\t1\t4\t50%\t0% / 0%\t\nWings Synthesis EXP\n×11,392\n\nWing\tTier 5\t1\t4\t30%\t0% / 0%\t\nWings Synthesis EXP\n×45,568\n\nRune\tTier 1\t1\t4\t100%\t0% / 0%\t\nRune Synthesis EXP\n×100\n\nRune\tTier 2\t1\t4\t90%\t0% / 0%\t\nRune Synthesis EXP\n×400\n\nRune\tTier 3\t1\t4\t70%\t0% / 0%\t\nRune Synthesis EXP\n×1,600\n\nRune\tTier 4\t1\t4\t50%\t0% / 0%\t\nRune Synthesis EXP\n×6,400\n\nRune\tTier 5\t1\t4\t30%\t0% / 0%\t\nRune Synthesis EXP\n×25,600\nSynthesis levels\nEquip Level\n\nLevelDown_table: chance to reduce an equipment level requirement, by tier and current reduction.\n\nTier\tCurrent reduction\tCost\tSuccess rate\tResult on success\nTier 1\t0–1\t\nWhetstone\n×1\n\t90%\t−1 (85%), −2 (10%), −3 (5%)\nTier 1\t2–2\t\nWhetstone\n×1\n\t85%\t−1 (85%), −2 (10%), −3 (5%)\nTier 1\t3–3\t\nWhetstone\n×1\n\t80%\t−1 (85%), −2 (10%), −3 (5%)\nTier 1\t4–4\t\nWhetstone\n×1\n\t75%\t−1 (85%), −2 (10%), −3 (5%)\nTier 1\t5–5\t\nWhetstone\n×1\n\t70%\t−1 (85%), −2 (10%), −3 (5%)\nTier 1\t6–6\t\nWhetstone\n×1\n\t65%\t−1 (85%), −2 (10%), −3 (5%)\nTier 1\t7–7\t\nWhetstone\n×1\n\t60%\t−1 (85%), −2 (10%), −3 (5%)\nTier 1\t8–8\t\nWhetstone\n×1\n\t55%\t−1 (85%), −2 (10%), −3 (5%)\nTier 1\t9–9\t\nWhetstone\n×1\n\t50%\t−1 (85%), −2 (10%), −3 (5%)\nTier 1\t10–∞\t\nWhetstone\n×1\n\t45%\t−1 (85%), −2 (10%), −3 (5%)\nTier 2\t0–1\t\nWhetstone\n×1\n\t90%\t−1 (85%), −2 (10%), −3 (5%)\nTier 2\t2–2\t\nWhetstone\n×1\n\t85%\t−1 (85%), −2 (10%), −3 (5%)\nTier 2\t3–3\t\nWhetstone\n×1\n\t80%\t−1 (85%), −2 (10%), −3 (5%)\nTier 2\t4–4\t\nWhetstone\n×1\n\t75%\t−1 (85%), −2 (10%), −3 (5%)\nTier 2\t5–5\t\nWhetstone\n×1\n\t70%\t−1 (85%), −2 (10%), −3 (5%)\nTier 2\t6–6\t\nWhetstone\n×1\n\t65%\t−1 (85%), −2 (10%), −3 (5%)\nTier 2\t7–7\t\nWhetstone\n×1\n\t60%\t−1 (85%), −2 (10%), −3 (5%)\nTier 2\t8–8\t\nWhetstone\n×1\n\t55%\t−1 (85%), −2 (10%), −3 (5%)\nTier 2\t9–9\t\nWhetstone\n×1\n\t50%\t−1 (85%), −2 (10%), −3 (5%)\nTier 2\t10–∞\t\nWhetstone\n×1\n\t45%\t−1 (85%), −2 (10%), −3 (5%)\nTier 3\t0–1\t\nWhetstone\n×1\n\t80%\t−1 (85%), −2 (10%), −3 (5%)\nTier 3\t2–2\t\nWhetstone\n×1\n\t75%\t−1 (85%), −2 (10%), −3 (5%)\nTier 3\t3–3\t\nWhetstone\n×1\n\t70%\t−1 (85%), −2 (10%), −3 (5%)\nTier 3\t4–4\t\nWhetstone\n×1\n\t65%\t−1 (85%), −2 (10%), −3 (5%)\nTier 3\t5–5\t\nWhetstone\n×1\n\t60%\t−1 (85%), −2 (10%), −3 (5%)\nTier 3\t6–6\t\nWhetstone\n×1\n\t55%\t−1 (85%), −2 (10%), −3 (5%)\nTier 3\t7–7\t\nWhetstone\n×1\n\t50%\t−1 (85%), −2 (10%), −3 (5%)\nTier 3\t8–8\t\nWhetstone\n×1\n\t45%\t−1 (85%), −2 (10%), −3 (5%)\nTier 3\t9–9\t\nWhetstone\n×1\n\t40%\t−1 (85%), −2 (10%), −3 (5%)\nTier 3\t10–∞\t\nWhetstone\n×1\n\t35%\t−1 (85%), −2 (10%), −3 (5%)\nTier 4\t0–1\t\nWhetstone\n×1\n\t80%\t−1 (85%), −2 (10%), −3 (5%)\nTier 4\t2–2\t\nWhetstone\n×1\n\t75%\t−1 (85%), −2 (10%), −3 (5%)\nTier 4\t3–3\t\nWhetstone\n×1\n\t70%\t−1 (85%), −2 (10%), −3 (5%)\nTier 4\t4–4\t\nWhetstone\n×1\n\t65%\t−1 (85%), −2 (10%), −3 (5%)\nTier 4\t5–5\t\nWhetstone\n×1\n\t60%\t−1 (85%), −2 (10%), −3 (5%)\nTier 4\t6–6\t\nWhetstone\n×1\n\t55%\t−1 (85%), −2 (10%), −3 (5%)\nTier 4\t7–7\t\nWhetstone\n×1\n\t50%\t−1 (85%), −2 (10%), −3 (5%)\nTier 4\t8–8\t\nWhetstone\n×1\n\t45%\t−1 (85%), −2 (10%), −3 (5%)\nTier 4\t9–9\t\nWhetstone\n×1\n\t40%\t−1 (85%), −2 (10%), −3 (5%)\nTier 4\t10–∞\t\nWhetstone\n×1\n\t35%\t−1 (85%), −2 (10%), −3 (5%)\nTier 5\t0–1\t\nWhetstone\n×1\n\t75%\t−1 (85%), −2 (10%), −3 (5%)\nTier 5\t2–2\t\nWhetstone\n×1\n\t70%\t−1 (85%), −2 (10%), −3 (5%)\nTier 5\t3–3\t\nWhetstone\n×1\n\t65%\t−1 (85%), −2 (10%), −3 (5%)\nTier 5\t4–4\t\nWhetstone\n×1\n\t60%\t−1 (85%), −2 (10%), −3 (5%)\nTier 5\t5–5\t\nWhetstone\n×1\n\t55%\t−1 (85%), −2 (10%), −3 (5%)\nTier 5\t6–6\t\nWhetstone\n×1\n\t50%\t−1 (85%), −2 (10%), −3 (5%)\nTier 5\t7–7\t\nWhetstone\n×1\n\t45%\t−1 (85%), −2 (10%), −3 (5%)\nTier 5\t8–8\t\nWhetstone\n×1\n\t40%\t−1 (85%), −2 (10%), −3 (5%)\nTier 5\t9–9\t\nWhetstone\n×1\n\t35%\t−1 (85%), −2 (10%), −3 (5%)\nTier 5\t10–∞\t\nWhetstone\n×1\n\t30%\t−1 (85%), −2 (10%), −3 (5%)\nTier 6\t0–1\t\nWhetstone\n×1\n\t70%\t−1 (85%), −2 (10%), −3 (5%)\nTier 6\t2–2\t\nWhetstone\n×1\n\t65%\t−1 (85%), −2 (10%), −3 (5%)\nTier 6\t3–3\t\nWhetstone\n×1\n\t60%\t−1 (85%), −2 (10%), −3 (5%)\nTier 6\t4–4\t\nWhetstone\n×1\n\t55%\t−1 (85%), −2 (10%), −3 (5%)\nTier 6\t5–5\t\nWhetstone\n×1\n\t50%\t−1 (85%), −2 (10%), −3 (5%)\nTier 6\t6–6\t\nWhetstone\n×1\n\t45%\t−1 (85%), −2 (10%), −3 (5%)\nTier 6\t7–7\t\nWhetstone\n×1\n\t40%\t−1 (85%), −2 (10%), −3 (5%)\nTier 6\t8–8\t\nWhetstone\n×1\n\t35%\t−1 (85%), −2 (10%), −3 (5%)\nTier 6\t9–9\t\nWhetstone\n×1\n\t30%\t−1 (85%), −2 (10%), −3 (5%)\nTier 6\t10–∞\t\nWhetstone\n×1\n\t20%\t−1 (85%), −2 (10%), −3 (5%)\n↑\nGenesis Archive / Independent game wiki\nPrivacy Policy\nFan-Made Legal Notice",
+  "links": [
+    {
+      "text": "Skip to content",
+      "url": "https://warofgenesis.wiki/growth#content"
+    },
+    {
+      "text": "GENESIS\nARCHIVE",
+      "url": "https://warofgenesis.wiki/"
+    },
+    {
+      "text": "Overview",
+      "url": "https://warofgenesis.wiki/"
+    },
+    {
+      "text": "Stages",
+      "url": "https://warofgenesis.wiki/stages"
+    },
+    {
+      "text": "Monsters",
+      "url": "https://warofgenesis.wiki/monsters"
+    },
+    {
+      "text": "Gold Bar",
+      "url": "https://warofgenesis.wiki/gold"
+    },
+    {
+      "text": "Characters",
+      "url": "https://warofgenesis.wiki/heroes"
+    },
+    {
+      "text": "Skills",
+      "url": "https://warofgenesis.wiki/skills"
+    },
+    {
+      "text": "Equipment",
+      "url": "https://warofgenesis.wiki/equipment"
+    },
+    {
+      "text": "Items",
+      "url": "https://warofgenesis.wiki/items"
+    },
+    {
+      "text": "Wings, Runes & Pets",
+      "url": "https://warofgenesis.wiki/companions"
+    },
+    {
+      "text": "Machina",
+      "url": "https://warofgenesis.wiki/machina"
+    },
+    {
+      "text": "Passive Skills",
+      "url": "https://warofgenesis.wiki/passives"
+    },
+    {
+      "text": "Relics",
+      "url": "https://warofgenesis.wiki/relics"
+    },
+    {
+      "text": "Altar",
+      "url": "https://warofgenesis.wiki/altar"
+    },
+    {
+      "text": "Compare",
+      "url": "https://warofgenesis.wiki/compare"
+    },
+    {
+      "text": "Growth Systems",
+      "url": "https://warofgenesis.wiki/growth"
+    },
+    {
+      "text": "Battlefield",
+      "url": "https://warofgenesis.wiki/battlefield"
+    },
+    {
+      "text": "Competition",
+      "url": "https://warofgenesis.wiki/competition"
+    },
+    {
+      "text": "Quests",
+      "url": "https://warofgenesis.wiki/quests"
+    },
+    {
+      "text": "Content Unlocks",
+      "url": "https://warofgenesis.wiki/unlocks"
+    },
+    {
+      "text": "Farming simulator",
+      "url": "https://warofgenesis.wiki/farming"
+    },
+    {
+      "text": "Leveling Calculator",
+      "url": "https://warofgenesis.wiki/leveling"
+    },
+    {
+      "text": "Combat Calculator",
+      "url": "https://warofgenesis.wiki/calculator"
+    },
+    {
+      "text": "Stats & Formulas",
+      "url": "https://warofgenesis.wiki/stats"
+    },
+    {
+      "text": "Game settings",
+      "url": "https://warofgenesis.wiki/systems"
+    },
+    {
+      "text": "Data & sources",
+      "url": "https://warofgenesis.wiki/sources"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://warofgenesis.wiki/privacy"
+    },
+    {
+      "text": "Fan-Made Legal Notice",
+      "url": "https://warofgenesis.wiki/legal"
+    },
+    {
+      "text": "Data & sources",
+      "url": "https://warofgenesis.wiki/sources"
+    },
+    {
+      "text": "Support",
+      "url": "https://buymeacoffee.com/arianshirone"
+    },
+    {
+      "text": "Iyolin Pendragon",
+      "url": "https://warofgenesis.wiki/heroes/100"
+    },
+    {
+      "text": "Riona Willard",
+      "url": "https://warofgenesis.wiki/heroes/200"
+    },
+    {
+      "text": "Haya Belle",
+      "url": "https://warofgenesis.wiki/heroes/300"
+    },
+    {
+      "text": "Moon Cleave",
+      "url": "https://warofgenesis.wiki/skills/8101010"
+    },
+    {
+      "text": "High-Speed Flurry",
+      "url": "https://warofgenesis.wiki/skills/8108010"
+    },
+    {
+      "text": "First Strike",
+      "url": "https://warofgenesis.wiki/skills/8201010"
+    },
+    {
+      "text": "Arrow Rain",
+      "url": "https://warofgenesis.wiki/skills/8208010"
+    },
+    {
+      "text": "Dark Blast",
+      "url": "https://warofgenesis.wiki/skills/8301010"
+    },
+    {
+      "text": "Holy Blow",
+      "url": "https://warofgenesis.wiki/skills/8308010"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Formation Flame",
+      "url": "https://warofgenesis.wiki/skills/8102010"
+    },
+    {
+      "text": "Fighting Spirit",
+      "url": "https://warofgenesis.wiki/skills/8115010"
+    },
+    {
+      "text": "Shield of Conviction",
+      "url": "https://warofgenesis.wiki/skills/8124010"
+    },
+    {
+      "text": "Iron Wall Defense",
+      "url": "https://warofgenesis.wiki/skills/8129010"
+    },
+    {
+      "text": "Rapid Fire",
+      "url": "https://warofgenesis.wiki/skills/8202010"
+    },
+    {
+      "text": "Bleed",
+      "url": "https://warofgenesis.wiki/skills/8215010"
+    },
+    {
+      "text": "Ghost Steps",
+      "url": "https://warofgenesis.wiki/skills/8226010"
+    },
+    {
+      "text": "Quick Step",
+      "url": "https://warofgenesis.wiki/skills/8229010"
+    },
+    {
+      "text": "Flame Storm",
+      "url": "https://warofgenesis.wiki/skills/8302010"
+    },
+    {
+      "text": "Prayer",
+      "url": "https://warofgenesis.wiki/skills/8315010"
+    },
+    {
+      "text": "Chain Casting",
+      "url": "https://warofgenesis.wiki/skills/8324010"
+    },
+    {
+      "text": "Master's Staff",
+      "url": "https://warofgenesis.wiki/skills/8329010"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Joan Cartwright",
+      "url": "https://warofgenesis.wiki/heroes/101"
+    },
+    {
+      "text": "Cecily Narejuno",
+      "url": "https://warofgenesis.wiki/heroes/201"
+    },
+    {
+      "text": "Ennil Dia",
+      "url": "https://warofgenesis.wiki/heroes/301"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Barricade",
+      "url": "https://warofgenesis.wiki/skills/8109010"
+    },
+    {
+      "text": "Endurance",
+      "url": "https://warofgenesis.wiki/skills/8123010"
+    },
+    {
+      "text": "Tough Body",
+      "url": "https://warofgenesis.wiki/skills/8130010"
+    },
+    {
+      "text": "Stone Arrow",
+      "url": "https://warofgenesis.wiki/skills/8209010"
+    },
+    {
+      "text": "Quick Reload",
+      "url": "https://warofgenesis.wiki/skills/8225010"
+    },
+    {
+      "text": "Hawk Eye",
+      "url": "https://warofgenesis.wiki/skills/8230010"
+    },
+    {
+      "text": "Fireball",
+      "url": "https://warofgenesis.wiki/skills/8309010"
+    },
+    {
+      "text": "Mana Pierce",
+      "url": "https://warofgenesis.wiki/skills/8323010"
+    },
+    {
+      "text": "Battle Experience",
+      "url": "https://warofgenesis.wiki/skills/8330010"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Kashutar Gunter",
+      "url": "https://warofgenesis.wiki/heroes/102"
+    },
+    {
+      "text": "Erica Myers",
+      "url": "https://warofgenesis.wiki/heroes/202"
+    },
+    {
+      "text": "Kaja Amigo",
+      "url": "https://warofgenesis.wiki/heroes/302"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Divine Spear",
+      "url": "https://warofgenesis.wiki/skills/8103010"
+    },
+    {
+      "text": "Vitality",
+      "url": "https://warofgenesis.wiki/skills/8117010"
+    },
+    {
+      "text": "Fortitude",
+      "url": "https://warofgenesis.wiki/skills/8122010"
+    },
+    {
+      "text": "Watcher",
+      "url": "https://warofgenesis.wiki/skills/8203010"
+    },
+    {
+      "text": "Counterattack",
+      "url": "https://warofgenesis.wiki/skills/8216010"
+    },
+    {
+      "text": "Bloody Battle",
+      "url": "https://warofgenesis.wiki/skills/8228010"
+    },
+    {
+      "text": "Arcane Burst",
+      "url": "https://warofgenesis.wiki/skills/8303010"
+    },
+    {
+      "text": "Brand",
+      "url": "https://warofgenesis.wiki/skills/8316010"
+    },
+    {
+      "text": "Barrier Break",
+      "url": "https://warofgenesis.wiki/skills/8325010"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Elizabeth Pendragon",
+      "url": "https://warofgenesis.wiki/heroes/103"
+    },
+    {
+      "text": "Ariana Weaver",
+      "url": "https://warofgenesis.wiki/heroes/203"
+    },
+    {
+      "text": "Dalia Ygritte",
+      "url": "https://warofgenesis.wiki/heroes/303"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Moon Slash",
+      "url": "https://warofgenesis.wiki/skills/8104010"
+    },
+    {
+      "text": "Godslayer Spear",
+      "url": "https://warofgenesis.wiki/skills/8110010"
+    },
+    {
+      "text": "Perfect Defense",
+      "url": "https://warofgenesis.wiki/skills/8125010"
+    },
+    {
+      "text": "Deflect",
+      "url": "https://warofgenesis.wiki/skills/8131010"
+    },
+    {
+      "text": "Double Down",
+      "url": "https://warofgenesis.wiki/skills/8204010"
+    },
+    {
+      "text": "Poisoned",
+      "url": "https://warofgenesis.wiki/skills/8210010"
+    },
+    {
+      "text": "Lethal Poison",
+      "url": "https://warofgenesis.wiki/skills/8222010"
+    },
+    {
+      "text": "Deadly Poison",
+      "url": "https://warofgenesis.wiki/skills/8231010"
+    },
+    {
+      "text": "Titan Seal",
+      "url": "https://warofgenesis.wiki/skills/8304010"
+    },
+    {
+      "text": "Lava Swamp",
+      "url": "https://warofgenesis.wiki/skills/8310010"
+    },
+    {
+      "text": "Inferno",
+      "url": "https://warofgenesis.wiki/skills/8322010"
+    },
+    {
+      "text": "Sharp Strike",
+      "url": "https://warofgenesis.wiki/skills/8331010"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Karls Brandt",
+      "url": "https://warofgenesis.wiki/heroes/104"
+    },
+    {
+      "text": "Chris",
+      "url": "https://warofgenesis.wiki/heroes/204"
+    },
+    {
+      "text": "Karim Nidia",
+      "url": "https://warofgenesis.wiki/heroes/304"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Titan's Fist",
+      "url": "https://warofgenesis.wiki/skills/8111010"
+    },
+    {
+      "text": "Thunderbolt",
+      "url": "https://warofgenesis.wiki/skills/8116010"
+    },
+    {
+      "text": "Lethal Lightning",
+      "url": "https://warofgenesis.wiki/skills/8132010"
+    },
+    {
+      "text": "Combat Focus",
+      "url": "https://warofgenesis.wiki/skills/8211010"
+    },
+    {
+      "text": "Shadow Step",
+      "url": "https://warofgenesis.wiki/skills/8217010"
+    },
+    {
+      "text": "Precision Aim",
+      "url": "https://warofgenesis.wiki/skills/8232010"
+    },
+    {
+      "text": "Mental Breakdown",
+      "url": "https://warofgenesis.wiki/skills/8311010"
+    },
+    {
+      "text": "Mana Drain",
+      "url": "https://warofgenesis.wiki/skills/8317010"
+    },
+    {
+      "text": "Ignition",
+      "url": "https://warofgenesis.wiki/skills/8332010"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    },
+    {
+      "text": "Knight Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8000"
+    },
+    {
+      "text": "Ranger Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8100"
+    },
+    {
+      "text": "Wizard Skill Points\n×1",
+      "url": "https://warofgenesis.wiki/items/8200"
+    }
+  ],
+  "access_date": "2026-10-10",
+  "requested_url": "https://warofgenesis.wiki/growth"
+}

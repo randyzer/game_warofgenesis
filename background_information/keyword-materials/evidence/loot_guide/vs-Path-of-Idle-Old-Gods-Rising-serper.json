@@ -1,0 +1,55 @@
+{
+  "searchParameters": {
+    "q": "War of Genesis: Idle Loot vs Path of Idle Old Gods Rising",
+    "gl": "us",
+    "hl": "en",
+    "type": "search",
+    "num": 6,
+    "engine": "google"
+  },
+  "organic": [
+    {
+      "title": "My first impressions of War of Genesis: Idle Loot",
+      "link": "https://www.reddit.com/r/gamereviews/comments/1wk1hty/my_first_impressions_of_war_of_genesis_idle_loot/",
+      "snippet": "War of Genesis: Idle Loot has a really interesting concept for anyone who enjoys idle games with progression and plenty of things to develop.",
+      "position": 1
+    },
+    {
+      "title": "Complete Breakdown of NEW RPG: War of Genesis Idle Loot",
+      "link": "https://www.youtube.com/watch?v=vNcB-St8N8c",
+      "snippet": "War of Genesis: Idle Loot, a new RPG that combines idle progression, character development, strategic combat, loot collection, and a unique ...",
+      "date": "1 day ago",
+      "position": 2
+    },
+    {
+      "title": "Going through boons and loot is a chore. Should be ...",
+      "link": "https://steamcommunity.com/app/4243990/discussions/0/586183630898928439/",
+      "snippet": "Going through boons and loot is a chore. Should be pleasure. The comparison requires to much focus from the player. We are missing pure relaxing ...",
+      "date": "Aug 19, 2026",
+      "position": 3
+    },
+    {
+      "title": "War of Genesis: Idle Loot Beginner Guide",
+      "link": "https://www.youtube.com/watch?v=yY3vzq9uELM",
+      "snippet": "Getting started in War of Genesis: Idle Loot and not sure what you should be focusing on? This beginner guide is here to help!",
+      "date": "3 weeks ago",
+      "position": 4
+    },
+    {
+      "title": "Path of Idle: Old Gods Rising",
+      "link": "https://store.steampowered.com/app/4243990/Path_of_Idle_Old_Gods_Rising/",
+      "snippet": "A Lovecraftian idle RPG with auto-battles, loot farming, chests, team strategy, town building, gear crafting, Runewords, stages, towers, realms, ...",
+      "rating": 3.5,
+      "ratingCount": 1252,
+      "position": 5
+    },
+    {
+      "title": "[WoG] How It Differs From the Mobile Title “Idle Heroes”",
+      "link": "https://himeb.com/en/wog-vs-idle-heroes/",
+      "snippet": "This article makes clear that the two are separate titles and lays out points to help avoid confusing them.",
+      "date": "Sep 20, 2026",
+      "position": 6
+    }
+  ],
+  "credits": 1
+}

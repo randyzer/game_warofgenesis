@@ -1,0 +1,169 @@
+{
+  "title": "Data & sources | War of Genesis: Idle Loot Wiki",
+  "url": "https://warofgenesis.wiki/sources",
+  "text": "Skip to content\nGENESIS\nARCHIVE\n\nWar of Genesis: Idle Loot\n\nEXPLORE\nOverview\nStages\nMonsters\nGold Bar\nCOLLECTION\nCharacters\nSkills\nEquipment\nItems\nWings, Runes & Pets\nMachina\nPassive Skills\nRelics\nAltar\nCompare\nPROGRESSION\nGrowth Systems\nBattlefield\nCompetition\nQuests\nContent Unlocks\nTOOLS & GUIDES\nFarming simulator\nLeveling Calculator\nCombat Calculator\nREFERENCE\nStats & Formulas\nGame settings\nData & sources\nPrivacy Policy\nFan-Made Legal Notice\nClient snapshot v1245\nData & sources\nData & sources\nSearch\nSupport\nLanguage\nEnglish (EN)\nIndonesia (ID)\n简体中文 (CN)\n繁體中文 (TW)\n한국어 (KR)\n日本語 (JP)\nPortuguês (BR)\nไทย (TH)\nРусский (RU)\nTürkçe (TR)\nEspañol (ES)\nData & sources\n\nAll values are read from the local game client's content tables (bin/*_table.bin, msgpack) and asset bundles. Account data is never read.\n\nColumn names come from the client's own row classes (e.g. class Stage_table { StageID; GroupID; … }) extracted from the running game; every field list matches its table's row width.\n\nCombat formulas were copied from the client's own calcFinal_* functions after the game decrypted its script bundle in memory; no formula is guessed.\n\nGame text uses the original English, Indonesian, Simplified Chinese, Korean, Japanese and Brazilian Portuguese localization. English is used when a translation is absent.\n\nItem icons are matched to the exact sprite names in the item table. Game assets belong to their respective owners.\n\nOfficial Steam page\nClient snapshot v1245\n2026-09-12\nSource file\tRecords\tSHA-256\nAbility_table.bin\t159\t\nf72dafa5ad523e572c12cb98d9a3ce0571d1f9a27c6f844deb106dffb013ac88\n\nAbilityAction_table.bin\t1,397\t\neb1bb5c5fe94662748dbcdcfae4ee7c888ad6d3e3bc14c9b05b8d62851b9248c\n\nAbilityDisplay_table.bin\t76\t\n7041ddb974be01d5745331211cc3a1f1139e40bb7100276a395f8b23c87b8c32\n\nArena_table.bin\t7\t\n4ae8cced800bddef4c99d47340829ad81792c5c2b1febbf44970d6f84199fae1\n\nBannedwords_table.bin\t7,674\t\nae500a9d24d6d33a0077b87647d85a9ff7e7c8bf6e497f0a4a879451b939ceb3\n\nBingoRank_table.bin\t110\t\n27e217ad6e1c8169007fd90a7b5d60d996aa888fa3060416dd442f7e9f000d6a\n\nConfig_table.bin\t56\t\nd20bf6cfd3a5b55ce1490f26e557292726584614ae1b4f36394b6cfe8301c19a\n\nContentUnlock_table.bin\t17\t\ndd3ca0bfaa2ac11420d13f56ceb8f09577298bbcc1c424efc1aea8eeb7e7b399\n\nDiaGrowth_table.bin\t3,000\t\n17b846ce4369154cee688831c33db42761721d585fecc85863e12074b857a6db\n\nDrop_table.bin\t12,000\t\n1ff078c54d5233cb833794af14487ac88c799b529f4353226ac09623ec5be79d\n\nDropList_table.bin\t1,232\t\nb1f71a23bb1b4941f6b963315d8ee98184c18a05f25bfa32d201710f0869f12d\n\nDungeon_table.bin\t4\t\n45caa3ef4f3f5166903bd3327d14dbc207fab32af84e3e8816f293ce0e5a627d\n\nEffect_table.bin\t11\t\nb7d5a77a8c8038e0e1ae38208a34926a9e38d44392657177f3a7107c1db13735\n\nEquip_table.bin\t1,872\t\nb275cac9a13b6293c108e438d0acd9da4dda7aba701be634c100f1a06f6c670b\n\nFusion_table.bin\t150\t\n8da18cc206266f9e99d7534e52e0027927fa1afeb1fea81bcaff5e6a192f6735\n\nFusionLevel_table.bin\t600\t\naa1472083fedf001dba0a300773b5830e0dad72527509997fc60c5f63ae2e3c2\n\nGacha_table.bin\t684\t\ne34f2de2a0209136b444a162fef1b7fe57e4b11ad88dbf0a69342d76925c9fec\n\nGachaList_table.bin\t1,658\t\nb8f63fa865cf64d8f9b56d8d51101800d8da01b0d341bad7b9d80de4d9ab80fc\n\nHero_table.bin\t33\t\n6510c69a4d3b3a5d3fe92449ff391b9a3198e6cd5a01bc54b0af2d6b4c395665\n\nItem_table.bin\t207\t\n0ed665f96884d81bcb63a0608c0265d38e69487713cd875c47ef298a12c555d5\n\nKeyword_table.bin\t16\t\n0716f1bea47aa04314c1fa04c7efb2abe7904941fa70180cd3e7f553ac715cf0\n\nLeague_table.bin\t32\t\n85eb95b6d66fc7b33dd316340007176eaf7b474f20aa5ad1a372faf2fc9f76fc\n\nLevelDown_table.bin\t60\t\na26cf06bee59653fc63d5ecaceb4b1cab2fc0b116d46937b87a402f64208a61d\n\nLocale_table.bin\t3,479\t\nf07f2e3d582505fa4ff16c90ff4d669426efa0e136116b6c109d268d6dcb5898\n\nMachina_table.bin\t5\t\n362d66286e0e4134745097079ab285895204a6056240283d1e3622b907234731\n\nMail_table.bin\t8\t\nffdff3bcd7d6dcb3aa6a4f21c183449b95bbfadc1113db82ede2691088945905\n\nMatchUserName_table.bin\t100\t\n1911f3d8e8134ed3c9dbc2dc8d8121194f21f45bcdfb4cc049cc83734a0945f4\n\nMonster_table.bin\t1,800\t\naf1777a2ab86129e2e650aa5a96c07c01da6e9cbebdf11b73331dd392b134581\n\nPassiveItem_table.bin\t2,000\t\nb10097287e51332237cefbac5960c80585b6782efa16d2119a0bb3027c858dc1\n\nPassiveSkill_table.bin\t1,679\t\ncef2be0b884e48e357ce581da9aaf646b05b8f6aff7de1dd9d9102c1667e9b97\n\nPet_table.bin\t90\t\n33642aa54e048c6957835275a204b4862c17472f4988fa21892d2a42d52d9232\n\nQuest_table.bin\t83\t\nfa73d0f946e7f57f0fc0dc653e342569116320c6964285849ff23bae4c6b8d43\n\nRandomOption_table.bin\t204\t\n2a3d97269e7f4fbe27a75ba67ed91d4ee5c5448704b04bd4ec076340fafcdf8f\n\nRanking_table.bin\t192\t\n44153baa4f86be17f0624a8d5957226100b72eeaae5c3c38ff9dc044cfc1dde6\n\nResource_table.bin\t389\t\na9d3cc0900a496586882d0a24c1a3b31551da133d0328911d8e7174643be3005\n\nSawmillLevel_table.bin\t70\t\naeecf3ecccfaabf93b962749c8f6e56de12aa89aaf0590f942d82c4b2f1bed48\n\nSawmillRank_table.bin\t132\t\n862c228f190cdfd7afbea6363ff77471c007e7c8eccc1e34a8ffab880c62583e\n\nSealLevel_table.bin\t70\t\ne363b714839a74213ad4539b922aa4ffa9305816a855054c8eaf065ba4344f9c\n\nSealRank_table.bin\t110\t\nd0950d7f3598dbedc5f6540035e0b9e83f0c22b43a659ea555f52a1b15d44d3b\n\nShop_table.bin\t12\t\n9008eda1ef724de03c97e7fdb170d21a4be8d22ac7063ddad3acd74eb78193ac\n\nShopList_table.bin\t12\t\n80fc15e45d5af5cbfda66d635d5d4d8ed3738236e255e4baa9887bec507e6d1d\n\nSkill_table.bin\t1,160\t\nac3df5ee07b904993e1130058816e68af9ec8ca21b33fec70933b4ad36930b5e\n\nSkillAnimation_table.bin\t243\t\nde87d35912e24be2297527a91ab1e5ee95f25c00d0ea968f9959c228a0d4a39d\n\nSkillTypeSet_table.bin\t416\t\n03cc59143bf20c0fef3418c32acd751c297165c19303e79315d0483c8bbb0bb8\n\nSkillTypes_table.bin\t642\t\n7531328a2f4da9cba7daff5013ab2d987f5ada5df15ab736cf23b0152a052cea\n\nSound_table.bin\t39\t\nb4e95f904bcfefd2d2599b9e66862719ccb7bfced849920ef58b315998c12cfd\n\nSoundCombat_table.bin\t443\t\n1554e2beaf71e51a05bc714f4174e315f0700d7ad4d8057fc2dd8562361ca6bd\n\nStage_table.bin\t400\t\n545cac9cefaf93a6b903181929c5cc108667526e02da5e6bbe5c7cc1f2a51a85\n\nStart_table.bin\t10\t\n5c2a170d79b840420aabf8f7dc9a97abccab51d01bac1631224ec5f5d5ee872a\n\nUserLevel_table.bin\t100\t\n585aa76a445520c2b707dcbf59b935ed70ab4f48fd49ebc505fb517302f8f8b1\n\nWeapon_table.bin\t482\t\nd2bd98c9def233daaf47212906ec575109dd25ab1bca999354be09384af7955d\nDownload source manifest\n↑\nGenesis Archive / Independent game wiki\nPrivacy Policy\nFan-Made Legal Notice",
+  "links": [
+    {
+      "text": "Skip to content",
+      "url": "https://warofgenesis.wiki/sources#content"
+    },
+    {
+      "text": "GENESIS\nARCHIVE",
+      "url": "https://warofgenesis.wiki/"
+    },
+    {
+      "text": "Overview",
+      "url": "https://warofgenesis.wiki/"
+    },
+    {
+      "text": "Stages",
+      "url": "https://warofgenesis.wiki/stages"
+    },
+    {
+      "text": "Monsters",
+      "url": "https://warofgenesis.wiki/monsters"
+    },
+    {
+      "text": "Gold Bar",
+      "url": "https://warofgenesis.wiki/gold"
+    },
+    {
+      "text": "Characters",
+      "url": "https://warofgenesis.wiki/heroes"
+    },
+    {
+      "text": "Skills",
+      "url": "https://warofgenesis.wiki/skills"
+    },
+    {
+      "text": "Equipment",
+      "url": "https://warofgenesis.wiki/equipment"
+    },
+    {
+      "text": "Items",
+      "url": "https://warofgenesis.wiki/items"
+    },
+    {
+      "text": "Wings, Runes & Pets",
+      "url": "https://warofgenesis.wiki/companions"
+    },
+    {
+      "text": "Machina",
+      "url": "https://warofgenesis.wiki/machina"
+    },
+    {
+      "text": "Passive Skills",
+      "url": "https://warofgenesis.wiki/passives"
+    },
+    {
+      "text": "Relics",
+      "url": "https://warofgenesis.wiki/relics"
+    },
+    {
+      "text": "Altar",
+      "url": "https://warofgenesis.wiki/altar"
+    },
+    {
+      "text": "Compare",
+      "url": "https://warofgenesis.wiki/compare"
+    },
+    {
+      "text": "Growth Systems",
+      "url": "https://warofgenesis.wiki/growth"
+    },
+    {
+      "text": "Battlefield",
+      "url": "https://warofgenesis.wiki/battlefield"
+    },
+    {
+      "text": "Competition",
+      "url": "https://warofgenesis.wiki/competition"
+    },
+    {
+      "text": "Quests",
+      "url": "https://warofgenesis.wiki/quests"
+    },
+    {
+      "text": "Content Unlocks",
+      "url": "https://warofgenesis.wiki/unlocks"
+    },
+    {
+      "text": "Farming simulator",
+      "url": "https://warofgenesis.wiki/farming"
+    },
+    {
+      "text": "Leveling Calculator",
+      "url": "https://warofgenesis.wiki/leveling"
+    },
+    {
+      "text": "Combat Calculator",
+      "url": "https://warofgenesis.wiki/calculator"
+    },
+    {
+      "text": "Stats & Formulas",
+      "url": "https://warofgenesis.wiki/stats"
+    },
+    {
+      "text": "Game settings",
+      "url": "https://warofgenesis.wiki/systems"
+    },
+    {
+      "text": "Data & sources",
+      "url": "https://warofgenesis.wiki/sources"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://warofgenesis.wiki/privacy"
+    },
+    {
+      "text": "Fan-Made Legal Notice",
+      "url": "https://warofgenesis.wiki/legal"
+    },
+    {
+      "text": "Data & sources",
+      "url": "https://warofgenesis.wiki/sources"
+    },
+    {
+      "text": "Support",
+      "url": "https://buymeacoffee.com/arianshirone"
+    },
+    {
+      "text": "Official Steam page",
+      "url": "https://store.steampowered.com/app/4891320/"
+    },
+    {
+      "text": "Download source manifest",
+      "url": "https://warofgenesis.wiki/data-summary.json"
+    },
+    {
+      "text": "Home",
+      "url": "https://warofgenesis.wiki/"
+    },
+    {
+      "text": "Stages",
+      "url": "https://warofgenesis.wiki/stages"
+    },
+    {
+      "text": "Heroes",
+      "url": "https://warofgenesis.wiki/heroes"
+    },
+    {
+      "text": "Calc",
+      "url": "https://warofgenesis.wiki/calculator"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://warofgenesis.wiki/privacy"
+    },
+    {
+      "text": "Fan-Made Legal Notice",
+      "url": "https://warofgenesis.wiki/legal"
+    },
+    {
+      "text": "Dukung website ini",
+      "url": "https://buymeacoffee.com/arianshirone"
+    }
+  ],
+  "access_date": "2026-10-10",
+  "requested_url": "https://warofgenesis.wiki/sources"
+}

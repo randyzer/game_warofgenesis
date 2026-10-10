@@ -1,0 +1,572 @@
+{
+  "status_counts": {
+    "PARTIAL": 55,
+    "BLOCKED": 6
+  },
+  "keywords": [
+    {
+      "keyword": "War of Genesis: Idle Loot market",
+      "status": "PARTIAL",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 4,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot market素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot market buying",
+      "status": "PARTIAL",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 2,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot market buying素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot money making",
+      "status": "PARTIAL",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 3,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot money making素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot developer market revenue",
+      "status": "PARTIAL",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 2,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot developer market revenue素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot tools",
+      "status": "PARTIAL",
+      "web_count": 2,
+      "youtube_count": 0,
+      "official_count": 0,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot tools素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot github",
+      "status": "PARTIAL",
+      "web_count": 1,
+      "youtube_count": 0,
+      "official_count": 0,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot github素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot mods",
+      "status": "PARTIAL",
+      "web_count": 1,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot mods素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot plugins",
+      "status": "PARTIAL",
+      "web_count": 1,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot plugins素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot trainers",
+      "status": "PARTIAL",
+      "web_count": 1,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot trainers素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot cheat engine",
+      "status": "PARTIAL",
+      "web_count": 2,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot cheat engine素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot cheats",
+      "status": "PARTIAL",
+      "web_count": 2,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot cheats素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot unknowncheats",
+      "status": "PARTIAL",
+      "web_count": 2,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot unknowncheats素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot 3dm",
+      "status": "BLOCKED",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 0,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot 3dm素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot best class",
+      "status": "PARTIAL",
+      "web_count": 3,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot best class素材.md",
+      "youtube_metadata_candidates": 1
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot classes",
+      "status": "PARTIAL",
+      "web_count": 3,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot classes素材.md",
+      "youtube_metadata_candidates": 1
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot ranger build",
+      "status": "PARTIAL",
+      "web_count": 4,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 3,
+      "file": "War of Genesis- Idle Loot ranger build素材.md",
+      "youtube_metadata_candidates": 1
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot ranger",
+      "status": "PARTIAL",
+      "web_count": 3,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot ranger素材.md",
+      "youtube_metadata_candidates": 1
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot ranger skills",
+      "status": "PARTIAL",
+      "web_count": 4,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot ranger skills素材.md",
+      "youtube_metadata_candidates": 1
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot knight build",
+      "status": "PARTIAL",
+      "web_count": 4,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot knight build素材.md",
+      "youtube_metadata_candidates": 1
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot wizard build",
+      "status": "PARTIAL",
+      "web_count": 4,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 3,
+      "file": "War of Genesis- Idle Loot wizard build素材.md",
+      "youtube_metadata_candidates": 1
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot wizard",
+      "status": "PARTIAL",
+      "web_count": 3,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 3,
+      "file": "War of Genesis- Idle Loot wizard素材.md",
+      "youtube_metadata_candidates": 1
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot skill tree",
+      "status": "PARTIAL",
+      "web_count": 3,
+      "youtube_count": 0,
+      "official_count": 0,
+      "pending_count": 3,
+      "file": "War of Genesis- Idle Loot skill tree素材.md",
+      "youtube_metadata_candidates": 1
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot skill allocation",
+      "status": "PARTIAL",
+      "web_count": 3,
+      "youtube_count": 0,
+      "official_count": 0,
+      "pending_count": 3,
+      "file": "War of Genesis- Idle Loot skill allocation素材.md",
+      "youtube_metadata_candidates": 1
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot skills",
+      "status": "PARTIAL",
+      "web_count": 4,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 3,
+      "file": "War of Genesis- Idle Loot skills素材.md",
+      "youtube_metadata_candidates": 1
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot best skills",
+      "status": "PARTIAL",
+      "web_count": 3,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 3,
+      "file": "War of Genesis- Idle Loot best skills素材.md",
+      "youtube_metadata_candidates": 1
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot poison damage",
+      "status": "PARTIAL",
+      "web_count": 3,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 3,
+      "file": "War of Genesis- Idle Loot poison damage素材.md",
+      "youtube_metadata_candidates": 1
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot shadow step",
+      "status": "PARTIAL",
+      "web_count": 2,
+      "youtube_count": 0,
+      "official_count": 0,
+      "pending_count": 3,
+      "file": "War of Genesis- Idle Loot shadow step素材.md",
+      "youtube_metadata_candidates": 0
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot adventurer skills",
+      "status": "BLOCKED",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 3,
+      "file": "War of Genesis- Idle Loot adventurer skills素材.md",
+      "youtube_metadata_candidates": 0
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot guide",
+      "status": "PARTIAL",
+      "web_count": 2,
+      "youtube_count": 0,
+      "official_count": 2,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot guide素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot overview",
+      "status": "PARTIAL",
+      "web_count": 1,
+      "youtube_count": 0,
+      "official_count": 2,
+      "pending_count": 0,
+      "file": "War of Genesis- Idle Loot overview素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot wiki",
+      "status": "PARTIAL",
+      "web_count": 2,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot wiki素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot database",
+      "status": "PARTIAL",
+      "web_count": 3,
+      "youtube_count": 0,
+      "official_count": 0,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot database素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot builds",
+      "status": "PARTIAL",
+      "web_count": 2,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot builds素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot vs Path of Idle Old Gods Rising",
+      "status": "PARTIAL",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 2,
+      "pending_count": 0,
+      "file": "War of Genesis- Idle Loot vs Path of Idle Old Gods Rising素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot drop rates",
+      "status": "PARTIAL",
+      "web_count": 3,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 3,
+      "file": "War of Genesis- Idle Loot drop rates素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot items",
+      "status": "PARTIAL",
+      "web_count": 3,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot items素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot gold bars",
+      "status": "PARTIAL",
+      "web_count": 2,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot gold bars素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot gold bar drop rate",
+      "status": "PARTIAL",
+      "web_count": 2,
+      "youtube_count": 0,
+      "official_count": 0,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot gold bar drop rate素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot T5 to T6 synthesis chance",
+      "status": "PARTIAL",
+      "web_count": 1,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot T5 to T6 synthesis chance素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot auto gem synthesis",
+      "status": "PARTIAL",
+      "web_count": 2,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot auto gem synthesis素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot vault",
+      "status": "PARTIAL",
+      "web_count": 1,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot vault素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot diamond bags",
+      "status": "PARTIAL",
+      "web_count": 3,
+      "youtube_count": 0,
+      "official_count": 0,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot diamond bags素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot pets",
+      "status": "PARTIAL",
+      "web_count": 3,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 3,
+      "file": "War of Genesis- Idle Loot pets素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot offline rewards",
+      "status": "PARTIAL",
+      "web_count": 1,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot offline rewards素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot mobile",
+      "status": "PARTIAL",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot mobile素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot mobile storage requirements",
+      "status": "PARTIAL",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 1,
+      "file": "War of Genesis- Idle Loot mobile storage requirements素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot always on top",
+      "status": "PARTIAL",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 2,
+      "pending_count": 1,
+      "file": "War of Genesis- Idle Loot always on top素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot login problems",
+      "status": "PARTIAL",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 2,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot login problems素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot stuck",
+      "status": "PARTIAL",
+      "web_count": 1,
+      "youtube_count": 0,
+      "official_count": 2,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot stuck素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot profile",
+      "status": "PARTIAL",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 2,
+      "pending_count": 0,
+      "file": "War of Genesis- Idle Loot profile素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot in-app purchases",
+      "status": "PARTIAL",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 2,
+      "pending_count": 0,
+      "file": "War of Genesis- Idle Loot in-app purchases素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot refunds",
+      "status": "PARTIAL",
+      "web_count": 1,
+      "youtube_count": 0,
+      "official_count": 2,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot refunds素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot discord",
+      "status": "PARTIAL",
+      "web_count": 1,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 1,
+      "file": "War of Genesis- Idle Loot discord素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot bahamut",
+      "status": "BLOCKED",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 0,
+      "pending_count": 1,
+      "file": "War of Genesis- Idle Loot bahamut素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot reddit",
+      "status": "BLOCKED",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 0,
+      "pending_count": 1,
+      "file": "War of Genesis- Idle Loot reddit素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot 5ch",
+      "status": "PARTIAL",
+      "web_count": 1,
+      "youtube_count": 0,
+      "official_count": 1,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot 5ch素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot threads",
+      "status": "BLOCKED",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 0,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot threads素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot player count",
+      "status": "PARTIAL",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 2,
+      "pending_count": 0,
+      "file": "War of Genesis- Idle Loot player count素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot reviews",
+      "status": "PARTIAL",
+      "web_count": 1,
+      "youtube_count": 0,
+      "official_count": 2,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot reviews素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot crypto mining",
+      "status": "BLOCKED",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 0,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot crypto mining素材.md"
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot safety",
+      "status": "PARTIAL",
+      "web_count": 0,
+      "youtube_count": 0,
+      "official_count": 2,
+      "pending_count": 2,
+      "file": "War of Genesis- Idle Loot safety素材.md"
+    }
+  ]
+}
