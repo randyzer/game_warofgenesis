@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Emberdeep excavation command grid</title>
+  <desc id="desc">A fictional amber and green mining interface with an active excavation grid, mission telemetry, and a five-person crew status dock.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#090b08"/>
+      <stop offset=".55" stop-color="#15120c"/>
+      <stop offset="1" stop-color="#28170d"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#211c13"/>
+      <stop offset="1" stop-color="#100e0a"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#ff6b2c"/>
+      <stop offset="1" stop-color="#ffc53d"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#183d26"/>
+      <stop offset="1" stop-color="#72ce72"/>
+    </linearGradient>
+    <radialGradient id="well">
+      <stop stop-color="#ffd25a" stop-opacity=".7"/>
+      <stop offset=".36" stop-color="#ef7f25" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#ef7f25" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="micro" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#d9a734" stroke-opacity=".08"/>
+      <circle cx="2" cy="2" r="1" fill="#ffc53d" fill-opacity=".18"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <clipPath id="screen"><rect x="70" y="55" width="1460" height="790" rx="30"/></clipPath>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <ellipse cx="1200" cy="160" rx="330" ry="180" fill="#ff6b2c" fill-opacity=".1" filter="url(#soft)"/>
+  <ellipse cx="340" cy="680" rx="390" ry="170" fill="#4fba63" fill-opacity=".07" filter="url(#soft)"/>
+  <g clip-path="url(#screen)">
+    <rect x="70" y="55" width="1460" height="790" rx="30" fill="url(#panel)" stroke="#4a3a23" stroke-width="2"/>
+    <rect x="70" y="55" width="1460" height="790" fill="url(#micro)" opacity=".55"/>
+    <path d="M70 142H1530" stroke="#463924"/>
+    <path d="M1140 142V680" stroke="#463924"/>
+
+    <!-- command header -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <path d="M111 96l12-12 12 12-12 12z" fill="none" stroke="#ffc53d" stroke-width="3"/>
+      <circle cx="123" cy="96" r="3" fill="#ffc53d"/>
+      <text x="151" y="103" fill="#f3ead6" font-size="22" font-weight="700" letter-spacing="4">DESCENT ARRAY // 07</text>
+      <text x="1370" y="102" fill="#8f836c" font-size="15" text-anchor="end" letter-spacing="2">SHIFT 03:41</text>
+      <circle cx="1400" cy="96" r="6" fill="#66cf70" filter="url(#glow)"/>
+      <text x="1420" y="102" fill="#b7d6aa" font-size="14" letter-spacing="2">LINKED</text>
+    </g>
+
+    <!-- active excavation grid -->
+    <rect x="108" y="180" width="994" height="462" rx="16" fill="#090c09" stroke="#3b3424" stroke-width="2"/>
+    <rect x="127" y="199" width="956" height="424" rx="8" fill="#0c120d" stroke="#1d4128"/>
+    <g stroke="#275132" stroke-width="1">
+      <path d="M127 252H1083M127 305H1083M127 358H1083M127 411H1083M127 464H1083M127 517H1083M127 570H1083"/>
+      <path d="M246 199V623M365 199V623M484 199V623M603 199V623M722 199V623M841 199V623M960 199V623"/>
+    </g>
+    <g fill="#163020">
+      <path d="M128 200h117v51H128zM247 253h117v51H247zM366 200h117v51H366zM485 306h117v51H485zM604 359h117v51H604zM723 306h117v51H723zM842 412h117v51H842zM961 359h121v51H961z"/>
+      <path d="M128 518h117v51H128zM247 465h117v51H247zM366 518h117v51H366zM604 518h117v51H604zM842 518h117v51H842z" opacity=".72"/>
+    </g>
+    <g fill="#cb8c28" fill-opacity=".2" stroke="#d9a734" stroke-opacity=".44">
+      <path d="M248 200h116v51H248zM485 200h117v51H485zM604 253h117v51H604zM842 253h117v51H842zM961 306h121v51H961z"/>
+      <path d="M366 359h117v51H366zM485 412h117v51H485zM723 465h117v51H723zM961 518h121v51H961z"/>
+    </g>
+    <g opacity=".9">
+      <path d="M166 226l18-18 20 18-20 14z" fill="#4e9d58"/>
+      <path d="M285 279l15-17 21 5 6 20-20 10z" fill="#68c06d"/>
+      <path d="M407 225l17-16 19 18-18 13z" fill="#e9a52e"/>
+      <path d="M526 332l14-17 21 5 7 19-22 11z" fill="#d89028"/>
+      <path d="M649 385l18-15 18 19-18 12z" fill="#59ad61"/>
+      <path d="M766 332l16-18 21 18-20 15z" fill="#ffc53d"/>
+      <path d="M887 437l13-17 22 6 5 19-21 9z" fill="#5eb666"/>
+      <path d="M1001 385l19-15 18 18-17 14z" fill="#d98b2d"/>
+      <path d="M288 492l17-17 21 17-20 15z" fill="#64bd6b"/>
+      <path d="M765 492l15-19 23 8 4 18-21 10z" fill="#f0ae34"/>
+    </g>
+
+    <!-- scanning path and rig -->
+    <polyline points="184,226 306,279 424,225 545,332 666,385 782,332 906,437 1020,385" fill="none" stroke="#ffc53d" stroke-opacity=".65" stroke-width="3" stroke-dasharray="7 9"/>
+    <g filter="url(#glow)">
+      <circle cx="666" cy="385" r="9" fill="#ffc53d"/>
+      <circle cx="666" cy="385" r="28" fill="none" stroke="#ffc53d" stroke-opacity=".4"/>
+      <path d="M651 363h30l14 22-14 24h-30l-14-24z" fill="#1b2013" stroke="#ffc53d" stroke-width="3"/>
+      <path d="M658 376h17v18h-17zm3-8h11v8h-11z" fill="#ffc53d"/>
+    </g>
+    <rect x="142" y="584" width="322" height="22" rx="11" fill="#17251a" stroke="#244b2e"/>
+    <rect x="146" y="588" width="238" height="14" rx="7" fill="url(#green)"/>
+    <text x="480" y="601" fill="#7ebd81" font-family="ui-monospace, monospace" font-size="15">74% CLEARED</text>
+
+    <!-- right telemetry stack -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <text x="1182" y="190" fill="#8f836c" font-size="13" letter-spacing="3">LIVE TELEMETRY</text>
+      <text x="1182" y="230" fill="#f3ead6" font-size="26" font-weight="700">BASALT VEIN</text>
+      <text x="1450" y="230" fill="#ffc53d" font-size="18" text-anchor="end">DEPTH 4.82 KM</text>
+      <rect x="1180" y="258" width="307" height="84" rx="10" fill="#17130e" stroke="#3f3526"/>
+      <text x="1200" y="286" fill="#8f836c" font-size="12" letter-spacing="2">ORE / MIN</text>
+      <text x="1200" y="322" fill="#ffc53d" font-size="29" font-weight="700">12,480</text>
+      <path d="M1350 319l20-20 18 7 20-32 20 15 38-25" fill="none" stroke="#ff9c32" stroke-width="3"/>
+      <path d="M1350 326H1467" stroke="#3f3526"/>
+
+      <rect x="1180" y="360" width="307" height="120" rx="10" fill="#17130e" stroke="#3f3526"/>
+      <text x="1200" y="389" fill="#8f836c" font-size="12" letter-spacing="2">PRESSURE BAND</text>
+      <rect x="1200" y="411" width="267" height="14" rx="7" fill="#2b2418"/>
+      <rect x="1200" y="411" width="184" height="14" rx="7" fill="url(#amber)"/>
+      <text x="1200" y="455" fill="#cbbda3" font-size="16">STABLE</text>
+      <text x="1467" y="455" fill="#ffc53d" font-size="16" text-anchor="end">68 / 100</text>
+
+      <rect x="1180" y="498" width="307" height="144" rx="10" fill="#17130e" stroke="#3f3526"/>
+      <text x="1200" y="528" fill="#8f836c" font-size="12" letter-spacing="2">MATERIAL RETURN</text>
+      <g fill="#cbbda3" font-size="14">
+        <circle cx="1208" cy="558" r="7" fill="#62b76a"/><text x="1226" y="563">MOSS IRON</text><text x="1462" y="563" text-anchor="end">x 308</text>
+        <path d="M1201 582l7-9 8 9-8 8z" fill="#ffc53d"/><text x="1226" y="588">SUN SHARD</text><text x="1462" y="588" text-anchor="end">x 042</text>
+        <path d="M1200 610h16l-3 12h-10z" fill="#c95d2b"/><text x="1226" y="621">EMBER SALT</text><text x="1462" y="621" text-anchor="end">x 117</text>
+      </g>
+    </g>
+
+    <!-- five-person status dock -->
+    <rect x="108" y="680" width="1379" height="128" rx="16" fill="#0b0c09" stroke="#403621" stroke-width="2"/>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <text x="132" y="711" fill="#8f836c" font-size="12" letter-spacing="3">CREW STATUS // FIVE LINKS</text>
+      <g transform="translate(132 727)">
+        <rect width="245" height="60" rx="9" fill="#182017" stroke="#285331"/>
+        <circle cx="31" cy="30" r="18" fill="#233523" stroke="#62bd69"/><path d="M20 39c3-10 19-10 22 0M25 24a7 7 0 1 1 12 0" fill="none" stroke="#9bdd9f" stroke-width="3"/>
+        <text x="61" y="25" fill="#f3ead6" font-size="15" font-weight="700">KITE</text><text x="61" y="45" fill="#6fc878" font-size="12">SCOUT · READY</text>
+        <circle cx="222" cy="18" r="5" fill="#64cb6d"/><rect x="190" y="36" width="34" height="5" rx="2" fill="#24462b"/><rect x="190" y="36" width="29" height="5" rx="2" fill="#64cb6d"/>
+      </g>
+      <g transform="translate(394 727)">
+        <rect width="245" height="60" rx="9" fill="#211b12" stroke="#594523"/>
+        <circle cx="31" cy="30" r="18" fill="#342817" stroke="#dca72f"/><path d="M20 39c3-10 19-10 22 0M25 24a7 7 0 1 1 12 0" fill="none" stroke="#ffd66d" stroke-width="3"/>
+        <text x="61" y="25" fill="#f3ead6" font-size="15" font-weight="700">BRAM</text><text x="61" y="45" fill="#d9a734" font-size="12">DRILL · WORKING</text>
+        <circle cx="222" cy="18" r="5" fill="#ffc53d"/><rect x="190" y="36" width="34" height="5" rx="2" fill="#4a3920"/><rect x="190" y="36" width="24" height="5" rx="2" fill="#ffc53d"/>
+      </g>
+      <g transform="translate(656 727)">
+        <rect width="245" height="60" rx="9" fill="#1c1711" stroke="#473925"/>
+        <circle cx="31" cy="30" r="18" fill="#302719" stroke="#c69a36"/><path d="M20 39c3-10 19-10 22 0M25 24a7 7 0 1 1 12 0" fill="none" stroke="#f0c868" stroke-width="3"/>
+        <text x="61" y="25" fill="#f3ead6" font-size="15" font-weight="700">MICA</text><text x="61" y="45" fill="#bca66e" font-size="12">WARD · READY</text>
+        <circle cx="222" cy="18" r="5" fill="#ffc53d"/><rect x="190" y="36" width="34" height="5" rx="2" fill="#4a3920"/><rect x="190" y="36" width="32" height="5" rx="2" fill="#d9a734"/>
+      </g>
+      <g transform="translate(918 727)">
+        <rect width="245" height="60" rx="9" fill="#211610" stroke="#613322"/>
+        <circle cx="31" cy="30" r="18" fill="#382017" stroke="#dd6330"/><path d="M20 39c3-10 19-10 22 0M25 24a7 7 0 1 1 12 0" fill="none" stroke="#ff9b67" stroke-width="3"/>
+        <text x="61" y="25" fill="#f3ead6" font-size="15" font-weight="700">ROOK</text><text x="61" y="45" fill="#dc784c" font-size="12">FORGE · HOT</text>
+        <circle cx="222" cy="18" r="5" fill="#ff6b2c"/><rect x="190" y="36" width="34" height="5" rx="2" fill="#4b2d21"/><rect x="190" y="36" width="20" height="5" rx="2" fill="#ff6b2c"/>
+      </g>
+      <g transform="translate(1180 727)">
+        <rect width="283" height="60" rx="9" fill="#182017" stroke="#285331"/>
+        <circle cx="31" cy="30" r="18" fill="#233523" stroke="#62bd69"/><path d="M20 39c3-10 19-10 22 0M25 24a7 7 0 1 1 12 0" fill="none" stroke="#9bdd9f" stroke-width="3"/>
+        <text x="61" y="25" fill="#f3ead6" font-size="15" font-weight="700">VALE</text><text x="61" y="45" fill="#6fc878" font-size="12">MEDIC · READY</text>
+        <circle cx="260" cy="18" r="5" fill="#64cb6d"/><rect x="228" y="36" width="34" height="5" rx="2" fill="#24462b"/><rect x="228" y="36" width="27" height="5" rx="2" fill="#64cb6d"/>
+      </g>
+    </g>
+  </g>
+  <rect x="70" y="55" width="1460" height="790" rx="30" fill="none" stroke="#70542c" stroke-opacity=".7" stroke-width="2"/>
+  <path d="M97 55h110M70 82v94M1503 55h-110M1530 82v94M97 845h110M70 818v-94M1503 845h-110M1530 818v-94" stroke="#ffc53d" stroke-opacity=".4" stroke-width="3"/>
+</svg>

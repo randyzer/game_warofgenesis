@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Emberdeep Field Manual cover</title>
+  <desc id="desc">An original dark amber field manual cover composed from a survey grid, technical equipment cards, depth markings, and expedition diagrams.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#080806"/>
+      <stop offset=".5" stop-color="#16120c"/>
+      <stop offset="1" stop-color="#32190c"/>
+    </linearGradient>
+    <linearGradient id="plate" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#242018"/>
+      <stop offset="1" stop-color="#100e0a"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#d9a734"/>
+      <stop offset=".48" stop-color="#ffc53d"/>
+      <stop offset="1" stop-color="#ff6b2c"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#75d67c"/>
+      <stop offset="1" stop-color="#245d31"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#d9a734" stroke-opacity=".1"/>
+      <circle cx="1" cy="1" r="1.5" fill="#ffc53d" fill-opacity=".23"/>
+    </pattern>
+    <pattern id="ticks" width="80" height="16" patternUnits="userSpaceOnUse">
+      <path d="M0 0v14M20 0v7M40 0v10M60 0v7" stroke="#ffc53d" stroke-opacity=".34"/>
+    </pattern>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#000" flood-opacity=".65"/>
+    </filter>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)" opacity=".55"/>
+  <path d="M0 705C286 636 377 718 600 644s447-122 1000-12V900H0z" fill="#ff6b2c" fill-opacity=".035"/>
+  <circle cx="1310" cy="118" r="245" fill="#ffc53d" fill-opacity=".045"/>
+
+  <!-- editorial spine and title block -->
+  <rect x="78" y="62" width="20" height="776" rx="10" fill="url(#metal)"/>
+  <rect x="118" y="62" width="2" height="776" fill="#71532b"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text x="158" y="116" fill="#ffc53d" font-size="14" font-weight="700" letter-spacing="7">INDEPENDENT EXPEDITION SERIES · VOLUME 07</text>
+    <text x="158" y="224" fill="#f3ead6" font-size="76" font-weight="800" letter-spacing="2">EMBERDEEP</text>
+    <text x="158" y="296" fill="#f3ead6" font-size="76" font-weight="800" letter-spacing="2">FIELD MANUAL</text>
+    <rect x="160" y="327" width="566" height="4" fill="url(#metal)"/>
+    <text x="158" y="369" fill="#cbbda3" font-size="18" letter-spacing="4">ROUTES · CREWS · GEAR · SAFE RETURN</text>
+    <text x="158" y="405" fill="#8f836c" font-size="14" letter-spacing="2">ISSUED FOR BELOW-CITY OPERATIONS</text>
+  </g>
+
+  <!-- survey board -->
+  <g filter="url(#shadow)" transform="translate(152 458)">
+    <rect width="660" height="330" rx="18" fill="url(#plate)" stroke="#4a3b27" stroke-width="2"/>
+    <rect x="20" y="20" width="620" height="290" rx="10" fill="#0e120d" stroke="#304634"/>
+    <rect x="20" y="20" width="620" height="290" fill="url(#grid)" opacity=".7"/>
+    <g fill="#17301f" stroke="#376141">
+      <rect x="43" y="44" width="92" height="62"/><rect x="137" y="108" width="92" height="62"/><rect x="231" y="44" width="92" height="62"/>
+      <rect x="325" y="108" width="92" height="62"/><rect x="419" y="170" width="92" height="62"/><rect x="513" y="108" width="103" height="62"/>
+      <rect x="43" y="232" width="92" height="54"/><rect x="231" y="232" width="92" height="54"/>
+    </g>
+    <g fill="#53391b" stroke="#97702d">
+      <rect x="137" y="44" width="92" height="62"/><rect x="231" y="108" width="92" height="62"/><rect x="325" y="170" width="92" height="62"/>
+      <rect x="419" y="108" width="92" height="62"/><rect x="513" y="232" width="103" height="54"/>
+    </g>
+    <polyline points="88,75 183,139 277,75 371,139 465,201 564,139" fill="none" stroke="#ffc53d" stroke-width="4" stroke-dasharray="7 8"/>
+    <g fill="#ffc53d" filter="url(#glow)"><circle cx="88" cy="75" r="6"/><circle cx="183" cy="139" r="6"/><circle cx="277" cy="75" r="6"/><circle cx="371" cy="139" r="6"/><circle cx="465" cy="201" r="6"/><circle cx="564" cy="139" r="9"/></g>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <text x="42" y="298" fill="#7d9a7f" font-size="12" letter-spacing="2">EXCAVATION MODEL // A-17</text>
+      <text x="616" y="298" fill="#ffc53d" font-size="12" text-anchor="end">ROUTE LOCKED</text>
+    </g>
+  </g>
+
+  <!-- equipment card collage -->
+  <g transform="translate(850 105) rotate(2 320 330)">
+    <rect width="648" height="674" rx="22" fill="#0f0d09" stroke="#604824" stroke-width="2" filter="url(#shadow)"/>
+    <path d="M0 70H648M0 596H648" stroke="#3f3526"/>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <text x="32" y="43" fill="#8f836c" font-size="13" letter-spacing="3">STANDARD FIELD LOADOUT</text>
+      <text x="616" y="43" fill="#ffc53d" font-size="13" text-anchor="end">PLATE 02 / 06</text>
+    </g>
+
+    <!-- drill card -->
+    <g transform="translate(30 98)">
+      <rect width="278" height="214" rx="14" fill="#1d1811" stroke="#514126"/>
+      <rect x="17" y="17" width="244" height="127" rx="9" fill="#0d110d" stroke="#31513a"/>
+      <path d="M55 102l87-58 19 17-85 64z" fill="url(#green)"/>
+      <path d="M142 44l47 5 34 32-20 17-42-37z" fill="#d5a234"/>
+      <path d="M196 54l31-22 17 16-30 24z" fill="#72562a"/>
+      <circle cx="70" cy="111" r="16" fill="#19271c" stroke="#64bf6b" stroke-width="5"/>
+      <path d="M37 129h200" stroke="#34523a" stroke-dasharray="4 6"/>
+      <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+        <text x="18" y="171" fill="#f3ead6" font-size="17" font-weight="700">VEIN BORER</text>
+        <text x="18" y="196" fill="#7cb982" font-size="12" letter-spacing="2">TOOL · RANK III</text>
+        <text x="258" y="196" fill="#ffc53d" font-size="12" text-anchor="end">+18</text>
+      </g>
+    </g>
+
+    <!-- lamp card -->
+    <g transform="translate(338 98)">
+      <rect width="280" height="214" rx="14" fill="#1d1811" stroke="#514126"/>
+      <rect x="17" y="17" width="246" height="127" rx="9" fill="#17110c" stroke="#604524"/>
+      <circle cx="140" cy="79" r="51" fill="#ffc53d" fill-opacity=".1"/>
+      <path d="M112 112h56l-8-21h-40z" fill="#6a4d25" stroke="#ffc53d"/>
+      <path d="M122 91V57c0-25 36-25 36 0v34" fill="#2b2316" stroke="#d9a734" stroke-width="5"/>
+      <circle cx="140" cy="61" r="17" fill="#ffc53d" filter="url(#glow)"/>
+      <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+        <text x="18" y="171" fill="#f3ead6" font-size="17" font-weight="700">EMBER LANTERN</text>
+        <text x="18" y="196" fill="#c6a85f" font-size="12" letter-spacing="2">WARD · RANK II</text>
+        <text x="260" y="196" fill="#ffc53d" font-size="12" text-anchor="end">94%</text>
+      </g>
+    </g>
+
+    <!-- belt card -->
+    <g transform="translate(30 340)">
+      <rect width="278" height="214" rx="14" fill="#1d1811" stroke="#514126"/>
+      <rect x="17" y="17" width="244" height="127" rx="9" fill="#15110d" stroke="#513d25"/>
+      <path d="M40 68c61 28 136 29 198 0v43c-65 26-131 26-198 0z" fill="#5c4528" stroke="#bc8d39" stroke-width="3"/>
+      <rect x="116" y="71" width="48" height="42" rx="7" fill="#1d1811" stroke="#ffc53d" stroke-width="5"/>
+      <path d="M128 83h24v18h-24z" fill="#d9a734"/>
+      <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+        <text x="18" y="171" fill="#f3ead6" font-size="17" font-weight="700">ANCHOR BELT</text>
+        <text x="18" y="196" fill="#b79b6c" font-size="12" letter-spacing="2">ARMOR · RANK II</text>
+        <text x="258" y="196" fill="#ffc53d" font-size="12" text-anchor="end">+12</text>
+      </g>
+    </g>
+
+    <!-- compass card -->
+    <g transform="translate(338 340)">
+      <rect width="280" height="214" rx="14" fill="#1d1811" stroke="#514126"/>
+      <rect x="17" y="17" width="246" height="127" rx="9" fill="#10140f" stroke="#31513a"/>
+      <circle cx="140" cy="80" r="49" fill="#16261a" stroke="#55a95e" stroke-width="4"/>
+      <circle cx="140" cy="80" r="35" fill="none" stroke="#6f8c68" stroke-dasharray="3 5"/>
+      <path d="M140 42l11 38-11 38-11-38z" fill="#ffc53d"/>
+      <path d="M102 80h76M140 42v76" stroke="#a4b99c" stroke-opacity=".4"/>
+      <circle cx="140" cy="80" r="6" fill="#f3ead6"/>
+      <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+        <text x="18" y="171" fill="#f3ead6" font-size="17" font-weight="700">FAULT COMPASS</text>
+        <text x="18" y="196" fill="#7cb982" font-size="12" letter-spacing="2">KIT · CALIBRATED</text>
+        <text x="260" y="196" fill="#68c971" font-size="12" text-anchor="end">OK</text>
+      </g>
+    </g>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <text x="30" y="632" fill="#8f836c" font-size="12" letter-spacing="2">CHECK BEFORE EVERY DESCENT</text>
+      <rect x="488" y="615" width="130" height="30" rx="15" fill="#221c12" stroke="#674f28"/>
+      <circle cx="510" cy="630" r="5" fill="#ffc53d"/>
+      <text x="526" y="635" fill="#d9a734" font-size="12" letter-spacing="1">ISSUE 04</text>
+    </g>
+  </g>
+
+  <!-- depth ruler and peripheral marks -->
+  <rect x="104" y="854" width="1390" height="15" fill="url(#ticks)"/>
+  <g fill="#8f836c" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">
+    <text x="104" y="890">000M</text><text x="470" y="890">1200M</text><text x="836" y="890">2400M</text><text x="1202" y="890">3600M</text><text x="1494" y="890" text-anchor="end">4800M</text>
+  </g>
+  <path d="M136 428h640" stroke="#463824" stroke-dasharray="2 10"/>
+  <path d="M760 74l16-16 16 16-16 16zM760 74h32" fill="none" stroke="#ffc53d" stroke-opacity=".5"/>
+  <circle cx="776" cy="74" r="4" fill="#ffc53d"/>
+</svg>
