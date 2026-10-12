@@ -1,0 +1,10 @@
+{
+  "typecheck": 0,
+  "lint": 0,
+  "build": 0,
+  "HTTP_invariants": "PASS",
+  "policy_viewport_cases": 12,
+  "browser": "PASS",
+  "test_script": "NOT CONFIGURED",
+  "dependencies_changed": false
+}

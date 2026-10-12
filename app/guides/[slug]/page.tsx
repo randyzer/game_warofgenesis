@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { ArticleShell } from "@/components/article-shell";
+import { createPageMetadata } from "@/lib/page-metadata";
 import {
   getGuideBySlug,
   getRelatedGuides,
@@ -28,10 +29,11 @@ export async function generateMetadata({
     return {};
   }
 
-  return {
+  return createPageMetadata({
+    path: `/guides/${slug}`,
     title: article.metadata.title,
     description: article.metadata.description,
-  };
+  });
 }
 
 export default async function GuidePage({ params }: GuidePageProps) {
@@ -45,7 +47,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
   const { Content, metadata } = article;
 
   return (
-    <ArticleShell metadata={metadata} related={getRelatedGuides(slug, 6)}>
+    <ArticleShell metadata={metadata} related={getRelatedGuides(slug, 3)}>
       <Content />
     </ArticleShell>
   );

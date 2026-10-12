@@ -1,18 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #0c0a08;
-  --color-bg-soft: #14110d;
-  --color-surface: #1c1812;
-  --color-surface-2: #262017;
-  --color-border: #3f3526;
-  --color-border-soft: #2c261c;
-  --color-text: #f3ead6;
-  --color-text-soft: #cbbda3;
-  --color-text-muted: #8f836c;
-  --color-brand: #ffc53d;
-  --color-brand-strong: #d9a734;
-  --color-accent: #ff6b2c;
+  --color-bg: hsl(222 31% 8%);
+  --color-bg-soft: hsl(220 25% 12%);
+  --color-surface: hsl(220 25% 12%);
+  --color-surface-2: hsl(218 22% 17%);
+  --color-border: hsl(218 18% 24%);
+  --color-border-soft: hsl(218 18% 20%);
+  --color-text: hsl(42 25% 92%);
+  --color-text-soft: hsl(42 18% 83%);
+  --color-text-muted: hsl(218 12% 72%);
+  --color-brand: hsl(38 92% 55%);
+  --color-brand-strong: hsl(32 88% 44%);
+  --color-accent: hsl(32 88% 52%);
+  --color-danger: hsl(2 68% 48%);
   --page-width: 1240px;
   --header-height: 65px;
   --radius-card: 0.85rem;
@@ -36,7 +37,7 @@ body {
   overflow-x: hidden;
   background:
     radial-gradient(circle at 82% 7%, #5c321224 0, transparent 28rem),
-    linear-gradient(180deg, #100d09 0, var(--color-bg) 28rem);
+    linear-gradient(180deg, var(--color-bg-soft) 0, var(--color-bg) 28rem);
   color: var(--color-text);
   font-family: var(--font-sans), "Trebuchet MS", sans-serif;
   text-rendering: optimizeLegibility;
@@ -123,7 +124,7 @@ img {
   top: 0;
   min-height: var(--header-height);
   border-bottom: 1px solid var(--color-border-soft);
-  background: #0c0a08ed;
+  background: hsl(222 31% 8% / 93%);
   box-shadow: 0 12px 32px #00000035;
   backdrop-filter: blur(16px);
 }
@@ -992,6 +993,32 @@ img {
   line-height: 1.7;
 }
 
+.legal-document {
+  max-width: 64rem;
+  padding-bottom: 4rem;
+}
+
+.legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.legal-links a {
+  padding-block: 0.35rem;
+  color: var(--color-brand);
+}
+
+.advertisement {
+  overflow: hidden;
+  padding-block: 1.5rem;
+}
+
+.advertisement > div {
+  min-height: 150px;
+}
+
 /* Article shell and long-form content */
 .article-header {
   display: grid;
@@ -1070,7 +1097,14 @@ img {
 }
 
 .article-main {
+  grid-column: 1;
+  grid-row: 1;
   max-width: 59rem;
+}
+
+.article-toc {
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .table-of-contents,
@@ -1423,6 +1457,9 @@ img {
   .mobile-menu.is-open {
     display: block;
     width: 100vw;
+    max-height: calc(100dvh - var(--header-height) - 1px);
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
     margin-left: calc(50% - 50vw);
     grid-column: 1 / -1;
   }
@@ -1446,9 +1483,18 @@ img {
     padding-top: 2.4rem;
   }
 
-  .table-of-contents,
-  .article-toc {
+  .table-of-contents {
     display: none;
+  }
+
+  .article-main,
+  .article-toc {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .article-toc {
+    position: static;
   }
 
   .footer-grid {
@@ -1617,3 +1663,17 @@ img {
     transform: none;
   }
 }
+
+
+.site-icon-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  gap: 0.5rem;
+}
+.site-icon-panel img { width: min(16rem, 100%); height: auto; }
+.reference-panel { padding: 1.5rem; }
+.article-title, .card-title { overflow-wrap: anywhere; }

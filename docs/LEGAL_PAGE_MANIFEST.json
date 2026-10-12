@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "game": "War of Genesis",
+  "kind": "site-policy-pages",
+  "deployment_status": "NOT DEPLOYED",
+  "policy_review": "owner approved on 2026-10-12; no legal compliance claim",
+  "pages": [
+    {
+      "path": "/privacy",
+      "source_file": "app/privacy/page.tsx",
+      "route_status": "IMPLEMENTED",
+      "intended_indexable": true,
+      "advertising": false,
+      "analytics": "GA4 on production origin only"
+    },
+    {
+      "path": "/cookies",
+      "source_file": "app/cookies/page.tsx",
+      "route_status": "IMPLEMENTED",
+      "intended_indexable": true,
+      "advertising": false,
+      "analytics": "GA4 on production origin only"
+    },
+    {
+      "path": "/terms",
+      "source_file": "app/terms/page.tsx",
+      "route_status": "IMPLEMENTED",
+      "intended_indexable": true,
+      "advertising": false,
+      "analytics": "GA4 on production origin only"
+    }
+  ],
+  "retention": {
+    "days": 30,
+    "scope": [
+      "Vercel website request logs",
+      "Cloudflare website request logs",
+      "contact emails"
+    ],
+    "confirmed_by": "site operator",
+    "confirmed_on": "2026-10-12",
+    "external_settings_verification": "NOT VERIFIED",
+    "applies_to_GA4_or_Adsterra": false
+  }
+}

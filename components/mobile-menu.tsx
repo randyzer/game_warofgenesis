@@ -131,10 +131,10 @@ export function MobileMenu({ guideLinks, exploreLinks }: MobileMenuProps) {
 
           <Link
             className="button-link button--primary mobile-menu__cta"
-            href="/guides/how-to-play/"
+            href="/guides/getting-started/"
             onClick={closeMenu}
           >
-            Open field guide
+            Start reading
           </Link>
         </div>
       </nav>

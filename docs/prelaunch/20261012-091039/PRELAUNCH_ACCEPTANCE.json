@@ -1,0 +1,1396 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20261012-091039",
+  "game": "War of Genesis: Idle Loot",
+  "project_path": "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis",
+  "expected_domain": "https://war-of-genesis.wiki",
+  "mode": "audit-and-repair",
+  "preview_url": "http://127.0.0.1:3217",
+  "git_head": "ae6ac45c9a37a59cdef5ee451a5f38c5d0009c9c",
+  "branch": "codex/template-rebuild",
+  "runtime": {
+    "node": "22.16.0",
+    "pnpm": "12.6.0",
+    "framework": "Next.js 16.3.7"
+  },
+  "coverage": {
+    "routes_expected": 14,
+    "routes_checked": 14,
+    "desktop_checked_this_run": 3,
+    "mobile_390_checked_this_run": 3,
+    "viewport_cases_this_run": 12,
+    "screenshots_this_run": 12,
+    "prior_full_viewport_cases": 38,
+    "prior_full_browser_run": "20261012-080455",
+    "limitations": [
+      "本轮14页HTTP/SEO复测；仅受影响的3政策页新增12组浏览器截图，11内容页完整浏览器/交互/脚本隔离证据沿用上轮，对应源码未改变。",
+      "用户批准的30天期限为本站运营规则；未配置或核验Vercel/Cloudflare及邮箱实际留存/删除执行，记NOTE，不承诺已经自动删除。",
+      "没有部署、真实GA4入流、Adsterra投放、增强型衡量后台确认、GSC或线上CWV；这些属于后续部署与测量核验。",
+      "未重新游戏调研；相同MDX的内容事实及外链证据沿用。Discord入服/X目的页访问限制保持NOTE。",
+      "基本布局/键盘/命名/图片检查不等同于完整WCAG或法律合规认证。"
+    ]
+  },
+  "pages": [
+    {
+      "path": "/",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:3217/",
+      "release_status": "PUBLISHED",
+      "title": "War of Genesis: Idle Loot Wiki — Classes & Market",
+      "description": "Explore War of Genesis: Idle Loot with verified Steam-game references for classes, profile settings, G-Coins, official communities, and market trading.",
+      "h1": "War of Genesis:Idle Loot",
+      "h1_count": 1,
+      "target_keyword": "未配置",
+      "body_word_count": 1102,
+      "keyword_count": null,
+      "keyword_density": null,
+      "canonical": "https://war-of-genesis.wiki",
+      "noindex": false,
+      "open_graph": {
+        "og:title": "War of Genesis: Idle Loot Wiki — Classes & Market",
+        "og:description": "Explore War of Genesis: Idle Loot with verified Steam-game references for classes, profile settings, G-Coins, official communities, and market trading.",
+        "og:url": "https://war-of-genesis.wiki",
+        "og:site_name": "War of Genesis: Idle Loot Wiki",
+        "og:locale": "en_US",
+        "og:image": "https://war-of-genesis.wiki/android-chrome-512x512.png",
+        "og:image:width": "512",
+        "og:image:height": "512",
+        "og:image:alt": "Independent War of Genesis guide-site icon",
+        "og:type": "website"
+      },
+      "checks": {
+        "http": "PASS",
+        "canonical": "PASS",
+        "desktop": "PASS",
+        "mobile_390": "PASS",
+        "provenance": "PASS"
+      },
+      "page_type": "content",
+      "screenshots": [
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/home-390.png",
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/home-1440.png"
+      ],
+      "browser_evidence_run": "20261012-080455"
+    },
+    {
+      "path": "/guides/getting-started/",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:3217/guides/getting-started",
+      "release_status": "PUBLISHED",
+      "title": "War of Genesis: Idle Loot guide — Getting Started",
+      "description": "Use this War of Genesis: Idle Loot guide to understand automatic battles, Blacksmith menus, class choices, and the limits of Early Access advice.",
+      "h1": "War of Genesis: Idle Loot guide — Getting Started",
+      "h1_count": 1,
+      "target_keyword": "War of Genesis: Idle Loot guide",
+      "body_word_count": 832,
+      "keyword_count": 4,
+      "keyword_density": 0.004807692307692308,
+      "canonical": "https://war-of-genesis.wiki/guides/getting-started",
+      "noindex": false,
+      "open_graph": {
+        "og:title": "War of Genesis: Idle Loot guide — Getting Started",
+        "og:description": "Use this War of Genesis: Idle Loot guide to understand automatic battles, Blacksmith menus, class choices, and the limits of Early Access advice.",
+        "og:url": "https://war-of-genesis.wiki/guides/getting-started",
+        "og:site_name": "War of Genesis: Idle Loot Wiki",
+        "og:locale": "en_US",
+        "og:image": "https://war-of-genesis.wiki/android-chrome-512x512.png",
+        "og:image:width": "512",
+        "og:image:height": "512",
+        "og:image:alt": "Independent War of Genesis guide-site icon",
+        "og:type": "website"
+      },
+      "checks": {
+        "http": "PASS",
+        "canonical": "PASS",
+        "desktop": "PASS",
+        "mobile_390": "PASS",
+        "provenance": "PASS"
+      },
+      "page_type": "content",
+      "screenshots": [
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-getting-started-390.png",
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-getting-started-1440.png"
+      ],
+      "browser_evidence_run": "20261012-080455"
+    },
+    {
+      "path": "/guides/",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:3217/guides",
+      "release_status": "PUBLISHED",
+      "title": "War of Genesis: Idle Loot overview — Steam & Gameplay",
+      "description": "Read this War of Genesis: Idle Loot overview for the Steam game’s identity, release dates, Windows platform, automatic battles, and trading features.",
+      "h1": "War of Genesis: Idle Loot overview — Steam & Gameplay",
+      "h1_count": 1,
+      "target_keyword": "War of Genesis: Idle Loot overview",
+      "body_word_count": 668,
+      "keyword_count": 4,
+      "keyword_density": 0.005988023952095809,
+      "canonical": "https://war-of-genesis.wiki/guides",
+      "noindex": false,
+      "open_graph": {
+        "og:title": "War of Genesis: Idle Loot overview — Steam & Gameplay",
+        "og:description": "Read this War of Genesis: Idle Loot overview for the Steam game’s identity, release dates, Windows platform, automatic battles, and trading features.",
+        "og:url": "https://war-of-genesis.wiki/guides",
+        "og:site_name": "War of Genesis: Idle Loot Wiki",
+        "og:locale": "en_US",
+        "og:image": "https://war-of-genesis.wiki/android-chrome-512x512.png",
+        "og:image:width": "512",
+        "og:image:height": "512",
+        "og:image:alt": "Independent War of Genesis guide-site icon",
+        "og:type": "website"
+      },
+      "checks": {
+        "http": "PASS",
+        "canonical": "PASS",
+        "desktop": "PASS",
+        "mobile_390": "PASS",
+        "provenance": "PASS"
+      },
+      "page_type": "content",
+      "screenshots": [
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-390.png",
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-1440.png"
+      ],
+      "browser_evidence_run": "20261012-080455"
+    },
+    {
+      "path": "/guides/vs-path-of-idle/",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:3217/guides/vs-path-of-idle",
+      "release_status": "PUBLISHED",
+      "title": "War of Genesis: Idle Loot vs Path of Idle Old Gods Rising",
+      "description": "Compare War of Genesis: Idle Loot vs Path of Idle Old Gods Rising using official descriptions of desktop play, trading, classes, and town building.",
+      "h1": "War of Genesis: Idle Loot vs Path of Idle Old Gods Rising",
+      "h1_count": 1,
+      "target_keyword": "War of Genesis: Idle Loot vs Path of Idle Old Gods Rising",
+      "body_word_count": 647,
+      "keyword_count": 4,
+      "keyword_density": 0.0061823802163833074,
+      "canonical": "https://war-of-genesis.wiki/guides/vs-path-of-idle",
+      "noindex": false,
+      "open_graph": {
+        "og:title": "War of Genesis: Idle Loot vs Path of Idle Old Gods Rising",
+        "og:description": "Compare War of Genesis: Idle Loot vs Path of Idle Old Gods Rising using official descriptions of desktop play, trading, classes, and town building.",
+        "og:url": "https://war-of-genesis.wiki/guides/vs-path-of-idle",
+        "og:site_name": "War of Genesis: Idle Loot Wiki",
+        "og:locale": "en_US",
+        "og:image": "https://war-of-genesis.wiki/android-chrome-512x512.png",
+        "og:image:width": "512",
+        "og:image:height": "512",
+        "og:image:alt": "Independent War of Genesis guide-site icon",
+        "og:type": "website"
+      },
+      "checks": {
+        "http": "PASS",
+        "canonical": "PASS",
+        "desktop": "PASS",
+        "mobile_390": "PASS",
+        "provenance": "PASS"
+      },
+      "page_type": "content",
+      "screenshots": [
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-vs-path-of-idle-390.png",
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-vs-path-of-idle-1440.png"
+      ],
+      "browser_evidence_run": "20261012-080455"
+    },
+    {
+      "path": "/guides/classes/",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:3217/guides/classes",
+      "release_status": "PUBLISHED",
+      "title": "War of Genesis: Idle Loot classes — Names & Roles",
+      "description": "Understand War of Genesis: Idle Loot classes: Knight, Ranger, and Wizard, with official names, Early Access role descriptions, and ranking limits.",
+      "h1": "War of Genesis: Idle Loot classes — Names & Roles",
+      "h1_count": 1,
+      "target_keyword": "War of Genesis: Idle Loot classes",
+      "body_word_count": 684,
+      "keyword_count": 4,
+      "keyword_density": 0.005847953216374269,
+      "canonical": "https://war-of-genesis.wiki/guides/classes",
+      "noindex": false,
+      "open_graph": {
+        "og:title": "War of Genesis: Idle Loot classes — Names & Roles",
+        "og:description": "Understand War of Genesis: Idle Loot classes: Knight, Ranger, and Wizard, with official names, Early Access role descriptions, and ranking limits.",
+        "og:url": "https://war-of-genesis.wiki/guides/classes",
+        "og:site_name": "War of Genesis: Idle Loot Wiki",
+        "og:locale": "en_US",
+        "og:image": "https://war-of-genesis.wiki/android-chrome-512x512.png",
+        "og:image:width": "512",
+        "og:image:height": "512",
+        "og:image:alt": "Independent War of Genesis guide-site icon",
+        "og:type": "website"
+      },
+      "checks": {
+        "http": "PASS",
+        "canonical": "PASS",
+        "desktop": "PASS",
+        "mobile_390": "PASS",
+        "provenance": "PASS"
+      },
+      "page_type": "content",
+      "screenshots": [
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-classes-390.png",
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-classes-1440.png"
+      ],
+      "browser_evidence_run": "20261012-080455"
+    },
+    {
+      "path": "/guides/player-count/",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:3217/guides/player-count",
+      "release_status": "PUBLISHED",
+      "title": "War of Genesis: Idle Loot player count — Dated Snapshot",
+      "description": "Read the War of Genesis: Idle Loot player count snapshot from October 10, 2026, and distinguish concurrent players, group chat, and the EA peak.",
+      "h1": "War of Genesis: Idle Loot player count — Dated Snapshot",
+      "h1_count": 1,
+      "target_keyword": "War of Genesis: Idle Loot player count",
+      "body_word_count": 546,
+      "keyword_count": 4,
+      "keyword_density": 0.007326007326007326,
+      "canonical": "https://war-of-genesis.wiki/guides/player-count",
+      "noindex": false,
+      "open_graph": {
+        "og:title": "War of Genesis: Idle Loot player count — Dated Snapshot",
+        "og:description": "Read the War of Genesis: Idle Loot player count snapshot from October 10, 2026, and distinguish concurrent players, group chat, and the EA peak.",
+        "og:url": "https://war-of-genesis.wiki/guides/player-count",
+        "og:site_name": "War of Genesis: Idle Loot Wiki",
+        "og:locale": "en_US",
+        "og:image": "https://war-of-genesis.wiki/android-chrome-512x512.png",
+        "og:image:width": "512",
+        "og:image:height": "512",
+        "og:image:alt": "Independent War of Genesis guide-site icon",
+        "og:type": "website"
+      },
+      "checks": {
+        "http": "PASS",
+        "canonical": "PASS",
+        "desktop": "PASS",
+        "mobile_390": "PASS",
+        "provenance": "PASS"
+      },
+      "page_type": "content",
+      "screenshots": [
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-player-count-390.png",
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-player-count-1440.png"
+      ],
+      "browser_evidence_run": "20261012-080455"
+    },
+    {
+      "path": "/guides/discord/",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:3217/guides/discord",
+      "release_status": "PUBLISHED",
+      "title": "War of Genesis: Idle Loot discord — Official Invite",
+      "description": "Find the War of Genesis: Idle Loot discord invite cited in official Steam announcements, and distinguish that server link from Discord’s game directory.",
+      "h1": "War of Genesis: Idle Loot discord — Official Invite",
+      "h1_count": 1,
+      "target_keyword": "War of Genesis: Idle Loot discord",
+      "body_word_count": 566,
+      "keyword_count": 4,
+      "keyword_density": 0.007067137809187279,
+      "canonical": "https://war-of-genesis.wiki/guides/discord",
+      "noindex": false,
+      "open_graph": {
+        "og:title": "War of Genesis: Idle Loot discord — Official Invite",
+        "og:description": "Find the War of Genesis: Idle Loot discord invite cited in official Steam announcements, and distinguish that server link from Discord’s game directory.",
+        "og:url": "https://war-of-genesis.wiki/guides/discord",
+        "og:site_name": "War of Genesis: Idle Loot Wiki",
+        "og:locale": "en_US",
+        "og:image": "https://war-of-genesis.wiki/android-chrome-512x512.png",
+        "og:image:width": "512",
+        "og:image:height": "512",
+        "og:image:alt": "Independent War of Genesis guide-site icon",
+        "og:type": "website"
+      },
+      "checks": {
+        "http": "PASS",
+        "canonical": "PASS",
+        "desktop": "PASS",
+        "mobile_390": "PASS",
+        "provenance": "PASS"
+      },
+      "page_type": "content",
+      "screenshots": [
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-discord-390.png",
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-discord-1440.png"
+      ],
+      "browser_evidence_run": "20261012-080455"
+    },
+    {
+      "path": "/guides/profile/",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:3217/guides/profile",
+      "release_status": "PUBLISHED",
+      "title": "War of Genesis: Idle Loot profile — User Code & Frames",
+      "description": "Use the War of Genesis: Idle Loot profile icon to find your User Code, then read the October 7 update’s explanation of character images and frames.",
+      "h1": "War of Genesis: Idle Loot profile — User Code & Frames",
+      "h1_count": 1,
+      "target_keyword": "War of Genesis: Idle Loot profile",
+      "body_word_count": 561,
+      "keyword_count": 4,
+      "keyword_density": 0.0071301247771836,
+      "canonical": "https://war-of-genesis.wiki/guides/profile",
+      "noindex": false,
+      "open_graph": {
+        "og:title": "War of Genesis: Idle Loot profile — User Code & Frames",
+        "og:description": "Use the War of Genesis: Idle Loot profile icon to find your User Code, then read the October 7 update’s explanation of character images and frames.",
+        "og:url": "https://war-of-genesis.wiki/guides/profile",
+        "og:site_name": "War of Genesis: Idle Loot Wiki",
+        "og:locale": "en_US",
+        "og:image": "https://war-of-genesis.wiki/android-chrome-512x512.png",
+        "og:image:width": "512",
+        "og:image:height": "512",
+        "og:image:alt": "Independent War of Genesis guide-site icon",
+        "og:type": "website"
+      },
+      "checks": {
+        "http": "PASS",
+        "canonical": "PASS",
+        "desktop": "PASS",
+        "mobile_390": "PASS",
+        "provenance": "PASS"
+      },
+      "page_type": "content",
+      "screenshots": [
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-profile-390.png",
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-profile-1440.png"
+      ],
+      "browser_evidence_run": "20261012-080455"
+    },
+    {
+      "path": "/guides/in-app-purchases/",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:3217/guides/in-app-purchases",
+      "release_status": "PUBLISHED",
+      "title": "War of Genesis: Idle Loot in-app purchases — G-Coins",
+      "description": "Understand War of Genesis: Idle Loot in-app purchases, the G-Coins Shop entry introduced October 7, and the official Steam Overlay payment FAQ.",
+      "h1": "War of Genesis: Idle Loot in-app purchases — G-Coins",
+      "h1_count": 1,
+      "target_keyword": "War of Genesis: Idle Loot in-app purchases",
+      "body_word_count": 639,
+      "keyword_count": 4,
+      "keyword_density": 0.006259780907668232,
+      "canonical": "https://war-of-genesis.wiki/guides/in-app-purchases",
+      "noindex": false,
+      "open_graph": {
+        "og:title": "War of Genesis: Idle Loot in-app purchases — G-Coins",
+        "og:description": "Understand War of Genesis: Idle Loot in-app purchases, the G-Coins Shop entry introduced October 7, and the official Steam Overlay payment FAQ.",
+        "og:url": "https://war-of-genesis.wiki/guides/in-app-purchases",
+        "og:site_name": "War of Genesis: Idle Loot Wiki",
+        "og:locale": "en_US",
+        "og:image": "https://war-of-genesis.wiki/android-chrome-512x512.png",
+        "og:image:width": "512",
+        "og:image:height": "512",
+        "og:image:alt": "Independent War of Genesis guide-site icon",
+        "og:type": "website"
+      },
+      "checks": {
+        "http": "PASS",
+        "canonical": "PASS",
+        "desktop": "PASS",
+        "mobile_390": "PASS",
+        "provenance": "PASS"
+      },
+      "page_type": "content",
+      "screenshots": [
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-in-app-purchases-390.png",
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-in-app-purchases-1440.png"
+      ],
+      "browser_evidence_run": "20261012-080455"
+    },
+    {
+      "path": "/guides/market/",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:3217/guides/market",
+      "release_status": "PUBLISHED",
+      "title": "War of Genesis: Idle Loot market — Steam Trading Basics",
+      "description": "Explore the War of Genesis: Idle Loot market through official Steam links, with eligible-item scope, Steam Wallet funds, and item-specific trade limits.",
+      "h1": "War of Genesis: Idle Loot market — Steam Trading Basics",
+      "h1_count": 1,
+      "target_keyword": "War of Genesis: Idle Loot market",
+      "body_word_count": 625,
+      "keyword_count": 6,
+      "keyword_density": 0.0096,
+      "canonical": "https://war-of-genesis.wiki/guides/market",
+      "noindex": false,
+      "open_graph": {
+        "og:title": "War of Genesis: Idle Loot market — Steam Trading Basics",
+        "og:description": "Explore the War of Genesis: Idle Loot market through official Steam links, with eligible-item scope, Steam Wallet funds, and item-specific trade limits.",
+        "og:url": "https://war-of-genesis.wiki/guides/market",
+        "og:site_name": "War of Genesis: Idle Loot Wiki",
+        "og:locale": "en_US",
+        "og:image": "https://war-of-genesis.wiki/android-chrome-512x512.png",
+        "og:image:width": "512",
+        "og:image:height": "512",
+        "og:image:alt": "Independent War of Genesis guide-site icon",
+        "og:type": "website"
+      },
+      "checks": {
+        "http": "PASS",
+        "canonical": "PASS",
+        "desktop": "PASS",
+        "mobile_390": "PASS",
+        "provenance": "PASS"
+      },
+      "page_type": "content",
+      "screenshots": [
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-market-390.png",
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-market-1440.png"
+      ],
+      "browser_evidence_run": "20261012-080455"
+    },
+    {
+      "path": "/guides/market-buying/",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:3217/guides/market-buying",
+      "release_status": "PUBLISHED",
+      "title": "War of Genesis: Idle Loot market buying — Item Delivery",
+      "description": "Understand War of Genesis: Idle Loot market buying: the official Inventory delivery change, order matching, and the limits recorded for one jewel.",
+      "h1": "War of Genesis: Idle Loot market buying — Item Delivery",
+      "h1_count": 1,
+      "target_keyword": "War of Genesis: Idle Loot market buying",
+      "body_word_count": 629,
+      "keyword_count": 4,
+      "keyword_density": 0.006359300476947536,
+      "canonical": "https://war-of-genesis.wiki/guides/market-buying",
+      "noindex": false,
+      "open_graph": {
+        "og:title": "War of Genesis: Idle Loot market buying — Item Delivery",
+        "og:description": "Understand War of Genesis: Idle Loot market buying: the official Inventory delivery change, order matching, and the limits recorded for one jewel.",
+        "og:url": "https://war-of-genesis.wiki/guides/market-buying",
+        "og:site_name": "War of Genesis: Idle Loot Wiki",
+        "og:locale": "en_US",
+        "og:image": "https://war-of-genesis.wiki/android-chrome-512x512.png",
+        "og:image:width": "512",
+        "og:image:height": "512",
+        "og:image:alt": "Independent War of Genesis guide-site icon",
+        "og:type": "website"
+      },
+      "checks": {
+        "http": "PASS",
+        "canonical": "PASS",
+        "desktop": "PASS",
+        "mobile_390": "PASS",
+        "provenance": "PASS"
+      },
+      "page_type": "content",
+      "screenshots": [
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-market-buying-390.png",
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-080455/screenshots/guides-market-buying-1440.png"
+      ],
+      "browser_evidence_run": "20261012-080455"
+    },
+    {
+      "path": "/privacy/",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:3217/privacy",
+      "release_status": "PUBLISHED",
+      "title": "Privacy Policy",
+      "description": "Privacy information for War of Genesis: Idle Loot Wiki, including analytics, advertising, hosting, browser storage, and contacting the site operator.",
+      "h1": "Privacy Policy",
+      "h1_count": 1,
+      "target_keyword": "未配置",
+      "body_word_count": 371,
+      "keyword_count": null,
+      "keyword_density": null,
+      "canonical": "https://war-of-genesis.wiki/privacy",
+      "noindex": false,
+      "open_graph": {
+        "og:title": "Privacy Policy",
+        "og:description": "Privacy information for War of Genesis: Idle Loot Wiki, including analytics, advertising, hosting, browser storage, and contacting the site operator.",
+        "og:url": "https://war-of-genesis.wiki/privacy",
+        "og:site_name": "War of Genesis: Idle Loot Wiki",
+        "og:locale": "en_US",
+        "og:image": "https://war-of-genesis.wiki/android-chrome-512x512.png",
+        "og:image:width": "512",
+        "og:image:height": "512",
+        "og:image:alt": "Independent War of Genesis guide-site icon",
+        "og:type": "website"
+      },
+      "checks": {
+        "http": "PASS",
+        "canonical": "PASS",
+        "desktop": "PASS",
+        "mobile_390": "PASS",
+        "provenance": "USER FACTS CONFIRMED; RETENTION UNDETERMINED"
+      },
+      "page_type": "policy",
+      "screenshots": [
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-091039/screenshots/privacy-390.png",
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-091039/screenshots/privacy-1440.png"
+      ],
+      "browser_evidence_run": "20261012-091039"
+    },
+    {
+      "path": "/cookies/",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:3217/cookies",
+      "release_status": "PUBLISHED",
+      "title": "Cookie Policy",
+      "description": "Learn about browser storage, Google Analytics 4, Adsterra advertising, and the browser controls relevant to War of Genesis: Idle Loot Wiki.",
+      "h1": "Cookie Policy",
+      "h1_count": 1,
+      "target_keyword": "未配置",
+      "body_word_count": 238,
+      "keyword_count": null,
+      "keyword_density": null,
+      "canonical": "https://war-of-genesis.wiki/cookies",
+      "noindex": false,
+      "open_graph": {
+        "og:title": "Cookie Policy",
+        "og:description": "Learn about browser storage, Google Analytics 4, Adsterra advertising, and the browser controls relevant to War of Genesis: Idle Loot Wiki.",
+        "og:url": "https://war-of-genesis.wiki/cookies",
+        "og:site_name": "War of Genesis: Idle Loot Wiki",
+        "og:locale": "en_US",
+        "og:image": "https://war-of-genesis.wiki/android-chrome-512x512.png",
+        "og:image:width": "512",
+        "og:image:height": "512",
+        "og:image:alt": "Independent War of Genesis guide-site icon",
+        "og:type": "website"
+      },
+      "checks": {
+        "http": "PASS",
+        "canonical": "PASS",
+        "desktop": "PASS",
+        "mobile_390": "PASS",
+        "provenance": "USER FACTS CONFIRMED; RETENTION UNDETERMINED"
+      },
+      "page_type": "policy",
+      "screenshots": [
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-091039/screenshots/cookies-390.png",
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-091039/screenshots/cookies-1440.png"
+      ],
+      "browser_evidence_run": "20261012-091039"
+    },
+    {
+      "path": "/terms/",
+      "http_status": 200,
+      "final_url": "http://127.0.0.1:3217/terms",
+      "release_status": "PUBLISHED",
+      "title": "Terms of Use",
+      "description": "Read the use information for War of Genesis: Idle Loot Wiki, including independent fan-site status, dated references, third-party links, and contact.",
+      "h1": "Terms of Use",
+      "h1_count": 1,
+      "target_keyword": "未配置",
+      "body_word_count": 206,
+      "keyword_count": null,
+      "keyword_density": null,
+      "canonical": "https://war-of-genesis.wiki/terms",
+      "noindex": false,
+      "open_graph": {
+        "og:title": "Terms of Use",
+        "og:description": "Read the use information for War of Genesis: Idle Loot Wiki, including independent fan-site status, dated references, third-party links, and contact.",
+        "og:url": "https://war-of-genesis.wiki/terms",
+        "og:site_name": "War of Genesis: Idle Loot Wiki",
+        "og:locale": "en_US",
+        "og:image": "https://war-of-genesis.wiki/android-chrome-512x512.png",
+        "og:image:width": "512",
+        "og:image:height": "512",
+        "og:image:alt": "Independent War of Genesis guide-site icon",
+        "og:type": "website"
+      },
+      "checks": {
+        "http": "PASS",
+        "canonical": "PASS",
+        "desktop": "PASS",
+        "mobile_390": "PASS",
+        "provenance": "USER FACTS CONFIRMED; RETENTION UNDETERMINED"
+      },
+      "page_type": "policy",
+      "screenshots": [
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-091039/screenshots/terms-390.png",
+        "/Users/randyz/.codex/worktrees/template-rebuild/game_warofgenesis/docs/prelaunch/20261012-091039/screenshots/terms-1440.png"
+      ],
+      "browser_evidence_run": "20261012-091039"
+    }
+  ],
+  "non_public_manifest": [
+    {
+      "keyword": "War of Genesis: Idle Loot wiki",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot builds",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot database",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot best class",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot ranger",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot ranger build",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot ranger skills",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot knight build",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot wizard build",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot wizard",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot bahamut",
+      "outcome": "BLOCKED",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot reviews",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot reddit",
+      "outcome": "BLOCKED",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot 5ch",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot threads",
+      "outcome": "BLOCKED",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot mobile",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot mobile storage requirements",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot always on top",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot login problems",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot stuck",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot refunds",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot pets",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot drop rates",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot items",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot gold bars",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot gold bar drop rate",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot T5 to T6 synthesis chance",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot auto gem synthesis",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot vault",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot diamond bags",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot offline rewards",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot plugins",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot tools",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot github",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot mods",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot trainers",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot cheat engine",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot cheats",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot unknowncheats",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot 3dm",
+      "outcome": "BLOCKED",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot skill tree",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot skill allocation",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot skills",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot best skills",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot poison damage",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot shadow step",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot adventurer skills",
+      "outcome": "BLOCKED",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot money making",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot developer market revenue",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot crypto mining",
+      "outcome": "BLOCKED",
+      "route": null,
+      "source_file": null
+    },
+    {
+      "keyword": "War of Genesis: Idle Loot safety",
+      "outcome": "DRAFT",
+      "route": null,
+      "source_file": null
+    }
+  ],
+  "route_union": {
+    "content_registry": [
+      "/",
+      "/guides/getting-started/",
+      "/guides/",
+      "/guides/vs-path-of-idle/",
+      "/guides/classes/",
+      "/guides/player-count/",
+      "/guides/discord/",
+      "/guides/profile/",
+      "/guides/in-app-purchases/",
+      "/guides/market/",
+      "/guides/market-buying/"
+    ],
+    "policy_registry": [
+      "/privacy",
+      "/cookies",
+      "/terms"
+    ],
+    "keyword_manifest_published": 10,
+    "policy_manifest": "docs/LEGAL_PAGE_MANIFEST.json",
+    "production_output": [
+      "/",
+      "/_global-error",
+      "/_not-found",
+      "/cookies",
+      "/guides",
+      "/guides/classes",
+      "/guides/discord",
+      "/guides/getting-started",
+      "/guides/in-app-purchases",
+      "/guides/market",
+      "/guides/market-buying",
+      "/guides/player-count",
+      "/guides/profile",
+      "/guides/vs-path-of-idle",
+      "/privacy",
+      "/robots.txt",
+      "/sitemap.xml",
+      "/terms"
+    ],
+    "sitemap": [
+      "https://war-of-genesis.wiki/",
+      "https://war-of-genesis.wiki/guides",
+      "https://war-of-genesis.wiki/guides/getting-started",
+      "https://war-of-genesis.wiki/guides/classes",
+      "https://war-of-genesis.wiki/guides/vs-path-of-idle",
+      "https://war-of-genesis.wiki/guides/player-count",
+      "https://war-of-genesis.wiki/guides/discord",
+      "https://war-of-genesis.wiki/guides/profile",
+      "https://war-of-genesis.wiki/guides/in-app-purchases",
+      "https://war-of-genesis.wiki/guides/market",
+      "https://war-of-genesis.wiki/guides/market-buying",
+      "https://war-of-genesis.wiki/privacy",
+      "https://war-of-genesis.wiki/cookies",
+      "https://war-of-genesis.wiki/terms"
+    ],
+    "reachable": [
+      "/",
+      "/guides/getting-started/",
+      "/guides/",
+      "/guides/vs-path-of-idle/",
+      "/guides/classes/",
+      "/guides/player-count/",
+      "/guides/discord/",
+      "/guides/profile/",
+      "/guides/in-app-purchases/",
+      "/guides/market/",
+      "/guides/market-buying/",
+      "/privacy/",
+      "/cookies/",
+      "/terms/"
+    ],
+    "drafts_blocked": 51
+  },
+  "utility_routes": [
+    {
+      "path": "/robots.txt",
+      "status": 200
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200
+    },
+    {
+      "path": "/favicon.ico",
+      "status": 200
+    },
+    {
+      "path": "/does-not-exist/",
+      "status": 404
+    },
+    {
+      "path": "/guides/controls/",
+      "status": 404
+    },
+    {
+      "path": "/privacy/",
+      "status": 404
+    },
+    {
+      "path": "/about/",
+      "status": 404
+    },
+    {
+      "path": "/contact/",
+      "status": 404
+    },
+    {
+      "path": "/disclaimer/",
+      "status": 404
+    },
+    {
+      "path": "/guides/farming",
+      "status": 410
+    },
+    {
+      "path": "/guides/gear",
+      "status": 410
+    }
+  ],
+  "checks": [
+    {
+      "name": "typecheck",
+      "status": "PASS",
+      "evidence": "本轮按现有锁文件/依赖运行对应脚本，退出0；没有安装或升级依赖。"
+    },
+    {
+      "name": "lint",
+      "status": "PASS",
+      "evidence": "本轮按现有锁文件/依赖运行对应脚本，退出0；没有安装或升级依赖。"
+    },
+    {
+      "name": "production-build",
+      "status": "PASS",
+      "evidence": "本轮按现有锁文件/依赖运行对应脚本，退出0；没有安装或升级依赖。"
+    },
+    {
+      "name": "test",
+      "status": "NOT CONFIGURED",
+      "evidence": "package.json无test脚本；未安装测试工具、未修改依赖。"
+    },
+    {
+      "name": "published-route-inventory",
+      "status": "PASS",
+      "evidence": "11内容页和3政策页共14；三条政策页独立记录，61关键词计数不变。"
+    },
+    {
+      "name": "draft-and-blocked-exposure",
+      "status": "PASS",
+      "evidence": "51草稿/阻断项目不在sitemap，route/source_file均null，候选404本轮复测。"
+    },
+    {
+      "name": "internal-links-fragments",
+      "status": "PASS",
+      "evidence": "14页内部链接/锚点扫描无失效；19项导航操作记录及独立真实Tab/Enter手机目录复测通过。"
+    },
+    {
+      "name": "external-links",
+      "status": "BLOCKED",
+      "evidence": "沿用20261010T153823Z外链证据（相同源码）：7条可读，Discord入口正文不可读、X超时；未降级或再次平台调研。"
+    },
+    {
+      "name": "tdh-keywords",
+      "status": "PASS",
+      "evidence": "本轮14页TDH/元数据正常，3政策页正文词数按.prose-wiki当前DOM更新；10资料页关键词与正文统计沿用相同MDX。首页主词未配置属NOTE。"
+    },
+    {
+      "name": "content-truth-provenance",
+      "status": "PASS",
+      "evidence": "首页+10资料页对照既有provenance、10份material与8份原始网页记录；未发现已确认事实矛盾。PASS仅针对已发表的限定范围。 相关原检查沿用；本轮公开源码残留扫描无命中，事实文件未改。"
+    },
+    {
+      "name": "canonical",
+      "status": "PASS",
+      "evidence": "本轮14页唯一canonical且匹配正式域名和最终路径。"
+    },
+    {
+      "name": "robots",
+      "status": "PASS",
+      "evidence": "本轮200 text/plain，Allow: /，正式域名sitemap指令。"
+    },
+    {
+      "name": "sitemap",
+      "status": "PASS",
+      "evidence": "本轮14唯一新域名loc：11内容页+3政策页，映射预览均200，51未发布项目排除。"
+    },
+    {
+      "name": "language-public-noindex",
+      "status": "PASS",
+      "evidence": "公开页lang=en，无noindex。404错误响应有noindex；来源模板/localhost未出现在公开SEO字段。"
+    },
+    {
+      "name": "structured-data",
+      "status": "NOT CONFIGURED",
+      "evidence": "公开页没有JSON-LD；不凭此宣称严重SEO错误或已取得富媒体展示资格。 相关原检查沿用；本轮公开源码残留扫描无命中，事实文件未改。"
+    },
+    {
+      "name": "open-graph",
+      "status": "PASS",
+      "evidence": "本轮14页标题/描述/URL分别匹配，既有独立站图标作为分享图。"
+    },
+    {
+      "name": "desktop-layout",
+      "status": "PASS",
+      "evidence": "3政策页1440px本轮复测；11内容页沿用相同源码的上轮完整桌面证据。"
+    },
+    {
+      "name": "mobile-390-and-key-360-768",
+      "status": "PASS",
+      "evidence": "3政策页360/390/768/1440共12组均无溢出；其余同源码内容页沿用上轮38组中的相应证据。"
+    },
+    {
+      "name": "accessibility",
+      "status": "PASS",
+      "evidence": "本轮政策页H1/语言/链接按钮命名/图片检查通过，无广告或第三方脚本加载；未变导航真实Tab/Enter等证据沿用上轮，不宣称全面WCAG符合性。"
+    },
+    {
+      "name": "performance-local-resources",
+      "status": "PASS",
+      "evidence": "本轮17本地资源200，所有38组无缺失图片；没有线上CWV或真实第三方性能结果。"
+    },
+    {
+      "name": "console-network-all-routes",
+      "status": "PASS",
+      "evidence": "本轮政策页12组及菜单复测无网站自身错误；Chrome扩展资源错误单独记录。其他同源码路由沿用上轮。"
+    },
+    {
+      "name": "favicon",
+      "status": "PASS",
+      "evidence": "根路径/favicon.ico返回200 image/x-icon，15406bytes；资产未改。"
+    },
+    {
+      "name": "template-residue",
+      "status": "PASS",
+      "evidence": "public源码扫描未见Emberdeep/Northlamp/bombfarm/gamesop/localhost/placeholder/TODO残留；拆除6模板候选路由全部404；package非公开标识与内部模板报告允许保留。 相关原检查沿用；本轮公开源码残留扫描无命中，事实文件未改。"
+    },
+    {
+      "name": "current-workspace-secrets",
+      "status": "PASS",
+      "evidence": "本轮当前及tracked文本的敏感文件名/常见凭据扫描无命中；不打印秘密、不覆盖Git历史或云端环境。"
+    },
+    {
+      "name": "operator-policy-readiness",
+      "status": "PASS",
+      "evidence": "用户明确批准当前政策文案，并将Vercel/Cloudflare请求日志及联系邮件保存规则设为30天；隐私页已更新且通过构建/12尺寸复测。后台实际执行未核验另列NOTE。"
+    },
+    {
+      "name": "old-site-url-migration",
+      "status": "NOT APPLICABLE",
+      "evidence": "用户明确新站按新内容规划验收，旧路径无对应新页不算缺陷或阻断。另已验证2条语义308和2条410，不要求恢复旧页。"
+    },
+    {
+      "name": "GA4-code",
+      "status": "PASS",
+      "evidence": "上轮SERVICES_ISOLATION_RETEST.json完成加载分支/政策无广告/预览不加载/SPA不重复检查；对应服务源码未改变，沿用。真实收数/广告投放未验证。"
+    },
+    {
+      "name": "Adsterra-code",
+      "status": "PASS",
+      "evidence": "上轮SERVICES_ISOLATION_RETEST.json完成加载分支/政策无广告/预览不加载/SPA不重复检查；对应服务源码未改变，沿用。真实收数/广告投放未验证。"
+    },
+    {
+      "name": "production-measurement",
+      "status": "NOT CONFIGURED",
+      "evidence": "本轮不部署，不改GA4后台或GSC；Realtime/广告实际投放及自动SPA增强型衡量待独立验证。"
+    }
+  ],
+  "seo_url_audit": {
+    "robots": {
+      "http_status": 200,
+      "body": "User-Agent: *\nAllow: /\n\nSitemap: https://war-of-genesis.wiki/sitemap.xml\n",
+      "sitemap_directives": [
+        "https://war-of-genesis.wiki/sitemap.xml"
+      ],
+      "status": "PASS"
+    },
+    "sitemap": {
+      "http_status": 200,
+      "loc_count": 14,
+      "locs": [
+        "https://war-of-genesis.wiki/",
+        "https://war-of-genesis.wiki/guides",
+        "https://war-of-genesis.wiki/guides/getting-started",
+        "https://war-of-genesis.wiki/guides/classes",
+        "https://war-of-genesis.wiki/guides/vs-path-of-idle",
+        "https://war-of-genesis.wiki/guides/player-count",
+        "https://war-of-genesis.wiki/guides/discord",
+        "https://war-of-genesis.wiki/guides/profile",
+        "https://war-of-genesis.wiki/guides/in-app-purchases",
+        "https://war-of-genesis.wiki/guides/market",
+        "https://war-of-genesis.wiki/guides/market-buying",
+        "https://war-of-genesis.wiki/privacy",
+        "https://war-of-genesis.wiki/cookies",
+        "https://war-of-genesis.wiki/terms"
+      ],
+      "domain_mismatches": [],
+      "missing_published_routes": [],
+      "draft_or_blocked_routes": [],
+      "all_loc_preview_status": 200,
+      "status": "PASS"
+    }
+  },
+  "findings": [
+    {
+      "id": "PL-001",
+      "severity": "P1",
+      "status": "FIXED",
+      "page": "全部14公开页",
+      "category": "technical-seo",
+      "evidence": "本轮14/14 canonical唯一且正式origin/最终路径对应；根origin与origin/语义等同。",
+      "recommendation": "本轮修复并通过生产响应复测。",
+      "source": "SEO_ROUTE_RETEST.json"
+    },
+    {
+      "id": "PL-002",
+      "severity": "P1",
+      "status": "FIXED",
+      "page": "/robots.txt",
+      "category": "technical-seo",
+      "evidence": "200 text/plain，Allow: /，Sitemap指向正式域名/sitemap.xml。",
+      "recommendation": "本轮修复并通过生产响应复测。",
+      "source": "SEO_ROUTE_RETEST.json"
+    },
+    {
+      "id": "PL-003",
+      "severity": "P1",
+      "status": "FIXED",
+      "page": "/sitemap.xml",
+      "category": "technical-seo",
+      "evidence": "本轮200 XML、14唯一正式域名loc，全部映射预览200；排除51未发布项目和410/错误工具路径。",
+      "recommendation": "本轮修复并通过生产响应复测。",
+      "source": "SEO_ROUTE_RETEST.json"
+    },
+    {
+      "id": "PL-004",
+      "severity": "P1",
+      "status": "FIXED",
+      "page": "站点运营政策确认",
+      "category": "operator-policies",
+      "evidence": "2026-10-12用户明确确认Vercel/Cloudflare请求日志及联系邮件30天留存规则，批准政策文案；隐私文案/政策日期更新，构建及12组布局通过。原人工确认项已关闭；实际账户执行单列NOTE。",
+      "recommendation": "保留当前已批准政策；后续独立核对外部账户实际30天执行，不重复询问已确认文案。",
+      "source": "用户本轮确认；docs/LEGAL_FACT_CHECK.md；THIS_RUN.patch；BROWSER_RETEST.json",
+      "partial_repair": "Owner confirmation complete; bounded policy/date changes verified"
+    },
+    {
+      "id": "PL-005",
+      "severity": "NOTE",
+      "status": "ACCEPTED_WITH_REASON",
+      "page": "旧站6条已验证可访问URL",
+      "category": "route-migration",
+      "evidence": "用户明确新站按新内容规划验收，旧路径无对应新页不算缺陷或阻断。另已验证2条语义308和2条410，不要求恢复旧页。",
+      "recommendation": "按新内容规划验收，不补建farming或gear页面；410仅为已批准下线响应。",
+      "source": "用户范围更正；next.config.mjs；410 route handlers",
+      "baseline_severity": "P1"
+    },
+    {
+      "id": "PL-006",
+      "severity": "P2",
+      "status": "FIXED",
+      "page": "/guides/getting-started/（同类文章）",
+      "category": "ui-ux",
+      "evidence": "10资料页手机目录可见，DOM在正文之前；实际Tab焦点可见、点击/Enter跳转标题无遮挡。",
+      "recommendation": "已完成最小UI修复和真实Chrome复测。",
+      "source": "../20261012-080455/TOC_KEYBOARD_RETEST.json；未改变article-shell及导航源码"
+    },
+    {
+      "id": "PL-007",
+      "severity": "P2",
+      "status": "FIXED",
+      "page": "全部14公开页",
+      "category": "social-metadata",
+      "evidence": "本轮14/14 OG标题、描述、URL匹配当前页面，使用既有已批准独立粉丝站图标。",
+      "recommendation": "本轮修复并通过生产响应复测。",
+      "source": "SEO_ROUTE_RETEST.json"
+    },
+    {
+      "id": "PL-008",
+      "severity": "NOTE",
+      "status": "FIXED",
+      "page": "全部公开页",
+      "category": "current-candidate-coverage",
+      "evidence": "上轮38组完整浏览器覆盖通过；本轮受影响3政策页12组重新通过，其他内容页源码不变。",
+      "recommendation": "浏览器覆盖缺口已消除。",
+      "source": "../20261012-080455/BROWSER_RETEST.json；BROWSER_RETEST.json"
+    },
+    {
+      "id": "PL-009",
+      "severity": "NOTE",
+      "status": "OPEN",
+      "page": "/",
+      "category": "keyword-configuration",
+      "evidence": "重构站没有明确primaryKeyword/targetKeyword字段，首页目标词记为未配置；layout通用keywords数组不能代替唯一目标词配置。",
+      "recommendation": "站主确认首页主关键词后补入可追踪配置；不要把旧站字段直接当作重构授权。",
+      "source": "app/layout.tsx；lib/site-data.ts；docs/CONTENT_PAGE_MANIFEST.json"
+    },
+    {
+      "id": "PL-010",
+      "severity": "NOTE",
+      "status": "NEEDS_CONFIRMATION",
+      "page": "Discord与X外链",
+      "category": "external-links",
+      "evidence": "Discord入口HTTP200后正文不可读，不能确认入服有效性；X导航16秒超时，没有证据证明目的页失效。其余7外链200且正文可读。",
+      "recommendation": "如需确认入服或账号页有效性，由用户协助页面访问；本轮保留BLOCKED，不改链接或重复抓取。",
+      "source": "EXTERNAL_LINK_AUDIT.json"
+    },
+    {
+      "id": "PL-011",
+      "severity": "NOTE",
+      "status": "NEEDS_CONFIRMATION",
+      "page": "GA4与Adsterra",
+      "category": "measurement",
+      "evidence": "当前加载分支隔离测试通过，真实生产GA4入流/增强型衡量设置与Adsterra投放尚未验证。",
+      "recommendation": "完成候选复测后，在另行授权的部署流程验证标签、Realtime与广告投放，区分代码存在和数据收到。",
+      "source": "../20261012-080455/SERVICES_ISOLATION_RETEST.json；服务源码未改变"
+    },
+    {
+      "id": "PL-012",
+      "severity": "NOTE",
+      "status": "NEEDS_CONFIRMATION",
+      "page": "外部平台与联系邮箱",
+      "category": "retention-execution",
+      "evidence": "30天规则已获用户确认，当前没有Vercel/Cloudflare日志留存或邮箱清理的实际配置证据。本轮未进入外部账户、未设置删除任务。页面如实披露设置未核验。",
+      "recommendation": "下一步独立检查各账户可用的留存设置和执行方式，再落实30天规则；不将政策修改称为自动删除已配置。",
+      "source": "用户30天决定；app/privacy/page.tsx；docs/LEGAL_PAGE_MANIFEST.json"
+    }
+  ],
+  "repairs": [
+    {
+      "finding_ids": [
+        "PL-004"
+      ],
+      "files": [
+        "app/privacy/page.tsx",
+        "components/legal-page.tsx",
+        "docs/LEGAL_FACT_CHECK.md",
+        "docs/LEGAL_CONTENT_DRAFT.md",
+        "docs/LEGAL_PAGE_MANIFEST.json",
+        "docs/CONTENT_GAPS.md"
+      ],
+      "result": "FIXED: owner policy confirmation complete; retention wording/date and four policy records updated; type/lint/build and 14 HTTP/12 viewport checks PASS."
+    }
+  ],
+  "disposition": "可以上线",
+  "word_count_method": "资料页/首页沿用上轮同一源码的正文统计方法；本轮3政策页用.prose-wiki.innerText的英文字词边界计数。不对政策页施加游戏关键词。",
+  "manual_confirmations": [
+    "用户确认首版GA4/Adsterra直接加载，不设置同意控制。",
+    "公开运营者和邮箱、无账号/表单/评论事实均已确认。",
+    "Vercel/Cloudflare日志与联系邮件保存期限：用户明确回答未确定。",
+    "完整公开广告embed已提供；没有请求密码或API密钥。",
+    "2026-10-12用户明确将Vercel/Cloudflare日志及联系邮件期限设置为30天；取代此前未确定。",
+    "2026-10-12用户回复文案确认；首版Privacy/Cookies/Terms文案批准。"
+  ],
+  "cleanup": {
+    "preview_pid": 73563,
+    "preview_closed": true,
+    "owned_tabs_closed": true,
+    "proxy_browser_preserved": true,
+    "deployed": false,
+    "pushed": false,
+    "committed": false,
+    "external_settings_changed": false
+  },
+  "previous_audit": "20261012-080455",
+  "continuation": "Owner confirmed 30-day Vercel/Cloudflare log and contact-email policy, and approved policy wording. Bounded copy/date repair and relevant retest completed; no external account changes or deployment.",
+  "browser_retest": {
+    "status": "PASS",
+    "debug_port": 62698,
+    "viewport_cases_this_run": 12,
+    "screenshots_this_run": 12,
+    "full_baseline_run": "20261012-080455",
+    "fallback_used": false
+  },
+  "generated_at": "2026-10-12T01:15:47.311324+00:00",
+  "open_counts": {
+    "P0": 0,
+    "P1": 0,
+    "P2": 0
+  }
+}

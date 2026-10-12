@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
@@ -47,22 +46,12 @@ export function ArticleShell({
               Published {formatPublishedDate(metadata.publishedAt)}
             </time>
           </p>
+          <p className="article-meta">Research last checked <time dateTime={metadata.lastVerified}>{formatPublishedDate(metadata.lastVerified)}</time>. Historical claims retain their dates.</p>
         </header>
 
-        <div className="article-cover">
-          <Image
-            src={metadata.cover}
-            alt={metadata.coverAlt}
-            width={1600}
-            height={900}
-            sizes="(max-width: 1272px) calc(100vw - 2rem), 1240px"
-            priority
-          />
-        </div>
-
         <div className="article-reading-grid">
-          <div className="article-main prose-wiki">{children}</div>
           <TableOfContents sections={metadata.sections} />
+          <div className="article-main prose-wiki">{children}</div>
         </div>
 
         <FaqList faqs={metadata.faqs} idPrefix={`${metadata.slug}-faq`} />

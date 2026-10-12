@@ -1,26 +1,15 @@
 import type { MDXContent } from "mdx/types";
 
-import ControlsContent, {
-  metadata as controlsMetadata,
-} from "@/content/guides/controls.mdx";
-import GearForgingContent, {
-  metadata as gearForgingMetadata,
-} from "@/content/guides/gear-forging.mdx";
-import GettingStartedContent, {
-  metadata as gettingStartedMetadata,
-} from "@/content/guides/getting-started.mdx";
-import HowToPlayContent, {
-  metadata as howToPlayMetadata,
-} from "@/content/guides/how-to-play.mdx";
-import OverviewContent, {
-  metadata as overviewMetadata,
-} from "@/content/guides/overview.mdx";
-import SquadBuildingContent, {
-  metadata as squadBuildingMetadata,
-} from "@/content/guides/squad-building.mdx";
-import WorldProgressContent, {
-  metadata as worldProgressMetadata,
-} from "@/content/guides/world-progress.mdx";
+import Content0, { metadata as metadata0 } from "@/content/guides/getting-started.mdx";
+import Content1, { metadata as metadata1 } from "@/content/guides/overview.mdx";
+import Content2, { metadata as metadata2 } from "@/content/guides/classes.mdx";
+import Content3, { metadata as metadata3 } from "@/content/guides/vs-path-of-idle.mdx";
+import Content4, { metadata as metadata4 } from "@/content/guides/player-count.mdx";
+import Content5, { metadata as metadata5 } from "@/content/guides/discord.mdx";
+import Content6, { metadata as metadata6 } from "@/content/guides/profile.mdx";
+import Content7, { metadata as metadata7 } from "@/content/guides/in-app-purchases.mdx";
+import Content8, { metadata as metadata8 } from "@/content/guides/market.mdx";
+import Content9, { metadata as metadata9 } from "@/content/guides/market-buying.mdx";
 
 export interface ArticleSection {
   id: string;
@@ -36,8 +25,9 @@ export interface ArticleMetadata {
   slug: string;
   title: string;
   description: string;
-  category: "Guides";
+  category: string;
   publishedAt: string;
+  lastVerified: string;
   cover: string;
   coverAlt: string;
   sections: ArticleSection[];
@@ -126,9 +116,6 @@ export function parseArticleMetadata(
   }
 
   const category = readNonEmptyString(value, "category", source);
-  if (category !== "Guides") {
-    throw new Error(`${source}: metadata.category must be exactly "Guides"`);
-  }
 
   const publishedAt = readNonEmptyString(value, "publishedAt", source);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(publishedAt)) {
@@ -194,6 +181,7 @@ export function parseArticleMetadata(
     description: readNonEmptyString(value, "description", source),
     category,
     publishedAt,
+    lastVerified: readNonEmptyString(value, "lastVerified", source),
     cover,
     coverAlt: readNonEmptyString(value, "coverAlt", source),
     sections,
@@ -234,71 +222,89 @@ function assertUniqueArticleSlugs(
   }
 }
 
-const overviewEntry = createRegistryEntry(
-  overviewMetadata,
-  OverviewContent,
-  "content/guides/overview.mdx",
-);
+const overviewEntry = createRegistryEntry(metadata1, Content1, "content/guides/overview.mdx");
 
 const guideEntries: readonly ArticleRegistryEntry[] = [
-  createRegistryEntry(
-    howToPlayMetadata,
-    HowToPlayContent,
-    "content/guides/how-to-play.mdx",
-  ),
-  createRegistryEntry(
-    gettingStartedMetadata,
-    GettingStartedContent,
-    "content/guides/getting-started.mdx",
-  ),
-  createRegistryEntry(
-    controlsMetadata,
-    ControlsContent,
-    "content/guides/controls.mdx",
-  ),
-  createRegistryEntry(
-    squadBuildingMetadata,
-    SquadBuildingContent,
-    "content/guides/squad-building.mdx",
-  ),
-  createRegistryEntry(
-    gearForgingMetadata,
-    GearForgingContent,
-    "content/guides/gear-forging.mdx",
-  ),
-  createRegistryEntry(
-    worldProgressMetadata,
-    WorldProgressContent,
-    "content/guides/world-progress.mdx",
-  ),
+  createRegistryEntry(metadata0, Content0, "content/guides/getting-started.mdx"),
+  createRegistryEntry(metadata2, Content2, "content/guides/classes.mdx"),
+  createRegistryEntry(metadata3, Content3, "content/guides/vs-path-of-idle.mdx"),
+  createRegistryEntry(metadata4, Content4, "content/guides/player-count.mdx"),
+  createRegistryEntry(metadata5, Content5, "content/guides/discord.mdx"),
+  createRegistryEntry(metadata6, Content6, "content/guides/profile.mdx"),
+  createRegistryEntry(metadata7, Content7, "content/guides/in-app-purchases.mdx"),
+  createRegistryEntry(metadata8, Content8, "content/guides/market.mdx"),
+  createRegistryEntry(metadata9, Content9, "content/guides/market-buying.mdx"),
 ];
 
 assertUniqueArticleSlugs([overviewEntry, ...guideEntries]);
 
 export const guideOverview: ArticleRecord = overviewEntry.article;
-
-const unsortedGuideArticles: readonly ArticleRecord[] = guideEntries.map(
-  (entry) => entry.article,
-);
-
-export const guideArticles: readonly ArticleRecord[] = [
-  ...unsortedGuideArticles,
-].sort((left, right) =>
-  right.metadata.publishedAt.localeCompare(left.metadata.publishedAt),
-);
+export const guideArticles: readonly ArticleRecord[] = guideEntries.map((entry) => entry.article);
 
 export function getGuideBySlug(slug: string): ArticleRecord | undefined {
   return guideArticles.find((article) => article.metadata.slug === slug);
 }
 
-export function getRelatedGuides(slug: string, limit = 6): ArticleRecord[] {
+const relatedSlugs: Readonly<Record<string, readonly string[]>> = {
+  "getting-started": [
+    "classes",
+    "market",
+    "in-app-purchases"
+  ],
+  "overview": [
+    "getting-started",
+    "classes",
+    "market"
+  ],
+  "classes": [
+    "getting-started",
+    "market",
+    "in-app-purchases"
+  ],
+  "vs-path-of-idle": [
+    "classes",
+    "getting-started",
+    "market"
+  ],
+  "player-count": [
+    "discord",
+    "vs-path-of-idle",
+    "market"
+  ],
+  "discord": [
+    "profile",
+    "player-count",
+    "getting-started"
+  ],
+  "profile": [
+    "in-app-purchases",
+    "discord",
+    "getting-started"
+  ],
+  "in-app-purchases": [
+    "profile",
+    "market",
+    "market-buying"
+  ],
+  "market": [
+    "market-buying",
+    "in-app-purchases",
+    "getting-started"
+  ],
+  "market-buying": [
+    "market",
+    "in-app-purchases",
+    "profile"
+  ]
+};
+
+export function getRelatedGuides(slug: string, limit = 3): ArticleRecord[] {
   if (!Number.isFinite(limit)) {
     throw new RangeError("getRelatedGuides limit must be a finite number");
   }
-
   const safeLimit = Math.max(0, Math.floor(limit));
-
-  return guideArticles
-    .filter((article) => article.metadata.slug !== slug)
+  return (relatedSlugs[slug] ?? [])
+    .map((relatedSlug) => getGuideBySlug(relatedSlug))
+    .filter((article): article is ArticleRecord => article !== undefined && article.metadata.slug !== slug)
     .slice(0, safeLimit);
 }

@@ -6,8 +6,9 @@ import {
   type MobileMenuLink,
 } from "@/components/mobile-menu";
 import { guideArticles } from "@/lib/articles";
+import { site } from "@/lib/site-data";
 
-const guideLinks: readonly MobileMenuLink[] = guideArticles.map(
+const guideLinks: readonly MobileMenuLink[] = guideArticles.slice(0, 6).map(
   ({ metadata }) => ({
     href: `/guides/${metadata.slug}/`,
     label: metadata.title,
@@ -15,21 +16,20 @@ const guideLinks: readonly MobileMenuLink[] = guideArticles.map(
 );
 
 const exploreLinks: readonly MobileMenuLink[] = [
-  { href: "/#crews", label: "Crews" },
-  { href: "/#loadouts", label: "Loadouts" },
-  { href: "/#expeditions", label: "Expeditions" },
-  { href: "/#dispatches", label: "Dispatches" },
+  { href: "/#classes", label: "Classes" },
+  { href: "/#market", label: "Market" },
+  { href: "/#updates", label: "Updates" },
 ];
 
 export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="site-header__inner page-shell">
-        <Link aria-label="Emberdeep Codex home" className="site-brand" href="/">
+        <Link aria-label={`${site.name} home`} className="site-brand" href="/">
           <span aria-hidden="true" className="brand-mark">
             <span className="brand-mark__spark" />
           </span>
-          <span>Emberdeep Codex</span>
+          <span>{site.shortName}</span>
         </Link>
 
         <nav aria-label="Primary navigation" className="desktop-nav">
@@ -58,7 +58,7 @@ export function SiteHeader() {
 
         <div className="header-actions desktop-only">
           <span className="language-label">EN</span>
-          <ButtonLink href="/guides/how-to-play/">Open field guide</ButtonLink>
+          <ButtonLink href="/guides/getting-started/">Start reading</ButtonLink>
         </div>
 
         <MobileMenu exploreLinks={exploreLinks} guideLinks={guideLinks} />

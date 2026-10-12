@@ -12,9 +12,9 @@ export function FaqList({ faqs, idPrefix = "faq" }: FaqListProps) {
     <section className="article-faq" aria-labelledby={headingId}>
       <header className="section-heading">
         <p className="section-eyebrow">FAQ</p>
-        <h2 id={headingId}>Frequently Asked Questions</h2>
+        <h2 id={headingId}>Questions & answers</h2>
         <p className="section-description">
-          Quick field answers for the questions captains ask most often.
+          Short answers based on the documented material for this page.
         </p>
       </header>
 

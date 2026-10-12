@@ -1,0 +1,11 @@
+{
+  "changed_product_files": [
+    "app/privacy/page.tsx",
+    "components/legal-page.tsx"
+  ],
+  "unchanged_product_count": 47,
+  "dependencies_changed": false,
+  "game_content_unchanged": true,
+  "previous_browser_retest": "20261012-080455",
+  "confirmation": "Owner selected 30 days and approved current policy text; live service settings have not been changed or verified."
+}
