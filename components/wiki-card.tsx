@@ -1,15 +1,18 @@
+import { localize } from "@/lib/i18n/translate";
+import type { Locale } from "@/lib/i18n/locales";
 import Link from "next/link";
 
 import type { ArticleRecord } from "@/lib/articles";
 
 interface WikiCardProps {
+  locale?: Locale;
   article: ArticleRecord;
 }
 
-export function WikiCard({ article }: WikiCardProps) {
+export function WikiCard({ article, locale = "en" }: WikiCardProps) {
   const { metadata } = article;
 
-  return (
+  return localize(
     <article>
       <Link
         className="wiki-card card-hover"
@@ -25,5 +28,5 @@ export function WikiCard({ article }: WikiCardProps) {
         </div>
       </Link>
     </article>
-  );
+  , locale);
 }

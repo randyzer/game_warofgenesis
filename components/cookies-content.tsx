@@ -1,13 +1,15 @@
 import { LegalPage } from "@/components/legal-page";
-import { createPageMetadata } from "@/lib/page-metadata";
+import Link from "next/link";
+import { localize } from "@/lib/i18n/translate";
+import type { Locale } from "@/lib/i18n/locales";
 import { legalPages } from "@/lib/legal-pages";
 import { site } from "@/lib/site-data";
 
 const page = legalPages[1];
-export const metadata = createPageMetadata(page);
 
-export default function CookiesPage() {
-  return <LegalPage title={page.title}>
+
+export function CookiesPage({ locale = "en" }: { locale?: Locale }) {
+  return localize(<LegalPage locale={locale} title={page.title}>
     <p>This page describes the browser storage and third-party loading arrangement for {site.name}.</p>
     <h2>Cookies and browser storage</h2>
     <p>Cookies and other browser storage can keep information between visits. The site’s reading features do not offer account sessions or saved preferences. That does not mean that the website’s analytics, advertising, or infrastructure services are cookie-free.</p>
@@ -17,6 +19,6 @@ export default function CookiesPage() {
     <h2>Your browser controls</h2>
     <p>You can use your browser’s settings to inspect, restrict, or clear cookies and other site storage. Those settings may affect third-party analytics or advertising. Clearing stored information does not itself prevent a later visit from loading the scripts again. This site does not provide a separate preference panel or claim to implement a withdrawal control.</p>
     <h2>Service changes and contact</h2>
-    <p>If the site’s scripts or loading controls change, this notice should be updated to describe the actual implementation. For questions, contact {site.operator.name} at <a href={`mailto:${site.operator.email}`}>{site.operator.email}</a>. More information is provided in the <a href="/privacy">Privacy Policy</a>.</p>
-  </LegalPage>;
+    <p>If the site’s scripts or loading controls change, this notice should be updated to describe the actual implementation. For questions, contact {site.operator.name} at <a href={`mailto:${site.operator.email}`}>{site.operator.email}</a>. More information is provided in the <Link href="/privacy">Privacy Policy</Link>.</p>
+  </LegalPage>, locale);
 }

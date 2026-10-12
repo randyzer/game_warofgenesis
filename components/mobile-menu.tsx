@@ -1,5 +1,7 @@
 "use client";
 
+import { localePath, type Locale } from "@/lib/i18n/locales";
+
 import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
 
@@ -9,13 +11,15 @@ export interface MobileMenuLink {
 }
 
 interface MobileMenuProps {
+  locale?: Locale;
+  labels: { home:string; guides:string; explore:string; start:string; open:string; close:string; navigation:string };
   guideLinks: readonly MobileMenuLink[];
   exploreLinks: readonly MobileMenuLink[];
 }
 
 type AccordionName = "guides" | "explore";
 
-export function MobileMenu({ guideLinks, exploreLinks }: MobileMenuProps) {
+export function MobileMenu({ guideLinks, exploreLinks, labels, locale = "en" }: MobileMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [openAccordion, setOpenAccordion] = useState<AccordionName | null>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
@@ -64,7 +68,7 @@ export function MobileMenu({ guideLinks, exploreLinks }: MobileMenuProps) {
         ref={menuButtonRef}
         type="button"
       >
-        <span className="sr-only">{isOpen ? "Close menu" : "Open menu"}</span>
+        <span className="sr-only">{isOpen ? labels.close : labels.open}</span>
         <span aria-hidden="true" className="menu-icon">
           <span className="menu-icon__line" />
           <span className="menu-icon__line" />
@@ -73,14 +77,14 @@ export function MobileMenu({ guideLinks, exploreLinks }: MobileMenuProps) {
       </button>
 
       <nav
-        aria-label="Mobile navigation"
+        aria-label={labels.navigation}
         className="mobile-menu"
         data-open={isOpen}
         id={menuId}
       >
         <div className="mobile-menu__inner page-shell">
-          <Link href="/" onClick={closeMenu}>
-            Home
+          <Link href={localePath("/",locale)} onClick={closeMenu}>
+            {labels.home}
           </Link>
 
           <div className="mobile-menu__section">
@@ -91,7 +95,7 @@ export function MobileMenu({ guideLinks, exploreLinks }: MobileMenuProps) {
               onClick={() => toggleAccordion("guides")}
               type="button"
             >
-              Guides
+              {labels.guides}
             </button>
             <div
               className="mobile-submenu"
@@ -114,7 +118,7 @@ export function MobileMenu({ guideLinks, exploreLinks }: MobileMenuProps) {
               onClick={() => toggleAccordion("explore")}
               type="button"
             >
-              Explore
+              {labels.explore}
             </button>
             <div
               className="mobile-submenu"
@@ -131,10 +135,10 @@ export function MobileMenu({ guideLinks, exploreLinks }: MobileMenuProps) {
 
           <Link
             className="button-link button--primary mobile-menu__cta"
-            href="/guides/getting-started/"
+            href={localePath("/guides/getting-started/",locale)}
             onClick={closeMenu}
           >
-            Start reading
+            {labels.start}
           </Link>
         </div>
       </nav>

@@ -1,13 +1,15 @@
 import { LegalPage } from "@/components/legal-page";
-import { createPageMetadata } from "@/lib/page-metadata";
+import Link from "next/link";
+import { localize } from "@/lib/i18n/translate";
+import type { Locale } from "@/lib/i18n/locales";
 import { legalPages } from "@/lib/legal-pages";
 import { site } from "@/lib/site-data";
 
 const page = legalPages[0];
-export const metadata = createPageMetadata(page);
 
-export default function PrivacyPage() {
-  return <LegalPage title={page.title}>
+
+export function PrivacyPage({ locale = "en" }: { locale?: Locale }) {
+  return localize(<LegalPage locale={locale} title={page.title}>
     <p>{site.name} is an independent fan-made reference website operated by {site.operator.name}. This notice describes the website’s contact channel, analytics, advertising, and infrastructure.</p>
     <h2>Reading and contacting the site</h2>
     <p>You can read the articles without a site account. This website does not offer an on-site account, comment system, or contact form. If you email the operator, your address, message, and any attachments are sent through email services, rather than a form on this website.</p>
@@ -20,8 +22,8 @@ export default function PrivacyPage() {
     <p>The operator has set a 30-day retention policy for Vercel and Cloudflare website request logs and for contact emails. The retention and deletion settings in those services and the email account have not yet been independently verified. This policy does not specify retention periods for data processed separately by Google Analytics 4 or Adsterra.</p>
     <p>Contact the operator with questions about a message you have sent or records associated with your visit. Do not include a password, account token, or payment information in a site inquiry.</p>
     <h2>External destinations and browser controls</h2>
-    <p>Links to Steam, Discord, X, and other services take you outside this guide hub. Their sites and services operate separately. Your browser provides controls for cookies and storage; see the <a href="/cookies">Cookie Policy</a> for this site’s loading arrangement.</p>
+    <p>Links to Steam, Discord, X, and other services take you outside this guide hub. Their sites and services operate separately. Your browser provides controls for cookies and storage; see the <Link href="/cookies">Cookie Policy</Link> for this site’s loading arrangement.</p>
     <h2>Contact and changes</h2>
     <p>Contact {site.operator.name} at <a href={`mailto:${site.operator.email}`}>{site.operator.email}</a>. This notice should be updated when the site’s services or handling arrangements change; the date above identifies this version.</p>
-  </LegalPage>;
+  </LegalPage>, locale);
 }

@@ -39,8 +39,33 @@ body {
     radial-gradient(circle at 82% 7%, #5c321224 0, transparent 28rem),
     linear-gradient(180deg, var(--color-bg-soft) 0, var(--color-bg) 28rem);
   color: var(--color-text);
-  font-family: var(--font-sans), "Trebuchet MS", sans-serif;
+  font-family: var(--font-sans), "Trebuchet MS", "Apple SD Gothic Neo", "Malgun Gothic", "Hiragino Kaku Gothic ProN", "Yu Gothic", "PingFang TC", "Microsoft JhengHei", sans-serif;
   text-rendering: optimizeLegibility;
+}
+
+.language-switcher select {
+  max-width: 11rem;
+  min-height: 44px;
+  padding: 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.45rem;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+.mobile-language { display: none; }
+
+html:lang(ko) .prose-wiki { word-break: keep-all; overflow-wrap: anywhere; }
+html:lang(ja) .prose-wiki, html:lang(zh-Hant) .prose-wiki { line-height: 1.95; }
+
+@media (max-width: 1040px) {
+  .site-header .site-brand { min-width: 0; }
+  .site-header .site-brand > span:last-child { overflow-wrap: anywhere; }
+  .mobile-language { display: block; margin-left: auto; }
+  .mobile-language select { max-width: 6.5rem; }
+  html:lang(pt-BR) .mobile-language select { max-width: 9rem; }
 }
 
 a {
@@ -1434,8 +1459,9 @@ img {
 
   .site-header__inner {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1fr) auto auto;
     align-items: center;
+    gap: 0.65rem;
   }
 
   .mobile-nav {

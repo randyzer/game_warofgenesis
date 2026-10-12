@@ -3,6 +3,7 @@ import createMDX from "@next/mdx";
 const withMDX = createMDX({});
 
 export default withMDX({
+  experimental: { globalNotFound: true },
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   async redirects() {
     return [

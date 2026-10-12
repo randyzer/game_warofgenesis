@@ -1,14 +1,17 @@
+import { localize } from "@/lib/i18n/translate";
+import type { Locale } from "@/lib/i18n/locales";
 import type { ArticleFaq } from "@/lib/articles";
 
 interface FaqListProps {
+  locale?: Locale;
   faqs: readonly ArticleFaq[];
   idPrefix?: string;
 }
 
-export function FaqList({ faqs, idPrefix = "faq" }: FaqListProps) {
+export function FaqList({ faqs, idPrefix = "faq", locale = "en" }: FaqListProps) {
   const headingId = `${idPrefix}-heading`;
 
-  return (
+  return localize(
     <section className="article-faq" aria-labelledby={headingId}>
       <header className="section-heading">
         <p className="section-eyebrow">FAQ</p>
@@ -29,5 +32,5 @@ export function FaqList({ faqs, idPrefix = "faq" }: FaqListProps) {
         ))}
       </div>
     </section>
-  );
+  , locale);
 }

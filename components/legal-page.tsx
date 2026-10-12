@@ -1,15 +1,18 @@
+import { localize, text } from "@/lib/i18n/translate";
+import type { Locale } from "@/lib/i18n/locales";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
 import { legalPages } from "@/lib/legal-pages";
 
 interface LegalPageProps {
+  locale?: Locale;
   title: string;
   children: ReactNode;
 }
 
-export function LegalPage({ title, children }: LegalPageProps) {
-  return (
+export function LegalPage({ title, children, locale = "en" }: LegalPageProps) {
+  return localize(
     <article className="legal-document page-shell">
       <header className="article-header">
         <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-current="page">{title}</span></nav>
@@ -19,8 +22,8 @@ export function LegalPage({ title, children }: LegalPageProps) {
       </header>
       <div className="prose-wiki">{children}</div>
       <nav className="legal-links" aria-label="Site policies">
-        {legalPages.map((page) => <a key={page.path} href={page.path} aria-current={page.title === title ? "page" : undefined}>{page.title}</a>)}
+        {legalPages.map((page) => <Link key={page.path} href={page.path} aria-current={text(page.title, locale) === title ? "page" : undefined}>{page.title}</Link>)}
       </nav>
     </article>
-  );
+  , locale);
 }

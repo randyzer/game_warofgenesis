@@ -1,3 +1,5 @@
+import { localize, text } from "@/lib/i18n/translate";
+import type { Locale } from "@/lib/i18n/locales";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
@@ -8,17 +10,18 @@ import { WikiCard } from "@/components/wiki-card";
 import type { ArticleMetadata, ArticleRecord } from "@/lib/articles";
 
 interface ArticleShellProps {
+  locale?: Locale;
   metadata: ArticleMetadata;
   children: ReactNode;
   related: readonly ArticleRecord[];
 }
 
-const publishedDateFormatter = new Intl.DateTimeFormat("en-US", {
+function formatPublishedDate(value: string, locale: Locale): string {
+ const publishedDateFormatter = new Intl.DateTimeFormat(locale === "zh-hant" ? "zh-Hant" : locale === "pt-br" ? "pt-BR" : locale, {
   dateStyle: "long",
   timeZone: "UTC",
 });
 
-function formatPublishedDate(value: string): string {
   return publishedDateFormatter.format(new Date(`${value}T00:00:00.000Z`));
 }
 
@@ -26,10 +29,11 @@ export function ArticleShell({
   metadata,
   children,
   related,
+  locale = "en",
 }: ArticleShellProps) {
   const relatedHeadingId = `${metadata.slug}-related-guides-title`;
 
-  return (
+  return localize(
     <article className="article-document">
       <div className="page-shell">
         <header className="article-header">
@@ -44,20 +48,20 @@ export function ArticleShell({
           <p className="article-description">{metadata.description}</p>
           <p className="article-meta">
             <time dateTime={metadata.publishedAt}>
-              Published {formatPublishedDate(metadata.publishedAt)}
+              {text("Published", locale)} {formatPublishedDate(metadata.publishedAt, locale)}
             </time>
           </p>
-          <p className="article-meta">Research last checked <time dateTime={metadata.lastVerified}>{formatPublishedDate(metadata.lastVerified)}</time>. Historical claims retain their dates.</p>
+          <p className="article-meta">{text("Research last checked", locale)} <time dateTime={metadata.lastVerified}>{formatPublishedDate(metadata.lastVerified, locale)}</time>{text(". Historical claims retain their dates.", locale)}</p>
         </header>
 
-        <AdSlot />
+        <AdSlot locale={locale} />
 
         <div className="article-reading-grid">
-          <TableOfContents sections={metadata.sections} />
+          <TableOfContents locale={locale} sections={metadata.sections} />
           <div className="article-main prose-wiki">{children}</div>
         </div>
 
-        <FaqList faqs={metadata.faqs} idPrefix={`${metadata.slug}-faq`} />
+        <FaqList locale={locale} faqs={metadata.faqs} idPrefix={`${metadata.slug}-faq`} />
 
         {related.length > 0 ? (
           <section
@@ -72,12 +76,12 @@ export function ArticleShell({
             </header>
             <div className="related-grid">
               {related.map((article) => (
-                <WikiCard article={article} key={article.metadata.slug} />
+                <WikiCard locale={locale} article={article} key={article.metadata.slug} />
               ))}
             </div>
           </section>
         ) : null}
       </div>
     </article>
-  );
+  , locale);
 }

@@ -1,9 +1,11 @@
+import { localize } from "@/lib/i18n/translate";
+import type { Locale } from "@/lib/i18n/locales";
 import Link from "next/link";
 import { site, browseLinks } from "@/lib/site-data";
 import { legalPages } from "@/lib/legal-pages";
 
-export function SiteFooter() {
-  return <footer className="site-footer">
+export function SiteFooter({ locale = "en" }: { locale?: Locale }) {
+  return localize(<footer className="site-footer">
     <div className="footer-grid page-shell">
       <div className="footer-brand">
         <Link className="site-brand" href="/"><span>{site.shortName}</span></Link>
@@ -18,5 +20,5 @@ export function SiteFooter() {
       <div><h2 className="footer-heading">More references</h2><ul className="footer-links">{browseLinks.slice(3).map(link => <li key={link.href}><Link href={link.href}>{link.label}</Link></li>)}</ul></div>
     </div>
     <div className="footer-bottom page-shell"><span>War of Genesis · Independent guide hub</span><span>Not affiliated with New Normal Soft Inc., Steam, or Valve.</span><nav className="legal-links" aria-label="Site policies">{legalPages.map(page => <a key={page.path} href={page.path}>{page.title}</a>)}</nav></div>
-  </footer>;
+  </footer>,locale);
 }
