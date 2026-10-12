@@ -1012,7 +1012,9 @@ img {
 
 .advertisement {
   overflow: hidden;
+  margin-block: 1.5rem;
   padding-block: 1.5rem;
+  border-block: 1px solid var(--color-border-soft);
 }
 
 .advertisement > div {

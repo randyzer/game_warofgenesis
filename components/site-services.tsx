@@ -1,7 +1,6 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 import { site } from "@/lib/site-data";
 
@@ -12,15 +11,7 @@ declare global {
   }
 }
 
-interface SiteServicesProps {
-  advertisingPaths: readonly string[];
-}
-
-export function SiteServices({ advertisingPaths }: SiteServicesProps) {
-  const pathname = usePathname();
-  const showAdvertisement = advertisingPaths.includes(pathname);
-  const adContainer = useRef<HTMLDivElement>(null);
-
+export function SiteServices() {
   useEffect(() => {
     // Keep audits and previews out of the production analytics stream.
     if (window.location.origin !== site.url || document.getElementById("wog-google-tag")) return;
@@ -40,26 +31,5 @@ export function SiteServices({ advertisingPaths }: SiteServicesProps) {
     document.head.appendChild(script);
   }, []);
 
-  useEffect(() => {
-    const container = adContainer.current;
-    if (!showAdvertisement || !container || window.location.origin !== site.url) return;
-
-    const script = document.createElement("script");
-    script.async = true;
-    script.setAttribute("data-cfasync", "false");
-    script.src = site.measurement.adsterraScript;
-    container.before(script);
-
-    return () => {
-      script.remove();
-      container.replaceChildren();
-    };
-  }, [showAdvertisement]);
-
-  if (!showAdvertisement) return null;
-
-  return <aside className="advertisement page-shell" aria-label="Advertisement">
-    <p className="section-eyebrow">Advertisement</p>
-    <div id={site.measurement.adsterraContainer} ref={adContainer} />
-  </aside>;
+  return null;
 }

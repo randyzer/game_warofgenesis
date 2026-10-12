@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { AdSlot } from "@/components/ad-slot";
 import { ButtonLink } from "@/components/button-link";
 import { FaqList } from "@/components/faq-list";
 import { SectionHeading } from "@/components/section-heading";
@@ -50,6 +51,7 @@ export default function HomePage() {
     <section aria-label="Verified game facts" className="page-shell">
       <dl className="stats-grid">{stats.map(stat => <div className="stat" key={stat.label}><dt className="stat-label">{stat.label}</dt><dd className="stat-value">{stat.value}</dd></div>)}</dl>
     </section>
+    <AdSlot className="page-shell" />
     <section aria-labelledby="overview-heading" className="section-block page-shell" id="overview">
       <SectionHeading eyebrow="Game overview" id="overview-heading" title="What is War of Genesis: Idle Loot?" description="A Windows desktop loot RPG with automatic battles, equipment growth, and eligible-item trading." />
       <div className="overview-grid">

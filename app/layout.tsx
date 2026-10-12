@@ -5,7 +5,6 @@ import type { ReactNode } from "react";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { SiteServices } from "@/components/site-services";
-import { guideArticles } from "@/lib/articles";
 
 import { site } from "@/lib/site-data";
 
@@ -49,7 +48,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </a>
         <SiteHeader />
         <main id="main-content">{children}</main>
-        <SiteServices advertisingPaths={["/", "/guides", ...guideArticles.map(({ metadata }) => `/guides/${metadata.slug}`)]} />
+        <SiteServices />
         <SiteFooter />
       </body>
     </html>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
+import { AdSlot } from "@/components/ad-slot";
 import { FaqList } from "@/components/faq-list";
 import { TableOfContents } from "@/components/table-of-contents";
 import { WikiCard } from "@/components/wiki-card";
@@ -48,6 +49,8 @@ export function ArticleShell({
           </p>
           <p className="article-meta">Research last checked <time dateTime={metadata.lastVerified}>{formatPublishedDate(metadata.lastVerified)}</time>. Historical claims retain their dates.</p>
         </header>
+
+        <AdSlot />
 
         <div className="article-reading-grid">
           <TableOfContents sections={metadata.sections} />
