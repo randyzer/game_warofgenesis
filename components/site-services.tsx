@@ -26,7 +26,10 @@ export function SiteServices({ advertisingPaths }: SiteServicesProps) {
     if (window.location.origin !== site.url || document.getElementById("wog-google-tag")) return;
 
     window.dataLayer = window.dataLayer ?? [];
-    window.gtag = window.gtag ?? ((...args: unknown[]) => { window.dataLayer?.push(args); });
+    window.gtag = window.gtag ?? function gtag() {
+      // eslint-disable-next-line prefer-rest-params -- gtag commands require an Arguments object.
+      window.dataLayer?.push(arguments);
+    };
     window.gtag("js", new Date());
     window.gtag("config", site.measurement.ga4Id);
 
